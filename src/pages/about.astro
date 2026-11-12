@@ -1,0 +1,80 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../data/site';
+const c = site.idCard;
+const a = site.about;
+---
+<Base title="About" current="about">
+  <section class="about-hero wrap">
+    <div class="about-hero__text">
+      <span class="mono muted">About</span>
+      <h1>{a.headline}</h1>
+      {a.paragraphs.slice(0, 1).map((p) => <p>{p}</p>)}
+      <div class="chips">
+        <a class="chip" href={site.resume} target="_blank" rel="noopener">Download resume ↗</a>
+        <a class="chip" href={`mailto:${site.email}`}>{site.email}</a>
+      </div>
+    </div>
+    <div class="id-wrap">
+      <div class="id-scroll">
+        <div class="id-card" data-id-card>
+          <div class="id-face" aria-label="Designer ID card, front: fun facts">
+            <div class="id-top">
+              <div><span class="id-title-zh">香港永久性設計師證</span><span class="id-title-en">HONG KONG PERMANENT DESIGNER CARD</span></div>
+              <span class="id-stars" aria-hidden="true">★★★</span>
+            </div>
+            <div class="id-main">
+              <div class="id-fields">
+                <div><span class="id-name-zh">{c.nameZh}</span><span class="id-name-en">{c.nameEn}</span></div>
+                <dl class="id-grid">{c.facts.map((f) => <div><dt>{f.zh} {f.en}</dt><dd>{f.value}</dd></div>)}</dl>
+              </div>
+              <div class="id-photo">{c.photo ? <img src={c.photo} alt={`Portrait of ${site.name}`} /> : '[ your photo or illustrated self-portrait ]'}</div>
+            </div>
+            <div class="id-foot">
+              <div><small>適用於 Valid for</small><strong style="font-size:13px;font-weight:500">{c.validFor}</strong></div>
+              <span class="id-number">{c.number}</span>
+            </div>
+          </div>
+          <div class="id-face id-face--back" aria-label="Designer ID card, back: short bio">
+            <span class="id-title-en">持證人資料 ABOUT THE HOLDER</span>
+            <p class="id-bio">{c.backBio}</p>
+            <div class="id-foot" style="border:0">
+              <div><span class="id-sign">{c.signature}</span><small style="border-top:1px solid rgba(30,58,95,.35);padding-top:4px;width:220px">持證人簽名 Holder's signature</small></div>
+              <small style="text-align:right">{site.location} · {site.email}</small>
+            </div>
+            <span class="id-mrz" aria-hidden="true">DSGN&lt;&lt;PRODUCT&lt;&lt;AI&lt;&lt;CREATIVE&lt;&lt;TECH&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="id-flip" data-id-flip aria-pressed="false">↻ Flip card</button>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="section__head"><h2 class="mono">What I do</h2></div>
+    <div class="services">{a.services.map((s) => <div class="service"><h3>{s.title}</h3><p>{s.text}</p></div>)}</div>
+  </section>
+
+  <section class="section wrap">
+    <div class="two-col">
+      <div>
+        <div class="section__head" style="margin-bottom:8px"><h2 class="mono">Experience</h2></div>
+        <ul class="rows">{a.experience.map((e) => <li><span>{e.what}</span><span class="mono muted">{e.when}</span></li>)}</ul>
+      </div>
+      <div>
+        <div class="section__head" style="margin-bottom:20px"><h2 class="mono">Tools</h2></div>
+        <div class="chips">{a.tools.map((t) => <span class="chip">{t}</span>)}</div>
+        <div class="prose" style="margin-top:40px">{a.paragraphs.slice(1).map((p) => <p class="muted">{p}</p>)}</div>
+      </div>
+    </div>
+  </section>
+  <script>
+    const card = document.querySelector('[data-id-card]')!;
+    const btn = document.querySelector<HTMLButtonElement>('[data-id-flip]')!;
+    btn.addEventListener('click', () => {
+      const flipped = card.classList.toggle('is-flipped');
+      btn.setAttribute('aria-pressed', String(flipped));
+      btn.textContent = flipped ? '↻ Back to fun facts' : '↻ Flip card';
+    });
+  </script>
+</Base>

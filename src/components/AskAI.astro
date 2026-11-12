@@ -1,0 +1,78 @@
+---
+import { site } from '../data/site';
+const raw = site.name.trim();
+const first = raw.startsWith('[') ? 'me' : raw.split(' ')[0];
+---
+<button type="button" class="ask-fab" data-ask-open aria-haspopup="dialog">
+  <span class="avatar" aria-hidden="true">{site.avatar ? <img src={site.avatar} alt="" /> : 'AI'}</span>
+  Ask AI {first === "me" ? "me" : first}
+</button>
+
+<section class="ask-panel" role="dialog" aria-modal="false" aria-labelledby="ask-title" hidden data-ask-panel>
+  <div class="ask-panel__head">
+    <span class="avatar" aria-hidden="true">{site.avatar ? <img src={site.avatar} alt="" /> : 'AI'}</span>
+    <div><strong id="ask-title">Chat with AI {first}</strong><small>The AI version of me</small></div>
+    <button type="button" class="ask-close" data-ask-close aria-label="Close chat">✕</button>
+  </div>
+  <div class="ask-log" data-ask-log aria-live="polite">
+    <p class="msg msg--bot">Hey! I'm the AI version of {first} — the real one is busy designing. Ask me about my work, process or resume.</p>
+  </div>
+  <div class="ask-suggest" data-show="product">
+    {site.lenses.product.suggestions.map((s) => <button type="button" class="chip" data-ask-suggest>{s}</button>)}
+  </div>
+  <div class="ask-suggest" data-show="brand">
+    {site.lenses.brand.suggestions.map((s) => <button type="button" class="chip" data-ask-suggest>{s}</button>)}
+  </div>
+  <form class="ask-form" data-ask-form>
+    <label for="ask-input" class="skip">Your question</label>
+    <input id="ask-input" name="q" autocomplete="off" placeholder="Ask me anything…" data-ask-input />
+    <button type="submit">Ask →</button>
+  </form>
+  <p class="ask-note">Answers come only from my portfolio and resume. AI can make mistakes.</p>
+</section>
+
+<script define:vars={{ email: site.email }}>
+  window.__ASK_EMAIL__ = email;
+</script>
+<script>
+  const panel = document.querySelector<HTMLElement>('[data-ask-panel]')!;
+  const fab = document.querySelector<HTMLElement>('.ask-fab')!;
+  const log = panel.querySelector<HTMLElement>('[data-ask-log]')!;
+  const input = panel.querySelector<HTMLInputElement>('[data-ask-input]')!;
+  const open = () => { panel.hidden = false; fab.hidden = true; input.focus(); };
+  const close = () => { panel.hidden = true; fab.hidden = false; fab.focus(); };
+  document.querySelectorAll('[data-ask-open]').forEach((b) => b.addEventListener('click', open));
+  panel.querySelector('[data-ask-close]')!.addEventListener('click', close);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !panel.hidden) close(); });
+
+  const add = (text: string, who: 'me' | 'bot') => {
+    const p = document.createElement('p');
+    p.className = `msg msg--${who}`;
+    p.textContent = text;
+    log.appendChild(p);
+    log.scrollTop = log.scrollHeight;
+  };
+
+  async function ask(q: string) {
+    add(q, 'me');
+    try {
+      // Wired up in the next step: an /api/ask endpoint that answers only from the
+      // portfolio + resume. Until it exists this falls through to the message below.
+      const res = await fetch('/api/ask', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ q }) });
+      if (!res.ok) throw new Error('not ready');
+      const data = await res.json();
+      add(data.answer, 'bot');
+    } catch {
+      add(`I'm still being trained on my portfolio — for now, email the real me at ${(window as any).__ASK_EMAIL__}.`, 'bot');
+    }
+  }
+
+  panel.querySelector('[data-ask-form]')!.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const q = input.value.trim();
+    if (!q) return;
+    input.value = '';
+    ask(q);
+  });
+  panel.querySelectorAll<HTMLButtonElement>('[data-ask-suggest]').forEach((b) => b.addEventListener('click', () => ask(b.textContent || '')));
+</script>

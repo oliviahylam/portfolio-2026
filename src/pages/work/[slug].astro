@@ -1,0 +1,67 @@
+---
+import { Image } from 'astro:assets';
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { getProjects, type Project } from '../../lib';
+
+export async function getStaticPaths() {
+  const all = await getProjects();
+  return all.map((project) => ({ params: { slug: project.id }, props: { project } }));
+}
+const { project } = Astro.props as { project: Project };
+const d = project.data;
+const lens = d.lens[0];
+const { Content } = await render(project);
+const siblings = await getProjects(lens);
+const i = siblings.findIndex((p) => p.id === project.id);
+const next = siblings[(i + 1) % siblings.length];
+const metaRows = [
+  ['Role', d.role], ['Client', d.client], ['Team', d.team], ['Timeline', d.timeline],
+  ['Tools', d.tools.length ? d.tools.join(', ') : undefined], ['Outcome', d.outcome], ['Year', d.year],
+].filter(([, v]) => v) as [string, string][];
+const editorial = d.template === 'editorial';
+---
+<Base title={d.title} lens={lens} description={d.summary}>
+  {editorial ? (
+    <article>
+      <header class="ed-head wrap">
+        <a class="back mono" href={lens === 'brand' ? '/?lens=brand#work-brand' : '/#work'}>← Index</a>
+        <h1 class="ed-title">{d.title}</h1>
+        <div class="meta">
+          <div><span class="mono muted">Discipline</span><span>{d.category}</span></div>
+          {metaRows.map(([k, v]) => <div><span class="mono muted">{k}</span><span>{v}</span></div>)}
+        </div>
+      </header>
+      <div class="ed-cover">
+        {d.coverVideo ? <video src={d.coverVideo} autoplay muted loop playsinline aria-hidden="true" />
+          : d.cover ? <Image src={d.cover} alt="" widths={[900, 1600, 2400]} sizes="100vw" loading="eager" /> : null}
+      </div>
+      <div class="ed-body wrap"><div class="prose"><Content /></div></div>
+      {next && next.id !== project.id && (
+        <a class="next ed-next wrap" href={`/work/${next.id}`}><span class="mono muted">Next</span><span class="next__title">{next.data.title} →</span></a>
+      )}
+    </article>
+  ) : (
+    <article>
+      <header class="cs-head wrap">
+        <a class="back" href={lens === 'brand' ? '/?lens=brand#work-brand' : '/#work'}>← All work</a>
+        <span class="mono muted">Case study · {d.category} · {d.year}</span>
+        <h1 class="cs-title">{d.title}</h1>
+        <p class="cs-summary">{d.summary}</p>
+      </header>
+      <div class="wrap">
+        <div class="meta">{metaRows.map(([k, v]) => <div><span class="mono muted">{k}</span><span>{v}</span></div>)}</div>
+      </div>
+      <div class="wrap" style="margin-top:48px">
+        <div class="cover">
+          {d.coverVideo ? <video src={d.coverVideo} autoplay muted loop playsinline aria-hidden="true" />
+            : d.cover ? <Image src={d.cover} alt="" widths={[900, 1400, 2000]} sizes="(min-width: 1344px) 1344px, 100vw" loading="eager" /> : null}
+        </div>
+      </div>
+      <div class="cs-body wrap"><div class="prose"><Content /></div></div>
+      {next && next.id !== project.id && (
+        <a class="next wrap" href={`/work/${next.id}`}><span class="mono muted">Next project</span><span style="font-size:clamp(28px,3vw,40px);font-weight:500;letter-spacing:-.02em">{next.data.title} →</span></a>
+      )}
+    </article>
+  )}
+</Base>

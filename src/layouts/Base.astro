@@ -1,0 +1,43 @@
+---
+import '../styles/global.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import AskAI from '../components/AskAI.astro';
+import { site, type Lens } from '../data/site';
+
+interface Props { title?: string; lens?: Lens; description?: string; current?: string }
+const { title, lens = 'product', description = site.description, current } = Astro.props;
+const fullTitle = title ? `${title} — ${site.name}` : `${site.name} — ${site.role}`;
+---
+<!doctype html>
+<html lang="en" data-lens={lens}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500&family=Geist+Mono:wght@400;500&family=Geist:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Noto+Sans+HK:wght@500;700&display=swap" />
+    <script is:inline>
+      // Pick the lens before first paint: ?lens=brand|product overrides the page default.
+      (function () {
+        var l = new URLSearchParams(location.search).get('lens');
+        if (l === 'brand' || l === 'product') document.documentElement.dataset.lens = l;
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <Nav current={current} />
+    <main id="main"><slot /></main>
+    <Footer />
+    <AskAI />
+    <script>
+      import '../scripts/lens';
+    </script>
+  </body>
+</html>

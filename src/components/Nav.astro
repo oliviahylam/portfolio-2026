@@ -1,0 +1,23 @@
+---
+import { site } from '../data/site';
+import { getProjects } from '../lib';
+const { current } = Astro.props;
+const counts = { product: (await getProjects('product')).length, brand: (await getProjects('brand')).length };
+const pad = (n: number) => String(n).padStart(2, '0');
+---
+<header class="nav">
+  <div class="nav__inner wrap">
+    <a class="nav__name" href="/" data-keep-lens>{site.name}</a>
+    <div class="lens-switch" role="group" aria-label="See my work in">
+      <button type="button" data-lens-set="product" aria-pressed="true">Product &amp; AI <span>{pad(counts.product)}</span></button>
+      <button type="button" data-lens-set="brand" aria-pressed="false">Brand &amp; Editorial <span>{pad(counts.brand)}</span></button>
+    </div>
+    <nav class="nav__links" aria-label="Main">
+      <a href="/#work" data-keep-lens aria-current={current === 'work' ? 'page' : undefined}>Work</a>
+      <a href="/playground" data-keep-lens aria-current={current === 'playground' ? 'page' : undefined}>Playground</a>
+      <a href="/about" data-keep-lens aria-current={current === 'about' ? 'page' : undefined}>About</a>
+      <a href={site.resume} target="_blank" rel="noopener" class="hide-sm">Resume ↗</a>
+      <button type="button" class="btn-ask" data-ask-open>Ask AI ✦</button>
+    </nav>
+  </div>
+</header>

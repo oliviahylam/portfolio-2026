@@ -1,0 +1,73 @@
+---
+import Base from '../layouts/Base.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { site, type Lens } from '../data/site';
+import { getProjects } from '../lib';
+
+const lists: Record<Lens, Awaited<ReturnType<typeof getProjects>>> = {
+  product: await getProjects('product'),
+  brand: await getProjects('brand'),
+};
+const lenses: Lens[] = ['product', 'brand'];
+const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
+---
+<Base current="work">
+  {lenses.map((lens) => {
+    const L = site.lenses[lens];
+    const scene = site.hero[lens];
+    const list = lists[lens];
+    return (
+      <div data-show={lens}>
+        <section class="hero wrap" aria-label="Intro">
+          <div class="hero__scene">
+            {scene ? (isVideo(scene) ? <video src={scene} autoplay muted loop playsinline aria-hidden="true" /> : <img src={scene} alt={`${site.name}'s workspace`} />)
+              : <div class="scene-placeholder mono muted">[ your 3D workspace — {lens === 'product' ? 'day' : 'night'} ]<br />public/hero/ → set in src/data/site.ts</div>}
+          </div>
+          <div class="hero__bottom">
+            <div class="hero__text">
+              <span class="mono muted status">{site.status} · {site.location}</span>
+              <span class="mono muted">{L.eyebrow}</span>
+              <h1 class:list={['display', lens === 'brand' ? 'display--brand' : 'display--product']} set:html={L.headline} />
+              <p class="hero__intro">{L.intro}</p>
+            </div>
+            <a class="mono scroll-cue" href="#work">↓ scroll</a>
+          </div>
+        </section>
+
+        <section class="intro wrap">
+          <div class="intro__label"><span class="mono muted">{lens === 'brand' ? '[ about ]' : '/* about */'}</span></div>
+          <div class="intro__body">
+            {L.bio.map((p) => <p>{p}</p>)}
+            <div class="chips">{L.tags.map((t) => <span class="chip">{t}</span>)}</div>
+          </div>
+        </section>
+
+        <section id={lens === 'product' ? 'work' : 'work-brand'} class="section wrap" aria-label="Selected work">
+          <div class="section__head">
+            <h2 class={lens === 'brand' ? 'serif-em' : 'mono'} set:html={L.workTitle} />
+            <span class="mono muted">{L.label} · {String(list.length).padStart(2, '0')}</span>
+          </div>
+          {list[0] && <ProjectCard project={list[0]} index={1} lens={lens} featured />}
+          <div class="grid">
+            {list.slice(1).map((p, i) => <ProjectCard project={p} index={i + 2} lens={lens} />)}
+          </div>
+        </section>
+
+        <section class="section wrap" aria-label="Playground">
+          <div class="section__head">
+            <h2 class="mono">{L.playgroundTitle}</h2>
+            <a href={lens === 'brand' ? '/playground?lens=brand' : '/playground'}>See all experiments →</a>
+          </div>
+          <div class="tiles">
+            {site.playground.slice(0, 4).map((x) => (
+              <div class="tile">
+                {x.media && (isVideo(x.media) ? <video src={x.media} autoplay muted loop playsinline aria-hidden="true" /> : <img src={x.media} alt="" loading="lazy" />)}
+                <span class="mono muted">{x.tool}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+    );
+  })}
+</Base>

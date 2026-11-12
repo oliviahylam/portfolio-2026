@@ -1,0 +1,17 @@
+---
+import { site } from '../data/site';
+---
+<div class="wrap" data-show="brand"><p class="wordmark" aria-hidden="true">{site.name}</p></div>
+<footer class="footer">
+  <div class="footer__inner wrap">
+    <div>
+      <p class="footer__title">Let's build something.</p>
+      <div class="footer__links">
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+        {site.links.map((l) => <a href={l.href} target="_blank" rel="noopener">{l.label}</a>)}
+        <a href={site.resume} target="_blank" rel="noopener">Resume</a>
+      </div>
+    </div>
+    <p class="mono muted" style="margin:0">{site.version}</p>
+  </div>
+</footer>
