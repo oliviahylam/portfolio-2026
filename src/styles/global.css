@@ -525,3 +525,6 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 .flows figcaption { font-size: 13px; color: var(--muted); }
 .flows figcaption span { font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-right: 8px; }
 @media (max-width: 760px) { .flows { grid-template-columns: 1fr 1fr; } .flows__m { grid-column: 1 / -1; } .flows__m img { max-height: 70vh; width: auto; margin-inline: auto; } }
+/* Key insight callout */
+.story-body .prose blockquote { margin: 2em 0; padding: 20px 24px; border-left: 3px solid var(--accent); border-radius: 0 12px 12px 0; background: var(--surface); font-size: 19px; }
+.story-body .prose blockquote p { margin: 0; }
