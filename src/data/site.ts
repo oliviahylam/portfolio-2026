@@ -104,9 +104,8 @@ export const site = {
   about: {
     headline: "Hi, I'm Olivia.",
     paragraphs: [
-      '[Paragraph 1 — what you do now.]',
-      '[Paragraph 2 — your path, and why the print / branding background makes you a better product designer.]',
-      "[Paragraph 3 — what you're looking for next.]",
+      "Olivia is a Hong Kong-born designer and AI creative technologist. She has worked with emerging tech and AI since it first came out, through her design internships at Animoca Brands and Silverside AI.",
+      "She emphasises the importance of visual craft in her work and is constantly exploring ways to push boundaries: enhancing what we're already capable of, finding ways to go beyond it, and always seeking out work that is innovative and new.",
     ],
     services: [
       { title: 'Product & AI design', text: 'Research, flows, interaction design, prototyping, designing for AI behavior.' },
