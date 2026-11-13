@@ -33,9 +33,14 @@ export const site = {
 
   // The interactive desk on the landing page. Click the scene → it zooms toward the screens;
   // click a screen → switches to that lens and scrolls to the work.
-  // All values are % of the scene image, so they keep working at any size.
+  // Screen hotspots are % of the final view (pov) if you add one, otherwise of the scene image, so they keep working at any size.
   // Once your real image is in, nudge these numbers so the hotspots sit on the screens.
   desk: {
+    // Optional camera move: a transition video from the idle loop to your eyeline,
+    // ending on a still of both screens straight-on. e.g. '/hero/desk-transition.mp4'
+    transition: null as string | null,
+    pov: null as string | null, // the final straight-on view, e.g. '/hero/desk-pov.webp'
+    // Without transition/pov the scene simply zooms toward this point:
     zoom: { x: 50, y: 38, scale: 2.1 }, // point to zoom toward + how far
     screens: {
       brand: { left: 34, top: 14, width: 32, height: 26, label: 'Brand & Editorial' }, // top monitor

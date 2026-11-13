@@ -356,3 +356,18 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
   .desk__toggle, .desk__screen { display: none; }
   .desk__mobile { display: flex; }
 }
+
+/* Desk with camera move (transition video + straight-on view) */
+.desk__frame { position: relative; }
+.desk--pov .desk__stage { cursor: pointer; transition: opacity .6s var(--ease); }
+.desk--pov.is-zoomed .desk__stage { transform: none; }
+.desk__transition, .desk__pov { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; pointer-events: none; transition: opacity .6s var(--ease); }
+.desk__transition { object-fit: cover; }
+.desk__pov img { width: 100%; height: 100%; object-fit: cover; }
+.desk--pov.is-playing .desk__transition { opacity: 1; }
+.desk--pov.is-zoomed .desk__pov { opacity: 1; pointer-events: auto; }
+.desk--pov.is-playing .desk__stage, .desk--pov.is-zoomed .desk__stage { opacity: 0; }
+.desk--pov.is-zoomed .desk__label { font-size: 13px; padding: 7px 12px; border-radius: 6px; }
+.desk--pov .desk__frame { aspect-ratio: 16 / 9; }
+.desk--pov .desk__stage { aspect-ratio: auto; height: 100%; }
+@media (max-width: 720px) { .desk--pov .desk__pov, .desk--pov .desk__transition { display: none; } }

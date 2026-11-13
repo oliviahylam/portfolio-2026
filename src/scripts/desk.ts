@@ -3,7 +3,21 @@
 document.querySelectorAll<HTMLElement>('[data-desk]').forEach((desk) => {
   const stage = desk.querySelector<HTMLElement>('[data-desk-stage]')!;
   const toggle = desk.querySelector<HTMLButtonElement>('[data-desk-toggle]')!;
+  const video = desk.querySelector<HTMLVideoElement>('[data-desk-transition]');
   const setZoom = (on: boolean) => {
+    if (desk.classList.contains('desk--pov')) {
+      desk.classList.remove('is-playing');
+      if (on && video) {
+        // play the camera move, then reveal the straight-on view
+        desk.classList.add('is-playing');
+        video.currentTime = 0;
+        video.play().catch(() => {});
+        video.onended = () => { desk.classList.remove('is-playing'); desk.classList.add('is-zoomed'); };
+        toggle.setAttribute('aria-pressed', 'true');
+        toggle.textContent = '↖ Step back';
+        return;
+      }
+    }
     desk.classList.toggle('is-zoomed', on);
     toggle.setAttribute('aria-pressed', String(on));
     toggle.textContent = on ? '↖ Step back' : '↘ Step into my desk';

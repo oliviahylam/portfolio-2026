@@ -4,12 +4,13 @@ interface Props { lens: Lens }
 const { lens } = Astro.props;
 const scene = site.hero[lens];
 const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
-const { zoom, screens } = site.desk;
+const { zoom, screens, transition, pov } = site.desk;
+const hasPov = Boolean(pov);
 const pos = (r: { left: number; top: number; width: number; height: number }) =>
   `left:${r.left}%;top:${r.top}%;width:${r.width}%;height:${r.height}%`;
 const order: Lens[] = ['brand', 'product'];
 ---
-<div class="desk" data-desk style={`--zx:${zoom.x}%;--zy:${zoom.y}%;--zs:${zoom.scale}`}>
+<div class:list={["desk", { "desk--pov": hasPov }]} data-desk style={`--zx:${zoom.x}%;--zy:${zoom.y}%;--zs:${zoom.scale}`}>
   <div class="desk__frame">
     <div class="desk__stage" data-desk-stage>
       {scene ? (isVideo(scene)
@@ -26,12 +27,23 @@ const order: Lens[] = ['brand', 'product'];
           <text x="200" y="285" text-anchor="middle">[ your 3D workspace goes here ]</text>
         </svg>
       )}
-      {order.map((l) => (
+      {!hasPov && order.map((l) => (
         <a class={`desk__screen desk__screen--${l}`} href={l === 'brand' ? '/?lens=brand#work-brand' : '/#work'} data-desk-go={l} style={pos(screens[l])}>
           <span class="desk__label">{screens[l].label} →</span>
         </a>
       ))}
     </div>
+    {transition && <video class="desk__transition" src={transition} muted playsinline preload="auto" aria-hidden="true" data-desk-transition />}
+    {hasPov && (
+      <div class="desk__pov" data-desk-pov>
+        <img src={pov!} alt="Close-up of my two screens" />
+        {order.map((l) => (
+          <a class={`desk__screen desk__screen--${l}`} href={l === 'brand' ? '/?lens=brand#work-brand' : '/#work'} data-desk-go={l} style={pos(screens[l])}>
+            <span class="desk__label">{screens[l].label} →</span>
+          </a>
+        ))}
+      </div>
+    )}
   </div>
   <button type="button" class="desk__toggle mono" data-desk-toggle aria-pressed="false">↘ Step into my desk</button>
   <div class="desk__mobile" aria-label="Choose a side of my work">
