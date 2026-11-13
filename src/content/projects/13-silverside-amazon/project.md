@@ -11,7 +11,7 @@ client: Amazon Ads (via Silverside AI)
 summary: LinkedIn social assets launching the refreshed Amazon Ads Programmatic Solutions Certifications. I generated every visual with AI, then designed the posts with typography inside Amazon Ads' brand guidelines.
 hook: Making a certification refresh feel like a competitive edge, in a single LinkedIn scroll.
 cover: ./blocks-5.webp
-thumb: ./blocks-1.webp
+thumb: ./logo.webp
 role: "[Your role at Silverside AI]"
 outcome: Three creative directions; the client favoured the 3D block style
 tools: []  # add the AI image tool(s) you used + Figma, e.g. [Midjourney, Figma]
