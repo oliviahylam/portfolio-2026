@@ -12,7 +12,7 @@ summary: LinkedIn social assets launching the refreshed Amazon Ads Programmatic 
 hook: Making a certification refresh feel like a competitive edge, in a single LinkedIn scroll.
 cover: ./blocks-5.webp
 thumb: ./logo.webp
-role: "[Your role at Silverside AI]"
+role: Main designer
 outcome: Three creative directions; the client favoured the 3D block style
 tools: []  # add the AI image tool(s) you used + Figma, e.g. [Midjourney, Figma]
 skills: [AI image generation, Social design, Typography, Brand guidelines]
