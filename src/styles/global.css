@@ -384,10 +384,19 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 .prose p:has(> :is(img, video) + :is(img, video) + :is(img, video) + :is(img, video)) { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 @media (max-width: 760px) { .prose p:has(> :is(img, video) + :is(img, video) + :is(img, video) + :is(img, video)) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
-/* Pause/play control on content videos */
+/* Video controls */
 .vid { position: relative; display: block; }
 .prose p .vid { min-width: 0; }
 .vid video { width: 100%; }
-.vid__btn { position: absolute; right: 12px; bottom: 12px; width: 40px; height: 40px; border-radius: 50%; border: 0; display: grid; place-items: center; background: rgba(14,14,14,.6); color: #fff; backdrop-filter: blur(6px); opacity: 0; transition: opacity .25s var(--ease); }
-.vid:hover .vid__btn, .vid__btn:focus-visible, .vid.is-paused .vid__btn { opacity: 1; }
+.vid__controls { position: absolute; left: 12px; right: 12px; bottom: 12px; display: flex; align-items: center; justify-content: flex-end; gap: 8px; opacity: 0; transition: opacity .25s var(--ease); }
+.vid--long .vid__controls { justify-content: flex-start; padding: 6px; border-radius: 999px; background: rgba(14,14,14,.55); backdrop-filter: blur(8px); }
+.vid:hover .vid__controls, .vid:focus-within .vid__controls, .vid.is-paused .vid__controls { opacity: 1; }
+.vid__btn { flex: none; width: 36px; height: 36px; border-radius: 50%; border: 0; display: grid; place-items: center; background: rgba(14,14,14,.6); color: #fff; backdrop-filter: blur(6px); }
+.vid--long .vid__btn { background: transparent; width: 32px; height: 32px; }
+.vid--long .vid__btn:hover { background: rgba(255,255,255,.15); }
 .vid__btn svg { width: 14px; height: 14px; fill: currentColor; }
+.vid__range { flex: 1; min-width: 0; height: 24px; margin: 0 8px 0 4px; background: transparent; -webkit-appearance: none; appearance: none; cursor: pointer; }
+.vid__range::-webkit-slider-runnable-track { height: 4px; border-radius: 4px; background: linear-gradient(to right, #fff var(--p, 0%), rgba(255,255,255,.3) var(--p, 0%)); }
+.vid__range::-moz-range-track { height: 4px; border-radius: 4px; background: linear-gradient(to right, #fff var(--p, 0%), rgba(255,255,255,.3) var(--p, 0%)); }
+.vid__range::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; margin-top: -4px; border-radius: 50%; background: #fff; }
+.vid__range::-moz-range-thumb { width: 12px; height: 12px; border: 0; border-radius: 50%; background: #fff; }
