@@ -41,7 +41,7 @@ const hasMedia = Boolean(d.cover || d.coverVideo);
           <div class="ed-tools">{skills.length > 0 && <div class="chips chips--sm">{skills.map((s) => <span class="chip">{s}</span>)}</div>}<Tools tools={d.tools} /></div>
         )}
       </header>
-      <PartTabs parts={d.parts} />
+      <PartTabs parts={d.parts} big />
       <div class="ed-cover">
         {d.coverVideo ? <video src={d.coverVideo} autoplay muted loop playsinline aria-hidden="true" />
           : d.cover ? <Image src={d.cover} alt="" widths={[900, 1600, 2400]} sizes="100vw" loading="eager" /> : <span class="mono muted">{d.coverNote ?? '[ cover image / video ]'}</span>}

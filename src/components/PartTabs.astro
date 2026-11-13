@@ -1,6 +1,6 @@
 ---
-interface Props { parts: { label: string; anchor: string }[] }
-const { parts } = Astro.props;
+interface Props { parts: { label: string; anchor: string }[]; big?: boolean }
+const { parts, big = false } = Astro.props;
 const css = parts.map((p) => `#${p.anchor}`).join(',');
 ---
 {parts.length > 1 && (
@@ -10,7 +10,7 @@ const css = parts.map((p) => `#${p.anchor}`).join(',');
         {parts.map((p, i) => <a href={`#${p.anchor}`} class="parts__tab" data-part={p.anchor} aria-current={i === 0 ? 'true' : undefined}><span class="mono">{String(i + 1).padStart(2, '0')}</span>{p.label}</a>)}
       </div>
     </nav>
-    <style set:html={`:is(${css}) { scroll-margin-top: calc(var(--nav-h, 72px) + 72px); } .prose :is(${css}) { font-family: var(--font-display-brand) !important; font-size: clamp(48px, 6vw, 96px) !important; line-height: .9 !important; letter-spacing: 0 !important; text-transform: uppercase !important; color: var(--fg) !important; max-width: none !important; margin: 2.2em 0 .5em !important; padding-top: 28px; border-top: 1px solid var(--fg); }`} />
+    <style set:html={`:is(${css}) { scroll-margin-top: calc(var(--nav-h, 72px) + 72px); } ${big ? `.prose :is(${css}) {` : '.unused-big {'} font-family: var(--font-display-brand) !important; font-size: clamp(48px, 6vw, 96px) !important; line-height: .9 !important; letter-spacing: 0 !important; text-transform: uppercase !important; color: var(--fg) !important; max-width: none !important; margin: 2.2em 0 .5em !important; padding-top: 28px; border-top: 1px solid var(--fg); }`.replace(/^/, '')} />
     <script>
       const tabs = [...document.querySelectorAll<HTMLAnchorElement>('[data-part]')];
       const targets = tabs.map((t) => document.getElementById(t.dataset.part!)).filter(Boolean) as HTMLElement[];
@@ -21,6 +21,23 @@ const css = parts.map((p) => `#${p.anchor}`).join(',');
         for (const el of targets) if (el.getBoundingClientRect().top <= line) current = el.id;
         if (current) setActive(current);
       };
+      // Scroll to a part, then keep correcting while lazy images above it load and shift the layout
+      tabs.forEach((t) => t.addEventListener('click', (e) => {
+        const el = document.getElementById(t.dataset.part!);
+        if (!el) return;
+        e.preventDefault();
+        history.replaceState(null, '', `#${el.id}`);
+        const offset = () => (parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 72) + 96;
+        const go = (behavior: ScrollBehavior) => scrollTo({ top: el.getBoundingClientRect().top + scrollY - offset(), behavior });
+        go('smooth');
+        let tries = 0;
+        const fix = setInterval(() => {
+          const d = el.getBoundingClientRect().top - offset();
+          if (Math.abs(d) > 12) go('auto');
+          if (++tries > 12) clearInterval(fix);
+        }, 250);
+        setActive(el.id);
+      }));
       addEventListener('scroll', onScroll, { passive: true });
       onScroll();
     </script>

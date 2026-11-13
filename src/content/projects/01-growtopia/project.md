@@ -16,6 +16,15 @@ outcome: Designed, built and deployed end-to-end
 tools: [ChatGPT, Claude, Figma, Midjourney, Cursor, Kling AI, Suno]
 skills: [UI/UX, Product design, Systems thinking, Game design, AI image generation, AI animation generation, AI audio generation, Prompt design]
 industry: Productivity · Games
+parts:
+  - { label: Overview, anchor: product-glimpse }
+  - { label: AI workflow, anchor: ai-workflow-accelerating-design-and-development }
+  - { label: Problem & goals, anchor: problem--goals }
+  - { label: Users & research, anchor: target-audience }
+  - { label: Design process, anchor: design-process }
+  - { label: Features, anchor: key-implementation-features }
+  - { label: Final product, anchor: final-product--special-game-features }
+  - { label: Impact, anchor: impact--outcome }
 ---
 
 ## Product glimpse
@@ -44,37 +53,37 @@ Every item, plant growth stage and scene in the game was generated with Midjourn
   </div>
   <div class="lib__scroll" tabindex="0" aria-label="Asset library">
     <div class="lib__grid">
-    <figure class="lib__tile" data-cat="tools"><img src="/media/growtopia/library/coin.webp" alt="Coin" loading="lazy" /><figcaption>Coin</figcaption></figure>
-    <figure class="lib__tile" data-cat="tools"><img src="/media/growtopia/library/sun.webp" alt="Sun" loading="lazy" /><figcaption>Sun</figcaption></figure>
-    <figure class="lib__tile" data-cat="tools"><img src="/media/growtopia/library/water.webp" alt="Water" loading="lazy" /><figcaption>Water</figcaption></figure>
-    <figure class="lib__tile" data-cat="tools"><img src="/media/growtopia/library/watering-can.webp" alt="Watering can" loading="lazy" /><figcaption>Watering can</figcaption></figure>
-    <figure class="lib__tile" data-cat="tools"><img src="/media/growtopia/library/shovel.webp" alt="Shovel" loading="lazy" /><figcaption>Shovel</figcaption></figure>
-    <figure class="lib__tile" data-cat="tools"><img src="/media/growtopia/library/pesticide.webp" alt="Pesticide" loading="lazy" /><figcaption>Pesticide</figcaption></figure>
-    <figure class="lib__tile" data-cat="tools"><img src="/media/growtopia/library/focus.webp" alt="Focus" loading="lazy" /><figcaption>Focus</figcaption></figure>
-    <figure class="lib__tile" data-cat="tools"><img src="/media/growtopia/library/streak.webp" alt="Streak" loading="lazy" /><figcaption>Streak</figcaption></figure>
-    <figure class="lib__tile" data-cat="tools"><img src="/media/growtopia/library/soft-narrative.webp" alt="Caterpillar (pest)" loading="lazy" /><figcaption>Caterpillar (pest)</figcaption></figure>
-    <figure class="lib__tile" data-cat="tools"><img src="/media/growtopia/library/shop.webp" alt="Garden shop" loading="lazy" /><figcaption>Garden shop</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/apple.webp" alt="Apple" loading="lazy" /><figcaption>Apple</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/blueberry.webp" alt="Blueberry" loading="lazy" /><figcaption>Blueberry</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/apple-stage-1.webp" alt="Apple tree · stage 1" loading="lazy" /><figcaption>Apple tree · stage 1</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/apple-stage-2.webp" alt="Apple tree · stage 2" loading="lazy" /><figcaption>Apple tree · stage 2</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/apple-stage-3.webp" alt="Apple tree · stage 3" loading="lazy" /><figcaption>Apple tree · stage 3</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/apple-stage-4.webp" alt="Apple tree · stage 4" loading="lazy" /><figcaption>Apple tree · stage 4</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/apple-stage-5.webp" alt="Apple tree · stage 5" loading="lazy" /><figcaption>Apple tree · stage 5</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/apple-sprite-1.webp" alt="Apple plot · stage 1" loading="lazy" /><figcaption>Apple plot · stage 1</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/apple-sprite-2.webp" alt="Apple plot · stage 2" loading="lazy" /><figcaption>Apple plot · stage 2</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/apple-sprite-3.webp" alt="Apple plot · stage 3" loading="lazy" /><figcaption>Apple plot · stage 3</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/apple-sprite-4.webp" alt="Apple plot · stage 4" loading="lazy" /><figcaption>Apple plot · stage 4</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/apple-sprite-5.webp" alt="Apple plot · stage 5" loading="lazy" /><figcaption>Apple plot · stage 5</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/blueberry-stage-1.webp" alt="Blueberry · stage 1" loading="lazy" /><figcaption>Blueberry · stage 1</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/blueberry-stage-2.webp" alt="Blueberry · stage 2" loading="lazy" /><figcaption>Blueberry · stage 2</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/blueberry-stage-3.webp" alt="Blueberry · stage 3" loading="lazy" /><figcaption>Blueberry · stage 3</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/blueberry-stage-4.webp" alt="Blueberry · stage 4" loading="lazy" /><figcaption>Blueberry · stage 4</figcaption></figure>
-    <figure class="lib__tile" data-cat="plants"><img src="/media/growtopia/library/blueberry-stage-5.webp" alt="Blueberry · stage 5" loading="lazy" /><figcaption>Blueberry · stage 5</figcaption></figure>
-    <figure class="lib__tile" data-cat="scenes"><img src="/media/growtopia/library/garden.webp" alt="Garden" loading="lazy" /><figcaption>Garden</figcaption></figure>
-    <figure class="lib__tile" data-cat="scenes"><img src="/media/growtopia/library/garden-alt-1.webp" alt="Garden · option 1" loading="lazy" /><figcaption>Garden · option 1</figcaption></figure>
-    <figure class="lib__tile" data-cat="scenes"><img src="/media/growtopia/library/garden-alt-2.webp" alt="Garden · option 2" loading="lazy" /><figcaption>Garden · option 2</figcaption></figure>
-    <figure class="lib__tile" data-cat="scenes"><img src="/media/growtopia/library/night.webp" alt="Garden · night" loading="lazy" /><figcaption>Garden · night</figcaption></figure>
+    <figure class="lib__tile" data-cat="tools"><img width="300" height="300" src="/media/growtopia/library/coin.webp" alt="Coin" loading="lazy" /><figcaption>Coin</figcaption></figure>
+    <figure class="lib__tile" data-cat="tools"><img width="300" height="300" src="/media/growtopia/library/sun.webp" alt="Sun" loading="lazy" /><figcaption>Sun</figcaption></figure>
+    <figure class="lib__tile" data-cat="tools"><img width="300" height="300" src="/media/growtopia/library/water.webp" alt="Water" loading="lazy" /><figcaption>Water</figcaption></figure>
+    <figure class="lib__tile" data-cat="tools"><img width="300" height="300" src="/media/growtopia/library/watering-can.webp" alt="Watering can" loading="lazy" /><figcaption>Watering can</figcaption></figure>
+    <figure class="lib__tile" data-cat="tools"><img width="300" height="300" src="/media/growtopia/library/shovel.webp" alt="Shovel" loading="lazy" /><figcaption>Shovel</figcaption></figure>
+    <figure class="lib__tile" data-cat="tools"><img width="300" height="300" src="/media/growtopia/library/pesticide.webp" alt="Pesticide" loading="lazy" /><figcaption>Pesticide</figcaption></figure>
+    <figure class="lib__tile" data-cat="tools"><img width="300" height="300" src="/media/growtopia/library/focus.webp" alt="Focus" loading="lazy" /><figcaption>Focus</figcaption></figure>
+    <figure class="lib__tile" data-cat="tools"><img width="300" height="300" src="/media/growtopia/library/streak.webp" alt="Streak" loading="lazy" /><figcaption>Streak</figcaption></figure>
+    <figure class="lib__tile" data-cat="tools"><img width="300" height="300" src="/media/growtopia/library/soft-narrative.webp" alt="Caterpillar (pest)" loading="lazy" /><figcaption>Caterpillar (pest)</figcaption></figure>
+    <figure class="lib__tile" data-cat="tools"><img width="300" height="300" src="/media/growtopia/library/shop.webp" alt="Garden shop" loading="lazy" /><figcaption>Garden shop</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/apple.webp" alt="Apple" loading="lazy" /><figcaption>Apple</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/blueberry.webp" alt="Blueberry" loading="lazy" /><figcaption>Blueberry</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/apple-stage-1.webp" alt="Apple tree · stage 1" loading="lazy" /><figcaption>Apple tree · stage 1</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/apple-stage-2.webp" alt="Apple tree · stage 2" loading="lazy" /><figcaption>Apple tree · stage 2</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/apple-stage-3.webp" alt="Apple tree · stage 3" loading="lazy" /><figcaption>Apple tree · stage 3</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/apple-stage-4.webp" alt="Apple tree · stage 4" loading="lazy" /><figcaption>Apple tree · stage 4</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/apple-stage-5.webp" alt="Apple tree · stage 5" loading="lazy" /><figcaption>Apple tree · stage 5</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/apple-sprite-1.webp" alt="Apple plot · stage 1" loading="lazy" /><figcaption>Apple plot · stage 1</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/apple-sprite-2.webp" alt="Apple plot · stage 2" loading="lazy" /><figcaption>Apple plot · stage 2</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/apple-sprite-3.webp" alt="Apple plot · stage 3" loading="lazy" /><figcaption>Apple plot · stage 3</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/apple-sprite-4.webp" alt="Apple plot · stage 4" loading="lazy" /><figcaption>Apple plot · stage 4</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/apple-sprite-5.webp" alt="Apple plot · stage 5" loading="lazy" /><figcaption>Apple plot · stage 5</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/blueberry-stage-1.webp" alt="Blueberry · stage 1" loading="lazy" /><figcaption>Blueberry · stage 1</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/blueberry-stage-2.webp" alt="Blueberry · stage 2" loading="lazy" /><figcaption>Blueberry · stage 2</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/blueberry-stage-3.webp" alt="Blueberry · stage 3" loading="lazy" /><figcaption>Blueberry · stage 3</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/blueberry-stage-4.webp" alt="Blueberry · stage 4" loading="lazy" /><figcaption>Blueberry · stage 4</figcaption></figure>
+    <figure class="lib__tile" data-cat="plants"><img width="300" height="300" src="/media/growtopia/library/blueberry-stage-5.webp" alt="Blueberry · stage 5" loading="lazy" /><figcaption>Blueberry · stage 5</figcaption></figure>
+    <figure class="lib__tile" data-cat="scenes"><img width="300" height="300" src="/media/growtopia/library/garden.webp" alt="Garden" loading="lazy" /><figcaption>Garden</figcaption></figure>
+    <figure class="lib__tile" data-cat="scenes"><img width="300" height="300" src="/media/growtopia/library/garden-alt-1.webp" alt="Garden · option 1" loading="lazy" /><figcaption>Garden · option 1</figcaption></figure>
+    <figure class="lib__tile" data-cat="scenes"><img width="300" height="300" src="/media/growtopia/library/garden-alt-2.webp" alt="Garden · option 2" loading="lazy" /><figcaption>Garden · option 2</figcaption></figure>
+    <figure class="lib__tile" data-cat="scenes"><img width="300" height="300" src="/media/growtopia/library/night.webp" alt="Garden · night" loading="lazy" /><figcaption>Garden · night</figcaption></figure>
     </div>
   </div>
 </div>
@@ -141,10 +150,10 @@ I studied cozy, nurturing games — Animal Crossing, Hay Day and plant-growing p
 The core experience was mapped in three phases, plus a monetization flow.
 
 <div class="flows">
-  <figure class="flows__p1"><figcaption><span>Phase 1</span> Core loop</figcaption><img src="/media/growtopia/flows/userflow-phase-1.webp" alt="Userflow phase 1: core loop" loading="lazy" /></figure>
-  <figure class="flows__p2" style="--ar:.768"><figcaption><span>Phase 2</span></figcaption><img src="/media/growtopia/flows/userflow-phase-2.webp" alt="Userflow phase 2" loading="lazy" /></figure>
-  <figure class="flows__p3" style="--ar:.656"><figcaption><span>Phase 3</span></figcaption><img src="/media/growtopia/flows/userflow-phase-3.webp" alt="Userflow phase 3" loading="lazy" /></figure>
-  <figure class="flows__m" style="--ar:.267"><figcaption><span>Monetization</span></figcaption><img src="/media/growtopia/flows/userflow-monetization.webp" alt="Monetization userflow" loading="lazy" /></figure>
+  <figure class="flows__p1"><figcaption><span>Phase 1</span> Core loop</figcaption><img src="/media/growtopia/flows/userflow-phase-1.webp" width="2400" height="1000" alt="Userflow phase 1: core loop" loading="lazy" /></figure>
+  <figure class="flows__p2" style="--ar:.768"><figcaption><span>Phase 2</span></figcaption><img src="/media/growtopia/flows/userflow-phase-2.webp" width="1128" height="1468" alt="Userflow phase 2" loading="lazy" /></figure>
+  <figure class="flows__p3" style="--ar:.656"><figcaption><span>Phase 3</span></figcaption><img src="/media/growtopia/flows/userflow-phase-3.webp" width="940" height="1432" alt="Userflow phase 3" loading="lazy" /></figure>
+  <figure class="flows__m" style="--ar:.267"><figcaption><span>Monetization</span></figcaption><img src="/media/growtopia/flows/userflow-monetization.webp" width="500" height="1872" alt="Monetization userflow" loading="lazy" /></figure>
 </div>
 
 ## Key implementation features
