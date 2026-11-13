@@ -69,6 +69,14 @@ reflection:
   - { title: Test with real users, text: What you'd validate next. }
 ```
 
+Multi-part projects (e.g. a book + its digital extension) can add sticky sub-tabs:
+
+```yaml
+parts:
+  - { label: Book, anchor: book }                         # links to the "## Book" heading
+  - { label: Digital experience, anchor: digital-experience }
+```
+
 Suggested chapter flow: **the problem worth solving → what you found → the turning point → building it → how it works → where it landed.**
 
 Tool logos (optional): put a logo in `public/tools/` and map it in `src/data/site.ts → toolIcons`.
