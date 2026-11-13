@@ -405,3 +405,16 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 .prose p:has(> :is(img, video) + :is(img, video)) { align-items: center; }
 /* Images whose filename contains "-nobg" show without a background box */
 .prose img[src*="-nobg"] { background: none; border-radius: 0; }
+
+/* ── No cropping: thumbnails + project covers ─────────────── */
+/* Thumbnails: taller box, whole image visible */
+.card__media { aspect-ratio: 16 / 11; }
+.card__media img, .card__media video { object-fit: contain; }
+.card:hover .card__media img, .card:hover .card__media video { transform: scale(1.02); }
+
+/* Project covers: full image/video at its natural shape, no box behind it */
+.story-cover, .ed-cover, .cover { aspect-ratio: auto; background: none; box-shadow: none; overflow: visible; border-radius: 0; display: flex; justify-content: center; }
+.story-cover img, .story-cover video, .ed-cover img, .ed-cover video, .cover img, .cover video { width: auto; max-width: 100%; height: auto; max-height: 82vh; object-fit: contain; border-radius: 12px; }
+.ed-cover { padding-inline: var(--gutter); }
+.story-cover .vid, .ed-cover .vid, .cover .vid { display: inline-block; max-width: 100%; }
+.story-cover--empty, .ed-cover:not(:has(img, video)) { aspect-ratio: 16 / 7; background: var(--card); border-radius: 16px; display: grid; place-items: center; }
