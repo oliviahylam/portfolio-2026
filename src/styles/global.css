@@ -499,3 +499,29 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 .persona dt { font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-top: 10px; }
 .persona dd { margin: 0; color: var(--muted); }
 .asset-slot { display: grid; place-items: center; min-height: 280px; padding: 24px; border: 1.5px dashed var(--line); border-radius: 16px; color: var(--muted); font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; text-align: center; }
+
+/* ── Asset library: uniform grid, 3 rows visible, scrolls inside ── */
+.prose .lib, .prose .flows { width: min(1100px, calc(100vw - 2 * var(--gutter))); margin: 2em 0 2.4em 50%; transform: translateX(-50%); }
+.lib { --tile: 150px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); overflow: hidden; }
+.lib__bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px 16px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+.lib__tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.lib__tabs button { padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--muted); font-size: 13px; font-weight: 500; }
+.lib__tabs button span { font-family: var(--font-mono); font-size: 11px; opacity: .7; margin-left: 4px; }
+.lib__tabs button[aria-pressed='true'] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.lib__hint { font-family: var(--font-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.lib__scroll { max-height: calc(3 * (var(--tile) + 42px) + 2 * 12px + 32px); overflow-y: auto; padding: 16px; scrollbar-width: thin; -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 36px), transparent); mask-image: linear-gradient(to bottom, #000 calc(100% - 36px), transparent); }
+.lib__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--tile), 1fr)); gap: 12px; padding-bottom: 24px; }
+.lib__tile { margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.lib__tile[hidden] { display: none; }
+.lib__tile img { width: 100%; aspect-ratio: 1; object-fit: contain; padding: 12px; box-sizing: border-box; border-radius: 12px; background: var(--card); }
+.lib__tile figcaption { font-size: 12px; color: var(--muted); line-height: 1.3; }
+@media (max-width: 600px) { .lib { --tile: 100px; } }
+
+/* ── Userflow board: phase 1 on top, the other three share one row height ── */
+.flows { display: grid; gap: 14px; grid-template-columns: .768fr .656fr .267fr; }
+.flows figure { margin: 0; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); padding: 12px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.flows__p1 { grid-column: 1 / -1; }
+.flows img { width: 100%; height: auto; border-radius: 8px; background: #fff; }
+.flows figcaption { font-size: 13px; color: var(--muted); }
+.flows figcaption span { font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-right: 8px; }
+@media (max-width: 760px) { .flows { grid-template-columns: 1fr 1fr; } .flows__m { grid-column: 1 / -1; } .flows__m img { max-height: 70vh; width: auto; margin-inline: auto; } }
