@@ -29,6 +29,7 @@ const rows = <T,>(xs: T[]) => xs.reduce<T[][]>((acc, x, i) => (i % 2 ? acc[acc.l
           <div class="hero__bottom">
             <div class="hero__text">
               <span class="mono muted status">{site.status} · Based in {site.location}</span>
+              <span class="mono hero__cv"><span class="muted">Currently</span> {site.currently} <span class="muted">· Previously</span> {site.previously}</span>
               <span class="mono muted">{L.eyebrow}</span>
               <h1 class:list={['display', lens === 'brand' ? 'display--brand' : 'display--product']} set:html={L.headline} />
               <p class="hero__intro">{L.intro}</p>
@@ -37,17 +38,6 @@ const rows = <T,>(xs: T[]) => xs.reduce<T[][]>((acc, x, i) => (i % 2 ? acc[acc.l
           </div>
         </section>
 
-        <section class="intro wrap">
-          <div class="intro__label"><span class="mono muted">{lens === 'brand' ? '[ about ]' : '/* about */'}</span></div>
-          <div class="intro__body">
-            <dl class="intro__cv">
-              <div><dt class="mono muted">Currently</dt><dd>{site.currently}</dd></div>
-              <div><dt class="mono muted">Previously</dt><dd>{site.previously}</dd></div>
-            </dl>
-            {L.bio.map((p) => <p>{p}</p>)}
-            <div class="chips">{L.tags.map((t) => <span class="chip">{t}</span>)}</div>
-          </div>
-        </section>
 
         <section id={lens === 'product' ? 'work' : 'work-brand'} class="section wrap wrap--wide" aria-label="Selected work">
           <div class="section__head">

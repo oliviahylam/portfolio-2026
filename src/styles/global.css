@@ -534,3 +534,4 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 .intro__cv dt { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
 .intro__cv dd { margin: 0; font-size: clamp(22px, 2.2vw, 30px); font-weight: 500; letter-spacing: -.02em; }
 [data-lens="brand"] .intro__cv dd { font-family: var(--font-serif); font-style: italic; font-weight: 400; letter-spacing: 0; }
+.hero__cv { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; margin-top: -8px; }

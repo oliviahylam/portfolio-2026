@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import { site } from '../data/site';
 const c = site.idCard;
 const a = site.about;
+const skills = [...new Set([...site.lenses.product.tags, ...site.lenses.brand.tags])];
 ---
 <Base title="About" current="about">
   <section class="about-hero wrap">
@@ -63,6 +64,8 @@ const a = site.about;
         <ul class="rows">{a.experience.map((e) => <li><span>{e.what}</span><span class="mono muted">{e.when}</span></li>)}</ul>
       </div>
       <div>
+        <div class="section__head" style="margin-bottom:20px"><h2 class="mono">Skills</h2></div>
+        <div class="chips" style="margin-bottom:40px">{skills.map((t) => <span class="chip">{t}</span>)}</div>
         <div class="section__head" style="margin-bottom:20px"><h2 class="mono">Tools</h2></div>
         <div class="chips">{a.tools.map((t) => <span class="chip">{t}</span>)}</div>
       </div>
