@@ -54,7 +54,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .display { margin: 0; }
 .display--product { font-weight: 500; font-size: clamp(40px, 5.6vw, 84px); line-height: 1.02; letter-spacing: -.04em; }
 .display--brand { font-family: var(--font-display-brand); font-weight: 400; text-transform: uppercase; font-size: clamp(56px, 9vw, 148px); line-height: .9; letter-spacing: 0; }
-.display--brand .dim { color: var(--muted); }
+.display--brand .dim, .display--product .dim { color: var(--muted); }
 .display--brand em, .serif-em em, h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; text-transform: none; letter-spacing: -.01em; }
 .display--brand em { font-size: .86em; }
 

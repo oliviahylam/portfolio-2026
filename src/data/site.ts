@@ -11,7 +11,7 @@ export const site = {
   description: 'Portfolio of [Your Name] — AI-driven product design, creative technology, identity and editorial work.',
   email: 'hello@example.com', // ← your public contact email
   resume: '/resume.pdf', // ← put your resume at public/resume.pdf
-  location: '[City]',
+  location: 'New York City',
   status: 'Available for 2026 roles',
   version: 'v1.0 · last designed + vibe-coded by [you] · 11.2026',
   links: [
@@ -54,8 +54,8 @@ export const site = {
     product: {
       label: 'Product & AI',
       eyebrow: '/* product designer · ai · creative technology */',
-      headline: 'I design AI-driven products — with a creative technologist\'s hands.',
-      intro: '[One line about you, in a friendly first-person voice.]',
+      headline: 'Designer who loves pretty things, <span class="dim">but loves efficiency and pushing boundaries even more.</span>',
+      intro: 'Product designer who leverages technology to get things done, tastefully.',
       bio: [
         '[2–3 sentences in your product voice: what you study or do, how you work with people, and what you design.]',
         "[I've designed for: Client, Client, Client.]",
