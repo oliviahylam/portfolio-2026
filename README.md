@@ -8,7 +8,9 @@ Everything about *you* — name, email, headlines, bios, tags, AI chat prompts, 
 experience, playground — lives in **`src/data/site.ts`**. Replace anything in `[brackets]`.
 
 - Resume → put it at `public/resume.pdf`
-- 3D workspace hero → put images/videos in `public/hero/` and set `hero.product` / `hero.brand` in `site.ts`
+- 3D workspace hero → put images/videos in `public/hero/` and set `hero.product` / `hero.brand` in `site.ts`.
+  The scene is interactive: click to zoom toward the screens, click a screen to jump to that lens's work.
+  Adjust `desk.zoom` and `desk.screens` (all % of the image) so the hotspots sit on your screens.
 - AI chat avatar / ID photo → `public/hero/…` and set `avatar` / `idCard.photo`
 
 ## Add or edit a project

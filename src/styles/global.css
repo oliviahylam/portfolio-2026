@@ -77,7 +77,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .hero { min-height: calc(100svh - 72px); display: grid; grid-template-rows: 1fr auto; gap: 32px; padding-block: 32px 48px; }
 .hero__scene { display: grid; place-items: center; }
 .hero__scene img, .hero__scene video { width: min(720px, 100%); height: auto; }
-.scene-placeholder { width: min(640px, 100%); aspect-ratio: 4 / 3; border: 1px dashed var(--line); border-radius: 24px; display: grid; place-items: center; text-align: center; padding: 24px; background: radial-gradient(ellipse at 50% 60%, var(--surface), transparent 70%); }
+.scene-placeholder-unused { width: min(640px, 100%); aspect-ratio: 4 / 3; border: 1px dashed var(--line); border-radius: 24px; display: grid; place-items: center; text-align: center; padding: 24px; background: radial-gradient(ellipse at 50% 60%, var(--surface), transparent 70%); }
 .hero__bottom { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px 48px; }
 .hero__text { display: flex; flex-direction: column; gap: 18px; max-width: 980px; }
 .hero__intro { margin: 0; font-size: 19px; color: var(--muted); max-width: 560px; }
@@ -331,3 +331,28 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 
 .card__main .mono { margin-bottom: 2px; }
 .card__side { padding-top: 2px; }
+
+/* ── Interactive desk ─────────────────────────────────────── */
+.desk { width: min(760px, 100%); display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.desk__frame { width: 100%; overflow: hidden; border-radius: 24px; }
+.desk__stage { position: relative; width: 100%; aspect-ratio: 4 / 3; cursor: zoom-in; transform-origin: var(--zx) var(--zy); transition: transform 1s cubic-bezier(.65, 0, .25, 1); }
+.desk.is-zoomed .desk__stage { transform: scale(var(--zs)); cursor: zoom-out; }
+.desk__media { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.desk__placeholder rect, .desk__placeholder circle { fill: var(--card); stroke: var(--line); }
+.desk__placeholder text { fill: var(--muted); font-family: var(--font-mono); font-size: 9px; text-transform: uppercase; letter-spacing: .06em; }
+.desk__screen { position: absolute; border-radius: 6px; display: grid; place-items: center; outline-offset: 2px; transition: background-color .3s var(--ease), box-shadow .3s var(--ease); }
+.desk__screen:hover, .desk__screen:focus-visible { background: color-mix(in srgb, var(--accent) 22%, transparent); box-shadow: 0 0 0 2px var(--accent), 0 0 40px color-mix(in srgb, var(--accent) 45%, transparent); }
+.desk__label { opacity: 0; transform: translateY(4px); padding: 6px 10px; border-radius: 6px; background: var(--fg); color: var(--bg); font-size: 12px; font-weight: 500; white-space: nowrap; transition: opacity .25s var(--ease), transform .25s var(--ease); pointer-events: none; }
+.desk.is-zoomed .desk__label { font-size: 6px; padding: 3px 5px; border-radius: 3px; }
+.desk__screen:hover .desk__label, .desk__screen:focus-visible .desk__label { opacity: 1; transform: none; }
+.desk.is-zoomed .desk__screen { animation: deskPulse 2.4s ease-in-out infinite; }
+@keyframes deskPulse { 50% { box-shadow: 0 0 0 1px var(--accent), 0 0 24px color-mix(in srgb, var(--accent) 35%, transparent); } }
+.desk__toggle { background: none; border: 1px solid var(--line); border-radius: 999px; padding: 9px 16px; color: var(--muted); }
+.desk__toggle:hover { color: var(--fg); border-color: var(--fg); }
+.desk__mobile { display: none; gap: 8px; flex-wrap: wrap; justify-content: center; }
+@media (max-width: 720px) {
+  .desk__stage { cursor: default; }
+  .desk.is-zoomed .desk__stage { transform: none; }
+  .desk__toggle, .desk__screen { display: none; }
+  .desk__mobile { display: flex; }
+}

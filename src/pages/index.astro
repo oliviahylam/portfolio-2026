@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
+import Desk from '../components/Desk.astro';
 import { site, type Lens } from '../data/site';
 import { getProjects } from '../lib';
 
@@ -14,15 +15,11 @@ const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
 <Base current="work">
   {lenses.map((lens) => {
     const L = site.lenses[lens];
-    const scene = site.hero[lens];
     const list = lists[lens];
     return (
       <div data-show={lens}>
         <section class="hero wrap" aria-label="Intro">
-          <div class="hero__scene">
-            {scene ? (isVideo(scene) ? <video src={scene} autoplay muted loop playsinline aria-hidden="true" /> : <img src={scene} alt={`${site.name}'s workspace`} />)
-              : <div class="scene-placeholder mono muted">[ your 3D workspace — {lens === 'product' ? 'day' : 'night'} ]<br />public/hero/ → set in src/data/site.ts</div>}
-          </div>
+          <div class="hero__scene"><Desk lens={lens} /></div>
           <div class="hero__bottom">
             <div class="hero__text">
               <span class="mono muted status">{site.status} · {site.location}</span>
@@ -69,4 +66,7 @@ const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
       </div>
     );
   })}
+  <script>
+    import '../scripts/desk';
+  </script>
 </Base>
