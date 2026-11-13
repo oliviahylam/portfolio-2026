@@ -13,7 +13,7 @@ coverVideo: /media/growtopia/cover.mp4
 role: Product Designer
 timeline: 1 month
 outcome: Designed, built and deployed end-to-end
-tools: [Figma, Cursor, Midjourney, Kling AI, Suno]
+tools: [ChatGPT, Claude, Figma, Midjourney, Cursor, Kling AI, Suno]
 skills: [UI/UX, Product design, Systems thinking, Game design, AI image generation, AI animation generation, AI audio generation, Prompt design]
 industry: Productivity · Games
 ---
@@ -25,6 +25,8 @@ industry: Productivity · Games
 ## AI workflow: accelerating design and development
 
 I integrated AI tools throughout the design process to speed up iteration and expand creative exploration.
+
+![AI workflow — ideation, game systems, design, assets, build, motion and audio](./ai-workflow.webp)
 
 ### Asset library: Midjourney
 
@@ -111,7 +113,20 @@ To understand why productivity apps often fail to keep users motivated, I looked
 
 ### Userflow
 
-<div class="asset-slot">Userflow diagram — add image here</div>
+The core experience was mapped in three phases, plus a monetization flow.
+
+Phase 1 — core loop
+
+![Userflow phase 1 — core loop](./userflow-phase-1.webp)
+
+Phase 2 and Phase 3
+
+![Userflow phase 2](./userflow-phase-2.webp)
+![Userflow phase 3](./userflow-phase-3.webp)
+
+Monetization
+
+![Monetization userflow](./userflow-monetization.webp)
 
 ## Key implementation features
 
