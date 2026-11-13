@@ -418,3 +418,9 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 .ed-cover { padding-inline: var(--gutter); }
 .story-cover .vid, .ed-cover .vid, .cover .vid { display: inline-block; max-width: 100%; }
 .story-cover--empty, .ed-cover:not(:has(img, video)) { aspect-ratio: 16 / 7; background: var(--card); border-radius: 16px; display: grid; place-items: center; }
+
+/* Thumbnails blend into the page: empty space matches the background */
+.card__media { background: transparent; border-radius: 0; overflow: hidden; }
+.card__media img, .card__media video { position: absolute; inset: 0; }
+.card__media img, .card__media video { border-radius: 10px; }
+.card__media:has(.card__placeholder) { background: var(--card); border-radius: 12px; }
