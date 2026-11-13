@@ -28,13 +28,19 @@ const rows = <T,>(xs: T[]) => xs.reduce<T[][]>((acc, x, i) => (i % 2 ? acc[acc.l
           <div class="hero__scene"><Desk lens={lens} /></div>
           <div class="hero__bottom">
             <div class="hero__text">
-              <span class="mono muted status">{site.status} · Based in {site.location}</span>
-              <span class="mono hero__cv"><span class="muted">Currently</span> {site.currently} <span class="muted">· Previously</span> {site.previously}</span>
               <span class="mono muted">{L.eyebrow}</span>
               <h1 class:list={['display', lens === 'brand' ? 'display--brand' : 'display--product']} set:html={L.headline} />
               <p class="hero__intro">{L.intro}</p>
             </div>
-            <a class="mono scroll-cue" href="#work">↓ scroll</a>
+            <div class="hero__side">
+              <div class="hero__meta mono">
+                <span class="muted status">{site.status}</span>
+                <span class="muted">Based in {site.location}</span>
+                <span><span class="muted">Currently</span> {site.currently}</span>
+                <span><span class="muted">Previously</span> {site.previously}</span>
+              </div>
+              <a class="mono scroll-cue" href="#work">↓ scroll</a>
+            </div>
           </div>
         </section>
 
