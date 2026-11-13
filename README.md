@@ -35,6 +35,7 @@ order: 1                 # position in the Product & AI list
 brandOrder: 3            # optional: position in the Brand & Editorial list
 category: Product design · Game
 summary: One sentence shown on the card and at the top of the page.
+thumb: ./grid.webp       # optional: different image for the home-page card
 cover: ./garden.webp     # or coverVideo: /media/growtopia/cover.mp4 + coverRatio: 1.778 (width ÷ height)
 role: Product designer
 tools: [Figma, Midjourney]

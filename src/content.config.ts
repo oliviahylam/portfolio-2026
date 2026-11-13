@@ -23,6 +23,8 @@ const projects = defineCollection({
       category: z.string(),
       summary: z.string(),
       cover: image().optional(),
+      // Optional different image for the home-page card (defaults to cover)
+      thumb: image().optional(),
       coverVideo: z.string().optional(),
       // width ÷ height of a cover video (images are measured automatically)
       coverRatio: z.number().optional(),

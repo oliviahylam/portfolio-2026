@@ -8,6 +8,7 @@ brandOrder: 2
 category: Rebrand · Identity system
 summary: A rebrand for the Danish Museum of Science and Technology — a new icon, a sleeker geometric typeface and a playful colour system that speaks to every visitor, from kids to engineers.
 cover: ./billboard.webp
+thumb: ./logo-variations.webp
 role: "[Your role]"
 client: "[Danmarks Tekniske Museum — student project?]"
 tools: []  # e.g. [Illustrator, After Effects, Midjourney]

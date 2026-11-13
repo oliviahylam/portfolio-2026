@@ -10,15 +10,17 @@ const num = lens === 'brand' ? `${String(index).padStart(3, '0')} —` : `${Stri
 const d = project.data;
 const skills = d.skills.length ? d.skills : d.tags;
 const soon = d.comingSoon;
-const ar = d.cover ? d.cover.width / d.cover.height : d.coverRatio ?? 1.6;
+const img = d.thumb ?? d.cover;
+const useVideo = !d.thumb && d.coverVideo;
+const ar = img && !useVideo ? img.width / img.height : d.coverRatio ?? 1.6;
 const Tag = soon ? 'div' : 'a';
 ---
 <Tag class:list={['card', { 'card--soon': soon }]} href={soon ? undefined : `/work/${project.id}`} aria-disabled={soon ? 'true' : undefined} style={`view-transition-name:card-${project.id};--ar:${ar.toFixed(3)}`}>
   <div class="card__media">
-    {d.coverVideo ? (
+    {useVideo ? (
       <video src={d.coverVideo} autoplay muted loop playsinline aria-hidden="true" />
-    ) : d.cover ? (
-      <Image src={d.cover} alt="" widths={[700, 1100, 1600]} sizes="(min-width: 900px) 50vw, 100vw" loading={index <= 2 ? 'eager' : 'lazy'} />
+    ) : img ? (
+      <Image src={img} alt="" widths={[700, 1100, 1600]} sizes="(min-width: 900px) 50vw, 100vw" loading={index <= 2 ? 'eager' : 'lazy'} />
     ) : (
       <span class="card__placeholder mono muted">{d.coverNote ?? '[ cover image ]'}</span>
     )}
