@@ -69,8 +69,8 @@ export const site = {
     brand: {
       label: 'Brand & Editorial',
       eyebrow: '[ identity · editorial · motion · creative direction ]',
-      headline: 'Identities <span class="dim">that move —</span> <em>on paper, on screen, in space.</em>',
-      intro: '[One line about your identity, editorial and motion work.]',
+      headline: 'Designer who loves pretty things, <span class="dim">but loves efficiency and pushing boundaries even more.</span>',
+      intro: 'Brand and editorial designer who gives a voice to those looking for one, creating memorable ideas and things people want to keep.',
       bio: [
         '[2–3 sentences in your brand voice: the identities, books and campaigns you make, and the idea that ties them together.]',
         "[I've designed for: Museum, Festival, Artist.]",
