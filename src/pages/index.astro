@@ -47,9 +47,8 @@ const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
             <h2 class={lens === 'brand' ? 'serif-em' : 'mono'} set:html={L.workTitle} />
             <span class="mono muted">{L.label} · {String(list.length).padStart(2, '0')}</span>
           </div>
-          {list[0] && <ProjectCard project={list[0]} index={1} lens={lens} featured />}
           <div class="grid">
-            {list.slice(1).map((p, i) => <ProjectCard project={p} index={i + 2} lens={lens} />)}
+            {list.map((p, i) => <ProjectCard project={p} index={i + 1} lens={lens} />)}
           </div>
         </section>
 

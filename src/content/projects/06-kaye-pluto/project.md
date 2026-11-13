@@ -10,8 +10,8 @@ summary: A visual identity for the artist Kaye Pluto — the "Getaway" cover, ph
 cover: ./album-cover.webp
 role: "[Creative direction, design, photography?]"
 client: Kaye Pluto
-tools: [Photoshop, "[Camera]"]
-tags: [Identity, Album art, Art direction]
+tools: []  # e.g. [Illustrator, After Effects, Midjourney]
+skills: [Art direction, Identity, Photography direction]
 ---
 
 [Two or three sentences: who Kaye Pluto is, the mood of "Getaway", and the one idea that holds the identity together.]

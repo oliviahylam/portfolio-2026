@@ -1,0 +1,16 @@
+---
+import { site } from '../data/site';
+interface Props { tools: string[]; size?: 'sm' | 'md' }
+const { tools, size = 'sm' } = Astro.props;
+const icons = site.toolIcons as Record<string, string>;
+---
+{tools.length > 0 && (
+  <ul class:list={['tools', `tools--${size}`]} aria-label="Tools used">
+    {tools.map((t) => (
+      <li class="tool" title={t}>
+        {icons[t] ? <img src={icons[t]} alt="" width="20" height="20" /> : <span class="tool__mono" aria-hidden="true">{t.replace(/[^A-Za-z0-9]/g, '').slice(0, 2)}</span>}
+        <span class="tool__name">{t}</span>
+      </li>
+    ))}
+  </ul>
+)}

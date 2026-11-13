@@ -9,8 +9,8 @@ category: Editorial + digital
 summary: An audio-to-visual book about how sound leaves a trace — extended into Echoform, a synesthetic platform for discovering music through color, motion and form.
 coverVideo: /media/synesthesia/cover.mp4
 role: "[Your role]"
-tools: [InDesign, Figma, "[Web tools]"]
-tags: [Book, Web, Sound]
+tools: []  # e.g. [Illustrator, After Effects, Midjourney]
+skills: [Editorial design, Typography, Web design]
 ---
 
 [Silence is never truly silent. Two or three sentences on the book's idea and why you extended it into a digital platform.]

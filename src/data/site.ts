@@ -26,6 +26,11 @@ export const site = {
     product: null as string | null,
     brand: null as string | null,
   },
+  // Optional logos for tools shown on cards/case studies. Drop SVG/PNG files in
+  // public/tools/ and map the tool name to the file, e.g. Figma: '/tools/figma.svg'.
+  // Tools without a logo show as a text chip.
+  toolIcons: {} as Record<string, string>,
+
   // Small round avatar for the AI chat (e.g. '/hero/avatar.webp').
   avatar: null as string | null,
 

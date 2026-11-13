@@ -2,7 +2,6 @@
 import '../styles/global.css';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
-import AskAI from '../components/AskAI.astro';
 import { site, type Lens } from '../data/site';
 
 interface Props { title?: string; lens?: Lens; description?: string; current?: string }
@@ -35,7 +34,6 @@ const fullTitle = title ? `${title} — ${site.name}` : `${site.name} — ${site
     <Nav current={current} />
     <main id="main"><slot /></main>
     <Footer />
-    <AskAI />
     <script>
       import '../scripts/lens';
     </script>

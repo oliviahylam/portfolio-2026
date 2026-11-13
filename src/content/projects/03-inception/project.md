@@ -9,19 +9,30 @@ summary: An immersive screenplay — a coded website that moves through layers o
 coverVideo: /media/inception/cover.mp4
 role: "[Design + development]"
 timeline: "[Duration]"
-tools: [HTML, CSS, JavaScript]
-tags: [Creative coding, Motion, Type]
+tools: [HTML, CSS, JavaScript, "[AI coding tools?]"]
+skills: [Creative coding, Motion design, Typography, Interaction]
+hook: What if reading a screenplay felt like falling through the layers of a dream?
+context: "[First person: why Inception, and why you wanted to build it in code rather than design it as a static piece.]"
+challenge: "[Your question or the brief.]"
+ai:
+  inProcess:
+    - tool: "[Tool]"
+      role: "[Code / ideation]"
+      note: "[If you used AI to build or debug the effects, say how — and what you wrote yourself.]"
+reflection:
+  - title: "[What you'd push further]"
+    text: "[One sentence.]"
 ---
 
 ## The idea
 
-[Why a screenplay, why Inception, and how the structure (Layer 1 → Layer 3 → Limbo) maps to the site.]
+[Why a screenplay, and how the structure — Layer 1 → Layer 3 → Limbo — maps onto the site.]
 
 ![Website scroll-through](/media/inception/scroll-through.mp4)
 
-## Type as interaction
+## Type that behaves like a dream
 
-[The typographic effects and what each one does to the reading experience.]
+[Each typographic effect and what it does to the reading experience.]
 
 ![Reflective text](/media/inception/reflective-text.mp4)
 ![Spinning type and flicker](/media/inception/spinning-type.mp4)
@@ -29,11 +40,11 @@ tags: [Creative coding, Motion, Type]
 ![Snow and moving text](/media/inception/snow-text.mp4)
 ![Disappearing text](/media/inception/disappearing-text.mp4)
 
-## Details
+## The details
 
 ![Click here](/media/inception/click-here.mp4)
 ![About page](/media/inception/about-page.mp4)
 
-## What I learned
+## What building it taught me
 
-[Technical challenges and what you'd push further.]
+[Technical challenges, and what you'd do next.]

@@ -1,0 +1,45 @@
+---
+// "How I used AI" + "Reflection" — shared by both project templates.
+import type { Project } from '../lib';
+interface Props { project: Project }
+const d = Astro.props.project.data;
+const ai = d.ai;
+---
+{ai && (ai.inProduct || ai.inProcess.length > 0) && (
+  <section class="story-section wrap" aria-labelledby="ai-h">
+    <span class="eyebrow">How I used AI</span>
+    <h2 id="ai-h" class="story-h2">AI in two ways: in the product, and in the process.</h2>
+    <div class="ai-split">
+      {ai.inProduct && (
+        <div class="ai-card ai-card--product">
+          <span class="mono muted">01 · Inside the product</span>
+          <p>{ai.inProduct}</p>
+        </div>
+      )}
+      {ai.inProcess.length > 0 && (
+        <div class="ai-card">
+          <span class="mono muted">{ai.inProduct ? '02' : '01'} · In my process</span>
+          <ul class="ai-tools">
+            {ai.inProcess.map((t) => (
+              <li>
+                <div class="ai-tools__head"><strong>{t.tool}</strong><span class="pill">{t.role}</span></div>
+                <p>{t.note}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  </section>
+)}
+{d.reflection.length > 0 && (
+  <section class="story-section wrap" aria-labelledby="ref-h">
+    <span class="eyebrow">Reflection & next steps</span>
+    <h2 id="ref-h" class="story-h2">What I'd do differently.</h2>
+    <div class="reflect">
+      {d.reflection.map((r, i) => (
+        <div class="reflect__item"><span class="mono muted">{String(i + 1).padStart(2, '0')}</span><h3>{r.title}</h3><p>{r.text}</p></div>
+      ))}
+    </div>
+  </section>
+)}

@@ -1,6 +1,7 @@
 ---
 import { site } from '../data/site';
 import { getProjects } from '../lib';
+import AskAI from './AskAI.astro';
 const { current } = Astro.props;
 const counts = { product: (await getProjects('product')).length, brand: (await getProjects('brand')).length };
 const pad = (n: number) => String(n).padStart(2, '0');
@@ -17,7 +18,7 @@ const pad = (n: number) => String(n).padStart(2, '0');
       <a href="/playground" data-keep-lens aria-current={current === 'playground' ? 'page' : undefined}>Playground</a>
       <a href="/about" data-keep-lens aria-current={current === 'about' ? 'page' : undefined}>About</a>
       <a href={site.resume} target="_blank" rel="noopener" class="hide-sm">Resume ↗</a>
-      <button type="button" class="btn-ask" data-ask-open>Ask AI ✦</button>
     </nav>
+    <AskAI />
   </div>
 </header>

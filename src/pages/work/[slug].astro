@@ -2,6 +2,8 @@
 import { Image } from 'astro:assets';
 import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import Tools from '../../components/Tools.astro';
+import StoryExtras from '../../components/StoryExtras.astro';
 import { getProjects, type Project } from '../../lib';
 
 export async function getStaticPaths() {
@@ -15,50 +17,79 @@ const { Content } = await render(project);
 const siblings = await getProjects(lens);
 const i = siblings.findIndex((p) => p.id === project.id);
 const next = siblings[(i + 1) % siblings.length];
-const metaRows = [
-  ['Role', d.role], ['Client', d.client], ['Team', d.team], ['Timeline', d.timeline],
-  ['Tools', d.tools.length ? d.tools.join(', ') : undefined], ['Outcome', d.outcome], ['Year', d.year],
+const facts = [
+  ['Timeline', d.timeline], ['Role', d.role], ['Team', d.team], ['Client', d.client], ['Industry', d.industry], ['Outcome', d.outcome],
 ].filter(([, v]) => v) as [string, string][];
+const skills = d.skills.length ? d.skills : d.tags;
 const editorial = d.template === 'editorial';
+const back = lens === 'brand' ? '/?lens=brand#work-brand' : '/#work';
 ---
 <Base title={d.title} lens={lens} description={d.summary}>
   {editorial ? (
     <article>
       <header class="ed-head wrap">
-        <a class="back mono" href={lens === 'brand' ? '/?lens=brand#work-brand' : '/#work'}>← Index</a>
+        <a class="back mono" href={back}>← Index</a>
         <h1 class="ed-title">{d.title}</h1>
         <div class="meta">
           <div><span class="mono muted">Discipline</span><span>{d.category}</span></div>
-          {metaRows.map(([k, v]) => <div><span class="mono muted">{k}</span><span>{v}</span></div>)}
+          {facts.map(([k, v]) => <div><span class="mono muted">{k}</span><span>{v}</span></div>)}
+          <div><span class="mono muted">Year</span><span>{d.year}</span></div>
         </div>
+        {(skills.length > 0 || d.tools.length > 0) && (
+          <div class="ed-tools">{skills.length > 0 && <div class="chips chips--sm">{skills.map((s) => <span class="chip">{s}</span>)}</div>}<Tools tools={d.tools} /></div>
+        )}
       </header>
       <div class="ed-cover">
         {d.coverVideo ? <video src={d.coverVideo} autoplay muted loop playsinline aria-hidden="true" />
           : d.cover ? <Image src={d.cover} alt="" widths={[900, 1600, 2400]} sizes="100vw" loading="eager" /> : null}
       </div>
       <div class="ed-body wrap"><div class="prose"><Content /></div></div>
+      <StoryExtras project={project} />
       {next && next.id !== project.id && (
         <a class="next ed-next wrap" href={`/work/${next.id}`}><span class="mono muted">Next</span><span class="next__title">{next.data.title} →</span></a>
       )}
     </article>
   ) : (
-    <article>
-      <header class="cs-head wrap">
-        <a class="back" href={lens === 'brand' ? '/?lens=brand#work-brand' : '/#work'}>← All work</a>
-        <span class="mono muted">Case study · {d.category} · {d.year}</span>
-        <h1 class="cs-title">{d.title}</h1>
-        <p class="cs-summary">{d.summary}</p>
+    <article class="story">
+      <header class="story-hero wrap">
+        <a class="back" href={back}>← All work</a>
+        <span class="eyebrow">{d.category} · {d.year}</span>
+        <h1 class="story-title">{d.title}</h1>
+        <p class="story-hook">{d.hook ?? d.summary}</p>
       </header>
       <div class="wrap">
-        <div class="meta">{metaRows.map(([k, v]) => <div><span class="mono muted">{k}</span><span>{v}</span></div>)}</div>
-      </div>
-      <div class="wrap" style="margin-top:48px">
-        <div class="cover">
+        <div class="story-cover">
           {d.coverVideo ? <video src={d.coverVideo} autoplay muted loop playsinline aria-hidden="true" />
-            : d.cover ? <Image src={d.cover} alt="" widths={[900, 1400, 2000]} sizes="(min-width: 1344px) 1344px, 100vw" loading="eager" /> : null}
+            : d.cover ? <Image src={d.cover} alt="" widths={[900, 1400, 2000]} sizes="(min-width: 1100px) 1100px, 100vw" loading="eager" /> : null}
         </div>
       </div>
-      <div class="cs-body wrap"><div class="prose"><Content /></div></div>
+
+      <section class="wrap" aria-label="Project overview">
+        <div class="context-card">
+          {(d.context || d.challenge) && (
+            <div class="context-card__top">
+              {d.context && <div><span class="eyebrow">Why it mattered to me</span><p>{d.context}</p></div>}
+              {d.challenge && <div class="challenge"><span class="mono">The question</span><p>{d.challenge}</p></div>}
+            </div>
+          )}
+          <div class="facts">
+            {facts.map(([k, v]) => <div><span class="mono muted">{k}</span><span>{v}</span></div>)}
+            {skills.length > 0 && <div class="facts__wide"><span class="mono muted">Skills</span><div class="chips chips--sm">{skills.map((s) => <span class="chip">{s}</span>)}</div></div>}
+          </div>
+          {d.tools.length > 0 && <div class="facts__tools"><span class="mono muted">Tools used</span><Tools tools={d.tools} size="md" /></div>}
+        </div>
+      </section>
+
+      {d.stats.length > 0 && (
+        <section class="stats" aria-label="By the numbers">
+          <div class="stats__inner wrap">
+            {d.stats.map((s) => <div class="stat"><span class="stat__value">{s.value}</span><span class="stat__label">{s.label}</span>{s.note && <span class="stat__note">{s.note}</span>}</div>)}
+          </div>
+        </section>
+      )}
+
+      <div class="story-body wrap"><div class="prose"><Content /></div></div>
+      <StoryExtras project={project} />
       {next && next.id !== project.id && (
         <a class="next wrap" href={`/work/${next.id}`}><span class="mono muted">Next project</span><span style="font-size:clamp(28px,3vw,40px);font-weight:500;letter-spacing:-.02em">{next.data.title} →</span></a>
       )}

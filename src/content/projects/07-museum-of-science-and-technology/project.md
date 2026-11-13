@@ -10,7 +10,8 @@ summary: A new identity for the Danish Museum of Science and Technology — a sk
 cover: ./billboard.webp
 role: "[Your role]"
 client: "[Danmarks Tekniske Museum — student project?]"
-tags: [Identity, Posters, Motion]
+tools: []  # e.g. [Illustrator, After Effects, Midjourney]
+skills: [Identity system, Poster design, Motion]
 ---
 
 [Two or three sentences: the brief, the idea behind the mark, and how it frames the museum's objects.]

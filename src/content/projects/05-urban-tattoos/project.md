@@ -9,8 +9,8 @@ category: Editorial + online experience
 summary: A book about the stickers that tattoo a city's surfaces — collected, scanned and set into spreads, then carried into an online experience you explore on your phone.
 coverVideo: /media/urban-tattoos/cover.mp4
 role: "[Your role]"
-tools: [InDesign, "[Web tools]"]
-tags: [Book, Archive, Web]
+tools: []  # e.g. [Illustrator, After Effects, Midjourney]
+skills: [Editorial design, Archiving, Web design]
 ---
 
 [Two or three sentences: the stickers you collected, where, and what they say about the city.]

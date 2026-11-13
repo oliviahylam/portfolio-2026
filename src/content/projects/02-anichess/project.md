@@ -10,35 +10,49 @@ coverVideo: /media/anichess/cover.mp4
 role: "[Your role]"
 team: "[Team / client or self-initiated]"
 timeline: "[Duration]"
-tools: [Figma]
 outcome: "[Result]"
-tags: [Redesign, Web, Games]
+tools: [Figma, "[AI tools you used]"]
+skills: [UX audit, Interaction design, Visual design, Prototyping]
+industry: Gaming · Web3
+hook: A chess game with a lot going on — how do you make the first five minutes feel effortless?
+context: "[First person: why this product, and what you noticed the first time you used it.]"
+challenge: "[Your question, e.g. How might we get new players from login to their first match without friction?]"
+ai:
+  inProcess:
+    - tool: "[Tool]"
+      role: "[Research / ideation / visuals]"
+      note: "[How AI sped up the audit, explorations or prototype — and where your judgment took over.]"
+reflection:
+  - title: "[Validate with players]"
+    text: "[What you'd test.]"
+  - title: "[Next screen to redesign]"
+    text: "[One sentence.]"
 ---
 
-## The existing experience
+## First impressions
 
-[What wasn't working in the current login, onboarding and loading flows, and how you found out.]
+[Story-first: what it felt like to enter the existing product — login, onboarding, loading — and where people get lost.]
 
 ![Existing login](./existing-login.webp)
 ![Existing onboarding](./existing-onboarding.webp)
 ![Existing loading](./existing-loading.webp)
 
-## Direction
+## Finding a direction
 
-[References and the visual direction you chose.]
+[The references you pulled and the feeling you wanted the redesign to have.]
 
 ![Reference board](./reference.webp)
 
-## Iterations
+## Trying, failing, refining
 
-[What changed from mid-fi v1 to v2, and why.]
+[What changed from v1 to v2, and what you learned from each version.]
 
 ![Mid-fi v1](./midfi-v1.webp)
 ![Mid-fi v2](./midfi-v2.webp)
 
-## High-fidelity redesign
+## The redesign
 
-[Key decisions in the final screens: home, Gambit mode, leaderboard.]
+[The key decisions in the final screens: home, Gambit mode, leaderboard.]
 
 ![Redesign overview](./hifi-overview.webp)
 
@@ -47,10 +61,10 @@ tags: [Redesign, Web, Games]
 
 ![Leaderboard](./hifi-leaderboard.webp)
 
-## Prototype
+## See it move
 
 ![Redesign prototype](/media/anichess/prototype.mp4)
 
-## Outcome & next
+## Where it landed
 
-[What changed because of the redesign, and what you'd do next.]
+[What changed because of the redesign.]

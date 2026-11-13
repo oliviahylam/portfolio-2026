@@ -45,6 +45,31 @@ Write normally. Headings become numbered sections on case studies.
 ![Two images on consecutive lines sit side by side](./night.webp)
 ```
 
+### Story fields (case studies)
+Case studies are told as a story. These optional fields fill the top of the page and the closing sections;
+the Markdown body below them is your chapters (each `##` heading becomes "Chapter 01, 02…").
+
+```yaml
+skills: [Product design, Prototyping]        # chips on the card + case study
+tools: [Figma, Midjourney, ChatGPT]          # tool row on the card + case study
+industry: Productivity
+hook: The one-line tension of the story, shown under the title.
+context: Why this problem mattered to YOU, in first person.
+challenge: The brief or "How might we…" question.
+stats:                                       # big numbers band (optional)
+  - { value: "80×", label: "more harmful than CO₂", note: "source" }
+ai:                                          # "AI in two ways"
+  inProduct: How AI works inside the product itself.
+  inProcess:
+    - { tool: Midjourney, role: Asset generation, note: What you did and where you stepped in. }
+reflection:
+  - { title: Test with real users, text: What you'd validate next. }
+```
+
+Suggested chapter flow: **the problem worth solving → what you found → the turning point → building it → how it works → where it landed.**
+
+Tool logos (optional): put a logo in `public/tools/` and map it in `src/data/site.ts → toolIcons`.
+
 - **Images**: drop them in the project folder and reference `./name.webp` (jpg/png are fine — the site optimizes them).
 - **Side by side**: put 2 or 3 images on consecutive lines (no blank line between).
 - **Videos**: put `.mp4` files in `public/media/<project>/` and reference them like an image:

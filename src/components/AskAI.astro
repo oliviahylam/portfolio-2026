@@ -1,49 +1,56 @@
 ---
+// "Ask AI" dropdown that lives in the header.
 import { site } from '../data/site';
 const raw = site.name.trim();
 const first = raw.startsWith('[') ? 'me' : raw.split(' ')[0];
 ---
-<button type="button" class="ask-fab" data-ask-open aria-haspopup="dialog">
-  <span class="avatar" aria-hidden="true">{site.avatar ? <img src={site.avatar} alt="" /> : 'AI'}</span>
-  Ask AI {first === "me" ? "me" : first}
-</button>
-
-<section class="ask-panel" role="dialog" aria-modal="false" aria-labelledby="ask-title" hidden data-ask-panel>
-  <div class="ask-panel__head">
-    <span class="avatar" aria-hidden="true">{site.avatar ? <img src={site.avatar} alt="" /> : 'AI'}</span>
-    <div><strong id="ask-title">Chat with AI {first}</strong><small>The AI version of me</small></div>
-    <button type="button" class="ask-close" data-ask-close aria-label="Close chat">✕</button>
-  </div>
-  <div class="ask-log" data-ask-log aria-live="polite">
-    <p class="msg msg--bot">Hey! I'm the AI version of {first} — the real one is busy designing. Ask me about my work, process or resume.</p>
-  </div>
-  <div class="ask-suggest" data-show="product">
-    {site.lenses.product.suggestions.map((s) => <button type="button" class="chip" data-ask-suggest>{s}</button>)}
-  </div>
-  <div class="ask-suggest" data-show="brand">
-    {site.lenses.brand.suggestions.map((s) => <button type="button" class="chip" data-ask-suggest>{s}</button>)}
-  </div>
-  <form class="ask-form" data-ask-form>
-    <label for="ask-input" class="skip">Your question</label>
-    <input id="ask-input" name="q" autocomplete="off" placeholder="Ask me anything…" data-ask-input />
-    <button type="submit">Ask →</button>
-  </form>
-  <p class="ask-note">Answers come only from my portfolio and resume. AI can make mistakes.</p>
-</section>
+<div class="ask">
+  <button type="button" class="btn-ask" data-ask-toggle aria-expanded="false" aria-controls="ask-panel">
+    <span class="avatar avatar--xs" aria-hidden="true">{site.avatar ? <img src={site.avatar} alt="" /> : '✦'}</span>
+    Ask AI {first}
+    <span class="ask__caret" aria-hidden="true">▾</span>
+  </button>
+  <section id="ask-panel" class="ask-panel" aria-label={`Chat with the AI version of ${first}`} hidden data-ask-panel>
+    <div class="ask-panel__head">
+      <span class="avatar" aria-hidden="true">{site.avatar ? <img src={site.avatar} alt="" /> : 'AI'}</span>
+      <div><strong>Chat with AI {first}</strong><small>Answers come only from my portfolio and resume</small></div>
+    </div>
+    <div class="ask-log" data-ask-log aria-live="polite">
+      <p class="msg msg--bot">Hey! I'm the AI version of {first} — the real one is busy designing. Ask me about my work, process or resume.</p>
+    </div>
+    <div class="ask-suggest" data-show="product">
+      {site.lenses.product.suggestions.map((s) => <button type="button" class="chip" data-ask-suggest>{s}</button>)}
+    </div>
+    <div class="ask-suggest" data-show="brand">
+      {site.lenses.brand.suggestions.map((s) => <button type="button" class="chip" data-ask-suggest>{s}</button>)}
+    </div>
+    <form class="ask-form" data-ask-form>
+      <label for="ask-input" class="skip">Your question</label>
+      <input id="ask-input" name="q" autocomplete="off" placeholder="Ask me anything…" data-ask-input />
+      <button type="submit">Ask →</button>
+    </form>
+    <p class="ask-note">AI can make mistakes. For anything important, email me.</p>
+  </section>
+</div>
 
 <script define:vars={{ email: site.email }}>
   window.__ASK_EMAIL__ = email;
 </script>
 <script>
-  const panel = document.querySelector<HTMLElement>('[data-ask-panel]')!;
-  const fab = document.querySelector<HTMLElement>('.ask-fab')!;
+  const root = document.querySelector<HTMLElement>('.ask')!;
+  const toggle = root.querySelector<HTMLButtonElement>('[data-ask-toggle]')!;
+  const panel = root.querySelector<HTMLElement>('[data-ask-panel]')!;
   const log = panel.querySelector<HTMLElement>('[data-ask-log]')!;
   const input = panel.querySelector<HTMLInputElement>('[data-ask-input]')!;
-  const open = () => { panel.hidden = false; fab.hidden = true; input.focus(); };
-  const close = () => { panel.hidden = true; fab.hidden = false; fab.focus(); };
-  document.querySelectorAll('[data-ask-open]').forEach((b) => b.addEventListener('click', open));
-  panel.querySelector('[data-ask-close]')!.addEventListener('click', close);
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !panel.hidden) close(); });
+  const setOpen = (open: boolean) => {
+    panel.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) input.focus();
+  };
+  toggle.addEventListener('click', () => setOpen(panel.hidden));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !panel.hidden) { setOpen(false); toggle.focus(); } });
+  document.addEventListener('click', (e) => { if (!panel.hidden && !root.contains(e.target as Node)) setOpen(false); });
+  document.querySelectorAll('[data-ask-open]').forEach((b) => b.addEventListener('click', (e) => { e.stopPropagation(); setOpen(true); }));
 
   const add = (text: string, who: 'me' | 'bot') => {
     const p = document.createElement('p');
@@ -52,12 +59,10 @@ const first = raw.startsWith('[') ? 'me' : raw.split(' ')[0];
     log.appendChild(p);
     log.scrollTop = log.scrollHeight;
   };
-
   async function ask(q: string) {
     add(q, 'me');
     try {
-      // Wired up in the next step: an /api/ask endpoint that answers only from the
-      // portfolio + resume. Until it exists this falls through to the message below.
+      // Next step: an /api/ask endpoint that answers only from the portfolio + resume.
       const res = await fetch('/api/ask', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ q }) });
       if (!res.ok) throw new Error('not ready');
       const data = await res.json();
@@ -66,7 +71,6 @@ const first = raw.startsWith('[') ? 'me' : raw.split(' ')[0];
       add(`I'm still being trained on my portfolio — for now, email the real me at ${(window as any).__ASK_EMAIL__}.`, 'bot');
     }
   }
-
   panel.querySelector('[data-ask-form]')!.addEventListener('submit', (e) => {
     e.preventDefault();
     const q = input.value.trim();

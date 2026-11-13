@@ -10,7 +10,8 @@ summary: A festival identity for Copenhagen Jazz Festival 2026 — bold color fi
 cover: ./poster-mockup.webp
 role: "[Your role]"
 client: "[Copenhagen Jazz Festival — student project?]"
-tags: [Identity, Posters, Web]
+tools: []  # e.g. [Illustrator, After Effects, Midjourney]
+skills: [Identity, Poster design, Web design]
 ---
 
 [Two or three sentences on the concept behind the identity.]
