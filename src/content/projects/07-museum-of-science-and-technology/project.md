@@ -27,7 +27,7 @@ The original identity relied on a wordmark alone. Its soft, rounded typeface fel
 
 ## Logo
 
-I designed an icon to sit beside the wordmark: a geometric, stepped silhouette. It gives the museum a symbol that can work on its own, on tickets, signage or an app icon, and it can be drawn as a solid shape or as a single continuous line. [Add what the silhouette represents, e.g. the museum's building or an industrial skyline.]
+I designed an icon to sit beside the wordmark: a geometric silhouette of Svanemøllen (the Swan Mill), the building the museum is relocating to. Grounding the logo in the museum’s new home gives it a meaningful symbol that can work on its own, on tickets, signage or an app icon, and it can be drawn as a solid shape or as a single continuous line.
 
 ![New logo lockup](./mark-1.webp)
 ![Logo lockups](./mark-4.webp)
