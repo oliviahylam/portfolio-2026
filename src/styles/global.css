@@ -224,7 +224,8 @@ html[data-lens='brand'] .footer { border-top: 0; }
 .id-main { display: flex; gap: 28px; flex: 1; }
 .id-fields { flex: 1; display: flex; flex-direction: column; gap: 16px; }
 .id-name-zh { font-family: 'Noto Sans HK', sans-serif; font-size: 30px; font-weight: 500; letter-spacing: .1em; display: block; }
-.id-name-en { font-size: 15px; font-weight: 600; letter-spacing: .06em; }
+.id-name-en { font-size: 22px; font-weight: 600; letter-spacing: .06em; display: block; }
+.id-title { font-size: 22px; font-weight: 700; letter-spacing: .1em; color: #1e3a5f; display: block; }
 .id-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 20px; margin: 0; }
 .id-grid dt { font-size: 11px; color: #3f5470; }
 .id-grid dd { margin: 2px 0 0; font-size: 15px; font-weight: 500; }

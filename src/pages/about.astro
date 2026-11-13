@@ -20,26 +20,26 @@ const a = site.about;
         <div class="id-card" data-id-card>
           <div class="id-face" aria-label="Designer ID card, front: fun facts">
             <div class="id-top">
-              <div><span class="id-title-zh">香港永久性設計師證</span><span class="id-title-en">HONG KONG PERMANENT DESIGNER CARD</span></div>
+              <div><span class="id-title">HONG KONG PERMANENT</span><span class="id-title-en">DESIGNER IDENTITY CARD</span></div>
               <span class="id-stars" aria-hidden="true">★★★</span>
             </div>
             <div class="id-main">
               <div class="id-fields">
-                <div><span class="id-name-zh">{c.nameZh}</span><span class="id-name-en">{c.nameEn}</span></div>
-                <dl class="id-grid">{c.facts.map((f) => <div><dt>{f.zh} {f.en}</dt><dd>{f.value}</dd></div>)}</dl>
+                <div><span class="id-name-en">{c.nameEn}</span></div>
+                <dl class="id-grid">{c.facts.map((f) => <div><dt>{f.label}</dt><dd>{f.value}</dd></div>)}</dl>
               </div>
               <div class="id-photo">{c.photo ? <img src={c.photo} alt={`Portrait of ${site.name}`} /> : '[ your photo or illustrated self-portrait ]'}</div>
             </div>
             <div class="id-foot">
-              <div><small>適用於 Valid for</small><strong style="font-size:13px;font-weight:500">{c.validFor}</strong></div>
+              <div><small>Valid for</small><strong style="font-size:13px;font-weight:500">{c.validFor}</strong></div>
               <span class="id-number">{c.number}</span>
             </div>
           </div>
           <div class="id-face id-face--back" aria-label="Designer ID card, back: short bio">
-            <span class="id-title-en">持證人資料 ABOUT THE HOLDER</span>
+            <span class="id-title-en">ABOUT THE HOLDER</span>
             <p class="id-bio">{c.backBio}</p>
             <div class="id-foot" style="border:0">
-              <div><span class="id-sign">{c.signature}</span><small style="border-top:1px solid rgba(30,58,95,.35);padding-top:4px;width:220px">持證人簽名 Holder's signature</small></div>
+              <div><span class="id-sign">{c.signature}</span><small style="border-top:1px solid rgba(30,58,95,.35);padding-top:4px;width:220px">Holder's signature</small></div>
               <small style="text-align:right">{site.location} · {site.email}</small>
             </div>
             <span class="id-mrz" aria-hidden="true">DSGN&lt;&lt;PRODUCT&lt;&lt;AI&lt;&lt;CREATIVE&lt;&lt;TECH&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span>

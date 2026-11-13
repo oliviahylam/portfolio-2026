@@ -85,19 +85,18 @@ export const site = {
 
   // About page — the ID card
   idCard: {
-    nameZh: '[中文名]',
     nameEn: '[SURNAME, Given Name]',
     number: 'DSGN-0001(✦)',
     validFor: 'Product · AI · Creative direction',
     facts: [
-      { zh: '最愛工具', en: 'Favourite tool', value: '[Your answer]' },
-      { zh: '咖啡', en: 'Coffee order', value: '[Your answer]' },
-      { zh: '現正沉迷', en: 'Currently obsessed with', value: '[Your answer]' },
-      { zh: '隱藏技能', en: 'Hidden talent', value: '[Your answer]' },
-      { zh: '最愛字體', en: 'Favourite typeface', value: '[Your answer]' },
-      { zh: '設計年資', en: 'Designing since', value: '[Year]' },
+      { label: 'Based in', value: 'New York City' },
+      { label: 'Currently on repeat', value: 'KAYTRANADA' },
+      { label: 'Coffee order', value: 'Almond matcha latte' },
+      { label: 'Favourite read', value: 'Educated' },
+      { label: 'I always have', value: 'Peppermint oil' },
+      { label: 'Favourite accessory atm', value: 'I LOVE cadet caps' },
     ],
-    photo: null as string | null, // e.g. '/hero/id-photo.webp'
+    photo: '/hero/me-id.webp' as string | null,
     backBio: '[A short bio in your own voice: the product and AI work, the print and branding roots, and the creative technology that ties them together.]',
     signature: '[Signature]',
   },
