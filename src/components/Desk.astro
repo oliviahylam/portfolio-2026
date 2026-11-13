@@ -2,51 +2,26 @@
 import { site, type Lens } from '../data/site';
 interface Props { lens: Lens }
 const { lens } = Astro.props;
-const scene = site.hero[lens];
-const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
-const { zoom, screens, transition, pov } = site.desk;
-const hasPov = Boolean(pov);
+const { intro, introReverse, start, end, screens } = site.desk;
 const pos = (r: { left: number; top: number; width: number; height: number }) =>
   `left:${r.left}%;top:${r.top}%;width:${r.width}%;height:${r.height}%`;
 const order: Lens[] = ['brand', 'product'];
+const href = (l: Lens) => (l === 'brand' ? '/?lens=brand#work-brand' : '/#work');
 ---
-<div class:list={["desk", { "desk--pov": hasPov }]} data-desk style={`--zx:${zoom.x}%;--zy:${zoom.y}%;--zs:${zoom.scale}`}>
-  <div class="desk__frame">
-    <div class="desk__stage" data-desk-stage>
-      {scene ? (isVideo(scene)
-        ? <video class="desk__media" src={scene} autoplay muted loop playsinline aria-hidden="true" />
-        : <img class="desk__media" src={scene} alt="" />)
-        : (
-        <svg class="desk__media desk__placeholder" viewBox="0 0 400 300" aria-hidden="true">
-          <rect x="136" y="42" width="128" height="78" rx="6" />
-          <rect x="196" y="120" width="8" height="34" />
-          <rect x="160" y="132" width="80" height="42" rx="4" />
-          <rect x="70" y="174" width="260" height="10" rx="3" />
-          <rect x="96" y="184" width="8" height="70" /><rect x="296" y="184" width="8" height="70" />
-          <circle cx="292" cy="152" r="22" /><rect x="280" y="174" width="24" height="60" rx="8" />
-          <text x="200" y="285" text-anchor="middle">[ your 3D workspace goes here ]</text>
-        </svg>
-      )}
-      {!hasPov && order.map((l) => (
-        <a class={`desk__screen desk__screen--${l}`} href={l === 'brand' ? '/?lens=brand#work-brand' : '/#work'} data-desk-go={l} style={pos(screens[l])}>
-          <span class="desk__label">{screens[l].label} →</span>
-        </a>
-      ))}
-    </div>
-    {transition && <video class="desk__transition" src={transition} muted playsinline preload="auto" aria-hidden="true" data-desk-transition />}
-    {hasPov && (
-      <div class="desk__pov" data-desk-pov>
-        <img src={pov!} alt="Close-up of my two screens" />
-        {order.map((l) => (
-          <a class={`desk__screen desk__screen--${l}`} href={l === 'brand' ? '/?lens=brand#work-brand' : '/#work'} data-desk-go={l} style={pos(screens[l])}>
-            <span class="desk__label">{screens[l].label} →</span>
-          </a>
-        ))}
-      </div>
-    )}
+<div class="desk" data-desk data-lens-owner={lens}>
+  <div class="desk__frame" data-desk-stage>
+    <img class="desk__media desk__still" src={start} alt="An illustration of me working at my desk, with a monitor reading “creative and editorial” and a laptop reading “digital product and AI”" width="1200" height="1200" />
+    {intro && <video class="desk__media desk__vid desk__vid--fwd is-on" src={intro} poster={start} muted playsinline preload="auto" aria-hidden="true" data-desk-fwd />}
+    {introReverse && <video class="desk__media desk__vid desk__vid--rev" src={introReverse} poster={end} muted playsinline preload="auto" aria-hidden="true" data-desk-rev />}
+    <span class="desk__hint mono" aria-hidden="true">Click to step in</span>
+    {order.map((l) => (
+      <a class={`desk__screen desk__screen--${l}`} href={href(l)} data-desk-go={l} style={pos(screens[l])} tabindex="-1">
+        <span class="desk__label">{screens[l].label} →</span>
+      </a>
+    ))}
   </div>
   <button type="button" class="desk__toggle mono" data-desk-toggle aria-pressed="false">↘ Step into my desk</button>
   <div class="desk__mobile" aria-label="Choose a side of my work">
-    {order.map((l) => <a class="chip" href={l === 'brand' ? '/?lens=brand#work-brand' : '/#work'} data-desk-go={l}>{screens[l].label} →</a>)}
+    {order.map((l) => <a class="chip" href={href(l)} data-desk-go={l}>{screens[l].label} →</a>)}
   </div>
 </div>

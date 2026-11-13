@@ -10,7 +10,7 @@ experience, playground — lives in **`src/data/site.ts`**. Replace anything in 
 - Resume → put it at `public/resume.pdf`
 - 3D workspace hero → put images/videos in `public/hero/` and set `hero.product` / `hero.brand` in `site.ts`.
   The scene is interactive: click to zoom toward the screens, click a screen to jump to that lens's work.
-  Adjust `desk.zoom` and `desk.screens` (all % of the image) so the hotspots sit on your screens.
+  The intro lives in `public/hero/intro.mp4` (+ `intro-reverse.mp4` for "Step back", and first/last frame stills). Adjust `desk.screens` (% of the square final frame) so the hotspots sit on the screens.
 - AI chat avatar / ID photo → `public/hero/…` and set `avatar` / `idCard.photo`
 
 ## Add or edit a project

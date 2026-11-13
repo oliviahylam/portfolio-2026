@@ -31,20 +31,19 @@ export const site = {
   // Tools without a logo show as a text chip.
   toolIcons: {} as Record<string, string>,
 
-  // The interactive desk on the landing page. Click the scene → it zooms toward the screens;
-  // click a screen → switches to that lens and scrolls to the work.
-  // Screen hotspots are % of the final view (pov) if you add one, otherwise of the scene image, so they keep working at any size.
-  // Once your real image is in, nudge these numbers so the hotspots sit on the screens.
+  // The interactive desk on the landing page.
+  // "Step into my desk" (or clicking the scene) plays the intro forward and stops on the
+  // over-the-shoulder view; "Step back" plays the same move in reverse.
+  // On the final view the monitor → Brand & Editorial, the laptop → Product & AI.
+  // Screen hotspots are % of the square final frame. Nudge them if the screens move.
   desk: {
-    // Optional camera move: a transition video from the idle loop to your eyeline,
-    // ending on a still of both screens straight-on. e.g. '/hero/desk-transition.mp4'
-    transition: null as string | null,
-    pov: null as string | null, // the final straight-on view, e.g. '/hero/desk-pov.webp'
-    // Without transition/pov the scene simply zooms toward this point:
-    zoom: { x: 50, y: 38, scale: 2.1 }, // point to zoom toward + how far
+    intro: '/hero/intro.mp4' as string | null, // forward camera move (square)
+    introReverse: '/hero/intro-reverse.mp4' as string | null, // same clip reversed, for "Step back"
+    start: '/hero/intro-start.webp', // first frame (isometric desk)
+    end: '/hero/intro-end.webp', // last frame (both screens)
     screens: {
-      brand: { left: 34, top: 14, width: 32, height: 26, label: 'Brand & Editorial' }, // top monitor
-      product: { left: 40, top: 44, width: 20, height: 14, label: 'Product & AI' }, // laptop
+      brand: { left: 19.5, top: 12.3, width: 61, height: 35, label: 'Brand & Editorial' }, // monitor
+      product: { left: 32.7, top: 49.6, width: 34.8, height: 21.8, label: 'Product & AI' }, // laptop
     },
   },
 

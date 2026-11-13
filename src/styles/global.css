@@ -76,7 +76,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 /* ── Hero (workspace landing) ─────────────────────────────── */
 .hero { min-height: calc(100svh - 72px); display: grid; grid-template-rows: 1fr auto; gap: 32px; padding-block: 32px 48px; }
 .hero__scene { display: grid; place-items: center; }
-.hero__scene img, .hero__scene video { width: min(720px, 100%); height: auto; }
+.hero__scene > img, .hero__scene > video { width: min(720px, 100%); height: auto; }
 .scene-placeholder-unused { width: min(640px, 100%); aspect-ratio: 4 / 3; border: 1px dashed var(--line); border-radius: 24px; display: grid; place-items: center; text-align: center; padding: 24px; background: radial-gradient(ellipse at 50% 60%, var(--surface), transparent 70%); }
 .hero__bottom { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px 48px; }
 .hero__text { display: flex; flex-direction: column; gap: 18px; max-width: 980px; }
@@ -333,44 +333,31 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 .card__side { padding-top: 2px; }
 
 /* ── Interactive desk ─────────────────────────────────────── */
-.desk { width: min(760px, 100%); display: flex; flex-direction: column; align-items: center; gap: 14px; }
-.desk__frame { width: 100%; overflow: hidden; border-radius: 24px; }
-.desk__stage { position: relative; width: 100%; aspect-ratio: 4 / 3; cursor: zoom-in; transform-origin: var(--zx) var(--zy); transition: transform 1s cubic-bezier(.65, 0, .25, 1); }
-.desk.is-zoomed .desk__stage { transform: scale(var(--zs)); cursor: zoom-out; }
-.desk__media { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
-.desk__placeholder rect, .desk__placeholder circle { fill: var(--card); stroke: var(--line); }
-.desk__placeholder text { fill: var(--muted); font-family: var(--font-mono); font-size: 9px; text-transform: uppercase; letter-spacing: .06em; }
-.desk__screen { position: absolute; border-radius: 6px; display: grid; place-items: center; outline-offset: 2px; transition: background-color .3s var(--ease), box-shadow .3s var(--ease); }
-.desk__screen:hover, .desk__screen:focus-visible { background: color-mix(in srgb, var(--accent) 22%, transparent); box-shadow: 0 0 0 2px var(--accent), 0 0 40px color-mix(in srgb, var(--accent) 45%, transparent); }
-.desk__label { opacity: 0; transform: translateY(4px); padding: 6px 10px; border-radius: 6px; background: var(--fg); color: var(--bg); font-size: 12px; font-weight: 500; white-space: nowrap; transition: opacity .25s var(--ease), transform .25s var(--ease); pointer-events: none; }
-.desk.is-zoomed .desk__label { font-size: 6px; padding: 3px 5px; border-radius: 3px; }
+.desk { width: min(640px, 100%); display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.desk__frame { position: relative; width: 100%; aspect-ratio: 1; overflow: hidden; border-radius: 24px; background: #f9f4f1; cursor: pointer; box-shadow: 0 1px 0 var(--line), 0 30px 60px -30px rgb(0 0 0 / .35); }
+.desk.is-zoomed .desk__frame { cursor: default; }
+.desk__media { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.desk__vid { opacity: 0; }
+.desk__vid.is-on { opacity: 1; }
+.desk.is-end .desk__still { content: url('/hero/intro-end.webp'); }
+.desk.is-end .desk__vid { opacity: 0; }
+.desk__hint { position: absolute; left: 50%; bottom: 16px; translate: -50% 0; padding: 7px 12px; border-radius: 999px; background: rgb(255 255 255 / .8); color: #4a3a3a; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; backdrop-filter: blur(6px); pointer-events: none; transition: opacity .4s var(--ease); }
+.desk__frame:hover .desk__hint { opacity: 1; }
+.desk.is-moving .desk__hint, .desk.is-zoomed .desk__hint, .desk.is-end .desk__hint, .desk:has([aria-pressed="true"]) .desk__hint { opacity: 0; }
+.desk__screen { position: absolute; border-radius: 1.2% / 1.6%; display: grid; place-items: center; outline-offset: 2px; pointer-events: none; opacity: 0; transition: background-color .3s var(--ease), box-shadow .3s var(--ease), opacity .4s var(--ease); }
+.desk.is-zoomed .desk__screen { pointer-events: auto; opacity: 1; cursor: pointer; animation: deskPulse 2.6s ease-in-out infinite; }
+.desk__screen:hover, .desk__screen:focus-visible { animation: none !important; background: color-mix(in srgb, #ff7a59 14%, transparent); box-shadow: 0 0 0 3px #ff7a59, 0 0 50px rgb(255 122 89 / .5); }
+.desk__label { position: absolute; bottom: 10px; right: 10px; opacity: 0; transform: translateY(4px); padding: 7px 12px; border-radius: 6px; background: #1d1716; color: #fff; font-size: 13px; font-weight: 500; white-space: nowrap; transition: opacity .25s var(--ease), transform .25s var(--ease); pointer-events: none; }
 .desk__screen:hover .desk__label, .desk__screen:focus-visible .desk__label { opacity: 1; transform: none; }
-.desk.is-zoomed .desk__screen { animation: deskPulse 2.4s ease-in-out infinite; }
-@keyframes deskPulse { 50% { box-shadow: 0 0 0 1px var(--accent), 0 0 24px color-mix(in srgb, var(--accent) 35%, transparent); } }
+@keyframes deskPulse { 0%, 100% { box-shadow: 0 0 0 0 rgb(255 122 89 / 0); } 50% { box-shadow: 0 0 0 2px rgb(255 122 89 / .7), 0 0 30px rgb(255 122 89 / .35); } }
 .desk__toggle { background: none; border: 1px solid var(--line); border-radius: 999px; padding: 9px 16px; color: var(--muted); }
 .desk__toggle:hover { color: var(--fg); border-color: var(--fg); }
 .desk__mobile { display: none; gap: 8px; flex-wrap: wrap; justify-content: center; }
 @media (max-width: 720px) {
-  .desk__stage { cursor: default; }
-  .desk.is-zoomed .desk__stage { transform: none; }
-  .desk__toggle, .desk__screen { display: none; }
+  .desk__label { font-size: 11px; padding: 5px 8px; bottom: 6px; right: 6px; }
+  .desk.is-zoomed .desk__label { opacity: 1; transform: none; }
   .desk__mobile { display: flex; }
 }
-
-/* Desk with camera move (transition video + straight-on view) */
-.desk__frame { position: relative; }
-.desk--pov .desk__stage { cursor: pointer; transition: opacity .6s var(--ease); }
-.desk--pov.is-zoomed .desk__stage { transform: none; }
-.desk__transition, .desk__pov { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; pointer-events: none; transition: opacity .6s var(--ease); }
-.desk__transition { object-fit: cover; }
-.desk__pov img { width: 100%; height: 100%; object-fit: cover; }
-.desk--pov.is-playing .desk__transition { opacity: 1; }
-.desk--pov.is-zoomed .desk__pov { opacity: 1; pointer-events: auto; }
-.desk--pov.is-playing .desk__stage, .desk--pov.is-zoomed .desk__stage { opacity: 0; }
-.desk--pov.is-zoomed .desk__label { font-size: 13px; padding: 7px 12px; border-radius: 6px; }
-.desk--pov .desk__frame { aspect-ratio: 16 / 9; }
-.desk--pov .desk__stage { aspect-ratio: auto; height: 100%; }
-@media (max-width: 720px) { .desk--pov .desk__pov, .desk--pov .desk__transition { display: none; } }
 
 /* Coming soon cards + empty covers */
 .card--soon { cursor: default; }
