@@ -1,0 +1,28 @@
+---
+interface Props { parts: { label: string; anchor: string }[] }
+const { parts } = Astro.props;
+const css = parts.map((p) => `#${p.anchor}`).join(',');
+---
+{parts.length > 1 && (
+  <>
+    <nav class="parts" aria-label="Project sections" data-parts>
+      <div class="parts__inner wrap">
+        {parts.map((p, i) => <a href={`#${p.anchor}`} class="parts__tab" data-part={p.anchor} aria-current={i === 0 ? 'true' : undefined}><span class="mono">{String(i + 1).padStart(2, '0')}</span>{p.label}</a>)}
+      </div>
+    </nav>
+    <style set:html={`:is(${css}) { scroll-margin-top: calc(var(--nav-h, 72px) + 72px); } .prose :is(${css}) { font-family: var(--font-display-brand) !important; font-size: clamp(48px, 6vw, 96px) !important; line-height: .9 !important; letter-spacing: 0 !important; text-transform: uppercase !important; color: var(--fg) !important; max-width: none !important; margin: 2.2em 0 .5em !important; padding-top: 28px; border-top: 1px solid var(--fg); }`} />
+    <script>
+      const tabs = [...document.querySelectorAll<HTMLAnchorElement>('[data-part]')];
+      const targets = tabs.map((t) => document.getElementById(t.dataset.part!)).filter(Boolean) as HTMLElement[];
+      const setActive = (id: string) => tabs.forEach((t) => t.toggleAttribute('aria-current', t.dataset.part === id));
+      const onScroll = () => {
+        const line = (parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 72) + 120;
+        let current = targets[0]?.id;
+        for (const el of targets) if (el.getBoundingClientRect().top <= line) current = el.id;
+        if (current) setActive(current);
+      };
+      addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    </script>
+  </>
+)}

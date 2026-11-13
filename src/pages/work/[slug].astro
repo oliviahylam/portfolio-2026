@@ -4,6 +4,7 @@ import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Tools from '../../components/Tools.astro';
 import StoryExtras from '../../components/StoryExtras.astro';
+import PartTabs from '../../components/PartTabs.astro';
 import { getProjects, type Project } from '../../lib';
 
 export async function getStaticPaths() {
@@ -40,6 +41,7 @@ const hasMedia = Boolean(d.cover || d.coverVideo);
           <div class="ed-tools">{skills.length > 0 && <div class="chips chips--sm">{skills.map((s) => <span class="chip">{s}</span>)}</div>}<Tools tools={d.tools} /></div>
         )}
       </header>
+      <PartTabs parts={d.parts} />
       <div class="ed-cover">
         {d.coverVideo ? <video src={d.coverVideo} autoplay muted loop playsinline aria-hidden="true" />
           : d.cover ? <Image src={d.cover} alt="" widths={[900, 1600, 2400]} sizes="100vw" loading="eager" /> : <span class="mono muted">{d.coverNote ?? '[ cover image / video ]'}</span>}
@@ -58,6 +60,7 @@ const hasMedia = Boolean(d.cover || d.coverVideo);
         <h1 class="story-title">{d.title}</h1>
         <p class="story-hook">{d.hook ?? d.summary}</p>
       </header>
+      <PartTabs parts={d.parts} />
       <div class="wrap">
         <div class:list={['story-cover', { 'story-cover--empty': !hasMedia }]}>
           {d.coverVideo ? <video src={d.coverVideo} autoplay muted loop playsinline aria-hidden="true" />

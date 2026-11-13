@@ -57,6 +57,8 @@ const projects = defineCollection({
         .optional(),
       // What you'd do differently / next steps
       reflection: z.array(z.object({ title: z.string(), text: z.string() })).default([]),
+      // Sub-tabs for multi-part projects. anchor = the id of a ## heading (lowercase, spaces → hyphens)
+      parts: z.array(z.object({ label: z.string(), anchor: z.string() })).default([]),
       // 'work' = main grid, 'client' = the Client work section (product lens)
       group: z.enum(['work', 'client']).default('work'),
       // Shows the card greyed out with a "Coming soon" badge and no page

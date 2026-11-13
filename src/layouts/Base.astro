@@ -37,6 +37,10 @@ const fullTitle = title ? `${title} — ${site.name}` : `${site.name} — ${site
     <script>
       import '../scripts/lens';
       import '../scripts/video-controls';
+      // expose the header height so sticky sub-tabs sit right under it
+      const nav = document.querySelector<HTMLElement>('.nav');
+      const setNavH = () => nav && document.documentElement.style.setProperty('--nav-h', `${nav.offsetHeight}px`);
+      setNavH(); addEventListener('resize', setNavH);
     </script>
   </body>
 </html>
