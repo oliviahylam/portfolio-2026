@@ -13,6 +13,9 @@ export const site = {
   resume: '/resume.pdf', // ← put your resume at public/resume.pdf
   location: 'New York City',
   status: 'Available for 2026 roles',
+  // Shown in the strip under the landing hero (both lenses)
+  currently: 'Silverside AI',
+  previously: 'Animoca Brands',
   version: 'v1.0 · last designed + vibe-coded by Olivia Lam · 11.2026',
   links: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
@@ -56,11 +59,8 @@ export const site = {
       eyebrow: '/* product designer · ai · creative technology */',
       headline: 'Designer who loves pretty things, <span class="dim">but loves experimenting with what\'s possible even more.</span>',
       intro: 'Product designer who uses AI and technology to move fast, without ever compromising on visual craft.',
-      bio: [
-        '[2–3 sentences in your product voice: what you study or do, how you work with people, and what you design.]',
-        "[I've designed for: Client, Client, Client.]",
-      ],
-      tags: ['AI / UX', 'Interaction', 'Prototyping', 'Creative tech'],
+      bio: [] as string[], // optional sentences above the skills
+      tags: ['Product design', 'AI-driven design', 'Web design', 'Prototyping', 'Motion graphics', 'TouchDesigner', 'XR / VR / AR'],
       workTitle: '/* selected work */',
       playgroundTitle: '/* playground */',
       askPlaceholder: 'Ask about my product work, skills or resume…',
@@ -71,11 +71,8 @@ export const site = {
       eyebrow: '[ identity · editorial · motion · creative direction ]',
       headline: 'Designer who loves pretty things, <span class="dim">but loves experimenting with what\'s possible even more.</span>',
       intro: 'Brand and editorial designer who gives a voice to those looking for one, creating memorable ideas and things people want to keep.',
-      bio: [
-        '[2–3 sentences in your brand voice: the identities, books and campaigns you make, and the idea that ties them together.]',
-        "[I've designed for: Museum, Festival, Artist.]",
-      ],
-      tags: ['Visual identity', 'Editorial', 'Motion', 'Art direction'],
+      bio: [] as string[],
+      tags: ['Visual identity', 'Editorial design', 'Art direction', 'Typography', 'Motion graphics', 'AI-driven design'],
       workTitle: 'Selected <em>work</em>',
       playgroundTitle: '[ playground ]',
       askPlaceholder: 'Ask about my identities, editorial or motion work…',

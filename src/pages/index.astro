@@ -40,6 +40,10 @@ const rows = <T,>(xs: T[]) => xs.reduce<T[][]>((acc, x, i) => (i % 2 ? acc[acc.l
         <section class="intro wrap">
           <div class="intro__label"><span class="mono muted">{lens === 'brand' ? '[ about ]' : '/* about */'}</span></div>
           <div class="intro__body">
+            <dl class="intro__cv">
+              <div><dt class="mono muted">Currently</dt><dd>{site.currently}</dd></div>
+              <div><dt class="mono muted">Previously</dt><dd>{site.previously}</dd></div>
+            </dl>
             {L.bio.map((p) => <p>{p}</p>)}
             <div class="chips">{L.tags.map((t) => <span class="chip">{t}</span>)}</div>
           </div>
