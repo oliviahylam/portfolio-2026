@@ -522,3 +522,10 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 .prose .pair-sm { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: min(460px, 100%); margin: 2em auto; }
 .pair-sm img { width: 100%; height: auto; border-radius: 12px; display: block; }
 .card__lock { background: color-mix(in srgb, var(--bg) 80%, transparent); color: var(--fg); border: 1px solid var(--line); backdrop-filter: blur(6px); }
+/* ID card: flips on hover where there's a mouse; the button stays for touch */
+.id-hint { display: none; font-size: 12px; }
+@media (hover: hover) and (pointer: fine) {
+  .id-scroll:hover .id-card:not(.is-flipped) { transform: rotateY(180deg) rotate(1.5deg); }
+  .id-flip { display: none; }
+  .id-hint { display: block; }
+}

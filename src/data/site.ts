@@ -97,7 +97,7 @@ export const site = {
       { label: 'Favourite accessory atm', value: 'I LOVE cadet caps' },
     ],
     photo: '/hero/me-id.webp' as string | null,
-    backBio: '[A short bio in your own voice: the product and AI work, the print and branding roots, and the creative technology that ties them together.]',
+    backBio: "Off the clock, I'm planning my next trip to try new cuisines and learn about different cultures. Brunch is my favourite meal, fall is my favourite season (a recent discovery), and I love all things fashion and makeup.",
     signature: 'Olivia Lam',
   },
 
