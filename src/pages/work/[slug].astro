@@ -59,6 +59,7 @@ const hasMedia = Boolean(d.cover || d.coverVideo);
         <span class="eyebrow">{d.category} · {d.year}</span>
         <h1 class="story-title">{d.title}</h1>
         <p class="story-hook">{d.hook ?? d.summary}</p>
+        {d.link && <a class="story-link" href={d.link.url} target="_blank" rel="noopener">{d.link.label} ↗</a>}
       </header>
       <PartTabs parts={d.parts} />
       <div class="wrap">
