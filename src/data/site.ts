@@ -6,14 +6,14 @@
 // ─────────────────────────────────────────────────────────────
 
 export const site = {
-  name: '[Your Name]',
+  name: 'Olivia Lam',
   role: 'Product designer · AI · Creative technology',
-  description: 'Portfolio of [Your Name] — AI-driven product design, creative technology, identity and editorial work.',
+  description: 'Portfolio of Olivia Lam — AI-driven product design, creative technology, identity and editorial work.',
   email: 'hello@example.com', // ← your public contact email
   resume: '/resume.pdf', // ← put your resume at public/resume.pdf
   location: 'New York City',
   status: 'Available for 2026 roles',
-  version: 'v1.0 · last designed + vibe-coded by [you] · 11.2026',
+  version: 'v1.0 · last designed + vibe-coded by Olivia Lam · 11.2026',
   links: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
     { label: 'Instagram', href: 'https://www.instagram.com/' },
@@ -85,7 +85,7 @@ export const site = {
 
   // About page — the ID card
   idCard: {
-    nameEn: '[SURNAME, Given Name]',
+    nameEn: 'LAM, Olivia',
     number: 'DSGN-0001(✦)',
     validFor: 'Product · AI · Creative direction',
     facts: [
@@ -98,11 +98,11 @@ export const site = {
     ],
     photo: '/hero/me-id.webp' as string | null,
     backBio: '[A short bio in your own voice: the product and AI work, the print and branding roots, and the creative technology that ties them together.]',
-    signature: '[Signature]',
+    signature: 'Olivia Lam',
   },
 
   about: {
-    headline: "[Hi, I'm Your Name.]",
+    headline: "Hi, I'm Olivia.",
     paragraphs: [
       '[Paragraph 1 — what you do now.]',
       '[Paragraph 2 — your path, and why the print / branding background makes you a better product designer.]',
