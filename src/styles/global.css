@@ -515,3 +515,11 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 /* Key insight callout */
 .story-body .prose blockquote { margin: 2em 0; padding: 20px 24px; border-left: 3px solid var(--accent); border-radius: 0 12px 12px 0; background: var(--surface); font-size: 19px; }
 .story-body .prose blockquote p { margin: 0; }
+
+/* Brand colour swatches (raw HTML in markdown) */
+.prose .swatches { width: min(1100px, calc(100vw - 2 * var(--gutter))); margin: 2em 0 2em 50%; transform: translateX(-50%); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 12px; }
+.swatch { aspect-ratio: 4 / 3; border-radius: 16px; background: var(--c); border: 1px solid var(--line); padding: 16px; display: flex; flex-direction: column; justify-content: flex-end; gap: 2px; color: #fff; font-size: 15px; font-weight: 500; }
+.swatch code { font-family: var(--font-mono); font-size: 12px; font-weight: 400; opacity: .8; background: none; padding: 0; color: inherit; }
+.swatch--light { color: #161D26; }
+.prose .pair-sm { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: min(460px, 100%); margin: 2em auto; }
+.pair-sm img { width: 100%; height: auto; border-radius: 12px; display: block; }
