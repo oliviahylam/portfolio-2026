@@ -55,7 +55,7 @@ export const site = {
       label: 'Product & AI',
       eyebrow: '/* product designer · ai · creative technology */',
       headline: 'Designer who loves pretty things, <span class="dim">but loves efficiency and pushing boundaries even more.</span>',
-      intro: 'Product designer who leverages technology to get things done, tastefully.',
+      intro: 'Product designer who uses AI and technology to move fast, without ever compromising on visual craft.',
       bio: [
         '[2–3 sentences in your product voice: what you study or do, how you work with people, and what you design.]',
         "[I've designed for: Client, Client, Client.]",
