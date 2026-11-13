@@ -5,7 +5,8 @@ import type { Lens } from '../data/site';
 import Tools from './Tools.astro';
 
 interface Props { project: Project; index: number; lens: Lens }
-const { project, index } = Astro.props;
+const { project, index, lens } = Astro.props;
+const num = lens === 'brand' ? `${String(index).padStart(3, '0')} —` : `${String(index).padStart(2, '0')} ·`;
 const d = project.data;
 const skills = d.skills.length ? d.skills : d.tags;
 ---
@@ -21,13 +22,14 @@ const skills = d.skills.length ? d.skills : d.tags;
     <span class="card__cta">{d.template === 'editorial' ? 'View project' : 'View case study'} <span aria-hidden="true">›</span></span>
   </div>
   <div class="card__body">
-    <div class="card__side">
-      {skills.length > 0 && <div class="tags">{skills.map((s) => <span class="tag">{s}</span>)}</div>}
-      <Tools tools={d.tools} />
-    </div>
     <div class="card__main">
+      <span class="mono muted">{num} {d.category} · {d.year}</span>
       <h3 class="card__title">{d.title}</h3>
       <p class="card__summary">{d.summary}</p>
+    </div>
+    <div class="card__side">
+      <Tools tools={d.tools} />
+      {skills.length > 0 && <div class="tags">{skills.map((s) => <span class="tag">{s}</span>)}</div>}
     </div>
   </div>
 </a>
