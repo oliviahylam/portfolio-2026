@@ -28,24 +28,29 @@ skills: [Identity system, Poster design, Motion]
 
 ![Poster mockup](./poster-mockup.webp)
 
-![Poster](./poster-01.webp)
-![Poster](./poster-02.webp)
-![Poster](./poster-03.webp)
+![Poster](./poster-73.webp)
+![Poster](./poster-74.webp)
+![Poster](./poster-64.webp)
+![Poster](./poster-75.webp)
 
-![Poster](./poster-04.webp)
-![Poster](./poster-05.webp)
-![Poster](./poster-06.webp)
+![Poster](./poster-76.webp)
+![Poster](./poster-79.webp)
+![Poster](./poster-80.webp)
+![Poster](./poster-81.webp)
 
-![Poster](./poster-07.webp)
-![Poster](./poster-08.webp)
-
-## Applications
-
-![Banner](./banner.webp)
+## Tickets
 
 ![Ticket](./ticket-01.webp)
 ![Ticket](./ticket-02.webp)
 ![Ticket](./ticket-03.webp)
+
+![Ticket](./ticket-04.webp)
+![Ticket](./ticket-05.webp)
+![Ticket](./ticket-06.webp)
+
+## Applications
+
+![Banner](./banner.webp)
 
 ![Shopping bag](./bag.webp)
 

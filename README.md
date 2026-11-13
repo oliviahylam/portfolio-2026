@@ -73,7 +73,7 @@ Suggested chapter flow: **the problem worth solving → what you found → the t
 Tool logos (optional): put a logo in `public/tools/` and map it in `src/data/site.ts → toolIcons`.
 
 - **Images**: drop them in the project folder and reference `./name.webp` (jpg/png are fine — the site optimizes them).
-- **Side by side**: put 2 or 3 images on consecutive lines (no blank line between).
+- **Side by side**: put 2, 3 or 4 images on consecutive lines (no blank line between).
 - **Videos**: put `.mp4` files in `public/media/<project>/` and reference them like an image:
   `![Walkthrough](/media/growtopia/planting.mp4)` — they autoplay, muted and looping.
   Keep videos short and compressed (under ~5 MB each).
