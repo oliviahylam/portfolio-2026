@@ -4,6 +4,7 @@ year: "[Year]"
 lens: [product]
 template: case-study
 group: client
+locked: true
 order: 1
 category: Client work · Silverside AI
 client: Amazon Ads (via Silverside AI)
@@ -54,21 +55,21 @@ I generated all of the visual assets with AI: the 3D blocks, the isometric illus
 
 Soft white blocks with a single orange one: a simple metaphor for standing apart from the crowd and staying ahead. This was the direction the client enjoyed most.
 
-![Differentiation starts here](./blocks-1.webp)
-![Unlock what's possible](./blocks-2.webp)
-![Differentiation starts here, stand apart, stay ahead](./blocks-3.webp)
-![Built from real behavior](./blocks-4.webp)
-![Just updated](./blocks-5.webp)
+![Differentiation starts here](/media/amazon/blocks-1.webp)
+![Unlock what's possible](/media/amazon/blocks-2.webp)
+![Differentiation starts here, stand apart, stay ahead](/media/amazon/blocks-3.webp)
+![Built from real behavior](/media/amazon/blocks-4.webp)
+![Just updated](/media/amazon/blocks-5.webp)
 
 ## Direction 2 — Isometric illustration
 
 Line-drawn dashboards, charts and stacked layers in orange and white, pointing to the data and tools behind programmatic advertising.
 
-![Unlock what's possible](./illo-1.webp)
-![Know your audience](./illo-2.webp)
-![Differentiation starts here](./illo-3.webp)
-![Built from real behavior](./illo-4.webp)
-![Differentiation starts here](./illo-5.webp)
+![Unlock what's possible](/media/amazon/illo-1.webp)
+![Know your audience](/media/amazon/illo-2.webp)
+![Differentiation starts here](/media/amazon/illo-3.webp)
+![Built from real behavior](/media/amazon/illo-4.webp)
+![Differentiation starts here](/media/amazon/illo-5.webp)
 
 ## Direction 3 — People
 

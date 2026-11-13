@@ -24,6 +24,7 @@ const Tag = soon ? 'div' : 'a';
     ) : (
       <span class="card__placeholder mono muted">{d.coverNote ?? '[ cover image ]'}</span>
     )}
+    {d.locked && !soon && <span class="card__soon card__lock mono">🔒 Password protected</span>}
     {soon ? <span class="card__soon mono">Coming soon</span> : <span class="card__cta">{d.template === 'editorial' ? 'View project' : 'View case study'} <span aria-hidden="true">›</span></span>}
   </div>
   <div class="card__body">

@@ -102,3 +102,11 @@ Every push to `main` updates the live site.
 
 ## Coming next
 - `/api/ask`: the AI version of me, answering only from this site's content + resume.
+
+## Password-protected pages
+
+`middleware.ts` (runs on Vercel) locks `/work/silverside-amazon` and its images in `/public/media/amazon`.
+Set the password in Vercel → Settings → Environment Variables → `PROTECTED_PASSWORD`, then redeploy. Until it's set, the page stays locked.
+Visitors unlock once and stay unlocked for 30 days. To protect another project, add its paths to `matcher` in `middleware.ts`,
+keep its images in a `/public/media/<name>/` folder, and add `locked: true` to its frontmatter.
+Note: `npm run dev` / `preview` don't run the middleware, so locally the page is always open.
