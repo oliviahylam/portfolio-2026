@@ -6,22 +6,25 @@ template: editorial
 order: 4
 brandOrder: 3
 category: Book + digital experience
-summary: A two-part project on how sound leaves a trace — an audio-to-visual book about living with synesthesia, extended into Echoform, a digital platform for discovering music through colour, motion and form.
+summary: "Don’t Think of an Elephant, an editorial book exploring how synesthesia shapes perception and memory, extended into Echoform, a digital platform for discovering music through colour, motion and form."
 coverRatio: 1
 coverVideo: /media/synesthesia/cover.mp4
-role: "[Your role]"
-tools: []  # e.g. [Illustrator, After Effects, Midjourney]
-skills: [Editorial design, Typography, Web design]
+role: Print Designer
+timeline: 4 weeks (book)
+tools: [Adobe InDesign, Adobe Photoshop, Procreate]
+skills: [Typography, Bookbinding, Publication design, Illustration, Web design]
 parts:
   - { label: Book, anchor: book }
   - { label: Digital experience, anchor: digital-experience }
 ---
 
-Silence is never truly silent. [Two or three sentences in your words: what synesthesia is, why it matters to you, and how the project moves from a printed book into a digital experience.]
+Silence is never truly silent. *Don’t Think of an Elephant* is an editorial book exploring how synesthesia shapes perception and memory. The title references the involuntary nature of synesthesia: just as being told not to think of an elephant immediately brings the image to mind, visual responses happen instinctively for people with synesthesia when listening to music.
 
 ## Book
 
-[The book: its format, its three chapters — Instrument, Echo and Immersion — and how the colour, imagery and type translate sound into something you can see.]
+The book is structured around interviews with three individuals with synesthesia, each forming a color-coded chapter. Imagery throughout each chapter is drawn from the interviewee’s personal memories and associations.
+
+At the end of each interview, participants described the visual landscapes they see when listening to their favourite songs, which were translated into illustrated chapter dividers. The project focuses on synesthesia as a lived, subjective experience, while visualising something that is typically intangible.
 
 ### Chosen spreads
 
@@ -64,7 +67,3 @@ Silence is never truly silent. [Two or three sentences in your words: what synes
 ### 03 · Connect
 
 ![Echoform — connect](/media/synesthesia/digital-3-connect.mp4)
-
-## Credits
-
-[Course, collaborators.]
