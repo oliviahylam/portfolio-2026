@@ -400,3 +400,8 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 .vid__range::-moz-range-track { height: 4px; border-radius: 4px; background: linear-gradient(to right, #fff var(--p, 0%), rgba(255,255,255,.3) var(--p, 0%)); }
 .vid__range::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; margin-top: -4px; border-radius: 50%; background: #fff; }
 .vid__range::-moz-range-thumb { width: 12px; height: 12px; border: 0; border-radius: 50%; background: #fff; }
+
+/* Side-by-side images sit vertically centred on each other */
+.prose p:has(> :is(img, video) + :is(img, video)) { align-items: center; }
+/* Images whose filename contains "-nobg" show without a background box */
+.prose img[src*="-nobg"] { background: none; border-radius: 0; }

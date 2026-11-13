@@ -19,7 +19,7 @@ Danmarks Tekniske Museum welcomes everyone, from school trips to lifelong engine
 ## Where it started
 
 ![Original logo](./original-1.webp)
-![Original logo with descriptor](./original-2.webp)
+![Original logo with descriptor](./original-2-nobg.webp)
 ![Original logo on orange](./original-3.webp)
 
 The original identity relied on a wordmark alone. Its soft, rounded typeface felt friendly, but it didn't read as science or technology, and without a visual element there was nothing for visitors — especially younger ones — to recognise and remember.

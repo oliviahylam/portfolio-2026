@@ -77,6 +77,7 @@ Tool logos (optional): put a logo in `public/tools/` and map it in `src/data/sit
 - **Videos**: put `.mp4` files in `public/media/<project>/` and reference them like an image:
   `![Walkthrough](/media/growtopia/planting.mp4)` — they autoplay, muted and looping.
   Keep videos short and compressed (under ~5 MB each).
+- **No background box**: add `-nobg` to an image filename (e.g. `logo-nobg.webp`) for transparent logos.
 - **Hide a project**: add `draft: true`.
 
 ## Run locally
