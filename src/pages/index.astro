@@ -6,8 +6,12 @@ import { site, type Lens } from '../data/site';
 import { getProjects } from '../lib';
 
 const lists: Record<Lens, Awaited<ReturnType<typeof getProjects>>> = {
-  product: await getProjects('product'),
-  brand: await getProjects('brand'),
+  product: await getProjects('product', 'work'),
+  brand: await getProjects('brand', 'work'),
+};
+const clients: Record<Lens, Awaited<ReturnType<typeof getProjects>>> = {
+  product: await getProjects('product', 'client'),
+  brand: await getProjects('brand', 'client'),
 };
 const lenses: Lens[] = ['product', 'brand'];
 const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
@@ -48,6 +52,18 @@ const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
             {list.map((p, i) => <ProjectCard project={p} index={i + 1} lens={lens} />)}
           </div>
         </section>
+
+        {clients[lens].length > 0 && (
+          <section class="section wrap wrap--wide" aria-label="Client work">
+            <div class="section__head">
+              <h2 class={lens === 'brand' ? 'serif-em' : 'mono'} set:html={lens === 'brand' ? 'Client <em>work</em>' : '/* client work · silverside ai */'} />
+              <span class="mono muted">Silverside AI · {String(clients[lens].length).padStart(2, '0')}</span>
+            </div>
+            <div class="grid">
+              {clients[lens].map((p, i) => <ProjectCard project={p} index={i + 1} lens={lens} />)}
+            </div>
+          </section>
+        )}
 
         <section class="section wrap" aria-label="Playground">
           <div class="section__head">

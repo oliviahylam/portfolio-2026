@@ -1,10 +1,10 @@
 ---
 title: Urban Tattoos
 year: 2025
-lens: [brand, product]
+lens: [brand]
 template: editorial
 order: 5
-brandOrder: 3
+brandOrder: 4
 category: Editorial + online experience
 summary: A book about the stickers that tattoo a city's surfaces — collected, scanned and set into spreads, then carried into an online experience you explore on your phone.
 coverVideo: /media/urban-tattoos/cover.mp4

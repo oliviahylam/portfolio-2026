@@ -3,7 +3,7 @@ import { site } from '../data/site';
 import { getProjects } from '../lib';
 import AskAI from './AskAI.astro';
 const { current } = Astro.props;
-const counts = { product: (await getProjects('product')).length, brand: (await getProjects('brand')).length };
+const counts = { product: (await getProjects('product', 'work')).length, brand: (await getProjects('brand', 'work')).length };
 const pad = (n: number) => String(n).padStart(2, '0');
 ---
 <header class="nav">

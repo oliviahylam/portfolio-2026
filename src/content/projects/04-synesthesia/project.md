@@ -1,10 +1,10 @@
 ---
 title: Synesthesia / Echoform
 year: 2025
-lens: [brand, product]
+lens: [brand]
 template: editorial
 order: 4
-brandOrder: 4
+brandOrder: 3
 category: Editorial + digital
 summary: An audio-to-visual book about how sound leaves a trace — extended into Echoform, a synesthetic platform for discovering music through color, motion and form.
 coverVideo: /media/synesthesia/cover.mp4

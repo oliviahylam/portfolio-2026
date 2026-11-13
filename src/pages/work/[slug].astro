@@ -7,14 +7,14 @@ import StoryExtras from '../../components/StoryExtras.astro';
 import { getProjects, type Project } from '../../lib';
 
 export async function getStaticPaths() {
-  const all = await getProjects();
+  const all = (await getProjects()).filter((p) => !p.data.comingSoon);
   return all.map((project) => ({ params: { slug: project.id }, props: { project } }));
 }
 const { project } = Astro.props as { project: Project };
 const d = project.data;
 const lens = d.lens[0];
 const { Content } = await render(project);
-const siblings = await getProjects(lens);
+const siblings = (await getProjects(lens, d.group)).filter((p) => !p.data.comingSoon);
 const i = siblings.findIndex((p) => p.id === project.id);
 const next = siblings[(i + 1) % siblings.length];
 const facts = [
@@ -23,6 +23,7 @@ const facts = [
 const skills = d.skills.length ? d.skills : d.tags;
 const editorial = d.template === 'editorial';
 const back = lens === 'brand' ? '/?lens=brand#work-brand' : '/#work';
+const hasMedia = Boolean(d.cover || d.coverVideo);
 ---
 <Base title={d.title} lens={lens} description={d.summary}>
   {editorial ? (
@@ -41,7 +42,7 @@ const back = lens === 'brand' ? '/?lens=brand#work-brand' : '/#work';
       </header>
       <div class="ed-cover">
         {d.coverVideo ? <video src={d.coverVideo} autoplay muted loop playsinline aria-hidden="true" />
-          : d.cover ? <Image src={d.cover} alt="" widths={[900, 1600, 2400]} sizes="100vw" loading="eager" /> : null}
+          : d.cover ? <Image src={d.cover} alt="" widths={[900, 1600, 2400]} sizes="100vw" loading="eager" /> : <span class="mono muted">{d.coverNote ?? '[ cover image / video ]'}</span>}
       </div>
       <div class="ed-body wrap"><div class="prose"><Content /></div></div>
       <StoryExtras project={project} />
@@ -58,9 +59,9 @@ const back = lens === 'brand' ? '/?lens=brand#work-brand' : '/#work';
         <p class="story-hook">{d.hook ?? d.summary}</p>
       </header>
       <div class="wrap">
-        <div class="story-cover">
+        <div class:list={['story-cover', { 'story-cover--empty': !hasMedia }]}>
           {d.coverVideo ? <video src={d.coverVideo} autoplay muted loop playsinline aria-hidden="true" />
-            : d.cover ? <Image src={d.cover} alt="" widths={[900, 1400, 2000]} sizes="(min-width: 1100px) 1100px, 100vw" loading="eager" /> : null}
+            : d.cover ? <Image src={d.cover} alt="" widths={[900, 1400, 2000]} sizes="(min-width: 1100px) 1100px, 100vw" loading="eager" /> : <span class="mono muted">{d.coverNote ?? '[ cover image / video ]'}</span>}
         </div>
       </div>
 

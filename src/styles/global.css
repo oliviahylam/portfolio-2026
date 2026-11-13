@@ -371,3 +371,11 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 .desk--pov .desk__frame { aspect-ratio: 16 / 9; }
 .desk--pov .desk__stage { aspect-ratio: auto; height: 100%; }
 @media (max-width: 720px) { .desk--pov .desk__pov, .desk--pov .desk__transition { display: none; } }
+
+/* Coming soon cards + empty covers */
+.card--soon { cursor: default; }
+.card--soon .card__media > :not(.card__soon) { filter: grayscale(1); opacity: .45; }
+.card--soon .card__title, .card--soon .card__summary { opacity: .55; }
+.card__soon { position: absolute; left: 16px; top: 16px; padding: 6px 10px; border-radius: 6px; background: var(--fg); color: var(--bg); }
+.story-cover--empty, .ed-cover:not(:has(img, video)) { display: grid; place-items: center; }
+.ed-cover:not(:has(img, video)) { aspect-ratio: 16 / 6; }
