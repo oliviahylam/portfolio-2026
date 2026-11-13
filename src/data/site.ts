@@ -54,7 +54,7 @@ export const site = {
     product: {
       label: 'Product & AI',
       eyebrow: '/* product designer · ai · creative technology */',
-      headline: 'Designer who loves pretty things, <span class="dim">but loves efficiency and pushing boundaries even more.</span>',
+      headline: 'Designer who loves pretty things, <span class="dim">but loves experimenting with what\'s possible even more.</span>',
       intro: 'Product designer who uses AI and technology to move fast, without ever compromising on visual craft.',
       bio: [
         '[2–3 sentences in your product voice: what you study or do, how you work with people, and what you design.]',
@@ -69,7 +69,7 @@ export const site = {
     brand: {
       label: 'Brand & Editorial',
       eyebrow: '[ identity · editorial · motion · creative direction ]',
-      headline: 'Designer who loves pretty things, <span class="dim">but loves efficiency and pushing boundaries even more.</span>',
+      headline: 'Designer who loves pretty things, <span class="dim">but loves experimenting with what\'s possible even more.</span>',
       intro: 'Brand and editorial designer who gives a voice to those looking for one, creating memorable ideas and things people want to keep.',
       bio: [
         '[2–3 sentences in your brand voice: the identities, books and campaigns you make, and the idea that ties them together.]',
