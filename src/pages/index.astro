@@ -42,7 +42,7 @@ const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
           </div>
         </section>
 
-        <section id={lens === 'product' ? 'work' : 'work-brand'} class="section wrap" aria-label="Selected work">
+        <section id={lens === 'product' ? 'work' : 'work-brand'} class="section wrap wrap--wide" aria-label="Selected work">
           <div class="section__head">
             <h2 class={lens === 'brand' ? 'serif-em' : 'mono'} set:html={L.workTitle} />
             <span class="mono muted">{L.label} · {String(list.length).padStart(2, '0')}</span>

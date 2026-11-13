@@ -310,3 +310,21 @@ html[data-lens='brand'] .footer { border-top: 0; }
 .reflect__item h3 { margin: 10px 0 8px; font-size: 18px; font-weight: 500; }
 .reflect__item p { margin: 0; color: var(--muted); font-size: 15px; }
 .ed-tools { display: flex; flex-direction: column; gap: 12px; }
+
+/* ── Work grid (reference layout) ─────────────────────────── */
+.wrap--wide { max-width: 1760px; padding-inline: clamp(16px, 2.4vw, 36px); }
+.grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 72px 20px; }
+@media (max-width: 860px) { .grid { grid-template-columns: 1fr; gap: 56px; } }
+.card { gap: 22px; }
+.card__media { aspect-ratio: 2.1 / 1; border-radius: 12px; }
+.card__cta { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -40%); opacity: 0; display: inline-flex; gap: 8px; align-items: center; padding: 10px 16px; border-radius: 8px; background: #0e0e0e; color: #fff; font-size: 15px; font-weight: 500; transition: opacity .3s var(--ease), transform .3s var(--ease); pointer-events: none; }
+.card:hover .card__cta, .card:focus-visible .card__cta { opacity: 1; transform: translate(-50%, -50%); }
+.card__body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px 32px; align-items: start; }
+@media (max-width: 560px) { .card__body { grid-template-columns: 1fr; } .card__main { order: -1; } }
+.card__side { display: flex; flex-direction: column; gap: 10px; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { padding: 5px 10px; border-radius: 6px; background: var(--surface); font-size: 13px; color: var(--fg); }
+.card__main { display: flex; flex-direction: column; gap: 10px; }
+.card__title { font-size: clamp(24px, 2.2vw, 34px); font-weight: 600; letter-spacing: -.02em; line-height: 1.1; }
+.card__summary { font-size: clamp(15px, 1.15vw, 18px); line-height: 1.45; color: var(--fg); opacity: .85; }
+html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); font-weight: 400; text-transform: uppercase; letter-spacing: 0; font-size: clamp(28px, 2.6vw, 42px); line-height: .95; }
