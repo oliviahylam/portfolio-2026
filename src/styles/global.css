@@ -459,3 +459,13 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 /* Cover videos reserve their width before loading (no jump), still never cropped */
 .story-cover .vid, .ed-cover .vid, .cover .vid { display: block; width: 100%; }
 .story-cover video, .ed-cover video, .cover video { width: 100%; max-width: 100%; height: auto; max-height: 82vh; object-fit: contain; }
+
+/* Slimmer top nav */
+.nav__inner { padding-block: 8px; gap: 8px 20px; }
+.nav__name { font-size: 15px; }
+.nav__links { font-size: 14px; gap: 2px 20px; }
+.nav__links a { padding-block: 8px; }
+.lens-switch { padding: 3px; }
+.lens-switch button { padding: 7px 14px; font-size: 13px; }
+.btn-ask { padding: 4px 10px 4px 4px; font-size: 13px; }
+.avatar--xs { width: 18px; height: 18px; }
