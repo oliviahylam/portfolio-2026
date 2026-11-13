@@ -424,3 +424,18 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 .card__media img, .card__media video { position: absolute; inset: 0; }
 .card__media img, .card__media video { border-radius: 10px; }
 .card__media:has(.card__placeholder) { background: var(--card); border-radius: 12px; }
+
+/* ── Justified rows: same height per row, width follows each project's shape ── */
+.rows { display: flex; flex-direction: column; gap: 72px; }
+.row { display: flex; gap: 20px; align-items: flex-start; }
+.row > .card { flex: var(--ar) 1 0; min-width: 0; }
+.row__spacer { flex: 1.6 1 0; }
+.row .card__media { aspect-ratio: var(--ar); }
+.row .card__media img, .row .card__media video { object-fit: cover; }
+.row .card__body { grid-template-columns: 1fr; }
+@media (min-width: 1100px) { .row .card__body { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+@media (max-width: 760px) { .row { flex-direction: column; gap: 56px; } .row > .card { flex: none; width: 100%; } .row__spacer { display: none; } }
+/* Card details stack when the card is narrow, sit side by side when it's wide */
+.row > .card { container-type: inline-size; }
+.row .card__body { grid-template-columns: 1fr !important; }
+@container (min-width: 560px) { .row .card__body { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important; } }

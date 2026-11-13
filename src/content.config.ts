@@ -24,6 +24,8 @@ const projects = defineCollection({
       summary: z.string(),
       cover: image().optional(),
       coverVideo: z.string().optional(),
+      // width ÷ height of a cover video (images are measured automatically)
+      coverRatio: z.number().optional(),
       coverNote: z.string().optional(),
       role: z.string().optional(),
       team: z.string().optional(),

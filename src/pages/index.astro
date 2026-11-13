@@ -15,6 +15,8 @@ const clients: Record<Lens, Awaited<ReturnType<typeof getProjects>>> = {
 };
 const lenses: Lens[] = ['product', 'brand'];
 const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
+// Pair cards into rows of two; each row shares one height, widths follow each cover's shape.
+const rows = <T,>(xs: T[]) => xs.reduce<T[][]>((acc, x, i) => (i % 2 ? acc[acc.length - 1].push(x) : acc.push([x]), acc), []);
 ---
 <Base current="work">
   {lenses.map((lens) => {
@@ -48,8 +50,13 @@ const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
             <h2 class={lens === 'brand' ? 'serif-em' : 'mono'} set:html={L.workTitle} />
             <span class="mono muted">{L.label} · {String(list.length).padStart(2, '0')}</span>
           </div>
-          <div class="grid">
-            {list.map((p, i) => <ProjectCard project={p} index={i + 1} lens={lens} />)}
+          <div class="rows">
+            {rows(list).map((row, r) => (
+              <div class="row">
+                {row.map((p, i) => <ProjectCard project={p} index={r * 2 + i + 1} lens={lens} />)}
+                {row.length === 1 && <div class="row__spacer" aria-hidden="true" />}
+              </div>
+            ))}
           </div>
         </section>
 
@@ -59,8 +66,13 @@ const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
               <h2 class={lens === 'brand' ? 'serif-em' : 'mono'} set:html={lens === 'brand' ? 'Client <em>work</em>' : '/* client work · silverside ai */'} />
               <span class="mono muted">Silverside AI · {String(clients[lens].length).padStart(2, '0')}</span>
             </div>
-            <div class="grid">
-              {clients[lens].map((p, i) => <ProjectCard project={p} index={i + 1} lens={lens} />)}
+            <div class="rows">
+              {rows(clients[lens]).map((row, r) => (
+                <div class="row">
+                  {row.map((p, i) => <ProjectCard project={p} index={r * 2 + i + 1} lens={lens} />)}
+                  {row.length === 1 && <div class="row__spacer" aria-hidden="true" />}
+                </div>
+              ))}
             </div>
           </section>
         )}

@@ -10,9 +10,10 @@ const num = lens === 'brand' ? `${String(index).padStart(3, '0')} —` : `${Stri
 const d = project.data;
 const skills = d.skills.length ? d.skills : d.tags;
 const soon = d.comingSoon;
+const ar = d.cover ? d.cover.width / d.cover.height : d.coverRatio ?? 1.6;
 const Tag = soon ? 'div' : 'a';
 ---
-<Tag class:list={['card', { 'card--soon': soon }]} href={soon ? undefined : `/work/${project.id}`} aria-disabled={soon ? 'true' : undefined} style={`view-transition-name:card-${project.id}`}>
+<Tag class:list={['card', { 'card--soon': soon }]} href={soon ? undefined : `/work/${project.id}`} aria-disabled={soon ? 'true' : undefined} style={`view-transition-name:card-${project.id};--ar:${ar.toFixed(3)}`}>
   <div class="card__media">
     {d.coverVideo ? (
       <video src={d.coverVideo} autoplay muted loop playsinline aria-hidden="true" />

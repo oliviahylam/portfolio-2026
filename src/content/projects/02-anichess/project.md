@@ -6,6 +6,7 @@ template: case-study
 order: 2
 category: Product design · Web
 summary: Redesigning the Anichess web experience — from login and onboarding to Gambit mode and the leaderboard — to make a dense, game-heavy product clearer to enter and easier to play.
+coverRatio: 1.778
 coverVideo: /media/anichess/cover.mp4
 role: "[Your role]"
 team: "[Team / client or self-initiated]"

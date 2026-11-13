@@ -7,6 +7,7 @@ order: 5
 brandOrder: 4
 category: Editorial + online experience
 summary: A book about the stickers that tattoo a city's surfaces — collected, scanned and set into spreads, then carried into an online experience you explore on your phone.
+coverRatio: 0.708
 coverVideo: /media/urban-tattoos/cover.mp4
 role: "[Your role]"
 tools: []  # e.g. [Illustrator, After Effects, Midjourney]

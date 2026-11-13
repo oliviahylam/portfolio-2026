@@ -6,6 +6,7 @@ template: case-study
 order: 5
 category: "[Product design · Brand]"
 summary: "[One sentence: what Subdue is and what you designed.]"
+coverRatio: 1.778
 coverVideo: /media/subdue/logo-reveal.mp4
 tools: []
 skills: [Brand identity, Motion]

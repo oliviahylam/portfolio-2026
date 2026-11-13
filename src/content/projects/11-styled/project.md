@@ -7,6 +7,7 @@ order: 11
 brandOrder: 6
 category: Editorial web experience
 summary: An immersive editorial website on how algorithms, technology and media shape the way we define style — fashion, digital identity and micro-trends, told through curated visuals and interactive layouts.
+coverRatio: 1.778
 coverVideo: /media/styled/desktop-1.mp4
 tools: []
 skills: [Editorial design, Web design, Art direction]

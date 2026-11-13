@@ -6,6 +6,7 @@ template: case-study
 order: 1
 category: Product design · Game
 summary: A cozy pixel-art garden where focus time makes things grow — planting, tending and weather turn a productivity timer into a world worth coming back to.
+coverRatio: 1.778
 coverVideo: /media/growtopia/cover.mp4
 role: "[Your role — e.g. Product designer, solo]"
 team: "[Team / course]"
