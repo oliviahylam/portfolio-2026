@@ -6,7 +6,7 @@ template: editorial
 order: 7
 brandOrder: 2
 category: Rebrand · Identity system
-summary: A rebrand for the Danish Museum of Science and Technology — a new icon, a sleeker geometric typeface and a playful colour system that speaks to every visitor, from kids to engineers.
+summary: A rebrand of the Danish Museum of Science and Technology, introducing a new icon, a geometric condensed typeface and a colour system designed to speak to visitors of all ages.
 cover: ./billboard.webp
 thumb: ./logo-variations.webp
 role: "[Your role]"
@@ -15,19 +15,19 @@ tools: []  # e.g. [Illustrator, After Effects, Midjourney]
 skills: [Rebrand, Logo design, Colour systems, Poster design, Motion]
 ---
 
-Danmarks Tekniske Museum welcomes everyone, from school trips to lifelong engineers. The rebrand gives it an identity that finally looks like what it holds — science and technology — while feeling fun enough for every age.
+This project focused on the rebrand of Danmarks Tekniske Museum, the Danish Museum of Science and Technology. The museum welcomes a wide audience, from school groups to engineers, so the goal was to create an identity that reflected science and technology while still feeling approachable for every age.
 
-## Where it started
+## Original identity
 
 ![Original logo](./original-1.webp)
 ![Original logo with descriptor](./original-2-nobg.webp)
 ![Original logo on orange](./original-3.webp)
 
-The original identity relied on a wordmark alone. Its soft, rounded typeface felt friendly, but it didn't read as science or technology, and without a visual element there was nothing for visitors — especially younger ones — to recognise and remember.
+The original identity relied on a wordmark alone. Its soft, rounded typeface felt friendly, but it did not communicate science or technology, and without a visual element there was nothing for visitors, especially younger ones, to recognise and remember.
 
-## A mark you can see
+## Logo
 
-I added an icon: a geometric, stepped silhouette that sits beside the wordmark. It gives the museum a symbol that works on its own — on a ticket, a sign or an app icon — and it can be drawn as a solid shape or as a single continuous line. [Add what the silhouette represents, e.g. the museum's building or an industrial skyline.]
+I designed an icon to sit beside the wordmark: a geometric, stepped silhouette. It gives the museum a symbol that can work on its own, on tickets, signage or an app icon, and it can be drawn as a solid shape or as a single continuous line. [Add what the silhouette represents, e.g. the museum's building or an industrial skyline.]
 
 ![New logo lockup](./mark-1.webp)
 ![Logo lockups](./mark-4.webp)
@@ -37,15 +37,15 @@ I added an icon: a geometric, stepped silhouette that sits beside the wordmark. 
 
 ![Logo animation](/media/museum-of-science-and-technology/animation.mp4)
 
-## Type that reads as technology
+## Typography
 
-I replaced the rounded type with a geometric, condensed typeface. Its tight, upright forms feel sleek and engineered — closer to the precision of the machines and inventions inside the museum.
+I replaced the rounded typeface with a geometric, condensed one. Its tight, upright forms feel sleek and engineered, reflecting the precision of the machines and inventions inside the museum.
 
 ![Wordmark in use](./logo.webp)
 
-## Colour for every visitor
+## Colour system
 
-Because the museum speaks to all ages, the system is built on colour. Each pairing keeps the mark recognisable while letting exhibitions, seasons and audiences each have their own personality — serious enough for adults, playful enough for kids.
+Because the museum speaks to all ages, the identity is built around colour. Each colour pairing keeps the logo recognisable while allowing exhibitions, seasons and audiences to have their own personality, ensuring the brand feels serious enough for adults and playful enough for children.
 
 ![Colour variations](./logo-variations.webp)
 
@@ -63,9 +63,9 @@ Because the museum speaks to all ages, the system is built on colour. Each pairi
 ![Poster](./poster-80.webp)
 ![Poster](./poster-81.webp)
 
-## Tickets worth keeping
+## Tickets
 
-Each ticket type gets its own colour and line drawing, so a visit leaves you with something to keep — a small collectible piece of the museum.
+Each ticket type has its own colour and line drawing, turning the tickets into small collectibles that visitors can keep after their visit.
 
 ![Ticket](./ticket-01.webp)
 ![Ticket](./ticket-02.webp)
@@ -75,14 +75,10 @@ Each ticket type gets its own colour and line drawing, so a visit leaves you wit
 ![Ticket](./ticket-05.webp)
 ![Ticket](./ticket-06.webp)
 
-## In the world
+## Applications
 
 ![Billboard](./billboard.webp)
 
 ![Banner](./banner.webp)
 
 ![Shopping bag](./bag.webp)
-
-## Credits
-
-[Course, collaborators.]
