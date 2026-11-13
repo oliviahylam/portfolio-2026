@@ -5,26 +5,27 @@ lens: [brand]
 template: editorial
 order: 6
 brandOrder: 1
-category: Artist identity
-summary: A visual identity for the artist Kaye Pluto — the "Getaway" cover, photoshoot direction and the system that carries it across Spotify and social.
+category: Creative direction · Artist branding
+summary: Creative direction and branding for an emerging Spotify artist — the album cover, the photoshoots and a cohesive visual identity that reflects both her sound and personality.
 cover: ./album-cover.webp
-role: "[Creative direction, design, photography?]"
+role: Brand & Graphic Designer, Creative Director, Photographer
 client: Kaye Pluto
-tools: []  # e.g. [Illustrator, After Effects, Midjourney]
-skills: [Art direction, Identity, Photography direction]
+timeline: Ongoing WIP
+tools: [Adobe Illustrator, Adobe Photoshop, Procreate]
+skills: [Branding, Creative direction, Art direction, Styling, Photography, Photo editing, Graphic design, Illustration]
 ---
 
-[Who Kaye Pluto is — her sound, and the feeling of "Getaway". Two or three sentences in your words.] The brief: build a visual world for the release that carries from the cover to her Spotify page and social feeds.
+This project focused on the creative direction and branding of an emerging Spotify artist. I designed the album cover, led photoshoots, and developed a cohesive visual identity that reflected both the artist’s sound and personality.
 
 ## Visual inspiration
 
-Before designing anything, I gathered the mood: [what the board captured — e.g. late-night colour, film grain, nostalgic interiors].
+Moodboard and inspiration images that set the direction for the cover and the shoots.
 
 ![Visual inspiration moodboard](./visual-inspo.webp)
 
 ## The photoshoot
 
-The moodboard became a photoshoot across [locations / city], directed to feel [describe the mood]. [Your role: art direction / photography.]
+Creative direction, photography and editing. I directed and edited the photoshoots, ensuring that the imagery felt unified across platforms and visually connected to the album’s core aesthetic.
 
 ![Photoshoot](./shoot-01.webp)
 
@@ -39,9 +40,9 @@ The moodboard became a photoshoot across [locations / city], directed to feel [d
 ![Photoshoot](./shoot-10.webp)
 ![Photoshoot](./shoot-11.webp)
 
-## Designing the cover
+## Album cover design
 
-From the first sketch to the final artwork: [the idea — two figures walking a glowing road into an old TV — and how texture and grain developed across versions].
+The cover concept was developed and designed by me, drawing from my interest in surrealist art and blending it with bold graphic design to match the tone of the album. Below is the design progression, from the first sketch to the final design.
 
 ![Concept sketch](./concept.webp)
 ![Cover progression 1](./process-1.webp)
@@ -52,7 +53,7 @@ From the first sketch to the final artwork: [the idea — two figures walking a 
 
 ## In context on Spotify
 
-The cover holds up where fans actually meet it — on the track page and across Kaye's artist profile.
+The final cover on the song page and across the artist’s Spotify profile.
 
 ![Song page on Spotify](./song.webp)
 
@@ -60,10 +61,6 @@ The cover holds up where fans actually meet it — on the track page and across 
 
 ## Social
 
-The same world carries into Kaye's social presence, so every touchpoint feels like part of one release.
+The photoshoot imagery carried into the artist’s socials, so every platform felt connected to the album.
 
 ![Instagram](./instagram.webp)
-
-## Credits
-
-[Artist: Kaye Pluto · Creative direction & design: you · Photography: … · Outcome: streams, her reaction, or what you learned.]
