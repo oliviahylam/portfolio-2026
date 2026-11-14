@@ -36,7 +36,7 @@ function page(path: string, error = false) {
 <form method="POST" action="${esc(path)}">
   <span class="eyebrow">🔒 Client work</span>
   <h1>This project is password protected</h1>
-  <p>It contains client work I can only share privately. Enter the password to view it, or email me for access.</p>
+  <p>It contains client work I can only share privately. Enter the password to view it, or <a href="mailto:oliviahylam@gmail.com?subject=Portfolio%20access" style="color:#f2f2f2">email me</a> for access.</p>
   <input type="password" name="password" placeholder="Password" autocomplete="current-password" autofocus required aria-label="Password">
   ${error ? '<span class="err">That password isn’t right. Try again.</span>' : ''}
   <button type="submit">View project</button>
