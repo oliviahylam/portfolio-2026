@@ -9,7 +9,7 @@ export const site = {
   name: 'Olivia Lam',
   role: 'Product designer · AI · Creative technology',
   description: 'Portfolio of Olivia Lam — AI-driven product design, creative technology, identity and editorial work.',
-  email: 'hello@example.com', // ← your public contact email
+  email: 'oliviahylam@gmail.com', // ← your public contact email
   resume: '/resume.pdf', // ← put your resume at public/resume.pdf
   location: 'New York City',
   status: 'Available for 2026 roles',
