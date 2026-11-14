@@ -3,6 +3,11 @@
 // reversed copy of the same clip from wherever the camera currently is.
 // Scrolling and the header switch keep working as usual.
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+// First visit only: play the intro on its own. Later visits start on the desk.
+const SEEN = 'desk-intro-seen';
+const seen = () => { try { return localStorage.getItem(SEEN) === '1'; } catch { return true; } };
+const markSeen = () => { try { localStorage.setItem(SEEN, '1'); } catch {} };
+let autoplayed = false;
 
 document.querySelectorAll<HTMLElement>('[data-desk]').forEach((desk) => {
   const stage = desk.querySelector<HTMLElement>('[data-desk-stage]')!;
@@ -72,4 +77,13 @@ document.querySelectorAll<HTMLElement>('[data-desk]').forEach((desk) => {
       }, 450);
     });
   });
+
+  // autoplay once, for the desk that's actually on screen
+  if (!autoplayed && !seen() && !reduced && fwd && rev && desk.offsetParent !== null && scrollY < innerHeight / 2) {
+    autoplayed = true;
+    markSeen();
+    const start = () => setTimeout(() => { if (!inside) move(true); }, 700);
+    if (fwd.readyState >= 3) start();
+    else fwd.addEventListener('canplaythrough', start, { once: true });
+  }
 });
