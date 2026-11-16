@@ -90,7 +90,7 @@ export const site = {
       { label: 'Currently on repeat', value: 'KAYTRANADA' },
       { label: 'Coffee order', value: 'Almond matcha latte' },
       { label: 'Favourite read', value: 'Educated' },
-      { label: 'I always have', value: 'Peppermint oil' },
+      { label: 'I always have', value: 'Earphones' },
       { label: 'Favourite accessory atm', value: 'I LOVE cadet caps' },
     ],
     photo: '/hero/me-id.webp' as string | null,
