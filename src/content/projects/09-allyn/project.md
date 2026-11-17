@@ -5,35 +5,230 @@ lens: [product]
 template: case-study
 order: 4
 category: "[Product design · AI]"
-summary: "[One sentence: what Allyn is, who it's for, and what changed because of it.]"
-coverNote: "[ Allyn — cover video coming soon ]"
-tools: []
-skills: []
-hook: "[The one-line tension of the story.]"
+summary: "[One sentence: what Allyn is, who it's for, and the problem it solves.]"
+coverNote: "[ Allyn — hero mockup or prototype video coming soon ]"
+role: "[Your role, e.g. Product Designer — research, UX, UI, branding]"
+team: "[Solo / team members]"
+timeline: "[e.g. 8 weeks · In progress]"
+tools: []  # e.g. [Figma, ChatGPT, Midjourney]
+skills: [Product design, UX research, UI design, Branding]
+industry: "[Industry]"
+hook: "[The one-line tension of the story: what's broken, and for whom.]"
 context: "[Why this problem mattered to you, in first person.]"
-challenge: "[The brief or your “How might we…” question.]"
+challenge: "[How might we … ?]"
+stats:
+  - { value: "[00%]", label: "[problem statistic]", note: "[source]" }
+  - { value: "[00M]", label: "[problem statistic]", note: "[source]" }
+  - { value: "[0 in 0]", label: "[problem statistic]", note: "[source]" }
+ai:
+  inProduct: "[How AI works inside Allyn — what it does for the user, and why it's better than doing it manually.]"
+  inProcess:
+    - { tool: "[AI tool]", role: "[Research / ideation / visuals]", note: "[How you used it.]" }
+    - { tool: "[AI tool]", role: "[Prototyping / copy / code]", note: "[How you used it.]" }
+parts:
+  - { label: Problem, anchor: the-problem }
+  - { label: Big idea, anchor: the-big-idea }
+  - { label: Research, anchor: research }
+  - { label: Users, anchor: users }
+  - { label: Strategy, anchor: strategy }
+  - { label: Structure, anchor: structure }
+  - { label: Testing, anchor: testing--iteration }
+  - { label: Brand & UI, anchor: brand--ui }
+  - { label: Prototype, anchor: high-fidelity-prototype }
+  - { label: Next steps, anchor: next-steps }
 ---
 
-## The problem worth solving
+[Two or three sentences introducing Allyn: what it is, who it's for, and what it helps them do.]
 
-[Tell the story of the problem: who it affects and why it matters.]
+## The problem
 
-## What I found
+### Problem statement
 
-[Research, insights, the moment you understood the real problem.]
+[Who is struggling, with what, and why current options fail them. Keep it to one clear paragraph.]
 
-## The turning point
+<div class="card-grid card-grid--3">
+  <div class="info-card"><h4>[Pain point 1]</h4><p>[One sentence.]</p></div>
+  <div class="info-card"><h4>[Pain point 2]</h4><p>[One sentence.]</p></div>
+  <div class="info-card"><h4>[Pain point 3]</h4><p>[One sentence.]</p></div>
+</div>
 
-[The idea that unlocked it.]
+## The big idea
 
-## Building it
+### Value proposition
 
-[How you designed and built it — including how you used AI in your process.]
+[One sentence: Allyn helps [who] do [what] by [how], unlike [alternatives].]
 
-## How it works
+### Key features
 
-[Key screens and flows.]
+<div class="card-grid card-grid--3">
+  <div class="info-card"><h4>01 · [Feature]</h4><p>[What it does and the pain point it answers.]</p></div>
+  <div class="info-card"><h4>02 · [Feature]</h4><p>[What it does and the pain point it answers.]</p></div>
+  <div class="info-card"><h4>03 · [Feature]</h4><p>[What it does and the pain point it answers.]</p></div>
+</div>
 
-## Where it landed
+## Research
 
-[Outcome, feedback, what you learned.]
+### Competitor analysis
+
+[What exists today, and the gap Allyn fills.]
+
+| | [Competitor A] | [Competitor B] | [Competitor C] | **Allyn** |
+|---|---|---|---|---|
+| [Criteria 1] | [ ] | [ ] | [ ] | [ ] |
+| [Criteria 2] | [ ] | [ ] | [ ] | [ ] |
+| [Criteria 3] | [ ] | [ ] | [ ] | [ ] |
+| Weakness | [ ] | [ ] | [ ] | [ ] |
+
+<div class="asset-slot">Positioning map: where Allyn sits against competitors (two axes)</div>
+
+### Interviews
+
+[How many people you interviewed, who they were, and what you asked.]
+
+<div class="card-grid card-grid--3">
+  <div class="info-card"><h4>Insight 01</h4><p>[What you learned.] <br>“[Supporting quote]”</p></div>
+  <div class="info-card"><h4>Insight 02</h4><p>[What you learned.] <br>“[Supporting quote]”</p></div>
+  <div class="info-card"><h4>Insight 03</h4><p>[What you learned.] <br>“[Supporting quote]”</p></div>
+</div>
+
+## Users
+
+### User personas
+
+<div class="card-grid card-grid--2">
+  <div class="persona">
+    <div class="persona__head"><span class="persona__avatar" aria-hidden="true">A</span><div><h4>[Name]</h4><span>[Short description]</span></div></div>
+    <blockquote>“[A quote that sums up their frustration.]”</blockquote>
+    <dl>
+      <dt>Goals</dt><dd>[ ]</dd>
+      <dt>Pain points</dt><dd>[ ]</dd>
+      <dt>Design response</dt><dd>[How Allyn helps.]</dd>
+    </dl>
+  </div>
+  <div class="persona">
+    <div class="persona__head"><span class="persona__avatar" aria-hidden="true">B</span><div><h4>[Name]</h4><span>[Short description]</span></div></div>
+    <blockquote>“[A quote that sums up their frustration.]”</blockquote>
+    <dl>
+      <dt>Goals</dt><dd>[ ]</dd>
+      <dt>Pain points</dt><dd>[ ]</dd>
+      <dt>Design response</dt><dd>[How Allyn helps.]</dd>
+    </dl>
+  </div>
+</div>
+
+### Empathy map
+
+<div class="card-grid card-grid--4">
+  <div class="info-card"><h4>Says</h4><p>[ ]</p></div>
+  <div class="info-card"><h4>Thinks</h4><p>[ ]</p></div>
+  <div class="info-card"><h4>Does</h4><p>[ ]</p></div>
+  <div class="info-card"><h4>Feels</h4><p>[ ]</p></div>
+</div>
+
+### User journey
+
+[The persona's experience today, from first need to outcome, and where it breaks down.]
+
+<div class="asset-slot">User journey map: stages, actions, emotions, pain points and opportunities</div>
+
+## Strategy
+
+### Business plan
+
+<div class="card-grid card-grid--4">
+  <div class="info-card"><h4>Target market</h4><p>[ ]</p></div>
+  <div class="info-card"><h4>Revenue model</h4><p>[e.g. freemium, subscription, partnerships]</p></div>
+  <div class="info-card"><h4>Go-to-market</h4><p>[ ]</p></div>
+  <div class="info-card"><h4>Success metrics</h4><p>[ ]</p></div>
+</div>
+
+### MVP features
+
+[How you prioritised what to build first, e.g. impact vs. effort.]
+
+<div class="card-grid card-grid--3">
+  <div class="info-card"><h4>Must have · MVP</h4><ul><li>[ ]</li><li>[ ]</li><li>[ ]</li></ul></div>
+  <div class="info-card"><h4>Should have</h4><ul><li>[ ]</li><li>[ ]</li></ul></div>
+  <div class="info-card"><h4>Later</h4><ul><li>[ ]</li><li>[ ]</li></ul></div>
+</div>
+
+## Structure
+
+### Information architecture
+
+<div class="asset-slot">Information architecture / sitemap</div>
+
+### User flow
+
+<div class="asset-slot">User flow for the core task</div>
+
+### Wireframes
+
+<div class="asset-slot">Low- and mid-fidelity wireframes</div>
+
+## Testing & iteration
+
+### User testing
+
+[Method (e.g. moderated usability tests), number of participants, and the tasks they completed.]
+
+<div class="card-grid card-grid--3">
+  <div class="info-card"><h4>[00%]</h4><p>[completed the core task]</p></div>
+  <div class="info-card"><h4>[00%]</h4><p>[found X confusing]</p></div>
+  <div class="info-card"><h4>[0/0]</h4><p>[would use it again]</p></div>
+</div>
+
+### Feedback & improvements
+
+<div class="card-grid card-grid--2">
+  <div class="info-card"><h4>Feedback: “[What users said]”</h4><p><strong>Improvement:</strong> [What you changed.]</p></div>
+  <div class="info-card"><h4>Feedback: “[What users said]”</h4><p><strong>Improvement:</strong> [What you changed.]</p></div>
+</div>
+
+<div class="asset-slot">Before / after screens</div>
+
+## Brand & UI
+
+### Brand strategy
+
+<div class="card-grid card-grid--3">
+  <div class="info-card"><h4>Mission</h4><p>[ ]</p></div>
+  <div class="info-card"><h4>Personality</h4><p>[Three adjectives]</p></div>
+  <div class="info-card"><h4>Tone of voice</h4><p>[ ]</p></div>
+</div>
+
+### Stylescape
+
+<div class="asset-slot">Stylescape: mood, imagery, colour and type direction</div>
+
+### Branding
+
+<div class="asset-slot">Logo, wordmark and app icon</div>
+
+### UI design system
+
+<div class="asset-slot">Colour palette, typography scale, components (buttons, inputs, cards) and icons</div>
+
+## High-fidelity prototype
+
+[A short intro to the final design.]
+
+### 01 · [Key feature]
+
+<div class="asset-slot">Screens or screen recording</div>
+
+### 02 · [Key feature]
+
+<div class="asset-slot">Screens or screen recording</div>
+
+### 03 · [Key feature]
+
+<div class="asset-slot">Screens or screen recording</div>
+
+## Next steps
+
+<div class="card-grid card-grid--3">
+  <div class="info-card"><h4>01 · [Next step]</h4><p>[e.g. a second round of testing]</p></div>
+  <div class="info-card"><h4>02 · [Next step]</h4><p>[e.g. building out the design system]</p></div>
+  <div class="info-card"><h4>03 · [Next step]</h4><p>[e.g. pitching or developing the MVP]</p></div>
+</div>
