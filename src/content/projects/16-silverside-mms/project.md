@@ -142,22 +142,22 @@ Each episode presents a different theory about where the red M&M’S went. Click
 
 <div class="feature-vid">
   <figure><video src="/media/mms/ep1-mmartian.mp4" autoplay muted loop playsinline data-sound data-expand aria-label="Episode 01: Martians"></video></figure>
-  <div class="feature-vid__text"><span class="mono">Episode 01 · 30s</span><h3>Martians</h3><p class="feature-vid__cap">“Coincidence? We don’t think so.”</p><p>[One or two sentences on the theory, and the M&M’S fact it is rooted in, if any.]</p></div>
+  <div class="feature-vid__text"><span class="mono">Episode 01 · 30s</span><h3>Martians</h3><p class="feature-vid__cap">“Coincidence? We don’t think so.”</p><p>The first theory points to space. M&M’S have been sent into space, the company behind them is called Mars, and Jupiter has a big red spot.</p></div>
 </div>
 
 <div class="feature-vid feature-vid--flip">
   <figure><video src="/media/mms/ep2-bigfoot.mp4" autoplay muted loop playsinline data-sound data-expand aria-label="Episode 02: Bigfoot"></video></figure>
-  <div class="feature-vid__text"><span class="mono">Episode 02 · 30s</span><h3>Bigfoot</h3><p class="feature-vid__cap">“Case update: a new theory is leading us deep into the mountains.”</p><p>[One or two sentences on the theory.]</p></div>
+  <div class="feature-vid__text"><span class="mono">Episode 02 · 30s</span><h3>Bigfoot</h3><p class="feature-vid__cap">“Case update: a new theory is leading us deep into the mountains.”</p><p>Both U.S. M&M’S manufacturing plants sit near the Appalachian region and the Appalachian Trail, so the investigation follows the missing reds into the mountains, and into Bigfoot territory.</p></div>
 </div>
 
 <div class="feature-vid">
   <figure><video src="/media/mms/ep3-walkout.mp4" autoplay muted loop playsinline data-sound data-expand aria-label="Episode 03: Walkout"></video></figure>
-  <div class="feature-vid__text"><span class="mono">Episode 03 · 30s</span><h3>Walkout</h3><p class="feature-vid__cap">“We blame the Peanuts.”</p><p>[One or two sentences on the theory.]</p></div>
+  <div class="feature-vid__text"><span class="mono">Episode 03 · 30s</span><h3>Walkout</h3><p class="feature-vid__cap">“We blame the Peanuts.”</p><p>Peanut M&M’S came three years after the original M&M’S and quickly became hugely popular. The theory: the reds staged a walkout.</p></div>
 </div>
 
 <div class="feature-vid feature-vid--flip">
   <figure><video src="/media/mms/ep4-halloween.mp4" autoplay muted loop playsinline data-sound data-expand aria-label="Episode 04: Halloween special"></video></figure>
-  <div class="feature-vid__text"><span class="mono">Episode 04 · 30s</span><h3>Halloween special</h3><p class="feature-vid__cap">“Trick-or-treat… we’ve been tricked.”</p><p>[One or two sentences on the theory.]</p></div>
+  <div class="feature-vid__text"><span class="mono">Episode 04 · 30s</span><h3>Halloween special</h3><p class="feature-vid__cap">“Trick-or-treat… we’ve been tricked.”</p><p>A Halloween special with a werewolf theory, showing how the series can scale across seasonal moments.</p></div>
 </div>
 
 ## Supporting statics
