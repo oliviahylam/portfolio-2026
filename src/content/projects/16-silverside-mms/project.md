@@ -126,6 +126,14 @@ An intro teaser video introduces the series and sets up the mystery.
 
 Four supporting statics extend the series into static media, carrying the same visual identity.
 
+### Missing poster
+
+One of the statics is a missing poster for the red M&M’S. The phone number on the poster is an actual M&M’S tipline that people can call, blurring the line between the campaign and real life and giving the audience a way to take part in the investigation themselves.
+
+<div class="asset-slot">Missing poster</div>
+
+### All statics
+
 <div class="asset-slot">Four statics, shown side by side</div>
 
 ## Outcome
