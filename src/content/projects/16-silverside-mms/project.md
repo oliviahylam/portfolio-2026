@@ -152,7 +152,7 @@ Each episode presents a different theory about where the red M&M’S went. Click
 
 <div class="feature-vid">
   <figure><video src="/media/mms/ep3-walkout.mp4" autoplay muted loop playsinline data-sound data-expand aria-label="Episode 03: Walkout"></video></figure>
-  <div class="feature-vid__text"><span class="mono">Episode 03 · 30s</span><h3>Walkout</h3><p class="feature-vid__cap">“We blame the Peanuts.”</p><p>Peanut M&M’S came three years after the original M&M’S and quickly became hugely popular. The theory: the reds staged a walkout.</p></div>
+  <div class="feature-vid__text"><span class="mono">Episode 03 · 30s</span><h3>Walkout</h3><p class="feature-vid__cap">“We blame the Peanuts.”</p><p>Peanut M&M’S came 13 years after the original M&M’S and quickly became hugely popular. The theory: the reds staged a walkout.</p></div>
 </div>
 
 <div class="feature-vid feature-vid--flip">
