@@ -147,7 +147,7 @@ export const site = {
   // sound: true adds a sound toggle (and click-to-fullscreen) on the Playground page.
   playground: [
     { title: 'Revitalize', tool: 'Extended reality', note: 'A meditative XR experience designed to slow the viewer down. A bubble expands and contracts to mimic breathing, guiding them through a calm, stylised forest.', media: '/media/playground/revitalize.mp4' as string | null, sound: true, tools: ['Meshy AI', 'Suno', 'Cursor'] },
-    { title: 'Netflix motion graphic recreation', tool: 'Motion graphics', note: 'A recreation of a Netflix motion graphic, animated in After Effects.', media: '/media/playground/netflix.mp4' as string | null, sound: true, tools: ['After Effects'] },
+    { title: 'Netflix recreation', tool: 'Motion graphics', note: 'A recreation of a Netflix motion graphic, animated in After Effects.', media: '/media/playground/netflix.mp4' as string | null, sound: true, tools: ['After Effects'] },
     { title: '[Experiment title]', tool: 'TouchDesigner', note: '[One line: the question, or what you learned]', media: null as string | null },
     { title: '[Experiment title]', tool: 'Motion', note: '[One line]', media: null as string | null },
     { title: '[Experiment title]', tool: 'Code', note: '[One line]', media: null as string | null },
