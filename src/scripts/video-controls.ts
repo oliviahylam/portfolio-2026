@@ -13,7 +13,7 @@ const ICON = {
 };
 const LONG = 12;
 
-document.querySelectorAll<HTMLVideoElement>('.prose video, .story-cover video, .ed-cover video, .cover video').forEach((v) => {
+document.querySelectorAll<HTMLVideoElement>('.prose video, .story-cover video, .ed-cover video, .cover video, .pg-item video[data-sound]').forEach((v) => {
   const wrap = document.createElement('span');
   wrap.className = 'vid';
   v.parentNode!.insertBefore(wrap, v);

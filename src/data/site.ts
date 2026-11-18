@@ -142,14 +142,15 @@ export const site = {
   },
 
   // Playground — small experiments. media: '/media/playground/clip.mp4' or an image path, or null.
+  // sound: true adds a sound toggle (and click-to-fullscreen) on the Playground page.
   playground: [
+    { title: 'Netflix motion graphic recreation', tool: 'Motion graphics', note: 'A recreation of a Netflix motion graphic.', media: '/media/playground/netflix.mp4' as string | null, sound: true },
     { title: '[Experiment title]', tool: 'TouchDesigner', note: '[One line: the question, or what you learned]', media: null as string | null },
     { title: '[Experiment title]', tool: 'XR', note: '[One line]', media: null as string | null },
     { title: '[Experiment title]', tool: 'Motion', note: '[One line]', media: null as string | null },
     { title: '[Experiment title]', tool: 'Code', note: '[One line]', media: null as string | null },
     { title: '[Experiment title]', tool: 'AI tools', note: '[One line]', media: null as string | null },
-    { title: '[Experiment title]', tool: 'TouchDesigner', note: '[One line]', media: null as string | null },
-  ],
+  ] as { title: string; tool: string; note: string; media: string | null; sound?: boolean }[],
 };
 
 export type Lens = 'product' | 'brand';
