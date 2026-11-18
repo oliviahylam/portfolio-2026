@@ -606,4 +606,5 @@ div.rows { display: flex; flex-direction: column; gap: 72px; }
 .off-item figcaption { display: flex; justify-content: space-between; gap: 12px; font-size: 15px; }
 .off-item figcaption .mono { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
 [data-pg-panel][hidden] { display: none !important; }
-.tile--contain img { object-fit: contain; padding: 12px; }
+.tile--contain { background: none; padding: 0; justify-content: center; align-items: stretch; }
+.tile--contain img { position: static; height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 12px; }
