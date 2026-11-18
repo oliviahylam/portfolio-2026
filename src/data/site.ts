@@ -32,7 +32,28 @@ export const site = {
   // Optional logos for tools shown on cards/case studies. Drop SVG/PNG files in
   // public/tools/ and map the tool name to the file, e.g. Figma: '/tools/figma.svg'.
   // Tools without a logo show as a text chip.
-  toolIcons: {} as Record<string, string>,
+  toolIcons: {
+    // Logos shown on project cards (from the open-source SVG Logos and Lobe Icons sets, in public/tools/)
+    Figma: '/tools/figma.svg',
+    'Adobe Illustrator': '/tools/adobe-illustrator.svg',
+    'Adobe Photoshop': '/tools/adobe-photoshop.svg',
+    'Adobe InDesign': '/tools/adobe-indesign.svg',
+    'After Effects': '/tools/adobe-after-effects.svg',
+    'Adobe After Effects': '/tools/adobe-after-effects.svg',
+    'Premiere Pro': '/tools/adobe-premiere.svg',
+    'Adobe Premiere Pro': '/tools/adobe-premiere.svg',
+    ChatGPT: '/tools/openai.svg',
+    OpenAI: '/tools/openai.svg',
+    Claude: '/tools/claude.svg',
+    Midjourney: '/tools/midjourney.svg',
+    Cursor: '/tools/cursor.svg',
+    'Kling AI': '/tools/kling.svg',
+    Kling: '/tools/kling.svg',
+    Suno: '/tools/suno.svg',
+    HTML: '/tools/html.svg',
+    CSS: '/tools/css.svg',
+    JavaScript: '/tools/javascript.svg',
+  } as Record<string, string>,
 
   // The interactive desk on the landing page.
   // "Step into my desk" (or clicking the scene) plays the intro forward and stops on the

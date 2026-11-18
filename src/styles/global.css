@@ -241,7 +241,7 @@ html[data-lens='brand'] .footer { border-top: 0; }
 .service p { margin: 0; color: var(--muted); font-size: 15px; }
 .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 48px 80px; }
 .rows { list-style: none; margin: 0; padding: 0; }
-.rows li { display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.rows > li { display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
 
 /* ── Card extras: skills + tools ─────────────────────────── */
 .card__top { display: flex; justify-content: space-between; gap: 12px; }
@@ -411,7 +411,7 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 .card__media:has(.card__placeholder) { background: var(--card); border-radius: 12px; }
 
 /* ── Justified rows: same height per row, width follows each project's shape ── */
-.rows { display: flex; flex-direction: column; gap: 72px; }
+div.rows { display: flex; flex-direction: column; gap: 72px; }
 .row { display: flex; gap: 20px; align-items: flex-start; }
 .row > .card { flex: var(--ar) 1 0; min-width: 0; }
 .row__spacer { flex: 1.6 1 0; }
@@ -579,3 +579,10 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
   .prose .feature-vid--flip > figure { order: 0; }
   .feature-vid video { height: auto; width: 100%; max-height: 80vh; }
 }
+/* Tool logos: logo-only chips, name on hover */
+.tool--logo { padding: 4px; position: relative; }
+.tool--logo img { background: #fff; padding: 2px; }
+.tools--md .tool--logo { padding: 6px; }
+.tool--logo::after { content: attr(title); position: absolute; left: 50%; bottom: calc(100% + 6px); translate: -50% 4px; white-space: nowrap; padding: 4px 8px; border-radius: 6px; background: var(--fg); color: var(--bg); font-size: 11px; opacity: 0; pointer-events: none; transition: opacity .15s, translate .15s; z-index: 5; }
+.tool--logo:hover::after { opacity: 1; translate: -50% 0; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }

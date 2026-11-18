@@ -7,9 +7,9 @@ const icons = site.toolIcons as Record<string, string>;
 {tools.length > 0 && (
   <ul class:list={['tools', `tools--${size}`]} aria-label="Tools used">
     {tools.map((t) => (
-      <li class="tool" title={t}>
-        {icons[t] ? <img src={icons[t]} alt="" width="20" height="20" /> : <span class="tool__mono" aria-hidden="true">{t.replace(/[^A-Za-z0-9]/g, '').slice(0, 2)}</span>}
-        <span class="tool__name">{t}</span>
+      <li class:list={['tool', { 'tool--logo': icons[t] }]} title={t}>
+        {icons[t] ? <img src={icons[t]} alt="" width="20" height="20" loading="lazy" /> : <span class="tool__mono" aria-hidden="true">{t.replace(/[^A-Za-z0-9]/g, '').slice(0, 2)}</span>}
+        <span class:list={['tool__name', { 'sr-only': icons[t] }]}>{t}</span>
       </li>
     ))}
   </ul>
