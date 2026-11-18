@@ -151,7 +151,7 @@ export const site = {
     { title: 'Dragon animation', tool: 'Character animation', note: 'A character animation exercise, practising rigging and movement with pins.', media: '/media/playground/dragon.mp4' as string | null, sound: true, tools: ['Adobe Illustrator', 'After Effects'] },
     { title: 'La Colombe', tool: 'Motion graphics', note: 'A motion piece using La Colombe draft latte to practise match cuts.', media: '/media/playground/la-colombe.mp4' as string | null, sound: true, tools: ['Adobe Photoshop', 'After Effects'] },
     { title: 'Chinese New Year poster', tool: 'Vector illustration', note: 'A Chinese New Year poster featuring a lion dance, illustrated entirely in vector in Adobe Illustrator.', media: '/media/playground/cny-poster.webp' as string | null, fit: 'contain', tools: ['Adobe Illustrator'] },
-    { title: 'Joker poster', tool: 'Vector illustration', note: 'A fan-made movie poster for Joker, illustrated entirely in vector in Adobe Illustrator.', media: '/media/playground/joker-poster.webp' as string | null, fit: 'contain', tools: ['Adobe Illustrator'] },
+    { title: 'Joker poster', tool: 'Vector illustration', note: 'My own take on a poster for the film Joker: a representation of the movie, composed and illustrated by me, entirely in vector in Adobe Illustrator.', media: '/media/playground/joker-poster.webp' as string | null, fit: 'contain', tools: ['Adobe Illustrator'] },
     { title: '[Experiment title]', tool: 'TouchDesigner', note: '[One line: the question, or what you learned]', media: null as string | null },
     { title: '[Experiment title]', tool: 'Code', note: '[One line]', media: null as string | null },
     { title: '[Experiment title]', tool: 'AI tools', note: '[One line]', media: null as string | null },
