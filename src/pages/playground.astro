@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { site } from '../data/site';
+import Tools from '../components/Tools.astro';
 const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
 ---
 <Base title="Playground" current="playground">
@@ -16,6 +17,7 @@ const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
           <div class="tile">{x.media && (isVideo(x.media) ? <video src={x.media} autoplay muted loop playsinline data-sound={x.sound ? "" : undefined} data-expand={x.sound ? "" : undefined} aria-label={x.title} /> : <img src={x.media} alt="" loading="lazy" />)}</div>
           <div class="pg-item__head"><h3>{x.title}</h3><span class="mono muted">{x.tool}</span></div>
           <p>{x.note}</p>
+          {x.tools && <Tools tools={x.tools} />}
         </div>
       ))}
     </div>
