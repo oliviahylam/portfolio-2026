@@ -50,6 +50,9 @@ export const site = {
     'Kling AI': '/tools/kling.svg',
     Kling: '/tools/kling.svg',
     Suno: '/tools/suno.svg',
+    'Nano Banana': '/tools/nano-banana.svg',
+    Seedance: '/tools/seedance.svg', // ByteDance logo (Seedance is ByteDance's video model)
+    ElevenLabs: '/tools/elevenlabs.svg',
     HTML: '/tools/html.svg',
     CSS: '/tools/css.svg',
     JavaScript: '/tools/javascript.svg',

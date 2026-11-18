@@ -17,7 +17,7 @@ team: "Team of 4: art director & copywriter, account manager, creative technolog
 timeline: "[e.g. 3 weeks]"
 client: Intern capstone project at Silverside AI, presented to Mars
 outcome: Presented to Mars, who responded positively
-tools: []  # e.g. [AI video tool, After Effects, Premiere Pro, Photoshop]
+tools: [Nano Banana, Seedance, ElevenLabs, Figma, Premiere Pro]
 skills: [Generative AI, Creative direction, Design, Advertising, Short-form video, Storytelling]
 industry: Advertising · Consumer goods
 context: "[Why this project mattered to you, in first person, e.g. what you enjoyed about turning a real conversation into a campaign.]"
@@ -28,8 +28,11 @@ stats:
   - { value: "4 + 4", label: "30-second episodes and statics, plus a teaser" }
 ai:
   inProcess:
-    - { tool: "[AI tool]", role: "[e.g. concept exploration / video generation]", note: "[How you used it.]" }
-    - { tool: "[AI tool]", role: "[e.g. visuals / editing]", note: "[How you used it.]" }
+    - { tool: "Nano Banana", role: "Image generation", note: "[How you used it, e.g. generating the stills, evidence shots and frames for each theory.]" }
+    - { tool: "Seedance", role: "Video generation", note: "[How you used it, e.g. turning frames into the found-footage clips for each episode.]" }
+    - { tool: "ElevenLabs", role: "AI voiceover", note: "[How you used it, e.g. the investigator narration.]" }
+    - { tool: "Premiere Pro", role: "Editing", note: "[How you used it, e.g. cutting the episodes and adding the vintage camera, documentary-style effects.]" }
+    - { tool: "Figma", role: "Statics & layout", note: "[How you used it, e.g. designing the four statics and the missing poster.]" }
 parts:
   - { label: Brief, anchor: the-brief }
   - { label: Research, anchor: research }
