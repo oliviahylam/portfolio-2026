@@ -359,7 +359,7 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 
 /* Coming soon cards + empty covers */
 .card--soon { cursor: default; }
-.card--soon .card__media > :not(.card__soon) { filter: grayscale(1); opacity: .45; }
+.card--soon .card__media > :not(.card__soon) { opacity: .9; }
 .card--soon .card__title, .card--soon .card__summary { opacity: .55; }
 .card__soon { position: absolute; left: 16px; top: 16px; padding: 6px 10px; border-radius: 6px; background: var(--fg); color: var(--bg); }
 .story-cover--empty, .ed-cover:not(:has(img, video)) { display: grid; place-items: center; }

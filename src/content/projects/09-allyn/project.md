@@ -6,7 +6,10 @@ template: case-study
 order: 4
 category: "[Product design · AI]"
 summary: "[One sentence: what Allyn is, who it's for, and the problem it solves.]"
-coverNote: "[ Allyn — hero mockup or prototype video coming soon ]"
+coverVideo: /media/allyn/thumbnail.mp4
+coverRatio: 1.778
+thumbVideo: /media/allyn/thumbnail.mp4
+thumbRatio: 1.778
 role: "[Your role, e.g. Product Designer — research, UX, UI, branding]"
 team: "[Solo / team members]"
 timeline: "[e.g. 8 weeks · In progress]"
@@ -213,17 +216,13 @@ parts:
 
 [A short intro to the final design.]
 
-### 01 · [Key feature]
+![Allyn high-fidelity screens](/media/allyn/hero.webp)
 
-<div class="asset-slot">Screens or screen recording</div>
-
-### 02 · [Key feature]
-
-<div class="asset-slot">Screens or screen recording</div>
-
-### 03 · [Key feature]
-
-<div class="asset-slot">Screens or screen recording</div>
+<div class="even-row even-row--mid">
+  <figure style="--ar:.461"><img src="/media/allyn/screen-wearables.webp" width="393" height="852" alt="Onboarding: connect your wearable" loading="lazy" /><figcaption><b>01 · Connect your wearable</b>[What this screen does.]</figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-today.webp" width="393" height="852" alt="Today: sleep score and daily insight" loading="lazy" /><figcaption><b>02 · Today</b>[What this screen does.]</figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-visit-brief.webp" width="393" height="852" alt="Visit brief for a doctor's appointment" loading="lazy" /><figcaption><b>03 · Visit brief</b>[What this screen does.]</figcaption></figure>
+</div>
 
 ## Next steps
 
