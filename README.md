@@ -110,3 +110,9 @@ Set the password in Vercel → Settings → Environment Variables → `PROTECTED
 Visitors unlock once and stay unlocked for 30 days. To protect another project, add its paths to `matcher` in `middleware.ts`,
 keep its images in a `/public/media/<name>/` folder, and add `locked: true` to its frontmatter.
 Note: `npm run dev` / `preview` don't run the middleware, so locally the page is always open.
+
+## Videos with sound
+
+Add `#sound` to a video's path in Markdown to give it a sound on/off button (it still starts muted):
+`![Episode 1](/media/mms/ep1-mmartian.mp4#sound)`. For a cover video, set `coverSound: true` in the frontmatter.
+Only one video plays sound at a time.

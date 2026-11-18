@@ -1,5 +1,5 @@
 ---
-title: "M&M’S: The Missing Reds"
+title: "M&M’S: #MMysteries"
 year: "[Year]"
 lens: [product]
 template: case-study
@@ -7,7 +7,10 @@ order: 2.5
 category: Campaign · Silverside AI
 summary: A conspiracy-theory campaign for M&M’S about the missing red M&M’S, made for a Gen Z audience as a series of 30-second episodes, a teaser and supporting statics. The project was later shown to Mars, who liked it.
 hook: Turning real online discourse about missing red M&M’S into a conspiracy series people want to speculate on.
-coverNote: "[ M&M’S — teaser video coming soon ]"
+coverVideo: /media/mms/teaser.mp4
+coverRatio: 0.5625
+coverSound: true
+thumb: ./thumb.webp
 role: "[Your role, e.g. Designer — concept, art direction, video editing]"
 team: "[Team members / size]"
 timeline: "[e.g. 3 weeks]"
@@ -32,13 +35,13 @@ parts:
   - { label: Insight, anchor: the-insight }
   - { label: Process, anchor: three-rounds-of-experimentation }
   - { label: The idea, anchor: the-campaign }
-  - { label: Teaser, anchor: series-teaser }
   - { label: Episodes, anchor: the-episodes }
   - { label: Statics, anchor: supporting-statics }
+  - { label: In the feed, anchor: in-the-feed }
   - { label: Outcome, anchor: outcome }
 ---
 
-This project focused on creating a campaign for M&M’S built around a real conversation happening online: the missing red M&M’S. We developed a conspiracy series of 30-second episodes, each exploring a different theory about where the red M&M’S could have disappeared to, supported by an intro teaser and four statics. The project was not client work, but it was later shown to the Mars company, who liked it.
+This project focused on creating a campaign for M&M’S built around a real conversation happening online: the missing red M&M’S. We developed a conspiracy series of 30-second episodes, each exploring a different theory about where the red M&M’S could have disappeared to, supported by an intro teaser (above) and four statics. The project was not client work, but it was later shown to the Mars company, who liked it.
 
 ## The brief
 
@@ -82,7 +85,7 @@ We chose to go in the direction of conspiracy theories because of the increasing
 
 The campaign is a conspiracy series of four 30-second episodes, each presenting a different theory about where the red M&M’S could have disappeared to. Some of the conspiracies are rooted in actual facts about M&M’S as a company or the candy itself, and we made sure to include a holiday special for Halloween.
 
-The idea was to give the entire campaign one visual identity while taking a unique approach to M&M’S advertising and targeting today’s audience. It was also designed to be collaborative, so the audience would want to join in and start speculating themselves.
+The idea was to give the entire campaign one visual identity while taking a unique approach to M&M’S advertising and targeting today’s audience. It was also designed to be collaborative, so the audience would want to join in and start speculating themselves. The series runs under the hashtag #MMysteries, with the investigation led by the fictional “Office of M&M’S Affairs”.
 
 ### Look and feel
 
@@ -90,51 +93,44 @@ The look and feel is inspired by vintage camera editing and documentary-style st
 
 <div class="asset-slot">Visual identity: colour, type, film texture and graphic elements across the series</div>
 
-## Series teaser
-
-An intro teaser video introduces the series and sets up the mystery.
-
-<div class="asset-slot">Teaser video</div>
-
 ## The episodes
 
-### Episode 01 · [Theory name]
+Each episode presents a different theory about where the red M&M’S went. Turn the sound on to hear the narration.
 
-[One or two sentences on the theory, and the M&M’S fact it is rooted in, if any.]
+![Episode 1: M&Martian](/media/mms/ep1-mmartian.mp4#sound)
+![Episode 2: Bigfoot](/media/mms/ep2-bigfoot.mp4#sound)
+![Episode 3: Halloween special](/media/mms/ep3-halloween.mp4#sound)
+![Episode 4](/media/mms/ep4-leave.mp4#sound)
 
-<div class="asset-slot">Episode 1 (30s)</div>
-
-### Episode 02 · [Theory name]
-
-[One or two sentences on the theory.]
-
-<div class="asset-slot">Episode 2 (30s)</div>
-
-### Episode 03 · [Theory name]
-
-[One or two sentences on the theory.]
-
-<div class="asset-slot">Episode 3 (30s)</div>
-
-### Episode 04 · [Theory name] · Halloween special
-
-[One or two sentences on the theory.]
-
-<div class="asset-slot">Episode 4 (30s)</div>
+<div class="card-grid card-grid--4">
+  <div class="info-card"><h4>01 · M&Martian</h4><p>[One or two sentences on the theory, and the M&M’S fact it is rooted in, if any.]</p></div>
+  <div class="info-card"><h4>02 · Bigfoot</h4><p>[One or two sentences on the theory.]</p></div>
+  <div class="info-card"><h4>03 · Halloween special</h4><p>[One or two sentences on the theory.]</p></div>
+  <div class="info-card"><h4>04 · [Theory name]</h4><p>[One or two sentences on the theory.]</p></div>
+</div>
 
 ## Supporting statics
 
 Four supporting statics extend the series into static media, carrying the same visual identity.
 
+![The case has been opened.](/media/mms/static-2-polaroid.webp)
+![We’re on it. We’ll keep you posted.](/media/mms/static-3-were-on-it.webp)
+![New evidence has been found.](/media/mms/static-1-evidence.webp)
+![Missing poster: Call now.](/media/mms/static-4-missing-poster.webp)
+
 ### Missing poster
 
 One of the statics is a missing poster for the red M&M’S. The phone number on the poster is an actual M&M’S tipline that people can call, blurring the line between the campaign and real life and giving the audience a way to take part in the investigation themselves.
 
-<div class="asset-slot">Missing poster</div>
+![The missing poster on a New York street](/media/mms/missing-poster-street.webp)
 
-### All statics
+## In the feed
 
-<div class="asset-slot">Four statics, shown side by side</div>
+The episodes and statics were designed to live natively on TikTok and Instagram, posted from the M&M’S accounts with the #MMysteries hashtag.
+
+![TikTok mockup](/media/mms/mockup-tiktok-nobg.webp)
+![Instagram grid mockup](/media/mms/mockup-instagram-grid-nobg.webp)
+![Instagram post mockup](/media/mms/mockup-instagram-post-nobg.webp)
 
 ## Outcome
 

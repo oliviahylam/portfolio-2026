@@ -544,3 +544,6 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 .prose th, .prose td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--line); vertical-align: top; min-width: 120px; }
 .prose thead th { font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 400; }
 .prose td:first-child { color: var(--muted); }
+/* portrait cover videos: shrink the wrapper to the video so its controls line up */
+.story-cover--portrait .vid { width: auto; max-width: 100%; }
+.story-cover--portrait .vid video { width: auto; max-width: 100%; max-height: 82vh; display: block; }

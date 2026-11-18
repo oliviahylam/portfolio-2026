@@ -6,6 +6,8 @@ const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const ICON = {
   pause: '<svg viewBox="0 0 14 14" aria-hidden="true"><rect x="2" y="1" width="3.5" height="12" rx="1"/><rect x="8.5" y="1" width="3.5" height="12" rx="1"/></svg>',
   play: '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9.5-5.5z"/></svg>',
+  soundOff: '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1.5 5h2.5l3.5-3v10L4 9H1.5z"/><path d="M9.5 5l3 4m0-4l-3 4" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg>',
+  soundOn: '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1.5 5h2.5l3.5-3v10L4 9H1.5z"/><path d="M9.5 4.5a3.5 3.5 0 0 1 0 5M11 3a5.5 5.5 0 0 1 0 8" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>',
   restart: '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M7 2a5 5 0 1 1-4.6 3H1l2.4-3L6 5H4.5A3.5 3.5 0 1 0 7 3.5V2z"/></svg>',
 };
 const LONG = 12;
@@ -33,6 +35,26 @@ document.querySelectorAll<HTMLVideoElement>('.prose video, .story-cover video, .
   play.addEventListener('click', () => (v.paused ? v.play() : v.pause()));
   v.addEventListener('play', sync);
   v.addEventListener('pause', sync);
+
+  // optional sound toggle (videos marked data-sound); only one video plays sound at a time
+  if (v.hasAttribute('data-sound')) {
+    const snd = document.createElement('button');
+    snd.type = 'button';
+    snd.className = 'vid__btn';
+    const paintSnd = () => {
+      snd.innerHTML = v.muted ? ICON.soundOff : ICON.soundOn;
+      snd.setAttribute('aria-label', v.muted ? 'Turn sound on' : 'Turn sound off');
+    };
+    snd.addEventListener('click', () => {
+      const on = v.muted;
+      if (on) document.querySelectorAll<HTMLVideoElement>('video[data-sound]').forEach((o) => { if (o !== v && !o.muted) { o.muted = true; o.dispatchEvent(new Event('volumechange')); } });
+      v.muted = !on;
+      if (on) { v.currentTime = 0; v.play(); }
+    });
+    v.addEventListener('volumechange', paintSnd);
+    bar.appendChild(snd);
+    paintSnd();
+  }
 
   const addTimeline = () => {
     if (!(v.duration > LONG) || bar.querySelector('.vid__range')) return;
