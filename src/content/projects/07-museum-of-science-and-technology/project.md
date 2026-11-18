@@ -11,7 +11,7 @@ cover: ./billboard.webp
 thumb: ./logo-variations.webp
 role: "[Your role]"
 client: "[Danmarks Tekniske Museum — student project?]"
-tools: []  # e.g. [Illustrator, After Effects, Midjourney]
+tools: [Adobe Photoshop, Adobe Illustrator, After Effects]
 skills: [Rebrand, Logo design, Colour systems, Poster design, Motion]
 ---
 

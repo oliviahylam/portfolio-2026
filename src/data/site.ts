@@ -149,7 +149,7 @@ export const site = {
     { title: 'Revitalize', tool: 'Extended reality', note: 'A meditative XR experience designed to slow the viewer down. A bubble expands and contracts to mimic breathing, guiding them through a calm, stylised forest.', media: '/media/playground/revitalize.mp4' as string | null, sound: true, tools: ['Meshy AI', 'Suno', 'Cursor'] },
     { title: 'Netflix recreation', tool: 'Motion graphics', note: 'A recreation of a Netflix motion graphic, animated in After Effects.', media: '/media/playground/netflix.mp4' as string | null, sound: true, tools: ['After Effects'] },
     { title: 'Dragon animation', tool: 'Character animation', note: 'A character animation exercise, practising rigging and movement with pins.', media: '/media/playground/dragon.mp4' as string | null, sound: true, tools: ['Adobe Illustrator', 'After Effects'] },
-    { title: 'La Colombe', tool: 'Motion graphics', note: 'A motion piece for La Colombe, made to practise match cuts.', media: '/media/playground/la-colombe.mp4' as string | null, sound: true, tools: ['Adobe Photoshop', 'After Effects'] },
+    { title: 'La Colombe', tool: 'Motion graphics', note: 'A motion piece using La Colombe draft latte to practise match cuts.', media: '/media/playground/la-colombe.mp4' as string | null, sound: true, tools: ['Adobe Photoshop', 'After Effects'] },
     { title: '[Experiment title]', tool: 'TouchDesigner', note: '[One line: the question, or what you learned]', media: null as string | null },
     { title: '[Experiment title]', tool: 'Code', note: '[One line]', media: null as string | null },
     { title: '[Experiment title]', tool: 'AI tools', note: '[One line]', media: null as string | null },

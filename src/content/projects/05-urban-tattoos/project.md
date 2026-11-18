@@ -10,7 +10,7 @@ summary: A book about the stickers that tattoo a city's surfaces — collected, 
 coverRatio: 0.708
 coverVideo: /media/urban-tattoos/cover.mp4
 role: "[Your role]"
-tools: []  # e.g. [Illustrator, After Effects, Midjourney]
+tools: [Adobe Photoshop, Adobe InDesign, After Effects, Figma, 8th Wall]
 skills: [Editorial design, Archiving, Web design]
 ---
 
