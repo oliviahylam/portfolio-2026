@@ -154,6 +154,18 @@ export const site = {
     { title: '[Experiment title]', tool: 'Code', note: '[One line]', media: null as string | null },
     { title: '[Experiment title]', tool: 'AI tools', note: '[One line]', media: null as string | null },
   ] as { title: string; tool: string; note: string; media: string | null; sound?: boolean; tools?: string[] }[],
+
+  // Offscreen — the second Playground tab: drawing, painting and ceramics. Images in public/media/offscreen/.
+  offscreen: [
+    { title: 'Inescapable', medium: 'Charcoal', src: '/media/offscreen/inescapable.webp', w: 1002, h: 1448 },
+    { title: 'Tiger', medium: 'Charcoal', src: '/media/offscreen/tiger.webp', w: 1143, h: 1600 },
+    { title: 'Unseen', medium: 'Charcoal', src: '/media/offscreen/unseen.webp', w: 716, h: 994 },
+    { title: 'Unseen II', medium: 'Acrylic', src: '/media/offscreen/unseen-2.webp', w: 732, h: 998 },
+    { title: 'Skull', medium: 'Charcoal', src: '/media/offscreen/skull.webp', w: 900, h: 1600 },
+    { title: 'Still life', medium: 'Graphite', src: '/media/offscreen/still-life.webp', w: 1600, h: 1154 },
+    { title: 'Turmoil', medium: 'Procreate', src: '/media/offscreen/turmoil.webp', w: 1179, h: 808 },
+    { title: 'Vase', medium: 'Ceramic', src: '/media/offscreen/vase.webp', w: 1600, h: 1201 },
+  ],
 };
 
 export type Lens = 'product' | 'brand';

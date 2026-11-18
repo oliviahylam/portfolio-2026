@@ -593,3 +593,16 @@ div.rows { display: flex; flex-direction: column; gap: 72px; }
 .tile .vid { position: absolute; inset: 0; }
 .tile .vid video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .pg-item .tile:has(.vid) { aspect-ratio: 16 / 9; }
+
+/* Playground tabs + Offscreen gallery */
+.pg-tabs { display: inline-flex; gap: 4px; padding: 4px; border: 1px solid var(--line); border-radius: 999px; margin-bottom: 32px; }
+.pg-tab { border: 0; background: none; color: var(--muted); padding: 8px 16px; border-radius: 999px; font: inherit; font-size: 15px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; }
+.pg-tab .mono { font-size: 11px; opacity: .7; }
+.pg-tab.is-active { background: var(--fg); color: var(--bg); }
+.pg-tab:not(.is-active):hover { color: var(--fg); }
+.off-grid { columns: 3 280px; column-gap: 20px; }
+.off-item { break-inside: avoid; margin: 0 0 28px; display: flex; flex-direction: column; gap: 10px; }
+.off-item img { width: 100%; height: auto; display: block; border-radius: 10px; }
+.off-item figcaption { display: flex; justify-content: space-between; gap: 12px; font-size: 15px; }
+.off-item figcaption .mono { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+[data-pg-panel][hidden] { display: none !important; }

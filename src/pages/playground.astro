@@ -8,10 +8,14 @@ const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
   <section class="cs-head wrap">
     <span class="mono muted">Playground</span>
     <h1 class="cs-title">Experiments in code, light, space and motion.</h1>
-    <p class="cs-summary">Experiments across motion graphics, TouchDesigner and extended reality (XR / VR / AR). Short and unpolished on purpose: each one is a question I wanted to answer.</p>
+    <p class="cs-summary">Experiments across motion graphics, TouchDesigner and extended reality (XR / VR / AR). Short and unpolished on purpose: each one is a question I wanted to answer. Offscreen is where the craft started: drawing, painting and ceramics.</p>
   </section>
   <section class="section wrap">
-    <div class="pg-grid">
+    <div class="pg-tabs" role="tablist" aria-label="Playground sections">
+      <button type="button" role="tab" class="pg-tab is-active" aria-selected="true" aria-controls="pg-experiments" data-pg-tab="experiments">Experiments <span class="mono">{String(site.playground.filter((x) => x.media).length).padStart(2, '0')}</span></button>
+      <button type="button" role="tab" class="pg-tab" aria-selected="false" aria-controls="pg-offscreen" data-pg-tab="offscreen">Offscreen <span class="mono">{String(site.offscreen.length).padStart(2, '0')}</span></button>
+    </div>
+    <div class="pg-grid" id="pg-experiments" role="tabpanel" data-pg-panel="experiments">
       {site.playground.map((x) => (
         <div class="pg-item">
           <div class="tile">{x.media && (isVideo(x.media) ? <video src={x.media} autoplay muted loop playsinline data-sound={x.sound ? "" : undefined} data-expand={x.sound ? "" : undefined} aria-label={x.title} /> : <img src={x.media} alt="" loading="lazy" />)}</div>
@@ -21,5 +25,22 @@ const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
         </div>
       ))}
     </div>
+    <div class="off-grid" id="pg-offscreen" role="tabpanel" data-pg-panel="offscreen" hidden>
+      {site.offscreen.map((a) => (
+        <figure class="off-item">
+          <img src={a.src} alt={`${a.title}, ${a.medium.toLowerCase()}`} width={a.w} height={a.h} loading="lazy" />
+          <figcaption><span>{a.title}</span><span class="mono muted">{a.medium}</span></figcaption>
+        </figure>
+      ))}
+    </div>
   </section>
+  <script>
+    const tabs = document.querySelectorAll<HTMLButtonElement>('[data-pg-tab]');
+    const show = (name: string) => {
+      tabs.forEach((t) => { const on = t.dataset.pgTab === name; t.classList.toggle('is-active', on); t.setAttribute('aria-selected', String(on)); });
+      document.querySelectorAll<HTMLElement>('[data-pg-panel]').forEach((p) => { p.hidden = p.dataset.pgPanel !== name; });
+    };
+    tabs.forEach((t) => t.addEventListener('click', () => { show(t.dataset.pgTab!); history.replaceState(null, '', t.dataset.pgTab === 'offscreen' ? '#offscreen' : location.pathname + location.search); }));
+    if (location.hash === '#offscreen') show('offscreen');
+  </script>
 </Base>
