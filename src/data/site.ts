@@ -150,10 +150,12 @@ export const site = {
     { title: 'Netflix recreation', tool: 'Motion graphics', note: 'A recreation of a Netflix motion graphic, animated in After Effects.', media: '/media/playground/netflix.mp4' as string | null, sound: true, tools: ['After Effects'] },
     { title: 'Dragon animation', tool: 'Character animation', note: 'A character animation exercise, practising rigging and movement with pins.', media: '/media/playground/dragon.mp4' as string | null, sound: true, tools: ['Adobe Illustrator', 'After Effects'] },
     { title: 'La Colombe', tool: 'Motion graphics', note: 'A motion piece using La Colombe draft latte to practise match cuts.', media: '/media/playground/la-colombe.mp4' as string | null, sound: true, tools: ['Adobe Photoshop', 'After Effects'] },
+    { title: 'Chinese New Year poster', tool: 'Vector illustration', note: 'A Chinese New Year poster featuring a lion dance, illustrated entirely in vector in Adobe Illustrator.', media: '/media/playground/cny-poster.webp' as string | null, fit: 'contain', tools: ['Adobe Illustrator'] },
+    { title: 'Joker poster', tool: 'Vector illustration', note: 'A fan-made movie poster for Joker, illustrated entirely in vector in Adobe Illustrator.', media: '/media/playground/joker-poster.webp' as string | null, fit: 'contain', tools: ['Adobe Illustrator'] },
     { title: '[Experiment title]', tool: 'TouchDesigner', note: '[One line: the question, or what you learned]', media: null as string | null },
     { title: '[Experiment title]', tool: 'Code', note: '[One line]', media: null as string | null },
     { title: '[Experiment title]', tool: 'AI tools', note: '[One line]', media: null as string | null },
-  ] as { title: string; tool: string; note: string; media: string | null; sound?: boolean; tools?: string[] }[],
+  ] as { title: string; tool: string; note: string; media: string | null; sound?: boolean; tools?: string[]; fit?: 'contain' }[],
 
   // Offscreen — the second Playground tab: drawing, painting and ceramics. Images in public/media/offscreen/.
   offscreen: [

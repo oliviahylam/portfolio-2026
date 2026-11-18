@@ -18,7 +18,7 @@ const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
     <div class="pg-grid" id="pg-experiments" role="tabpanel" data-pg-panel="experiments">
       {site.playground.map((x) => (
         <div class="pg-item">
-          <div class="tile">{x.media && (isVideo(x.media) ? <video src={x.media} autoplay muted loop playsinline data-sound={x.sound ? "" : undefined} data-expand={x.sound ? "" : undefined} aria-label={x.title} /> : <img src={x.media} alt="" loading="lazy" />)}</div>
+          <div class:list={["tile", { "tile--contain": x.fit === "contain" }]}>{x.media && (isVideo(x.media) ? <video src={x.media} autoplay muted loop playsinline data-sound={x.sound ? "" : undefined} data-expand={x.sound ? "" : undefined} aria-label={x.title} /> : <img src={x.media} alt="" loading="lazy" />)}</div>
           <div class="pg-item__head"><h3>{x.title}</h3><span class="mono muted">{x.tool}</span></div>
           <p>{x.note}</p>
           {x.tools && <Tools tools={x.tools} />}
