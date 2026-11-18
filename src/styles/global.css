@@ -547,3 +547,16 @@ html[data-lens='brand'] .card__title { font-family: var(--font-display-brand); f
 /* portrait cover videos: shrink the wrapper to the video so its controls line up */
 .story-cover--portrait .vid { width: auto; max-width: 100%; }
 .story-cover--portrait .vid video { width: auto; max-width: 100%; max-height: 82vh; display: block; }
+
+/* Even rows (raw HTML in markdown): items share one height, widths follow each item's --ar */
+.prose .even-row { width: min(1100px, calc(100vw - 2 * var(--gutter))); margin: 2em 0 2em 50%; transform: translateX(-50%); display: flex; gap: 16px; align-items: flex-start; }
+.even-row > figure { flex: var(--ar, 1) 1 0; min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.even-row > figure > :is(img, video, .vid) { width: 100%; height: auto; display: block; border-radius: 12px; }
+.even-row > figure > .vid video { width: 100%; border-radius: 12px; }
+.even-row figcaption { font-family: var(--font-mono); font-size: 12px; color: var(--muted); line-height: 1.4; }
+.even-row figcaption b { color: var(--fg); font-weight: 500; display: block; font-family: var(--font-sans); font-size: 14px; margin-bottom: 2px; }
+.even-row .nobg { border-radius: 0 !important; }
+@media (max-width: 640px) { .prose .even-row { flex-wrap: wrap; } .even-row > figure { flex-basis: calc(50% - 8px); } }
+.prose .even-row--narrow { width: min(720px, calc(100vw - 2 * var(--gutter))); justify-content: center; }
+.prose .even-row--narrow > figure:only-child { flex: 0 1 auto; width: min(100%, calc(var(--ar) * 72vh)); }
+.prose .even-row--mid { width: min(860px, calc(100vw - 2 * var(--gutter))); }

@@ -4,60 +4,100 @@ year: "[Year]"
 lens: [product]
 template: case-study
 order: 2.5
-category: Campaign · Silverside AI
-summary: A conspiracy-theory campaign for M&M’S about the missing red M&M’S, made for a Gen Z audience as a series of 30-second episodes, a teaser and supporting statics. The project was later shown to Mars, who liked it.
+category: Social campaign · Silverside AI
+summary: "Where are the reds? A true-crime-style social campaign for M&M’S, turning real online discourse about missing red M&M’S into a mystery series for Gen Z: a teaser, four 30-second episodes and four statics, presented to Mars."
 hook: Turning real online discourse about missing red M&M’S into a conspiracy series people want to speculate on.
 coverVideo: /media/mms/teaser.mp4
 coverRatio: 0.5625
 coverSound: true
-thumb: ./thumb.webp
-role: "[Your role, e.g. Designer — concept, art direction, video editing]"
-team: "[Team members / size]"
+thumbVideo: /media/mms/where-are-the-reds.mp4
+thumbRatio: 1.778
+role: Designer
+team: "Valentina Scheerle (Art Director + Copywriter), Lucy Bruechert (Account Manager), Ethan Stewart (Creative Technologist), Olivia Lam (Designer)"
 timeline: "[e.g. 3 weeks]"
-client: Silverside AI (shown to Mars)
+client: Intern capstone project at Silverside AI, presented to Mars
 outcome: Presented to Mars, who responded positively
 tools: []  # e.g. [AI video tool, After Effects, Premiere Pro, Photoshop]
 skills: [Campaign concept, Art direction, Short-form video, Motion graphics, Storytelling]
-industry: Consumer goods · Advertising
+industry: Consumer goods · Social media
 context: "[Why this project mattered to you, in first person, e.g. what you enjoyed about turning a real conversation into a campaign.]"
-challenge: How might we create an open-ended campaign that feels native to a Gen Z audience, using only the existing M&M’S packaging and brand colours?
+challenge: M&M’S is globally recognized, but the creative space is crowded. How might we find a point of view the brand can hold, and build a campaign around it?
 stats:
-  - { value: "4", label: "30-second episodes", note: "including a Halloween special" }
-  - { value: "4", label: "supporting statics" }
-  - { value: "1", label: "series teaser" }
-  - { value: "3", label: "rounds of experimentation" }
+  - { value: "79%", label: "of US Gen Z say M&M’S is their favourite candy", note: "YouGov & Statista, 2024" }
+  - { value: "0.14%", label: "engagement rate on M&M’S TikTok", note: "260K followers" }
+  - { value: "4 + 4", label: "30-second episodes and statics, plus a teaser" }
 ai:
   inProcess:
     - { tool: "[AI tool]", role: "[e.g. concept exploration / video generation]", note: "[How you used it.]" }
     - { tool: "[AI tool]", role: "[e.g. visuals / editing]", note: "[How you used it.]" }
 parts:
   - { label: Brief, anchor: the-brief }
+  - { label: Research, anchor: research }
   - { label: Insight, anchor: the-insight }
   - { label: Process, anchor: three-rounds-of-experimentation }
   - { label: The idea, anchor: the-campaign }
   - { label: Episodes, anchor: the-episodes }
   - { label: Statics, anchor: supporting-statics }
-  - { label: In the feed, anchor: in-the-feed }
+  - { label: Rollout, anchor: rollout }
   - { label: Outcome, anchor: outcome }
 ---
 
-This project focused on creating a campaign for M&M’S built around a real conversation happening online: the missing red M&M’S. We developed a conspiracy series of 30-second episodes, each exploring a different theory about where the red M&M’S could have disappeared to, supported by an intro teaser (above) and four statics. The project was not client work, but it was later shown to the Mars company, who liked it.
+This project focused on creating a social campaign for M&M’S built around a real conversation happening online: the missing red M&M’S. As a team of four at Silverside AI, we developed #MMysteries, a conspiracy series of 30-second episodes, each exploring a different theory about where the red M&M’S could have disappeared to, supported by an intro teaser (above) and four statics. The project was our intern capstone, and it was presented to the Mars company, who liked it.
 
 ## The brief
 
-The prompt was open-ended: create a campaign with a mix of static media and short-form content, four of each, catered to a younger Gen Z audience. The only assets we were given were existing M&M’S package designs and the brand colours.
+Build a fully realised social campaign for M&M’S, made up of four static Instagram posts and four vertical (9:16) videos, unified by one continuous story rather than a set of one-offs. The prompt was very open-ended, catered to a younger Gen Z audience, and the only assets we were given were existing M&M’S package designs and the brand colours.
 
 <div class="card-grid card-grid--3">
-  <div class="info-card"><h4>Deliverables</h4><p>Four short-form videos and four static assets.</p></div>
-  <div class="info-card"><h4>Audience</h4><p>A younger Gen Z audience.</p></div>
-  <div class="info-card"><h4>Given assets</h4><p>Existing M&M’S package designs and brand colours only.</p></div>
+  <div class="info-card"><h4>Deliverables</h4><p>Four static Instagram posts and four vertical (9:16) videos.</p></div>
+  <div class="info-card"><h4>Constraints</h4><ul><li>No M&M’S characters</li><li>Product visuals allowed</li><li>No real public figures or competitors</li></ul></div>
+  <div class="info-card"><h4>The challenge</h4><p>M&M’S is globally recognized, but the creative space is crowded. Find a point of view the brand can hold, then build a campaign around it.</p></div>
+</div>
+
+## Research
+
+### Loved, but under-talked-about
+
+We started with a deep dive into the brand. M&M’S is a cross-generational favourite: 79% of Gen Z, 76% of millennials and 83% of boomers in the US say it is their favourite candy. But that love was not translating online. Across social media, M&M’S had a big fandom with low engagement.
+
+<div class="card-grid card-grid--4">
+  <div class="info-card"><h4>1.2M</h4><p>Instagram followers, with a 0.30% engagement rate</p></div>
+  <div class="info-card"><h4>260K</h4><p>TikTok followers, with a 0.14% engagement rate</p></div>
+  <div class="info-card"><h4>Brand tone</h4><p>Comedic, absurdist and a little self-deprecating, playful and reactive to pop culture</p></div>
+  <div class="info-card"><h4>Brand voice</h4><p>Light, witty and conversational, a bit sarcastic</p></div>
+</div>
+
+### Who we were designing for
+
+Our target was Gen Z, ages 18 to 24: people who already indulge in M&M’S but do not have a reason to talk about them. The goal was a campaign built for reposts, mentions and online discourse, creating social relevance and shifting the mindset towards M&M’S as a desirable snack. Gen Z looks for relatability, humour, entertainment and community, so our role was to create shared moments around a nostalgic, accessible product.
+
+<div class="card-grid card-grid--2">
+  <div class="info-card"><h4>The insight</h4><p>They already eat them. They just don’t talk about them.</p></div>
+  <div class="info-card"><h4>The goal</h4><p>A campaign built for sharing, reposts and speculation.</p></div>
 </div>
 
 ## The insight
 
-Customers had been noticing fewer red M&M’S in their packages and were discussing it online. We took the liberty of purchasing a few packs and counting the colours ourselves, and it was true. This real, already-existing discourse became the starting point for the campaign.
+Customers had been noticing fewer red M&M’S in their packages and were discussing it online. We took the liberty of purchasing a few packs and counting the colours ourselves, and it was true. Three weeks of research later, everything led us to a single, critical question: where are the reds?
 
-<div class="asset-slot">Photos of the colour count, and screenshots of online discussion about missing red M&M’S</div>
+<div class="even-row">
+  <figure style="--ar:.75"><img src="/media/mms/count-1.webp" width="1050" height="1400" alt="Sorting M&M’S by colour" loading="lazy" /></figure>
+  <figure style="--ar:.75"><img src="/media/mms/count-2.webp" width="1050" height="1400" alt="Counting the colours in each pack" loading="lazy" /></figure>
+  <figure style="--ar:.75"><img src="/media/mms/count-3.webp" width="1050" height="1400" alt="The final count, with very few reds" loading="lazy" /></figure>
+</div>
+
+<div class="even-row even-row--narrow">
+  <figure style="--ar:1"><img src="/media/mms/discourse-1.webp" width="520" height="520" alt="Online thread: red dye is going away" loading="lazy" /></figure>
+  <figure style="--ar:.834"><img src="/media/mms/discourse-2.webp" width="994" height="1192" alt="Online post: do they even make red M&M’S anymore?" loading="lazy" /></figure>
+</div>
+
+<div class="even-row even-row--narrow">
+  <figure style="--ar:5.12"><img src="/media/mms/discourse-3.webp" width="1238" height="242" alt="Online post: are M&M’S making less red M&M’S?" loading="lazy" /></figure>
+</div>
+
+<div class="even-row even-row--narrow">
+  <figure style="--ar:5.07"><img src="/media/mms/discourse-4.webp" width="1400" height="276" alt="Online post: this container of M&M’S has no red ones in it" loading="lazy" /></figure>
+</div>
 
 ## Three rounds of experimentation
 
@@ -83,57 +123,71 @@ We chose to go in the direction of conspiracy theories because of the increasing
 
 ## The campaign
 
-The campaign is a conspiracy series of four 30-second episodes, each presenting a different theory about where the red M&M’S could have disappeared to. Some of the conspiracies are rooted in actual facts about M&M’S as a company or the candy itself, and we made sure to include a holiday special for Halloween.
+The idea was to turn this small observation into a full-blown mystery across social media. #MMysteries is a conspiracy series of four 30-second episodes, each presenting a different theory about where the red M&M’S could have disappeared to. Some of the conspiracies are rooted in actual facts about M&M’S as a company or the candy itself, and we made sure to include a holiday special for Halloween.
 
-The idea was to give the entire campaign one visual identity while taking a unique approach to M&M’S advertising and targeting today’s audience. It was also designed to be collaborative, so the audience would want to join in and start speculating themselves. The series runs under the hashtag #MMysteries, with the investigation led by the fictional “Office of M&M’S Affairs”.
+The idea was to give the entire campaign one visual identity while taking a unique approach to M&M’S advertising and targeting today’s audience. It was also designed to be collaborative, so the audience would want to join in and start speculating themselves, with the investigation led by the fictional “Office of M&M’S Affairs”.
 
 ### Look and feel
 
-The look and feel is inspired by vintage camera editing and documentary-style storytelling, giving every episode the tone of an investigation.
+The look and feel is inspired by “CSI style” videos, found footage, old tapes and documentary storytelling, giving every episode the tone of an investigation.
 
-<div class="asset-slot">Visual identity: colour, type, film texture and graphic elements across the series</div>
+<div class="even-row">
+  <figure style="--ar:1.778"><video src="/media/mms/where-are-the-reds.mp4" autoplay muted loop playsinline aria-label="The investigation board building up"></video><figcaption><b>The investigation board</b>Where are the reds?</figcaption></figure>
+  <figure style="--ar:1.333"><img src="/media/mms/style-cctv.webp" width="600" height="450" alt="Found-footage CCTV style reference" loading="lazy" /><figcaption><b>Found footage</b>CCTV and old-tape textures</figcaption></figure>
+</div>
 
 ## The episodes
 
 Each episode presents a different theory about where the red M&M’S went. Turn the sound on to hear the narration.
 
-![Episode 1: M&Martian](/media/mms/ep1-mmartian.mp4#sound)
-![Episode 2: Bigfoot](/media/mms/ep2-bigfoot.mp4#sound)
-![Episode 3: Halloween special](/media/mms/ep3-halloween.mp4#sound)
-![Episode 4](/media/mms/ep4-leave.mp4#sound)
-
-<div class="card-grid card-grid--4">
-  <div class="info-card"><h4>01 · M&Martian</h4><p>[One or two sentences on the theory, and the M&M’S fact it is rooted in, if any.]</p></div>
-  <div class="info-card"><h4>02 · Bigfoot</h4><p>[One or two sentences on the theory.]</p></div>
-  <div class="info-card"><h4>03 · Halloween special</h4><p>[One or two sentences on the theory.]</p></div>
-  <div class="info-card"><h4>04 · [Theory name]</h4><p>[One or two sentences on the theory.]</p></div>
+<div class="even-row">
+  <figure style="--ar:.5625"><video src="/media/mms/ep1-mmartian.mp4" autoplay muted loop playsinline data-sound aria-label="Episode 1: Martians"></video><figcaption><b>01 · Martians</b>“Coincidence? We don’t think so.”</figcaption></figure>
+  <figure style="--ar:.5625"><video src="/media/mms/ep2-bigfoot.mp4" autoplay muted loop playsinline data-sound aria-label="Episode 2: Bigfoot"></video><figcaption><b>02 · Bigfoot</b>“Case update: a new theory is leading us deep into the mountains.”</figcaption></figure>
+  <figure style="--ar:.5625"><video src="/media/mms/ep3-walkout.mp4" autoplay muted loop playsinline data-sound aria-label="Episode 3: Walkout"></video><figcaption><b>03 · Walkout</b>“We blame the Peanuts.”</figcaption></figure>
+  <figure style="--ar:.5625"><video src="/media/mms/ep4-halloween.mp4" autoplay muted loop playsinline data-sound aria-label="Episode 4: Halloween special"></video><figcaption><b>04 · Halloween special</b>“Trick-or-treat… we’ve been tricked.”</figcaption></figure>
 </div>
 
 ## Supporting statics
 
 Four supporting statics extend the series into static media, carrying the same visual identity.
 
-![The case has been opened.](/media/mms/static-2-polaroid.webp)
-![We’re on it. We’ll keep you posted.](/media/mms/static-3-were-on-it.webp)
-![New evidence has been found.](/media/mms/static-1-evidence.webp)
-![Missing poster: Call now.](/media/mms/static-4-missing-poster.webp)
+<div class="even-row">
+  <figure style="--ar:.558"><img src="/media/mms/static-2-polaroid.webp" width="893" height="1600" alt="Static 1: cork board polaroid" loading="lazy" /><figcaption><b>01 · Cork board polaroid</b>“The case has been opened.”</figcaption></figure>
+  <figure style="--ar:.75"><img src="/media/mms/static-3-were-on-it.webp" width="1200" height="1600" alt="Static 2: public statement" loading="lazy" /><figcaption><b>02 · Public statement</b>“We’ll keep you posted.”</figcaption></figure>
+  <figure style="--ar:.75"><img src="/media/mms/static-1-evidence.webp" width="1200" height="1600" alt="Static 3: evidence bag" loading="lazy" /><figcaption><b>03 · Evidence bag</b>“New evidence has been found.”</figcaption></figure>
+  <figure style="--ar:.711"><img src="/media/mms/static-4-missing-poster.webp" width="1080" height="1518" alt="Static 4: missing poster" loading="lazy" /><figcaption><b>04 · Missing poster</b>“Call now.”</figcaption></figure>
+</div>
 
 ### Missing poster
 
-One of the statics is a missing poster for the red M&M’S. The phone number on the poster is an actual M&M’S tipline that people can call, blurring the line between the campaign and real life and giving the audience a way to take part in the investigation themselves.
+One of the statics is a missing poster for the red M&M’S, from the “Office of M&M’S Affairs”. The phone number on the poster is an actual M&M’S tipline that people can call, blurring the line between the campaign and real life and giving the audience a way to take part in the investigation themselves.
 
-![The missing poster on a New York street](/media/mms/missing-poster-street.webp)
+<div class="even-row even-row--narrow">
+  <figure style="--ar:.806"><img src="/media/mms/missing-poster-street.webp" width="1289" height="1600" alt="The missing poster on a New York street" loading="lazy" /><figcaption><b>In the wild</b>The poster in context on a New York street</figcaption></figure>
+</div>
 
-## In the feed
+## Rollout
 
-The episodes and statics were designed to live natively on TikTok and Instagram, posted from the M&M’S accounts with the #MMysteries hashtag.
+The campaign was planned as a three-week content calendar, alternating statics and episodes so the story keeps unfolding, all under the #MMysteries hashtag on Instagram and TikTok.
 
-![TikTok mockup](/media/mms/mockup-tiktok-nobg.webp)
-![Instagram grid mockup](/media/mms/mockup-instagram-grid-nobg.webp)
-![Instagram post mockup](/media/mms/mockup-instagram-post-nobg.webp)
+<div class="card-grid card-grid--3">
+  <div class="info-card"><h4>Week one</h4><ul><li>Mon · Static 1: cork board polaroid</li><li>Tue · Teaser: campaign trailer</li><li>Fri · Static 2: public statement</li><li>Sat · Episode 1: Martians</li></ul></div>
+  <div class="info-card"><h4>Week two</h4><ul><li>Mon · Static 3: evidence bag</li><li>Wed · Episode 2: Bigfoot</li><li>Thu · Static 4: missing poster</li><li>Sat · Episode 3: Walkout</li></ul></div>
+  <div class="info-card"><h4>Week three</h4><ul><li>Mon · Episode 4: Halloween special</li></ul></div>
+</div>
+
+<div class="even-row even-row--mid">
+  <figure style="--ar:.487"><img class="nobg" src="/media/mms/mockup-tiktok-nobg.webp" width="779" height="1600" alt="TikTok mockup" loading="lazy" /><figcaption><b>TikTok</b>Episode in the For You feed</figcaption></figure>
+  <figure style="--ar:.487"><img class="nobg" src="/media/mms/mockup-instagram-grid-nobg.webp" width="779" height="1600" alt="Instagram grid mockup" loading="lazy" /><figcaption><b>Instagram grid</b>The series on the M&M’S profile</figcaption></figure>
+  <figure style="--ar:.487"><img class="nobg" src="/media/mms/mockup-instagram-post-nobg.webp" width="777" height="1600" alt="Instagram post mockup" loading="lazy" /><figcaption><b>Instagram post</b>“The case has been opened.”</figcaption></figure>
+</div>
 
 ## Outcome
 
-Although this was not client work, the campaign was shown to the Mars company, and they liked it. The project was not only interesting but also engaging and contributive, inviting the audience to take part in the conversation rather than just watch an ad.
+Although this was not client work, the campaign was presented to the Mars company, and they liked it. The project was not only interesting but also engaging and contributive, inviting the audience to take part in the conversation rather than just watch an ad.
 
-[Optional: anything Mars said, or what you learned.]
+<div class="card-grid card-grid--3">
+  <div class="info-card"><h4>Ownable</h4><p>A point of view only M&M’S can hold, carried as one continuous story across every asset.</p></div>
+  <div class="info-card"><h4>Scalable</h4><p>New theories can follow seasonal moments, like the Halloween special.</p></div>
+  <div class="info-card"><h4>Built to spread</h4><p>True crime has genuine viral potential: among US podcast listeners, 44% of women and 23% of men regularly listen to true crime podcasts (Pew Research).</p></div>
+</div>

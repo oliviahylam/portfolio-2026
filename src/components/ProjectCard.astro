@@ -11,14 +11,15 @@ const d = project.data;
 const skills = d.skills.length ? d.skills : d.tags;
 const soon = d.comingSoon;
 const img = d.thumb ?? d.cover;
-const useVideo = !d.thumb && d.coverVideo;
-const ar = img && !useVideo ? img.width / img.height : d.coverRatio ?? 1.6;
+const videoSrc = d.thumbVideo ?? (!d.thumb ? d.coverVideo : undefined);
+const useVideo = Boolean(videoSrc);
+const ar = d.thumbVideo ? d.thumbRatio ?? 16 / 9 : img && !useVideo ? img.width / img.height : d.coverRatio ?? 1.6;
 const Tag = soon ? 'div' : 'a';
 ---
 <Tag class:list={['card', { 'card--soon': soon }]} href={soon ? undefined : `/work/${project.id}`} aria-disabled={soon ? 'true' : undefined} style={`view-transition-name:card-${project.id};--ar:${ar.toFixed(3)}`}>
   <div class="card__media">
     {useVideo ? (
-      <video src={d.coverVideo} autoplay muted loop playsinline aria-hidden="true" />
+      <video src={videoSrc} autoplay muted loop playsinline aria-hidden="true" />
     ) : img ? (
       <Image src={img} alt="" widths={[700, 1100, 1600]} sizes="(min-width: 900px) 50vw, 100vw" loading={index <= 2 ? 'eager' : 'lazy'} />
     ) : (

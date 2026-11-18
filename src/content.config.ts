@@ -66,7 +66,9 @@ const projects = defineCollection({
       // Shows the card greyed out with a "Coming soon" badge and no page
       comingSoon: z.boolean().default(false),
       locked: z.boolean().default(false),
-      coverSound: z.boolean().default(false), // cover video gets a sound toggle // password-protected page (see middleware.ts)
+      coverSound: z.boolean().default(false), // cover video gets a sound toggle
+      thumbVideo: z.string().optional(), // looping video for the homepage card, e.g. /media/x/thumb.mp4
+      thumbRatio: z.number().optional(), // its width / height (default 16:9) // password-protected page (see middleware.ts)
       draft: z.boolean().default(false),
     }),
 });
