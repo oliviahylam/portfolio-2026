@@ -5,7 +5,7 @@ lens: [product]
 template: case-study
 order: 2.5
 category: Campaign · Silverside AI
-summary: A conspiracy-theory campaign for M&M’S about the missing red M&M’S, made for a Gen Z audience as a series of 15-second episodes, a teaser and supporting statics. The project was later shown to Mars, who liked it.
+summary: A conspiracy-theory campaign for M&M’S about the missing red M&M’S, made for a Gen Z audience as a series of 30-second episodes, a teaser and supporting statics. The project was later shown to Mars, who liked it.
 hook: Turning real online discourse about missing red M&M’S into a conspiracy series people want to speculate on.
 coverNote: "[ M&M’S — teaser video coming soon ]"
 role: "[Your role, e.g. Designer — concept, art direction, video editing]"
@@ -19,7 +19,7 @@ industry: Consumer goods · Advertising
 context: "[Why this project mattered to you, in first person, e.g. what you enjoyed about turning a real conversation into a campaign.]"
 challenge: How might we create an open-ended campaign that feels native to a Gen Z audience, using only the existing M&M’S packaging and brand colours?
 stats:
-  - { value: "4", label: "15-second episodes", note: "including a Halloween special" }
+  - { value: "4", label: "30-second episodes", note: "including a Halloween special" }
   - { value: "4", label: "supporting statics" }
   - { value: "1", label: "series teaser" }
   - { value: "3", label: "rounds of experimentation" }
@@ -38,7 +38,7 @@ parts:
   - { label: Outcome, anchor: outcome }
 ---
 
-This project focused on creating a campaign for M&M’S built around a real conversation happening online: the missing red M&M’S. We developed a conspiracy series of 15-second episodes, each exploring a different theory about where the red M&M’S could have disappeared to, supported by an intro teaser and four statics. The project was not client work, but it was later shown to the Mars company, who liked it.
+This project focused on creating a campaign for M&M’S built around a real conversation happening online: the missing red M&M’S. We developed a conspiracy series of 30-second episodes, each exploring a different theory about where the red M&M’S could have disappeared to, supported by an intro teaser and four statics. The project was not client work, but it was later shown to the Mars company, who liked it.
 
 ## The brief
 
@@ -68,7 +68,7 @@ The first round explored different creative concepts: different creative worlds,
 
 ### Round 02 · Choosing the conspiracy direction
 
-We chose to go in the direction of conspiracy theories because of the increasing popularity of true crime content. We also wanted each 15-second video to be really captivating, and that is when we created the campaign idea.
+We chose to go in the direction of conspiracy theories because of the increasing popularity of true crime content. We also wanted each 30-second video to be really captivating, and that is when we created the campaign idea.
 
 <div class="asset-slot">Round 2 frames or storyboards</div>
 
@@ -80,7 +80,7 @@ We chose to go in the direction of conspiracy theories because of the increasing
 
 ## The campaign
 
-The campaign is a conspiracy series of four 15-second episodes, each presenting a different theory about where the red M&M’S could have disappeared to. Some of the conspiracies are rooted in actual facts about M&M’S as a company or the candy itself, and we made sure to include a holiday special for Halloween.
+The campaign is a conspiracy series of four 30-second episodes, each presenting a different theory about where the red M&M’S could have disappeared to. Some of the conspiracies are rooted in actual facts about M&M’S as a company or the candy itself, and we made sure to include a holiday special for Halloween.
 
 The idea was to give the entire campaign one visual identity while taking a unique approach to M&M’S advertising and targeting today’s audience. It was also designed to be collaborative, so the audience would want to join in and start speculating themselves.
 
@@ -102,25 +102,25 @@ An intro teaser video introduces the series and sets up the mystery.
 
 [One or two sentences on the theory, and the M&M’S fact it is rooted in, if any.]
 
-<div class="asset-slot">Episode 1 (15s)</div>
+<div class="asset-slot">Episode 1 (30s)</div>
 
 ### Episode 02 · [Theory name]
 
 [One or two sentences on the theory.]
 
-<div class="asset-slot">Episode 2 (15s)</div>
+<div class="asset-slot">Episode 2 (30s)</div>
 
 ### Episode 03 · [Theory name]
 
 [One or two sentences on the theory.]
 
-<div class="asset-slot">Episode 3 (15s)</div>
+<div class="asset-slot">Episode 3 (30s)</div>
 
 ### Episode 04 · [Theory name] · Halloween special
 
 [One or two sentences on the theory.]
 
-<div class="asset-slot">Episode 4 (15s)</div>
+<div class="asset-slot">Episode 4 (30s)</div>
 
 ## Supporting statics
 
