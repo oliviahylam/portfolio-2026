@@ -142,7 +142,7 @@ Each episode presents a different theory about where the red M&M’S went. Click
 
 <div class="feature-vid">
   <figure><video src="/media/mms/ep1-mmartian.mp4" autoplay muted loop playsinline data-sound data-expand aria-label="Episode 01: Martians"></video></figure>
-  <div class="feature-vid__text"><span class="mono">Episode 01 · 30s</span><h3>Martians</h3><p class="feature-vid__cap">“Coincidence? We don’t think so.”</p><p>The first theory points to space. M&M’S have been sent into space, the company behind them is called Mars, and Jupiter has a big red spot.</p></div>
+  <div class="feature-vid__text"><span class="mono">Episode 01 · 30s</span><h3>Martians</h3><p class="feature-vid__cap">“Coincidence? We don’t think so.”</p><p>The first theory points to space. M&M’S were the first candy sent into space, the company behind them is called Mars, and Jupiter has a big red spot.</p></div>
 </div>
 
 <div class="feature-vid feature-vid--flip">
