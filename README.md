@@ -116,3 +116,8 @@ Note: `npm run dev` / `preview` don't run the middleware, so locally the page is
 Add `#sound` to a video's path in Markdown to give it a sound on/off button (it still starts muted):
 `![Episode 1](/media/mms/ep1-mmartian.mp4#sound)`. For a cover video, set `coverSound: true` in the frontmatter.
 Only one video plays sound at a time.
+
+## Featured videos + fullscreen
+
+`<div class="feature-vid">` (add `feature-vid--flip` to alternate sides) puts one big video beside its text.
+Add `data-expand` to a `<video>` so clicking it opens fullscreen with sound (an expand button is added too).

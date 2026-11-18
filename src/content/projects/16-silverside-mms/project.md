@@ -9,7 +9,7 @@ summary: "Where are the reds? A true-crime-style social campaign for M&M’S, tu
 hook: Turning real online discourse about missing red M&M’S into a conspiracy series people want to speculate on.
 coverVideo: /media/mms/teaser.mp4
 coverRatio: 0.5625
-coverSound: true
+coverSound: true  # cover video also opens fullscreen on click
 thumbVideo: /media/mms/where-are-the-reds.mp4
 thumbRatio: 1.778
 role: Designer
@@ -138,13 +138,26 @@ The look and feel is inspired by “CSI style” videos, found footage, old tape
 
 ## The episodes
 
-Each episode presents a different theory about where the red M&M’S went. Turn the sound on to hear the narration.
+Each episode presents a different theory about where the red M&M’S went. Click a video to watch it fullscreen with sound.
 
-<div class="even-row">
-  <figure style="--ar:.5625"><video src="/media/mms/ep1-mmartian.mp4" autoplay muted loop playsinline data-sound aria-label="Episode 1: Martians"></video><figcaption><b>01 · Martians</b>“Coincidence? We don’t think so.”</figcaption></figure>
-  <figure style="--ar:.5625"><video src="/media/mms/ep2-bigfoot.mp4" autoplay muted loop playsinline data-sound aria-label="Episode 2: Bigfoot"></video><figcaption><b>02 · Bigfoot</b>“Case update: a new theory is leading us deep into the mountains.”</figcaption></figure>
-  <figure style="--ar:.5625"><video src="/media/mms/ep3-walkout.mp4" autoplay muted loop playsinline data-sound aria-label="Episode 3: Walkout"></video><figcaption><b>03 · Walkout</b>“We blame the Peanuts.”</figcaption></figure>
-  <figure style="--ar:.5625"><video src="/media/mms/ep4-halloween.mp4" autoplay muted loop playsinline data-sound aria-label="Episode 4: Halloween special"></video><figcaption><b>04 · Halloween special</b>“Trick-or-treat… we’ve been tricked.”</figcaption></figure>
+<div class="feature-vid">
+  <figure><video src="/media/mms/ep1-mmartian.mp4" autoplay muted loop playsinline data-sound data-expand aria-label="Episode 01: Martians"></video></figure>
+  <div class="feature-vid__text"><span class="mono">Episode 01 · 30s</span><h3>Martians</h3><p class="feature-vid__cap">“Coincidence? We don’t think so.”</p><p>[One or two sentences on the theory, and the M&M’S fact it is rooted in, if any.]</p></div>
+</div>
+
+<div class="feature-vid feature-vid--flip">
+  <figure><video src="/media/mms/ep2-bigfoot.mp4" autoplay muted loop playsinline data-sound data-expand aria-label="Episode 02: Bigfoot"></video></figure>
+  <div class="feature-vid__text"><span class="mono">Episode 02 · 30s</span><h3>Bigfoot</h3><p class="feature-vid__cap">“Case update: a new theory is leading us deep into the mountains.”</p><p>[One or two sentences on the theory.]</p></div>
+</div>
+
+<div class="feature-vid">
+  <figure><video src="/media/mms/ep3-walkout.mp4" autoplay muted loop playsinline data-sound data-expand aria-label="Episode 03: Walkout"></video></figure>
+  <div class="feature-vid__text"><span class="mono">Episode 03 · 30s</span><h3>Walkout</h3><p class="feature-vid__cap">“We blame the Peanuts.”</p><p>[One or two sentences on the theory.]</p></div>
+</div>
+
+<div class="feature-vid feature-vid--flip">
+  <figure><video src="/media/mms/ep4-halloween.mp4" autoplay muted loop playsinline data-sound data-expand aria-label="Episode 04: Halloween special"></video></figure>
+  <div class="feature-vid__text"><span class="mono">Episode 04 · 30s</span><h3>Halloween special</h3><p class="feature-vid__cap">“Trick-or-treat… we’ve been tricked.”</p><p>[One or two sentences on the theory.]</p></div>
 </div>
 
 ## Supporting statics

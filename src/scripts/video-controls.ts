@@ -8,6 +8,7 @@ const ICON = {
   play: '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9.5-5.5z"/></svg>',
   soundOff: '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1.5 5h2.5l3.5-3v10L4 9H1.5z"/><path d="M9.5 5l3 4m0-4l-3 4" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg>',
   soundOn: '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1.5 5h2.5l3.5-3v10L4 9H1.5z"/><path d="M9.5 4.5a3.5 3.5 0 0 1 0 5M11 3a5.5 5.5 0 0 1 0 8" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>',
+  expand: '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1.5 5V1.5H5M9 1.5h3.5V5M12.5 9v3.5H9M5 12.5H1.5V9" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   restart: '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M7 2a5 5 0 1 1-4.6 3H1l2.4-3L6 5H4.5A3.5 3.5 0 1 0 7 3.5V2z"/></svg>',
 };
 const LONG = 12;
@@ -89,6 +90,29 @@ document.querySelectorAll<HTMLVideoElement>('.prose video, .story-cover video, .
     });
     range.addEventListener('change', () => { seeking = false; });
   };
+  // click-to-fullscreen (videos marked data-expand, and sound-enabled covers): opens with sound on
+  if (v.hasAttribute('data-expand') || (v.hasAttribute('data-sound') && v.closest('.story-cover'))) {
+    wrap.classList.add('vid--expand');
+    const open = () => {
+      const fv = v as HTMLVideoElement & { webkitEnterFullscreen?: () => void };
+      v.muted = false;
+      v.dispatchEvent(new Event('volumechange'));
+      v.currentTime = 0;
+      v.play();
+      if (v.requestFullscreen) v.requestFullscreen().catch(() => fv.webkitEnterFullscreen?.());
+      else fv.webkitEnterFullscreen?.();
+    };
+    const ex = document.createElement('button');
+    ex.type = 'button';
+    ex.className = 'vid__btn';
+    ex.innerHTML = ICON.expand;
+    ex.setAttribute('aria-label', 'Watch fullscreen with sound');
+    ex.addEventListener('click', open);
+    bar.appendChild(ex);
+    v.addEventListener('click', open);
+    v.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement) { v.muted = true; v.dispatchEvent(new Event('volumechange')); } });
+  }
+
   if (v.readyState >= 1) addTimeline();
   else v.addEventListener('loadedmetadata', addTimeline, { once: true });
 
