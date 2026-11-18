@@ -12,11 +12,27 @@ const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
   </section>
   <section class="section wrap">
     <div class="pg-tabs" role="tablist" aria-label="Playground sections">
-      <button type="button" role="tab" class="pg-tab is-active" aria-selected="true" aria-controls="pg-experiments" data-pg-tab="experiments">Experiments <span class="mono">{String(site.playground.filter((x) => x.media).length).padStart(2, '0')}</span></button>
+      <button type="button" role="tab" class="pg-tab is-active" aria-selected="true" aria-controls="pg-experiments" data-pg-tab="experiments">Experiments <span class="mono">{String(site.playground.reduce((n, x) => n + (x.posters ? x.posters.length : x.media ? 1 : 0), 0)).padStart(2, '0')}</span></button>
       <button type="button" role="tab" class="pg-tab" aria-selected="false" aria-controls="pg-offscreen" data-pg-tab="offscreen">Offscreen <span class="mono">{String(site.offscreen.length).padStart(2, '0')}</span></button>
     </div>
     <div class="pg-grid" id="pg-experiments" role="tabpanel" data-pg-panel="experiments">
-      {site.playground.map((x) => (
+      {site.playground.map((x) => x.posters ? (
+        <div class="pg-item pg-posters">
+          <div class="pg-posters__row">
+            {x.posters.map((p) => (
+              <figure>
+                <img src={p.src} alt={`${p.title} poster`} width={p.w} height={p.h} loading="lazy" data-zoom />
+                <figcaption><span>{p.title}</span><span class="muted">{p.note}</span></figcaption>
+              </figure>
+            ))}
+          </div>
+          <div class="pg-posters__text">
+            <div class="pg-item__head"><h3>{x.title}</h3><span class="mono muted">{x.tool}</span></div>
+            <p>{x.note}</p>
+            {x.tools && <Tools tools={x.tools} />}
+          </div>
+        </div>
+      ) : (
         <div class="pg-item">
           <div class:list={["tile", { "tile--contain": x.fit === "contain" }]}>{x.media && (isVideo(x.media) ? <video src={x.media} autoplay muted loop playsinline data-sound={x.sound ? "" : undefined} data-expand={x.sound ? "" : undefined} aria-label={x.title} /> : <img src={x.media} alt={x.title} loading="lazy" data-zoom={x.fit === "contain" ? "" : undefined} />)}</div>
           <div class="pg-item__head"><h3>{x.title}</h3><span class="mono muted">{x.tool}</span></div>

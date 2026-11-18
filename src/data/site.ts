@@ -150,12 +150,18 @@ export const site = {
     { title: 'Netflix recreation', tool: 'Motion graphics', note: 'A recreation of a Netflix motion graphic, animated in After Effects.', media: '/media/playground/netflix.mp4' as string | null, sound: true, tools: ['After Effects'] },
     { title: 'Dragon animation', tool: 'Character animation', note: 'A character animation exercise, practising rigging and movement with pins.', media: '/media/playground/dragon.mp4' as string | null, sound: true, tools: ['Adobe Illustrator', 'After Effects'] },
     { title: 'La Colombe', tool: 'Motion graphics', note: 'A motion piece using La Colombe draft latte to practise match cuts.', media: '/media/playground/la-colombe.mp4' as string | null, sound: true, tools: ['Adobe Photoshop', 'After Effects'] },
-    { title: 'Chinese New Year poster', tool: 'Vector illustration', note: 'A Chinese New Year poster featuring a lion dance, illustrated entirely in vector in Adobe Illustrator.', media: '/media/playground/cny-poster.webp' as string | null, fit: 'contain', tools: ['Adobe Illustrator'] },
-    { title: 'Joker poster', tool: 'Vector illustration', note: 'My own take on a poster for the film Joker: a representation of the movie, composed and illustrated by me, entirely in vector in Adobe Illustrator.', media: '/media/playground/joker-poster.webp' as string | null, fit: 'contain', tools: ['Adobe Illustrator'] },
+    {
+      title: 'Vector posters', tool: 'Vector illustration', note: 'Three posters, each composed and illustrated entirely in vector in Adobe Illustrator.', media: null, tools: ['Adobe Illustrator'],
+      posters: [
+        { title: 'Chinese New Year', note: 'A lion dance celebrating the new year.', src: '/media/playground/cny-poster.webp', w: 1130, h: 1600 },
+        { title: 'Joker', note: 'My own take on the film: a representation of the movie, composed and illustrated by me.', src: '/media/playground/joker-poster.webp', w: 1103, h: 1600 },
+        { title: 'Steve Lacy', note: 'A poster inspired by 80s psychedelic art.', src: '/media/playground/psychedelic-poster.webp', w: 1113, h: 1600 },
+      ],
+    },
     { title: '[Experiment title]', tool: 'TouchDesigner', note: '[One line: the question, or what you learned]', media: null as string | null },
     { title: '[Experiment title]', tool: 'Code', note: '[One line]', media: null as string | null },
     { title: '[Experiment title]', tool: 'AI tools', note: '[One line]', media: null as string | null },
-  ] as { title: string; tool: string; note: string; media: string | null; sound?: boolean; tools?: string[]; fit?: 'contain' }[],
+  ] as { title: string; tool: string; note: string; media: string | null; sound?: boolean; tools?: string[]; fit?: 'contain'; posters?: { title: string; note: string; src: string; w: number; h: number }[] }[],
 
   // Offscreen — the second Playground tab: drawing, painting and ceramics. Images in public/media/offscreen/.
   offscreen: [

@@ -83,7 +83,7 @@ const rows = <T,>(xs: T[]) => xs.reduce<T[][]>((acc, x, i) => (i % 2 ? acc[acc.l
             <a href={lens === 'brand' ? '/playground?lens=brand' : '/playground'}>See all experiments →</a>
           </div>
           <div class="tiles">
-            {site.playground.slice(0, 4).map((x) => (
+            {site.playground.filter((x) => x.media).slice(0, 4).map((x) => (
               <div class="tile">
                 {x.media && (isVideo(x.media) ? <video src={x.media} autoplay muted loop playsinline aria-hidden="true" /> : <img src={x.media} alt="" loading="lazy" />)}
                 <span class="mono muted">{x.tool}</span>
