@@ -13,7 +13,7 @@ coverSound: true
 thumbVideo: /media/mms/where-are-the-reds.mp4
 thumbRatio: 1.778
 role: Designer
-team: "Valentina Scheerle (Art Director + Copywriter), Lucy Bruechert (Account Manager), Ethan Stewart (Creative Technologist), Olivia Lam (Designer)"
+team: "Team of 4: art director & copywriter, account manager, creative technologist, and me as designer"
 timeline: "[e.g. 3 weeks]"
 client: Intern capstone project at Silverside AI, presented to Mars
 outcome: Presented to Mars, who responded positively
