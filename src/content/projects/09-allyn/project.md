@@ -31,19 +31,19 @@ ai:
     - { tool: "Nano Banana", role: "Image generation", note: "[How you used it, e.g. the hero device mockups.]" }
     - { tool: "Seedance", role: "Video generation", note: "[How you used it, e.g. animating the hero mockup.]" }
 parts:
-  - { label: Problem, anchor: problem }
-  - { label: Personas, anchor: personas }
-  - { label: Research, anchor: research }
+  - { label: Why, anchor: why }
+  - { label: The risk, anchor: situation }
+  - { label: Listening, anchor: listening }
   - { label: Insights, anchor: insights }
-  - { label: MVP, anchor: mvp }
-  - { label: Flow & IA, anchor: flow }
-  - { label: Iteration, anchor: iteration }
+  - { label: Building with AI, anchor: building-with-ai }
+  - { label: Priorities, anchor: mvp }
+  - { label: Feedback, anchor: iteration }
+  - { label: AI's limits, anchor: where-ai-stops }
   - { label: Brand, anchor: brand }
-  - { label: Design system, anchor: design-system }
-  - { label: Final designs, anchor: final-designs }
+  - { label: The product, anchor: final-designs }
   - { label: Designing for AI, anchor: designing-for-ai }
   - { label: Prototype, anchor: prototype }
-  - { label: Outcome, anchor: outcome }
+  - { label: Next, anchor: outcome }
 ---
 
 <div class="ai-two">
@@ -52,7 +52,11 @@ parts:
   <p class="ai-two__legend mono">Follow the two markers through the story ↓</p>
 </div>
 
-<h2 id="problem">Wearables collect everything. <span class="dim">Nobody explains it.</span></h2>
+<h2 id="why">Why this matters <span class="dim">to me.</span></h2>
+
+[Your personal why, 2–3 sentences in first person: why this problem matters to you. For example, your own experience with wearables, mixing Western and Chinese medicine, or someone close to you.]
+
+<h2 id="situation">The situation, <span class="dim">and the risk.</span></h2>
 
 Wearables collect huge amounts of data, but most people don't know what it means, what to do about it, or how to bring it to their doctor. Existing apps report numbers but ignore *how* someone wants to heal, whether that's Western medicine, functional medicine, Chinese medicine or a mix. Health decisions end up scattered across devices, doctors and Google.
 
@@ -62,9 +66,19 @@ Wearables collect huge amounts of data, but most people don't know what it means
   <div class="a-stat"><b>[ ]</b><span>[Market or problem stat from the deck]</span><small>[Source]</small></div>
 </div>
 
+<div class="card-grid card-grid--3">
+  <div class="info-card"><h4>The risk</h4><p>People act on numbers they don't understand, or ignore them completely.</p></div>
+  <div class="info-card"><h4>The gap</h4><p>Their doctors don't always agree, and checkups happen with no preparation.</p></div>
+  <div class="info-card"><h4>What's needed</h4><p>One place that explains the data, respects how each person wants to heal, and hands off to the doctor.</p></div>
+</div>
+
 <div class="asset-slot">03-problem.png · problem slide from the deck</div>
 
-<h2 id="personas">Two people, <span class="dim">two ways of healing.</span></h2>
+<h2 id="listening">Before designing, <span class="dim">I listened.</span></h2>
+
+I wanted to hear from real wearable users before deciding anything. These are the two people I designed for, and the research that shaped them.
+
+### Two people, two ways of healing
 
 <div class="card-grid card-grid--2">
   <div class="persona">
@@ -87,7 +101,7 @@ Wearables collect huge amounts of data, but most people don't know what it means
 
 <div class="asset-slot">04-persona-maya.png + 04-persona-kevin.png · persona slides from the deck</div>
 
-<h2 id="research">10 surveys, 4 interviews. <span class="dim">One clear signal.</span></h2>
+### 10 surveys, 4 interviews
 
 I ran a survey of 10 wearable users (7 to 9 short questions, with one open question) and 4 in-depth interviews of 30 to 45 minutes. I wrote a discussion guide in VOFF format, with a beginner and an advanced version. Each interview ran: background → concept pitch → mid-fi walkthrough → feature ranking → 1–5 rating → willingness to pay.
 
@@ -109,7 +123,7 @@ I ran a survey of 10 wearable users (7 to 9 short questions, with one open quest
 
 <div class="ai-note ai-note--process"><span class="ai-note__tag">AI in my process · Claude</span><p>I used Claude for AI-assisted research synthesis, turning the survey answers and four interviews into the patterns below. [Add how: what you gave it, and how you checked its output.]</p></div>
 
-<h2 id="insights">Four things real wearable users <span class="dim">taught me.</span></h2>
+<h2 id="insights">Four things they <span class="dim">taught me.</span></h2>
 
 <div class="card-grid card-grid--2">
   <div class="info-card"><h4>01 · People mix care, and their doctors don't always agree.</h4><p>Rennie's functional doctor opposed statins, but he chose medication anyway. Jillian noted that "lifestyle before statins" suits a functional doctor but would get pushback from a Western one.</p><blockquote>“I'm open to any kind of practitioner that will improve my health.”<cite>Vera</cite></blockquote></div>
@@ -120,7 +134,18 @@ I ran a survey of 10 wearable users (7 to 9 short questions, with one open quest
 
 <div class="ai-note ai-note--product"><span class="ai-note__tag">AI in the product · Ask Allyn</span><p>Insight 03 shaped the product directly: Vera wanted to ask questions about her own data, so I added Ask Allyn, an AI chat that answers using your connected wearables.</p></div>
 
-<h2 id="mvp">Four core features. <span class="dim">Everything else can wait.</span></h2>
+<h2 id="building-with-ai">Building with AI, <span class="dim">tool by tool.</span></h2>
+
+I didn't use one AI for everything. I tried different tools for different jobs, kept what helped, and stayed in charge of the decisions.
+
+<div class="card-grid card-grid--2">
+  <div class="info-card"><h4>Claude · research synthesis</h4><p>Helped me turn the survey and interviews into clear patterns. [What worked, and what you had to correct.]</p></div>
+  <div class="info-card"><h4>Claude · prototyping</h4><p>AI-assisted prototyping as the flows moved from mid-fidelity to v3. [What it sped up.]</p></div>
+  <div class="info-card"><h4>Nano Banana + Seedance · visuals</h4><p>Staged the screens as floating devices and animated them into the hero film. [Confirm.]</p></div>
+  <div class="info-card"><h4>[AI for branding]</h4><p>[If you used AI to explore names, logo directions or the stylescape faster, describe it here. Otherwise remove this card.]</p></div>
+</div>
+
+<h2 id="mvp">Deciding what matters <span class="dim">is a human call.</span></h2>
 
 I ranked candidate features on an impact vs. effort 2×2 and kept four core features.
 
@@ -137,13 +162,13 @@ I ranked candidate features on an impact vs. effort 2×2 and kept four core feat
 
 In interviews, pathway and insights ranked highest. Checkup prep was split (Vera and Ian ranked it near the top). Two people ranked the provider finder last because they rely on referrals, which is why I added trust signals instead of cutting it.
 
-<h2 id="flow">From onboarding <span class="dim">to two endings.</span></h2>
+### From onboarding to two endings
 
 One flow covers all four features, from onboarding to two endings: "insights & plan" and "book & save". Navigation is four tabs (Today · Pathway · Prep · Care) plus an Ask Allyn AI button.
 
 <div class="asset-slot">08-user-flow.png · Figma page “User Flow”</div>
 
-<h2 id="iteration">Testing reshaped <span class="dim">11 parts of the product.</span></h2>
+<h2 id="iteration">Human feedback reshaped <span class="dim">11 parts of the product.</span></h2>
 
 I put grayscale mid-fidelity wireframes in front of all four interviewees, then updated the design based on what they told me.
 
@@ -170,7 +195,20 @@ I put grayscale mid-fidelity wireframes in front of all four interviewees, then 
 
 <div class="info-card"><h4>Parked for later</h4><p>Social streaks and kudos, nutrition plans, a recovery tab, supplement timing and interaction checks, per-device tabs, and pricing models (free tier, loyalty discount).</p></div>
 
-<h2 id="brand">Align → Attune → <span class="dim">Allyn.</span></h2>
+<h2 id="where-ai-stops">Where AI <span class="dim">can't solve it.</span></h2>
+
+AI can explain data and suggest next steps, but some of Allyn's biggest problems aren't design or AI problems. They need permission, trust and people.
+
+<div class="card-grid card-grid--2">
+  <div class="info-card"><h4>Permission</h4><p>Allyn only works if wearable companies share their data. Rennie's main doubt was whether they will. This needs partnerships, not prompts.</p></div>
+  <div class="info-card"><h4>Privacy</h4><p>Health data is personal. Jillian's biggest concern was privacy, so the data model has to be privacy-first before anything else.</p></div>
+  <div class="info-card"><h4>The doctor decides</h4><p>Allyn never diagnoses or gives dosing advice. It prepares people for the appointment, and the decision stays with the doctor.</p></div>
+  <div class="info-card"><h4>Trust is human</h4><p>All four interviewees found doctors through referrals. Ratings, reviews, price and insurance help, but trust in a provider still comes from people.</p></div>
+</div>
+
+<div class="info-card"><h4>What it would take</h4><p>Partnerships with wearable companies for data access, a privacy-first data model, and prioritising the features people ranked highest (pathway and insights) before anything else. [Add who would need to sign off, e.g. legal, partnerships or clinical advisors.]</p></div>
+
+<h2 id="brand">Giving it a name <span class="dim">and a face.</span></h2>
 
 The app started as "Align", then became "Attune". During her interview, Jillian suggested spelling it like *ally*: “It's like your health ally.” I renamed it **Allyn**.
 
@@ -208,7 +246,7 @@ Night-sky base, one confident blue, soft auras per health area, and liquid glass
 
 <div class="asset-slot">10-stylescape.png · Allyn stylescape</div>
 
-<h2 id="design-system">A night sky <span class="dim">and one confident blue.</span></h2>
+### A night sky and one confident blue
 
 <div class="swatches">
   <div class="swatch" style="--c:#121A3A"><span>Night sky</span><code>#121A3A</code></div>
