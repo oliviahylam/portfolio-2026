@@ -635,3 +635,61 @@ img[data-zoom] { cursor: zoom-in; }
 .value h3 { margin: 0; font-size: clamp(22px, 2vw, 28px); font-weight: 500; letter-spacing: -.02em; line-height: 1.15; }
 .value p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.55; }
 .card__role { font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: .04em; margin-top: -2px; }
+
+/* ── Allyn theme: night sky, Allyn blue, soft auras ─────────── */
+body:has(.theme-allyn) {
+  --bg: #121A3A; --surface: rgba(201, 214, 250, .06); --card: rgba(201, 214, 250, .08);
+  --fg: #ffffff; --muted: rgba(255, 255, 255, .6); --line: rgba(201, 214, 250, .16);
+  --accent: #9DB4F5; --on-accent: #121A3A;
+  background: #121A3A;
+}
+.theme-allyn {
+  --font-sans: 'Urbanist', 'Geist', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Geist Mono', monospace;
+  --a-blue: #4F74E0; --a-sky: #9DB4F5; --a-mist: #C9D6FA;
+  font-family: var(--font-sans);
+  position: relative; isolation: isolate;
+  background:
+    radial-gradient(60vw 40vw at 85% 4%, rgba(79, 116, 224, .28), transparent 70%),
+    radial-gradient(50vw 40vw at 0% 30%, rgba(184, 163, 242, .14), transparent 70%),
+    radial-gradient(50vw 40vw at 100% 62%, rgba(147, 217, 188, .08), transparent 70%),
+    radial-gradient(60vw 40vw at 10% 92%, rgba(242, 154, 180, .10), transparent 70%);
+}
+.theme-allyn .story-title { font-weight: 600; letter-spacing: -.03em; }
+.theme-allyn .story-hook { color: rgba(255, 255, 255, .7); }
+.theme-allyn .prose h2 { font-weight: 600; letter-spacing: -.02em; }
+.theme-allyn .prose h2 .dim, .theme-allyn .dim { color: rgba(255, 255, 255, .5); }
+.theme-allyn .eyebrow, .theme-allyn .mono { font-family: var(--font-mono); }
+.theme-allyn .info-card, .theme-allyn .persona, .theme-allyn .context-card { background: rgba(201, 214, 250, .06); border-color: rgba(201, 214, 250, .14); backdrop-filter: blur(12px); }
+.theme-allyn .persona__avatar { background: linear-gradient(135deg, #9AAFED, #597CE2); color: #fff; }
+.theme-allyn .asset-slot { border-color: rgba(157, 180, 245, .3); color: rgba(201, 214, 250, .7); background: rgba(79, 116, 224, .06); }
+.theme-allyn .story-cover video { border-radius: 18px; }
+/* Doto metrics */
+.a-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 16px; }
+.prose .a-stats { width: min(1100px, calc(100vw - 2 * var(--gutter))); margin: 2em 0 2em 50%; transform: translateX(-50%); }
+.a-stat { padding: 22px; border-radius: 20px; background: rgba(201, 214, 250, .06); border: 1px solid rgba(201, 214, 250, .14); display: flex; flex-direction: column; gap: 6px; }
+.a-stat b { font-family: 'Doto', var(--font-mono); font-weight: 900; font-size: clamp(40px, 4.4vw, 56px); line-height: 1; color: #fff; letter-spacing: -.02em; }
+.a-stat span { color: rgba(255, 255, 255, .65); font-size: 15px; line-height: 1.4; }
+.a-stat small { font-family: var(--font-mono); font-size: 11px; color: var(--a-sky); text-transform: uppercase; letter-spacing: .06em; }
+/* quotes on insight cards */
+.theme-allyn .info-card blockquote { margin: 12px 0 0; padding: 0 0 0 12px; border-left: 2px solid var(--a-blue); color: #fff; font-size: 15px; }
+.theme-allyn .info-card blockquote cite { display: block; margin-top: 4px; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--a-sky); text-transform: uppercase; }
+/* type specimen */
+.a-type { display: grid; gap: 14px; }
+.prose .a-type { width: min(1100px, calc(100vw - 2 * var(--gutter))); margin: 2em 0 2em 50%; transform: translateX(-50%); grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.a-type > div { padding: 22px; border-radius: 20px; background: rgba(201, 214, 250, .06); border: 1px solid rgba(201, 214, 250, .14); }
+.a-type .a-type__sample { display: block; font-size: 34px; line-height: 1.1; margin: 8px 0; color: #fff; }
+.a-type .a-type__sample .dim { color: rgba(255, 255, 255, .5); }
+.a-type p { margin: 0; color: rgba(255, 255, 255, .6); font-size: 14px; }
+.theme-allyn .swatch { color: #fff; }
+.theme-allyn .swatch--light { color: #121A3A; }
+.a-aura { aspect-ratio: 4 / 3; border-radius: 16px; padding: 14px; display: flex; align-items: flex-end; font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: #fff; }
+.a-auras { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; }
+.prose .a-auras { width: min(1100px, calc(100vw - 2 * var(--gutter))); margin: 1em 0 2em 50%; transform: translateX(-50%); }
+@media (max-width: 760px) { .a-auras { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.theme-allyn .prose table td:first-child { color: #fff; }
+.theme-allyn .prose ol.a-principles { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 10px 24px; counter-reset: p; }
+.theme-allyn .prose ol.a-principles li { counter-increment: p; padding: 14px 0; border-top: 1px solid rgba(201, 214, 250, .16); font-size: 18px; color: #fff; }
+.theme-allyn .prose ol.a-principles li::before { content: '0' counter(p); font-family: var(--font-mono); font-size: 11px; color: var(--a-sky); margin-right: 12px; vertical-align: 3px; }
+.prose .card-grid .asset-slot, .prose .even-row .asset-slot { width: auto; margin: 0; transform: none; min-height: 140px; }
+@media (max-width: 720px) { .prose table { display: block; overflow-x: auto; width: calc(100vw - 2 * var(--gutter)); } }

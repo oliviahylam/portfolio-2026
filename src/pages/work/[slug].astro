@@ -21,12 +21,18 @@ const next = siblings[(i + 1) % siblings.length];
 const facts = [
   ['Timeline', d.timeline], ['Role', d.role], ['Team', d.team], ['Client', d.client], ['Industry', d.industry], ['Outcome', d.outcome],
 ].filter(([, v]) => v) as [string, string][];
+facts.push(...d.extraFacts.map((f) => [f.label, f.value] as [string, string]));
 const skills = d.skills.length ? d.skills : d.tags;
 const editorial = d.template === 'editorial';
 const back = lens === 'brand' ? '/?lens=brand#work-brand' : '/#work';
 const hasMedia = Boolean(d.cover || d.coverVideo);
 ---
 <Base title={d.title} lens={lens} description={d.summary}>
+  {d.theme === 'allyn' && (
+    <Fragment slot="head">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Doto:wght@500;700;900&display=swap" />
+    </Fragment>
+  )}
   {editorial ? (
     <article>
       <header class="ed-head wrap">
@@ -53,7 +59,7 @@ const hasMedia = Boolean(d.cover || d.coverVideo);
       )}
     </article>
   ) : (
-    <article class="story">
+    <article class:list={["story", d.theme && `theme-${d.theme}`]}>
       <header class="story-hero wrap">
         <a class="back" href={back}>← All work</a>
         <span class="eyebrow">{d.category} · {d.year}</span>
