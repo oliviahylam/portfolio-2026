@@ -722,3 +722,4 @@ body:has(.theme-allyn) {
 .ai-two__col p { margin: 0; color: var(--muted); font-size: 15px; }
 .ai-two__legend { grid-column: 1 / -1; margin: 0; color: var(--muted); text-align: center; }
 @media (max-width: 720px) { .ai-two { grid-template-columns: 1fr; } }
+.prose .even-row + .even-row { margin-top: -1.2em; }

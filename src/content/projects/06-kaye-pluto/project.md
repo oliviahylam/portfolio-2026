@@ -27,18 +27,28 @@ Moodboard and inspiration images that set the direction for the cover and the sh
 
 Creative direction, photography and editing. I directed and edited the photoshoots, ensuring that the imagery felt unified across platforms and visually connected to the album’s core aesthetic.
 
-![Photoshoot](./shoot-01.webp)
+<div class="even-row">
+  <figure style="--ar:1.5"><img src="/media/kaye-pluto/shoot-01.webp" width="2400" height="1600" alt="Photoshoot" loading="lazy" data-zoom /></figure>
+</div>
 
-![Photoshoot](./shoot-02.webp)
-![Photoshoot](./shoot-03.webp)
-![Photoshoot](./shoot-04.webp)
-![Photoshoot](./shoot-06.webp)
-![Photoshoot](./shoot-07.webp)
-![Photoshoot](./shoot-08.webp)
-![Photoshoot](./shoot-05.webp)
-![Photoshoot](./shoot-09.webp)
-![Photoshoot](./shoot-10.webp)
-![Photoshoot](./shoot-11.webp)
+<div class="even-row">
+  <figure style="--ar:0.667"><img src="/media/kaye-pluto/shoot-02.webp" width="1600" height="2400" alt="Photoshoot" loading="lazy" data-zoom /></figure>
+  <figure style="--ar:0.667"><img src="/media/kaye-pluto/shoot-03.webp" width="1600" height="2400" alt="Photoshoot" loading="lazy" data-zoom /></figure>
+  <figure style="--ar:0.667"><img src="/media/kaye-pluto/shoot-04.webp" width="1600" height="2400" alt="Photoshoot" loading="lazy" data-zoom /></figure>
+  <figure style="--ar:0.667"><img src="/media/kaye-pluto/shoot-06.webp" width="1600" height="2400" alt="Photoshoot" loading="lazy" data-zoom /></figure>
+</div>
+
+<div class="even-row">
+  <figure style="--ar:1.5"><img src="/media/kaye-pluto/shoot-05.webp" width="2400" height="1600" alt="Photoshoot" loading="lazy" data-zoom /></figure>
+  <figure style="--ar:0.667"><img src="/media/kaye-pluto/shoot-07.webp" width="1600" height="2400" alt="Photoshoot" loading="lazy" data-zoom /></figure>
+  <figure style="--ar:0.667"><img src="/media/kaye-pluto/shoot-08.webp" width="1600" height="2400" alt="Photoshoot" loading="lazy" data-zoom /></figure>
+</div>
+
+<div class="even-row">
+  <figure style="--ar:0.667"><img src="/media/kaye-pluto/shoot-09.webp" width="1600" height="2400" alt="Photoshoot" loading="lazy" data-zoom /></figure>
+  <figure style="--ar:0.667"><img src="/media/kaye-pluto/shoot-11.webp" width="1600" height="2400" alt="Photoshoot" loading="lazy" data-zoom /></figure>
+  <figure style="--ar:1.5"><img src="/media/kaye-pluto/shoot-10.webp" width="2400" height="1600" alt="Photoshoot" loading="lazy" data-zoom /></figure>
+</div>
 
 ## Album cover design
 
