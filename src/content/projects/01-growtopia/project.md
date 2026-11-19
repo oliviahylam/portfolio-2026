@@ -3,7 +3,7 @@ title: Growtopia
 year: 2025
 lens: [product]
 template: case-study
-order: 1
+order: 3
 category: Gamified productivity platform
 summary: A productivity platform that blends Pomodoro focus sessions with cozy gardening mechanics, turning tasks into progress and play — designed, built and shipped in one month with an AI-accelerated workflow.
 hook: A productivity platform that blends Pomodoro focus sessions with cozy gardening mechanics, turning tasks into progress and play. Designed an AI workflow to support the design process.

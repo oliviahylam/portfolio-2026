@@ -3,7 +3,7 @@ title: Inception
 year: 2025
 lens: [product]
 template: case-study
-order: 3
+order: 5
 category: Interaction · Coded website
 summary: An immersive screenplay — a coded website that moves through layers of a dream, using motion, reflective and disappearing type to make reading feel like falling deeper.
 coverRatio: 1.778

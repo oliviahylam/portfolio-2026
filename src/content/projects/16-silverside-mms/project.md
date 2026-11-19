@@ -3,7 +3,7 @@ title: "M&M’S: #MMysteries"
 year: "[Year]"
 lens: [product]
 template: case-study
-order: 2.5
+order: 2
 category: Generative AI campaign · Silverside AI
 summary: "Where are the reds? A true-crime-style social campaign for M&M’S, turning real online discourse about missing red M&M’S into a mystery series for Gen Z: a teaser, four 30-second episodes and four statics, presented to Mars."
 hook: Turning real online discourse about missing red M&M’S into a conspiracy series people want to speculate on.

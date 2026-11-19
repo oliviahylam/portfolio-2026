@@ -3,7 +3,7 @@ title: Allyn
 year: "[Year]"
 lens: [product]
 template: case-study
-order: 4
+order: 1
 category: "[Product design · AI]"
 summary: "[One sentence: what Allyn is, who it's for, and the problem it solves.]"
 coverVideo: /media/allyn/thumbnail.mp4

@@ -3,7 +3,7 @@ title: "Anichess: Gambit Mode"
 year: 2025
 lens: [product]
 template: case-study
-order: 2
+order: 4
 category: UI/UX internship · Animoca Brands
 summary: Introducing Gambit Mode — a token-based competitive feature for a Web3 chess game with 100,000+ monthly active players — designed to balance competition, clarity and accessibility.
 hook: Introducing a new monetization feature that balances competition, clarity, and accessibility in a Web3 gaming ecosystem.
