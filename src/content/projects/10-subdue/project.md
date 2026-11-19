@@ -1,6 +1,6 @@
 ---
 title: Subdue
-year: "[Year]"
+year: 2026
 lens: [product]
 template: case-study
 order: 6
