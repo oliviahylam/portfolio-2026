@@ -1,6 +1,6 @@
 ---
 title: Styled
-year: "[Year]"
+year: 2025
 lens: [brand]
 template: editorial
 order: 11

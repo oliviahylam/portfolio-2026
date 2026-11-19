@@ -15,6 +15,7 @@ const videoSrc = d.thumbVideo ?? (!d.thumb ? d.coverVideo : undefined);
 const useVideo = Boolean(videoSrc);
 const ar = d.thumbVideo ? d.thumbRatio ?? 16 / 9 : img && !useVideo ? img.width / img.height : d.coverRatio ?? 1.6;
 const Tag = soon ? 'div' : 'a';
+const role = d.role && !d.role.startsWith('[') ? d.role : null;
 ---
 <Tag class:list={['card', { 'card--soon': soon }]} href={soon ? undefined : `/work/${project.id}`} aria-disabled={soon ? 'true' : undefined} style={`view-transition-name:card-${project.id};--ar:${ar.toFixed(3)}`}>
   <div class="card__media">
@@ -32,6 +33,7 @@ const Tag = soon ? 'div' : 'a';
     <div class="card__main">
       <span class="mono muted">{num} {d.category} · {d.year}</span>
       <h3 class="card__title">{d.title}</h3>
+      {role && <span class="card__role mono">Role · {role}</span>}
       <p class="card__summary">{d.summary}</p>
     </div>
     <div class="card__side">
