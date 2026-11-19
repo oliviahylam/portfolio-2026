@@ -10,6 +10,8 @@ hook: A productivity platform that blends Pomodoro focus sessions with cozy gard
 link: { label: "Play the game (best on laptop)", url: "https://growtopia-phz5.vercel.app/main.html?v=1" }
 coverRatio: 1.778
 coverVideo: /media/growtopia/cover.mp4
+thumbVideo: /media/growtopia/thumb.mp4
+thumbRatio: 1.6
 role: Product Designer
 timeline: 1 month
 outcome: Designed, built and deployed end-to-end
