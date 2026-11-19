@@ -130,6 +130,12 @@ export const site = {
       "Olivia is a Hong Kong-born designer and AI creative technologist. She has been working with emerging tech and AI since its early days, including at her design internships at Animoca Brands and Silverside AI.",
       "She emphasises the importance of visual craft in her work and is constantly exploring ways to push boundaries: enhancing what we're already capable of, finding ways to go beyond it, and always seeking out work that is innovative and new.",
     ],
+    values: [
+      { title: 'Craft first, always', text: 'AI and technology help me move fast. Visual craft is never the part I rush.' },
+      { title: 'Experiment, then edit', text: 'I explore widely, then cut ruthlessly. The best idea is rarely the first one.' },
+      { title: 'Make it worth keeping', text: 'Design people want to save, share and come back to, like a ticket you don’t throw away.' },
+      { title: 'Give it a voice', text: 'Every brand, product and person has something to say. My job is to help them say it clearly.' },
+    ],
     services: [
       { title: 'Product & AI design', text: 'Research, flows, interaction design, prototyping, designing for AI behavior.' },
       { title: 'Creative technology', text: 'TouchDesigner, extended reality, coded web experiences.' },
