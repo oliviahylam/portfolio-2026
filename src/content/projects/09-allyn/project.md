@@ -42,7 +42,6 @@ parts:
   - { label: Brand, anchor: brand }
   - { label: The product, anchor: final-designs }
   - { label: Designing for AI, anchor: designing-for-ai }
-  - { label: Prototype, anchor: prototype }
   - { label: Next, anchor: outcome }
 ---
 
@@ -60,7 +59,7 @@ I believe AI should make things clearer, not noisier. I wanted to design somethi
 
 [Optional, only if true: one personal line, e.g. a moment with your own tracker, or growing up between Western and Chinese medicine in Hong Kong.]
 
-<h2 id="situation">The situation, <span class="dim">and the risk.</span></h2>
+<h2 id="situation">Wearables collect everything. <span class="dim">Nobody explains it.</span></h2>
 
 Wearables collect huge amounts of data, but most people don't know what it means, what to do about it, or how to bring it to their doctor. Existing apps report numbers but ignore *how* someone wants to heal, whether that's Western medicine, functional medicine, Chinese medicine or a mix. Health decisions end up scattered across devices, doctors and Google.
 
@@ -105,7 +104,7 @@ I wanted to hear from real wearable users before deciding anything. These are th
 
 <div class="asset-slot">04-persona-maya.png + 04-persona-kevin.png · persona slides from the deck</div>
 
-### 10 surveys, 4 interviews
+### 10 surveys, 4 interviews. One clear signal.
 
 I ran a survey of 10 wearable users (7 to 9 short questions, with one open question) and 4 in-depth interviews of 30 to 45 minutes. I wrote a discussion guide in VOFF format, with a beginner and an advanced version. Each interview ran: background → concept pitch → mid-fi walkthrough → feature ranking → 1–5 rating → willingness to pay.
 
@@ -117,17 +116,15 @@ I ran a survey of 10 wearable users (7 to 9 short questions, with one open quest
 | Jillian, 19 | Medical student, half-marathon training | Apple Watch | Western + functional + Chinese medicine |
 
 <div class="a-stats">
-  <div class="a-stat"><b>4.9/5</b><span>average concept rating (5, 5, 5, 4.5). 4 of 4 said they'd use it.</span><small>Interviews · n=4</small></div>
   <div class="a-stat"><b>3 / 4</b><span>already mix care approaches</span><small>Interviews · n=4</small></div>
   <div class="a-stat"><b>3 / 4</b><span>use two or more devices</span><small>Interviews · n=4</small></div>
-  <div class="a-stat"><b>4 / 4</b><span>find doctors through referrals</span><small>Interviews · n=4</small></div>
 </div>
 
 <div class="asset-slot">[Survey results · n=10]</div>
 
 <div class="ai-note ai-note--process"><span class="ai-note__tag">AI in my process · Claude</span><p>I used Claude for AI-assisted research synthesis, turning the survey answers and four interviews into the patterns below. [Add how: what you gave it, and how you checked its output.]</p></div>
 
-<h2 id="insights">Four things they <span class="dim">taught me.</span></h2>
+<h2 id="insights">Four things real wearable users <span class="dim">taught me.</span></h2>
 
 <div class="card-grid card-grid--2">
   <div class="info-card"><h4>01 · People mix care, and their doctors don't always agree.</h4><p>Rennie's functional doctor opposed statins, but he chose medication anyway. Jillian noted that "lifestyle before statins" suits a functional doctor but would get pushback from a Western one.</p><blockquote>“I'm open to any kind of practitioner that will improve my health.”<cite>Vera</cite></blockquote></div>
@@ -149,9 +146,9 @@ I didn't use one AI for everything. I tried different tools for different jobs, 
   <div class="info-card"><h4>[AI for branding]</h4><p>[If you used AI to explore names, logo directions or the stylescape faster, describe it here. Otherwise remove this card.]</p></div>
 </div>
 
-<h2 id="mvp">Deciding what matters <span class="dim">is a human call.</span></h2>
+<h2 id="mvp">Four core features. <span class="dim">Everything else can wait.</span></h2>
 
-I ranked candidate features on an impact vs. effort 2×2 and kept four core features.
+Deciding what matters is a human call. I ranked candidate features on an impact vs. effort 2×2 and kept four core features.
 
 <div class="asset-slot">07-mvp-2x2.png · impact vs. effort matrix from the deck</div>
 
@@ -172,9 +169,9 @@ One flow covers all four features, from onboarding to two endings: "insights & p
 
 <div class="asset-slot">08-user-flow.png · Figma page “User Flow”</div>
 
-<h2 id="iteration">Human feedback reshaped <span class="dim">11 parts of the product.</span></h2>
+<h2 id="iteration">Testing reshaped <span class="dim">11 parts of the product.</span></h2>
 
-I put grayscale mid-fidelity wireframes in front of all four interviewees, then updated the design based on what they told me.
+Human feedback drove every change. I put grayscale mid-fidelity wireframes in front of all four interviewees, then updated the design based on what they told me.
 
 <div class="asset-slot">09-midfi-onboarding.png · original mid-fi wireframes</div>
 
@@ -212,7 +209,7 @@ AI can explain data and suggest next steps, but some of Allyn's biggest problems
 
 <div class="info-card"><h4>What it would take</h4><p>Partnerships with wearable companies for data access, a privacy-first data model, and prioritising the features people ranked highest (pathway and insights) before anything else. [Add who would need to sign off, e.g. legal, partnerships or clinical advisors.]</p></div>
 
-<h2 id="brand">Giving it a name <span class="dim">and a face.</span></h2>
+<h2 id="brand">Align → Attune → <span class="dim">Allyn.</span></h2>
 
 The app started as "Align", then became "Attune". During her interview, Jillian suggested spelling it like *ally*: “It's like your health ally.” I renamed it **Allyn**.
 
@@ -343,20 +340,7 @@ Filters, a care map with a pulsing top match, provider profiles, booking and con
   <figure style="--ar:.461"><div class="asset-slot" style="aspect-ratio:393/852;margin:0;width:100%;transform:none">4.3 Book a visit</div><figcaption><b>4.3 · Book a visit</b></figcaption></figure>
 </div>
 
-<h2 id="designing-for-ai">Show the evidence. <span class="dim">The doctor decides.</span></h2>
-
-<span class="ai-note__tag ai-note__tag--solo">AI in the product · principles</span>
-
-Designing an AI that talks about your health meant designing for trust first.
-
-<div class="card-grid card-grid--2">
-  <div class="info-card"><h4>Trust & transparency</h4><p>Every insight shows <em>why</em> and links its sources. The brief and insights say “Illustrative data · your doctor decides.”</p></div>
-  <div class="info-card"><h4>Uncertainty & safety</h4><p>Allyn never gives dosing advice, and frames tests as “questions to ask”, not diagnoses.</p></div>
-  <div class="info-card"><h4>Control</h4><p>Users can edit their approach, goals and profile at any time, and checklists let them choose which tests go in the brief.</p></div>
-  <div class="info-card"><h4>Conversational help</h4><p>Ask Allyn answers using connected data, with a “Based on: Oura Ring + Fitbit · last 14 days” note and hold-to-speak voice input.</p></div>
-</div>
-
-<h2 id="prototype">Small motions <span class="dim">that feel calm.</span></h2>
+### Prototype & micro-interactions
 
 A clickable prototype covers every flow, from onboarding to booking.
 
@@ -372,6 +356,19 @@ A clickable prototype covers every flow, from onboarding to booking.
   <div class="asset-slot">14-micro-wearables.gif · wearable ring glowing on</div>
   <div class="asset-slot">14-micro-mic.gif · hold-to-speak, “Listening…”</div>
   <div class="asset-slot">14-micro-map-pulse.gif · pulsing top-match pin</div>
+</div>
+
+<h2 id="designing-for-ai">Show the evidence. <span class="dim">The doctor decides.</span></h2>
+
+<span class="ai-note__tag ai-note__tag--solo">AI in the product · principles</span>
+
+Designing an AI that talks about your health meant designing for trust first.
+
+<div class="card-grid card-grid--2">
+  <div class="info-card"><h4>Trust & transparency</h4><p>Every insight shows <em>why</em> and links its sources. The brief and insights say “Illustrative data · your doctor decides.”</p></div>
+  <div class="info-card"><h4>Uncertainty & safety</h4><p>Allyn never gives dosing advice, and frames tests as “questions to ask”, not diagnoses.</p></div>
+  <div class="info-card"><h4>Control</h4><p>Users can edit their approach, goals and profile at any time, and checklists let them choose which tests go in the brief.</p></div>
+  <div class="info-card"><h4>Conversational help</h4><p>Ask Allyn answers using connected data, with a “Based on: Oura Ring + Fitbit · last 14 days” note and hold-to-speak voice input.</p></div>
 </div>
 
 <h2 id="outcome">4.9 out of 5. <span class="dim">And what comes next.</span></h2>
