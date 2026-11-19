@@ -55,6 +55,7 @@ export const site = {
     ElevenLabs: '/tools/elevenlabs.svg',
     'Meshy AI': '/tools/meshy.svg',
     Meshy: '/tools/meshy.svg',
+    'VS Code': '/tools/vscode.svg',
     HTML: '/tools/html.svg',
     CSS: '/tools/css.svg',
     JavaScript: '/tools/javascript.svg',
