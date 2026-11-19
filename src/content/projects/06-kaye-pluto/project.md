@@ -44,23 +44,22 @@ Creative direction, photography and editing. I directed and edited the photoshoo
 
 The cover concept was developed and designed by me, drawing from my interest in surrealist art and blending it with bold graphic design to match the tone of the album. Below is the design progression, from the first sketch to the final design.
 
-![Concept sketch](./concept.webp)
-![Cover progression 1](./process-1.webp)
-![Cover progression 2](./process-2.webp)
-![Cover progression 3](./process-3.webp)
+<div class="even-row">
+  <figure style="--ar:.65"><img src="/media/kaye-pluto/concept.webp" width="1560" height="2400" alt="Concept sketch" loading="lazy" data-zoom /><figcaption><b>Concept sketch</b></figcaption></figure>
+  <figure style="--ar:1.017"><img src="/media/kaye-pluto/process-1.webp" width="2400" height="2361" alt="Cover progression 1" loading="lazy" data-zoom /><figcaption><b>Progression 01</b></figcaption></figure>
+  <figure style="--ar:1.016"><img src="/media/kaye-pluto/process-2.webp" width="1440" height="1417" alt="Cover progression 2" loading="lazy" data-zoom /><figcaption><b>Progression 02</b></figcaption></figure>
+  <figure style="--ar:1"><img src="/media/kaye-pluto/process-3.webp" width="2400" height="2400" alt="Cover progression 3" loading="lazy" data-zoom /><figcaption><b>Progression 03</b></figcaption></figure>
+</div>
 
 ![Final cover — Getaway](./album-cover.webp)
 
-## In context on Spotify
+## On Spotify and social
 
-The final cover on the song page and across the artist’s Spotify profile.
+The final cover on the song page and across the artist’s Spotify profile, with the photoshoot imagery carried into her socials so every platform felt connected to the album.
 
-![Song page on Spotify](./song.webp)
+<div class="even-row even-row--mid">
+  <figure style="--ar:.593"><img src="/media/kaye-pluto/song.webp" width="838" height="1414" alt="Song page on Spotify" loading="lazy" data-zoom /><figcaption><b>Spotify</b>Song page</figcaption></figure>
+  <figure style="--ar:.63"><img src="/media/kaye-pluto/instagram.webp" width="1048" height="1664" alt="Kaye Pluto's Instagram page" loading="lazy" data-zoom /><figcaption><b>Instagram</b>Artist profile</figcaption></figure>
+</div>
 
 ![Kaye Pluto's Spotify artist page](./spotify.webp)
-
-## Social
-
-The photoshoot imagery carried into the artist’s socials, so every platform felt connected to the album.
-
-![Instagram](./instagram.webp)
