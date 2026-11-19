@@ -13,7 +13,7 @@ coverSound: true  # cover video also opens fullscreen on click
 thumbVideo: /media/mms/where-are-the-reds.mp4
 thumbRatio: 1.778
 role: Designer, Creative Director & Creative Technologist
-team: "Team of 4: me, alongside an art director & copywriter, an account manager and a creative technologist"
+team: "Valentina Scheerle, Lucy Bruechert, Ethan Stewart"
 timeline: "[e.g. 3 weeks]"
 client: Intern capstone project at Silverside AI, presented to Mars
 outcome: Presented to Mars, who responded positively
