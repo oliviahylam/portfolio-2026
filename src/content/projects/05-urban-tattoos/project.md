@@ -9,6 +9,8 @@ category: Editorial + online experience
 summary: A book about the stickers that tattoo a city's surfaces — collected, scanned and set into spreads, then carried into an online experience you explore on your phone.
 coverRatio: 0.708
 coverVideo: /media/urban-tattoos/cover.mp4
+thumbVideo: /media/urban-tattoos/scans.mp4
+thumbRatio: 1.493
 role: "Print/Editorial Designer & Interaction Designer"
 tools: [Adobe Photoshop, Adobe InDesign, After Effects, Figma, 8th Wall]
 skills: [Editorial design, Archiving, Web design]
