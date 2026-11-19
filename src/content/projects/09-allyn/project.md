@@ -13,7 +13,7 @@ thumbRatio: 1.778
 role: "[Your role, e.g. Product Designer — research, UX, UI, branding]"
 team: "[Solo / team members]"
 timeline: "[e.g. 8 weeks · In progress]"
-tools: []  # e.g. [Figma, ChatGPT, Midjourney]
+tools: [Figma, Claude, Seedance, Nano Banana]
 skills: [Product design, UX research, UI design, Branding]
 industry: "[Industry]"
 hook: "[The one-line tension of the story: what's broken, and for whom.]"
@@ -26,8 +26,10 @@ stats:
 ai:
   inProduct: "[How AI works inside Allyn — what it does for the user, and why it's better than doing it manually.]"
   inProcess:
-    - { tool: "[AI tool]", role: "[Research / ideation / visuals]", note: "[How you used it.]" }
-    - { tool: "[AI tool]", role: "[Prototyping / copy / code]", note: "[How you used it.]" }
+    - { tool: "Figma", role: "UX & UI design", note: "[How you used it, e.g. flows, wireframes and the high-fidelity screens.]" }
+    - { tool: "Claude", role: "[e.g. Research & UX writing]", note: "[How you used it, e.g. synthesising research, shaping features or writing in-app copy.]" }
+    - { tool: "Nano Banana", role: "Image generation", note: "[How you used it, e.g. the device mockups and visuals.]" }
+    - { tool: "Seedance", role: "Video generation", note: "[How you used it, e.g. animating the hero mockup into the thumbnail video.]" }
 parts:
   - { label: Problem, anchor: the-problem }
   - { label: Big idea, anchor: the-big-idea }
