@@ -6,7 +6,7 @@ template: case-study
 group: client
 order: 2
 comingSoon: true
-category: Client work · Silverside AI
+category: Product launch · Creative campaign
 client: Benefit Cosmetics (via Silverside AI)
 summary: Case study coming soon.
 thumb: ./logo.webp

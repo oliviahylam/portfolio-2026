@@ -6,7 +6,7 @@ template: case-study
 group: client
 locked: true
 order: 1
-category: Client work · Silverside AI
+category: Social content · Amazon Ads
 client: Amazon Ads (via Silverside AI)
 summary: LinkedIn social assets launching the refreshed Amazon Ads Programmatic Solutions Certifications. I generated every visual with AI, then designed the posts with typography inside Amazon Ads' brand guidelines.
 hook: Making a certification refresh feel like a competitive edge, in a single LinkedIn scroll.
