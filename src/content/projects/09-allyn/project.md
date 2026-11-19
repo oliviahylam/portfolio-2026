@@ -54,7 +54,11 @@ parts:
 
 <h2 id="why">Why this matters <span class="dim">to me.</span></h2>
 
-[Your personal why, 2–3 sentences in first person: why this problem matters to you. For example, your own experience with wearables, mixing Western and Chinese medicine, or someone close to you.]
+Health is one of the most personal things we have, yet the tools around it feel generic. Wearables give us more data about ourselves than ever, but in my research I kept hearing the same gap: numbers without meaning, and advice that ignores how people actually choose to heal.
+
+I believe AI should make things clearer, not noisier. I wanted to design something that explains your data in plain words, respects every path to care, and walks you into your doctor's office prepared, so no one has to navigate their health alone.
+
+[Optional, only if true: one personal line, e.g. a moment with your own tracker, or growing up between Western and Chinese medicine in Hong Kong.]
 
 <h2 id="situation">The situation, <span class="dim">and the risk.</span></h2>
 
