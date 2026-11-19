@@ -8,7 +8,7 @@ category: Interaction · Coded website
 summary: An immersive screenplay — a coded website that moves through layers of a dream, using motion, reflective and disappearing type to make reading feel like falling deeper.
 coverRatio: 1.778
 coverVideo: /media/inception/cover.mp4
-role: "[Design + development]"
+role: "Front-end Engineer & Designer (designed and coded end-to-end)"
 timeline: "[Duration]"
 tools: [HTML, CSS, JavaScript, "[AI coding tools?]"]
 skills: [Creative coding, Motion design, Typography, Interaction]

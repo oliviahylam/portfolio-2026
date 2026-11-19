@@ -10,7 +10,7 @@ coverVideo: /media/allyn/thumbnail.mp4
 coverRatio: 1.778
 thumbVideo: /media/allyn/thumbnail.mp4
 thumbRatio: 1.778
-role: "[Your role, e.g. Product Designer — research, UX, UI, branding]"
+role: "AI Product Designer"
 team: "[Solo / team members]"
 timeline: "[e.g. 8 weeks · In progress]"
 tools: [Figma, Claude, Seedance, Nano Banana]

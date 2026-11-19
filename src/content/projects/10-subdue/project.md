@@ -8,6 +8,7 @@ category: "[Product design · Brand]"
 summary: "[One sentence: what Subdue is and what you designed.]"
 coverRatio: 1.778
 coverVideo: /media/subdue/logo-reveal.mp4
+role: "AI Product Designer"
 tools: []
 skills: [Brand identity, Motion]
 hook: "[The one-line tension of the story.]"

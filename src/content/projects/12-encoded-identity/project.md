@@ -8,6 +8,7 @@ brandOrder: 7
 category: "[Discipline]"
 summary: "[One sentence on the project.]"
 coverNote: "[ Encoded Identity — cover coming soon ]"
+role: "Book, Print & Editorial Designer"
 tools: []
 skills: []
 ---
