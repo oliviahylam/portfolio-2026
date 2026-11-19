@@ -12,8 +12,8 @@ coverRatio: 0.5625
 coverSound: true  # cover video also opens fullscreen on click
 thumbVideo: /media/mms/where-are-the-reds.mp4
 thumbRatio: 1.778
-role: Designer
-team: "Team of 4: art director & copywriter, account manager, creative technologist, and me as designer"
+role: Designer, Creative Director & Creative Technologist
+team: "Team of 4: me, alongside an art director & copywriter, an account manager and a creative technologist"
 timeline: "[e.g. 3 weeks]"
 client: Intern capstone project at Silverside AI, presented to Mars
 outcome: Presented to Mars, who responded positively
