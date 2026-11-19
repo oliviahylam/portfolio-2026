@@ -46,6 +46,12 @@ parts:
   - { label: Outcome, anchor: outcome }
 ---
 
+<div class="ai-two">
+  <div class="ai-two__col ai-two__col--process"><span class="ai-note__tag">AI in my process</span><h4>How I built it</h4><p>Claude for research synthesis and prototyping. Nano Banana and Seedance for the hero visuals. Figma for design, prototyping and the start-up deck.</p></div>
+  <div class="ai-two__col ai-two__col--product"><span class="ai-note__tag">AI in the product</span><h4>What it does for people</h4><p>An AI agent builds your pathway, explains your data in plain words, and Ask Allyn answers questions using your own wearable data.</p></div>
+  <p class="ai-two__legend mono">Follow the two markers through the story ↓</p>
+</div>
+
 <h2 id="problem">Wearables collect everything. <span class="dim">Nobody explains it.</span></h2>
 
 Wearables collect huge amounts of data, but most people don't know what it means, what to do about it, or how to bring it to their doctor. Existing apps report numbers but ignore *how* someone wants to heal, whether that's Western medicine, functional medicine, Chinese medicine or a mix. Health decisions end up scattered across devices, doctors and Google.
@@ -101,6 +107,8 @@ I ran a survey of 10 wearable users (7 to 9 short questions, with one open quest
 
 <div class="asset-slot">[Survey results · n=10]</div>
 
+<div class="ai-note ai-note--process"><span class="ai-note__tag">AI in my process · Claude</span><p>I used Claude for AI-assisted research synthesis, turning the survey answers and four interviews into the patterns below. [Add how: what you gave it, and how you checked its output.]</p></div>
+
 <h2 id="insights">Four things real wearable users <span class="dim">taught me.</span></h2>
 
 <div class="card-grid card-grid--2">
@@ -109,6 +117,8 @@ I ran a survey of 10 wearable users (7 to 9 short questions, with one open quest
   <div class="info-card"><h4>03 · Accountability keeps people coming back.</h4><p>Rennie relies on daily pushes from his other devices. Vera wanted to ask questions about her own data.</p><blockquote>“The most important thing I can add is the push. A daily push.”<cite>Rennie</cite></blockquote></div>
   <div class="info-card"><h4>04 · Finding a provider needs trust signals.</h4><p>Vera, Jillian and Ian all asked how they'd know a provider is good. Jillian added price, insurance and blood-test labs.</p><blockquote>“How do I know that that doctor or that practitioner is actually good?”<cite>Vera</cite></blockquote></div>
 </div>
+
+<div class="ai-note ai-note--product"><span class="ai-note__tag">AI in the product · Ask Allyn</span><p>Insight 03 shaped the product directly: Vera wanted to ask questions about her own data, so I added Ask Allyn, an AI chat that answers using your connected wearables.</p></div>
 
 <h2 id="mvp">Four core features. <span class="dim">Everything else can wait.</span></h2>
 
@@ -122,6 +132,8 @@ I ranked candidate features on an impact vs. effort 2×2 and kept four core feat
   <div class="info-card"><h4>03 · Checkup prep</h4><p>Which tests to ask about, plus a one-page visit brief.</p></div>
   <div class="info-card"><h4>04 · Provider finder</h4><p>A map of providers that match your goal and care approach, with booking.</p></div>
 </div>
+
+<div class="ai-note ai-note--product"><span class="ai-note__tag">AI in the product · Pathway + insights</span><p>Two of the four features are AI at their core: an AI agent builds your personal pathway from your care approach and goals, and insights translate your data into plain words with one small action to test.</p></div>
 
 In interviews, pathway and insights ranked highest. Checkup prep was split (Vera and Ian ranked it near the top). Two people ranked the provider finder last because they rely on referrals, which is why I added trust signals instead of cutting it.
 
@@ -153,6 +165,8 @@ I put grayscale mid-fidelity wireframes in front of all four interviewees, then 
 | Accountability | Ask Allyn, an AI chat that uses your data | 2.5 |
 | Trust | Ratings, reviews, price, insurance, "suggested for your goal", blood test labs, physio/osteopath filters | 4.0, 4.1, 4.2 |
 | Trust | Add to calendar and "rate this visit" prompt | 4.3 |
+
+<div class="ai-note ai-note--process"><span class="ai-note__tag">AI in my process · Claude</span><p>I also used Claude for AI-assisted prototyping as I moved from mid-fidelity to v3. [Add what it helped with, e.g. copy, edge cases or logic for the flows.]</p></div>
 
 <div class="info-card"><h4>Parked for later</h4><p>Social streaks and kudos, nutrition plans, a recovery tab, supplement timing and interaction checks, per-device tabs, and pricing models (free tier, loyalty discount).</p></div>
 
@@ -241,6 +255,8 @@ Six aura gradients, one per health area:
 
 ![Allyn high-fidelity screens](/media/allyn/hero.webp)
 
+<div class="ai-note ai-note--process"><span class="ai-note__tag">AI in my process · Nano Banana + Seedance</span><p>I used Nano Banana to stage my screens as floating devices, and Seedance to animate them into the hero film at the top of this page. [Confirm or adjust.]</p></div>
+
 ### Onboarding · Maya
 
 Welcome, care approach tiles, goals and a deadline, health profile, the multi-device wearables ring and a pathway summary. **Decision:** care approach comes first, because everything else adapts to it.
@@ -261,6 +277,8 @@ Morning push, daily check-in, Today with a pixel sleep-score ring, insights (why
   <figure style="--ar:.461"><div class="asset-slot" style="aspect-ratio:393/852;margin:0;width:100%;transform:none">2.5 Ask Allyn</div><figcaption><b>2.5 · Ask Allyn</b></figcaption></figure>
 </div>
 
+<div class="ai-note ai-note--product"><span class="ai-note__tag">AI in the product · Insights & Ask Allyn</span><p>Every insight leads with <em>why</em> and ends with its sources. Ask Allyn shows what it is based on, for example “Oura Ring + Fitbit · last 14 days”, so people can see where an answer comes from.</p></div>
+
 ### Checkup prep · Maya
 
 The Prep tab, what to ask (Western vs. functional), the visit brief, and a PDF preview to share. **Decision:** the brief hands off to the doctor, who decides.
@@ -270,6 +288,8 @@ The Prep tab, what to ask (Western vs. functional), the visit brief, and a PDF p
   <figure style="--ar:.461"><img src="/media/allyn/screen-visit-brief.webp" width="393" height="852" alt="Visit brief for a doctor's appointment" loading="lazy" data-zoom /><figcaption><b>3.3 · Visit brief</b>One page for the doctor</figcaption></figure>
   <figure style="--ar:.461"><div class="asset-slot" style="aspect-ratio:393/852;margin:0;width:100%;transform:none">3.4 Brief preview & share</div><figcaption><b>3.4 · Preview & share</b></figcaption></figure>
 </div>
+
+<div class="ai-note ai-note--product"><span class="ai-note__tag">AI in the product · Checkup prep</span><p>The AI suggests questions to ask, adapted to your doctor type (Western, functional or Chinese medicine), and frames tests as questions, never diagnoses. The doctor decides.</p></div>
 
 ### Provider finder · Kevin
 
@@ -282,6 +302,10 @@ Filters, a care map with a pulsing top match, provider profiles, booking and con
 </div>
 
 <h2 id="designing-for-ai">Show the evidence. <span class="dim">The doctor decides.</span></h2>
+
+<span class="ai-note__tag ai-note__tag--solo">AI in the product · principles</span>
+
+Designing an AI that talks about your health meant designing for trust first.
 
 <div class="card-grid card-grid--2">
   <div class="info-card"><h4>Trust & transparency</h4><p>Every insight shows <em>why</em> and links its sources. The brief and insights say “Illustrative data · your doctor decides.”</p></div>
