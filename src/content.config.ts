@@ -67,6 +67,7 @@ const projects = defineCollection({
       comingSoon: z.boolean().default(false),
       locked: z.boolean().default(false),
       coverSound: z.boolean().default(false), // cover video gets a sound toggle
+      opener: z.string().optional(), // full-screen statement shown first on the case study (accepts <span class="dim">)
       theme: z.enum(['allyn']).optional(), // page theme (colours + fonts) for a single case study
       extraFacts: z.array(z.object({ label: z.string(), value: z.string() })).default([]), // more rows in the overview box
       thumbVideo: z.string().optional(), // looping video for the homepage card, e.g. /media/x/thumb.mp4

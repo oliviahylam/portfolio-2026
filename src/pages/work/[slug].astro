@@ -60,7 +60,13 @@ const hasMedia = Boolean(d.cover || d.coverVideo);
     </article>
   ) : (
     <article class:list={["story", d.theme && `theme-${d.theme}`]}>
-      <header class="story-hero wrap">
+      {d.opener && (
+        <section class="opener" aria-label="Opening statement">
+          <p class="opener__line" set:html={d.opener} />
+          <a class="opener__cue mono" href="#story-start">Scroll ↓</a>
+        </section>
+      )}
+      <header class="story-hero wrap" id="story-start">
         <a class="back" href={back}>← All work</a>
         <span class="eyebrow">{d.category} · {d.year}</span>
         <h1 class="story-title">{d.title}</h1>

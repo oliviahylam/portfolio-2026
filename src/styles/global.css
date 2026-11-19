@@ -693,3 +693,14 @@ body:has(.theme-allyn) {
 .theme-allyn .prose ol.a-principles li::before { content: '0' counter(p); font-family: var(--font-mono); font-size: 11px; color: var(--a-sky); margin-right: 12px; vertical-align: 3px; }
 .prose .card-grid .asset-slot, .prose .even-row .asset-slot { width: auto; margin: 0; transform: none; min-height: 140px; }
 @media (max-width: 720px) { .prose table { display: block; overflow-x: auto; width: calc(100vw - 2 * var(--gutter)); } }
+
+/* Full-screen opening statement on a case study */
+.opener { min-height: calc(100svh - var(--nav-h, 64px)); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 48px; padding: 48px var(--gutter); text-align: center; position: relative; }
+.opener__line { margin: 0; max-width: 18ch; font-size: clamp(40px, 6.4vw, 96px); line-height: 1.05; font-weight: 600; letter-spacing: -.035em; opacity: 0; transform: translateY(16px); animation: openerIn 1.2s var(--ease) .2s forwards; }
+.opener__line .dim { color: var(--muted); display: block; margin-top: .25em; opacity: 0; animation: openerIn 1.2s var(--ease) 1.4s forwards; }
+.opener__cue { color: var(--muted); position: absolute; bottom: 32px; opacity: 0; animation: openerIn .8s var(--ease) 2.4s forwards; }
+@keyframes openerIn { to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .opener__line, .opener__line .dim, .opener__cue { animation: none; opacity: 1; transform: none; } }
+.theme-allyn .opener::before { content: ''; position: absolute; inset: 10% 15%; background: radial-gradient(closest-side, rgba(79, 116, 224, .35), transparent); filter: blur(40px); z-index: -1; animation: openerBreathe 6s ease-in-out infinite; }
+.theme-allyn .opener__line .dim { color: rgba(255, 255, 255, .5); }
+@keyframes openerBreathe { 50% { transform: scale(1.08); opacity: .75; } }
