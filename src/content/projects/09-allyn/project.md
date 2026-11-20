@@ -86,9 +86,13 @@ Asking "why" five times took me from "trackers show numbers" to the real cost: p
   <div class="info-card"><h4>What's needed</h4><p>One place that explains the data, respects how each person wants to heal, and hands off to the doctor.</p></div>
 </div>
 
-<div class="even-row">
-  <figure style="--ar:1.778"><img src="/media/allyn/five-whys.webp" width="1920" height="1080" alt="The 5 whys" loading="lazy" data-zoom /></figure>
-</div>
+<ol class="a-whys">
+  <li><span class="a-whys__n">01</span><b>Why do tracker users struggle to improve their health?</b><span>Their apps show numbers like heart rate and HRV, but rarely explain them or say what to do next.</span></li>
+  <li><span class="a-whys__n">02</span><b>Why don't they know what to do next?</b><span>The data lacks context: goals, blood work, diet and symptoms all live somewhere else.</span></li>
+  <li><span class="a-whys__n">03</span><b>Why is scattered context a problem?</b><span>People piece together advice from social media, AI chats and forums that often conflicts.</span></li>
+  <li><span class="a-whys__n">04</span><b>Why is this hard to fix?</b><span>No tool combines personal data, goals and different health approaches into one trustworthy plan.</span></li>
+  <li><span class="a-whys__n">05</span><b>Why does this matter?</b><span>People waste money on supplements and tests, drop routines, and miss the right questions at checkups.</span></li>
+</ol>
 
 <h2 id="listening">Before designing, <span class="dim">I listened.</span></h2>
 
@@ -117,21 +121,28 @@ I wanted to hear from real wearable users before deciding anything. These are th
   </div>
 </div>
 
-<div class="even-row">
-  <figure style="--ar:1.778"><img src="/media/allyn/persona-maya.webp" width="1920" height="1080" alt="Maya Torres persona" loading="lazy" data-zoom /></figure>
-  <figure style="--ar:1.778"><img src="/media/allyn/persona-kevin.webp" width="1920" height="1080" alt="Kevin Liu persona" loading="lazy" data-zoom /></figure>
-</div>
-
 ### Inside Maya's head, and both of their journeys
 
 The empathy map captured what Maya says, thinks, does and feels. The journey map follows Maya and Kevin from discovering Allyn to finding care, and what to design for at each stage.
 
-<div class="even-row">
-  <figure style="--ar:1.778"><img src="/media/allyn/empathy-maya.webp" width="1600" height="900" alt="Empathy map: Maya" loading="lazy" data-zoom /><figcaption><b>Empathy map · Maya</b></figcaption></figure>
+<span class="mono a-label">Empathy map · Maya, primary persona</span>
+
+<div class="a-empathy">
+  <div class="a-empathy__q a-empathy__q--says"><span class="mono">Says</span><ul><li>Why is my BP still high?</li><li>What do these scores mean?</li><li>Is this supplement safe?</li><li>“Let's start a statin”</li><li>Can my doctors work together?</li><li>I need a plan that fits my week</li><li>Is it stress or my diet?</li><li>Who can I see near me?</li></ul></div>
+  <div class="a-empathy__q a-empathy__q--thinks"><span class="mono">Thinks</span><ul><li>Am I doing this right?</li><li>Do I really need statins?</li><li>Who should I trust?</li><li>Is this worth the money?</li><li>Why is my BP up today?</li><li>There must be a root cause</li><li>What am I missing?</li><li>I don't want more pills</li></ul></div>
+  <div class="a-empathy__q a-empathy__q--does"><span class="mono">Does</span><ul><li>Checks Oura every morning</li><li>Asks ChatGPT about symptoms</li><li>Meal-preps heart-healthy</li><li>Listens to health podcasts</li><li>Buys supplements online</li><li>Logs her BP readings</li><li>Googles doctors nearby</li><li>Works through lunch</li></ul></div>
+  <div class="a-empathy__q a-empathy__q--feels"><span class="mono">Feels</span><ul><li>Overwhelmed</li><li>Dismissed</li><li>Anxious</li><li>Hopeful</li><li>Curious</li><li>Unsure who to trust</li><li>Frustrated</li><li>Motivated</li></ul></div>
+  <div class="a-empathy__c"><b>Maya</b><span class="mono">Persona 01</span></div>
 </div>
 
-<div class="even-row">
-  <figure style="--ar:1.778"><img src="/media/allyn/journey-map.webp" width="1600" height="900" alt="Multi-user journey map: Maya and Kevin" loading="lazy" data-zoom /><figcaption><b>Journey map · Maya and Kevin</b></figcaption></figure>
+<span class="mono a-label">Multi-user journey map · Maya and Kevin</span>
+
+<div class="a-journey">
+  <div class="a-journey__row a-journey__stages"><span class="mono">Stages</span><span>Discover</span><span>Onboard</span><span>Set pathway</span><span>Daily insights</span><span>Checkup prep</span><span>Find care</span></div>
+  <div class="a-journey__row a-journey__feel"><span class="mono">Feelings<small><i class="l1"></i>Maya <i class="l2"></i>Kevin</small></span><div class="a-journey__chart"><svg viewBox="0 0 600 110" preserveAspectRatio="none" aria-hidden="true"><polyline points="50,68 150,50 250,32 350,46 450,24 550,14" fill="none" stroke="#9DB4F5" stroke-width="2.5"/><polyline points="50,82 150,64 250,50 350,32 450,28 550,21" fill="none" stroke="#B8A3F2" stroke-width="2.5" stroke-dasharray="6 5"/><circle cx="50" cy="68" r="4.5" fill="#9DB4F5"/><circle cx="150" cy="50" r="4.5" fill="#9DB4F5"/><circle cx="250" cy="32" r="4.5" fill="#9DB4F5"/><circle cx="350" cy="46" r="4.5" fill="#9DB4F5"/><circle cx="450" cy="24" r="4.5" fill="#9DB4F5"/><circle cx="550" cy="14" r="4.5" fill="#9DB4F5"/><circle cx="50" cy="82" r="4.5" fill="#121A3A" stroke="#B8A3F2" stroke-width="2"/><circle cx="150" cy="64" r="4.5" fill="#121A3A" stroke="#B8A3F2" stroke-width="2"/><circle cx="250" cy="50" r="4.5" fill="#121A3A" stroke="#B8A3F2" stroke-width="2"/><circle cx="350" cy="32" r="4.5" fill="#121A3A" stroke="#B8A3F2" stroke-width="2"/><circle cx="450" cy="28" r="4.5" fill="#121A3A" stroke="#B8A3F2" stroke-width="2"/><circle cx="550" cy="21" r="4.5" fill="#121A3A" stroke="#B8A3F2" stroke-width="2"/></svg></div></div>
+  <div class="a-journey__row a-journey__maya"><span class="mono">Maya</span><span>Hears about Allyn from a friend</span><span>Connects Oura and uploads labs</span><span>Picks functional; goal: lower BP</span><span>Sees a BP spike after short sleep</span><span>Brings a one-page brief to her doctor</span><span>Books a functional clinic nearby</span></div>
+  <div class="a-journey__row a-journey__kevin"><span class="mono">Kevin</span><span>Sees Allyn on a sleep thread</span><span>Connects WHOOP, skips labs</span><span>Picks Western + Chinese; goal: sleep</span><span>Learns late coffee hurts his sleep</span><span>Asks his doctor about acupuncture</span><span>Finds an acupuncturist near work</span></div>
+  <div class="a-journey__row a-journey__for"><span class="mono">Design for</span><span>A sample insight before sign-up</span><span>Lab uploads that are optional</span><span>Mixing care approaches</span><span>Beginner lessons in plain language</span><span>A brief shared by PDF or link</span><span>Telehealth when none is nearby</span></div>
 </div>
 
 ### 10 surveys, 4 interviews. One clear signal.
@@ -156,9 +167,23 @@ I ran a survey of 10 wearable users (7 to 9 short questions, with one open quest
 
 I mapped direct competitors (January AI, Bevel, Oura, WHOOP, Superpower), secondary ones (Parsley Health, Function Health, ChatGPT Health) and indirect ones (practitioner directories, Zocdoc, Apple Health). None of them let you choose your care approach or find matching providers nearby.
 
-<div class="even-row">
-  <figure style="--ar:1.778"><img src="/media/allyn/competitive.webp" width="1920" height="1080" alt="Competitive analysis: feature comparison" loading="lazy" data-zoom /></figure>
+<div class="a-table-wrap">
+
+| | January AI | Oura | Superpower | Parsley Health | ChatGPT Health | **Allyn** |
+|---|---|---|---|---|---|---|
+| Overview | Free AI coach using records and wearables | Smart ring with AI and lab tests | Blood tests, plans and clinicians | Online functional medicine doctors | ChatGPT linked to Apple Health | **Personal pathways from any tracker** |
+| Strengths | Free; links Oura and WHOOP | Sleep and recovery data | Clear plans; syncs wearables | Real doctors; insurance-covered | Free and conversational | **Any tracker; your care type** |
+| Weaknesses | Centred on glucose and food | Only Oura's own ring | Sells tests and supplements | Visit-based; not tracker-first | No plans or tracking | **New brand; must earn trust** |
+| AI insights | ✓ | ✓ | ✓ | — | ✓ | **✓** |
+| Blood test results | ✓ | ✓ | ✓ | ✓ | ✓ | **✓** |
+| Any wearable brand | ✓ | — | ✓ | — | ✓ | **✓** |
+| Nothing to sell | ✓ | — | — | — | ✓ | **✓** |
+| Choose care approach | — | — | — | — | — | **✓** |
+| Find providers nearby | — | — | — | — | — | **✓** |
+
 </div>
+
+<span class="mono a-label">✓ offered · — not found · public product info, Oct 2026</span>
 
 <div class="card-grid card-grid--3">
   <div class="info-card"><h4>Any tracker, not one brand</h4><p>Oura and WHOOP's AI reads their own devices. Allyn works across all of them.</p></div>
@@ -196,8 +221,16 @@ I didn't use one AI for everything. I tried different tools for different jobs, 
 
 Deciding what matters is a human call. I ranked candidate features on an impact vs. effort 2×2 and kept four core features.
 
-<div class="even-row">
-  <figure style="--ar:1.778"><img src="/media/allyn/mvp-2x2.webp" width="1600" height="900" alt="Impact vs. effort matrix" loading="lazy" data-zoom /></figure>
+<div class="a-matrix" role="img" aria-label="Impact vs effort matrix: all candidate features sit in the high-value half">
+  <span class="a-matrix__ax a-matrix__ax--t">High value</span><span class="a-matrix__ax a-matrix__ax--b">Low value</span><span class="a-matrix__ax a-matrix__ax--l">Low effort</span><span class="a-matrix__ax a-matrix__ax--r">High effort</span>
+  <span class="a-matrix__chip" style="left:6%;top:16%">Detailed daily insights</span>
+  <span class="a-matrix__chip" style="left:22%;top:6%">Care approach & goal setup</span>
+  <span class="a-matrix__chip" style="left:6%;top:36%">Daily check-ins</span>
+  <span class="a-matrix__chip" style="left:30%;top:28%">Checkup prep</span>
+  <span class="a-matrix__chip" style="left:33%;top:40%">Reading tracker data</span>
+  <span class="a-matrix__chip" style="left:48%;top:17%">Red flags</span>
+  <span class="a-matrix__chip" style="left:68%;top:12%">Personal pathway</span>
+  <span class="a-matrix__chip" style="left:68%;top:28%">Provider finder</span>
 </div>
 
 <div class="card-grid card-grid--4">
