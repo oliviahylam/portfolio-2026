@@ -740,3 +740,5 @@ body:has(.theme-allyn) {
 .code-grid figure { flex: 0 1 calc((100% - 40px) / 3); }
 @media (max-width: 900px) { .code-grid figure { flex-basis: calc((100% - 20px) / 2); } }
 @media (max-width: 560px) { .code-grid figure { flex-basis: 100%; } }
+.prose .a-hmw { margin: 1.6em 0; padding: 24px 28px; border-radius: 20px; border: 1px solid rgba(157,180,245,.3); background: linear-gradient(135deg, rgba(79,116,224,.18), rgba(184,163,242,.08)); font-size: clamp(20px, 2vw, 26px); line-height: 1.35; font-weight: 500; color: var(--fg); font-style: normal; }
+.prose .a-hmw .mono { display: block; font-size: 11px; color: #9DB4F5; margin-bottom: 10px; font-weight: 400; }

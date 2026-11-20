@@ -63,19 +63,32 @@ I believe AI should make things clearer, not noisier. I wanted to design somethi
 
 Wearables collect huge amounts of data, but most people don't know what it means, what to do about it, or how to bring it to their doctor. Existing apps report numbers but ignore *how* someone wants to heal, whether that's Western medicine, functional medicine, Chinese medicine or a mix. Health decisions end up scattered across devices, doctors and Google.
 
+<blockquote class="a-hmw"><span class="mono">Problem statement</span>How might we help wearable users understand and act on their health data, so they can reach their health goals with confidence?</blockquote>
+
+<div class="card-grid card-grid--3">
+  <div class="info-card"><h4>Who</h4><p>Oura, WHOOP and Fitbit owners who want more from their data.</p></div>
+  <div class="info-card"><h4>What</h4><p>Explanations and next steps, not just scores and charts.</p></div>
+  <div class="info-card"><h4>Why</h4><p>Personal plans and nearby care that fit how they want to heal.</p></div>
+</div>
+
 <div class="a-stats">
   <div class="a-stat"><b>4 / 4</b><span>interviewees found their doctors through referrals, not search</span><small>Interviews · n=4</small></div>
   <div class="a-stat"><b>2 / 4</b><span>do no preparation before checkups</span><small>Interviews · n=4</small></div>
-  <div class="a-stat"><b>[ ]</b><span>[Market or problem stat from the deck]</span><small>[Source]</small></div>
 </div>
 
+### The 5 whys
+
+Asking "why" five times took me from "trackers show numbers" to the real cost: people waste money on supplements and tests, drop routines, and miss the right questions at checkups.
+
 <div class="card-grid card-grid--3">
-  <div class="info-card"><h4>The risk</h4><p>People act on numbers they don't understand, or ignore them completely.</p></div>
+  <div class="info-card"><h4>The risk</h4><p>People act on numbers they don't understand, piece together conflicting advice from social media, AI chats and forums, or ignore their data completely.</p></div>
   <div class="info-card"><h4>The gap</h4><p>Their doctors don't always agree, and checkups happen with no preparation.</p></div>
   <div class="info-card"><h4>What's needed</h4><p>One place that explains the data, respects how each person wants to heal, and hands off to the doctor.</p></div>
 </div>
 
-<div class="asset-slot">03-problem.png · problem slide from the deck</div>
+<div class="even-row">
+  <figure style="--ar:1.778"><img src="/media/allyn/five-whys.webp" width="1920" height="1080" alt="The 5 whys" loading="lazy" data-zoom /></figure>
+</div>
 
 <h2 id="listening">Before designing, <span class="dim">I listened.</span></h2>
 
@@ -85,24 +98,41 @@ I wanted to hear from real wearable users before deciding anything. These are th
 
 <div class="card-grid card-grid--2">
   <div class="persona">
-    <div class="persona__head"><span class="persona__avatar" aria-hidden="true">M</span><div><h4>Maya Torres, 31</h4><span>Marketing</span></div></div>
+    <div class="persona__head"><span class="persona__avatar" aria-hidden="true">M</span><div><h4>Maya Torres, 31</h4><span>Marketing manager · Oura Ring · functional & holistic</span></div></div>
+    <blockquote>“I know my numbers. I want to lower them naturally, with a plan that fits 60-hour weeks.”</blockquote>
     <dl>
-      <dt>Health</dt><dd>High cholesterol and high blood pressure.</dd>
-      <dt>Care approach</dt><dd>Prefers functional and holistic care, and wants to try lifestyle changes before medication.</dd>
-      <dt>Needs</dt><dd>To know which tests to ask about, and how to talk to her doctor.</dd>
+      <dt>Health</dt><dd>High cholesterol and hypertension. Goal: lower blood pressure and LDL naturally.</dd>
+      <dt>Frustrations</dt><dd>Lots of research, never enough time. Oura shows stress, not what to change. Doctors jump straight to statins.</dd>
+      <dt>How Allyn helps</dt><dd>A functional pathway for heart health that links BP spikes to stress, sleep and food, and maps functional clinics near work.</dd>
     </dl>
   </div>
   <div class="persona">
-    <div class="persona__head"><span class="persona__avatar" aria-hidden="true">K</span><div><h4>Kevin Liu, 27</h4><span>Finance</span></div></div>
+    <div class="persona__head"><span class="persona__avatar" aria-hidden="true">K</span><div><h4>Kevin Liu, 27</h4><span>Finance, long hours · WHOOP · Western + Chinese medicine</span></div></div>
+    <blockquote>“WHOOP says my recovery is in the red. I just want to sleep better, and I don't know where to start.”</blockquote>
     <dl>
-      <dt>Health</dt><dd>Struggles with sleep.</dd>
-      <dt>Care approach</dt><dd>Mixes Western and Chinese medicine.</dd>
-      <dt>Needs</dt><dd>To understand what his sleep data means, and find care that fits both approaches.</dd>
+      <dt>Health</dt><dd>A beginner, curious to learn. Goal: improve his sleep quality.</dd>
+      <dt>Frustrations</dt><dd>Recovery scores with no plan to fix them. Health advice online feels overwhelming. Unsure what in Chinese medicine is safe.</dd>
+      <dt>How Allyn helps</dt><dd>A beginner Western + Chinese pathway, short plain-language sleep lessons, and acupuncturists or sleep clinics nearby.</dd>
     </dl>
   </div>
 </div>
 
-<div class="asset-slot">04-persona-maya.png + 04-persona-kevin.png · persona slides from the deck</div>
+<div class="even-row">
+  <figure style="--ar:1.778"><img src="/media/allyn/persona-maya.webp" width="1920" height="1080" alt="Maya Torres persona" loading="lazy" data-zoom /></figure>
+  <figure style="--ar:1.778"><img src="/media/allyn/persona-kevin.webp" width="1920" height="1080" alt="Kevin Liu persona" loading="lazy" data-zoom /></figure>
+</div>
+
+### Inside Maya's head, and both of their journeys
+
+The empathy map captured what Maya says, thinks, does and feels. The journey map follows Maya and Kevin from discovering Allyn to finding care, and what to design for at each stage.
+
+<div class="even-row">
+  <figure style="--ar:1.778"><img src="/media/allyn/empathy-maya.webp" width="1600" height="900" alt="Empathy map: Maya" loading="lazy" data-zoom /><figcaption><b>Empathy map · Maya</b></figcaption></figure>
+</div>
+
+<div class="even-row">
+  <figure style="--ar:1.778"><img src="/media/allyn/journey-map.webp" width="1600" height="900" alt="Multi-user journey map: Maya and Kevin" loading="lazy" data-zoom /><figcaption><b>Journey map · Maya and Kevin</b></figcaption></figure>
+</div>
 
 ### 10 surveys, 4 interviews. One clear signal.
 
@@ -121,6 +151,20 @@ I ran a survey of 10 wearable users (7 to 9 short questions, with one open quest
 </div>
 
 <div class="asset-slot">[Survey results · n=10]</div>
+
+### The competition
+
+I mapped direct competitors (January AI, Bevel, Oura, WHOOP, Superpower), secondary ones (Parsley Health, Function Health, ChatGPT Health) and indirect ones (practitioner directories, Zocdoc, Apple Health). None of them let you choose your care approach or find matching providers nearby.
+
+<div class="even-row">
+  <figure style="--ar:1.778"><img src="/media/allyn/competitive.webp" width="1920" height="1080" alt="Competitive analysis: feature comparison" loading="lazy" data-zoom /></figure>
+</div>
+
+<div class="card-grid card-grid--3">
+  <div class="info-card"><h4>Any tracker, not one brand</h4><p>Oura and WHOOP's AI reads their own devices. Allyn works across all of them.</p></div>
+  <div class="info-card"><h4>Nothing to sell you</h4><p>Lab memberships sell tests and supplements. Allyn's advice stays independent.</p></div>
+  <div class="info-card"><h4>Your path, your providers</h4><p>Pick Western, functional or Chinese medicine, then find nearby providers who practice it.</p></div>
+</div>
 
 <div class="ai-note ai-note--process"><span class="ai-note__tag">AI in my process · Claude</span><p>I used Claude for AI-assisted research synthesis, turning the survey answers and four interviews into the patterns below. [Add how: what you gave it, and how you checked its output.]</p></div>
 
@@ -148,9 +192,13 @@ I didn't use one AI for everything. I tried different tools for different jobs, 
 
 <h2 id="mvp">Four core features. <span class="dim">Everything else can wait.</span></h2>
 
+<blockquote class="a-hmw"><span class="mono">Value proposition</span>Allyn is the AI health companion for fitness trackers that allows health-conscious people to understand their data, follow a health pathway built around their goals, and find the right care nearby.</blockquote>
+
 Deciding what matters is a human call. I ranked candidate features on an impact vs. effort 2×2 and kept four core features.
 
-<div class="asset-slot">07-mvp-2x2.png · impact vs. effort matrix from the deck</div>
+<div class="even-row">
+  <figure style="--ar:1.778"><img src="/media/allyn/mvp-2x2.webp" width="1600" height="900" alt="Impact vs. effort matrix" loading="lazy" data-zoom /></figure>
+</div>
 
 <div class="card-grid card-grid--4">
   <div class="info-card"><h4>01 · Personal pathway</h4><p>Pick your care approach and goals, and an AI agent builds your plan.</p></div>
@@ -167,18 +215,27 @@ In interviews, pathway and insights ranked highest. Checkup prep was split (Vera
 
 One flow covers all four features, from onboarding to two endings: "insights & plan" and "book & save". Navigation is four tabs (Today · Pathway · Prep · Care) plus an Ask Allyn AI button.
 
-<div class="asset-slot">08-user-flow.png · Figma page “User Flow”</div>
+<div class="even-row">
+  <figure style="--ar:1.667"><img src="/media/allyn/user-flow.webp" width="1600" height="960" alt="User flow: Option B, goal-first" loading="lazy" data-zoom /><figcaption><b>Goal-first flow · works with or without a tracker</b></figcaption></figure>
+</div>
 
 <h2 id="iteration">Testing reshaped <span class="dim">11 parts of the product.</span></h2>
 
 Human feedback drove every change. I put grayscale mid-fidelity wireframes in front of all four interviewees, then updated the design based on what they told me.
 
-<div class="asset-slot">09-midfi-onboarding.png · original mid-fi wireframes</div>
+<div class="even-row even-row--narrow">
+  <figure style="--ar:0.416"><img src="/media/allyn/midfi-v2.webp" width="665" height="1600" alt="Mid-fidelity updates from user testing (v2)" loading="lazy" data-zoom /><figcaption><b>Mid-fidelity v2 · updates from user testing</b></figcaption></figure>
+</div>
 
-<div class="card-grid card-grid--3">
-  <div class="asset-slot">09-before-after-wearables.png · mid-fi → v3 1.4</div>
-  <div class="asset-slot">09-before-after-prep.png · mid-fi → v3 3.2</div>
-  <div class="asset-slot">09-before-after-provider.png · mid-fi → v3 4.2</div>
+### Before and after testing
+
+<div class="even-row">
+  <figure style="--ar:.46"><img src="/media/allyn/midfi-wearables.webp" width="440" height="956" alt="Wearables: mid-fidelity before testing" loading="lazy" data-zoom /><figcaption><b>Before</b>Wearables · mid-fi</figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-wearables.webp" width="393" height="852" alt="Wearables: after testing" loading="lazy" data-zoom /><figcaption><b>After</b>Wearables · v3</figcaption></figure>
+  <figure style="--ar:.46"><img src="/media/allyn/midfi-what-to-ask.webp" width="440" height="956" alt="What to ask: mid-fidelity before testing" loading="lazy" data-zoom /><figcaption><b>Before</b>What to ask · mid-fi</figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-what-to-ask.webp" width="393" height="852" alt="What to ask: after testing" loading="lazy" data-zoom /><figcaption><b>After</b>What to ask · v3</figcaption></figure>
+  <figure style="--ar:.46"><img src="/media/allyn/midfi-provider.webp" width="440" height="956" alt="Provider: mid-fidelity before testing" loading="lazy" data-zoom /><figcaption><b>Before</b>Provider · mid-fi</figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-provider.webp" width="393" height="852" alt="Provider: after testing" loading="lazy" data-zoom /><figcaption><b>After</b>Provider · v3</figcaption></figure>
 </div>
 
 | Learning | Change | Screens (v3) |
@@ -237,15 +294,29 @@ Calm · Clear · Open-minded · Supportive · Quietly smart. *“The friend who 
 
 I explored wordmarks (ll treatments), symbols from the word, wearable and "extension of you" ideas, then unity and support symbols. The final mark is **the clasp**: two identical hooks holding each other, for you and your ally, equal and connected.
 
-<div class="asset-slot">10-logo-explorations.png · symbol directions v2 / v3 / v4, clasp refinement</div>
+<div class="even-row">
+  <figure style="--ar:2.817"><img src="/media/allyn/logo-v2.webp" width="1600" height="568" alt="Symbol directions v2" loading="lazy" data-zoom /><figcaption><b>Symbols from the meaning of the word</b></figcaption></figure>
+</div>
 
-<div class="asset-slot">10-logo-final.png · final logo</div>
+<div class="even-row">
+  <figure style="--ar:2.817"><img src="/media/allyn/logo-v4.webp" width="1600" height="568" alt="Symbol directions v4" loading="lazy" data-zoom /><figcaption><b>Unity, support and alignment</b></figcaption></figure>
+</div>
+
+<div class="even-row">
+  <figure style="--ar:2.428"><img src="/media/allyn/logo-clasp.webp" width="1600" height="659" alt="Clasp refinement" loading="lazy" data-zoom /><figcaption><b>Refining the clasp</b></figcaption></figure>
+</div>
+
+<div class="even-row">
+  <figure style="--ar:2.092"><img src="/media/allyn/logo-final.webp" width="1600" height="765" alt="Final Allyn logo" loading="lazy" data-zoom /><figcaption><b>The clasp: two hooks, one hold</b></figcaption></figure>
+</div>
 
 ### Stylescape
 
 Night-sky base, one confident blue, soft auras per health area, and liquid glass on touchable elements only.
 
-<div class="asset-slot">10-stylescape.png · Allyn stylescape</div>
+<div class="even-row">
+  <figure style="--ar:1.406"><img src="/media/allyn/stylescape.webp" width="1600" height="1138" alt="Allyn stylescape" loading="lazy" data-zoom /></figure>
+</div>
 
 ### A night sky and one confident blue
 
@@ -288,7 +359,9 @@ Six aura gradients, one per health area:
   <div class="info-card"><h4>Components</h4><p>Primary and secondary pill buttons, glass inputs, choice chips, toggles, checkboxes, Yes/No segmented control, date and time pickers, and a nav bar with a sliding active bubble.</p></div>
 </div>
 
-<div class="asset-slot">11-design-system.png · UI Design System v2 board</div>
+<div class="even-row">
+  <figure style="--ar:1.587"><img src="/media/allyn/design-system.webp" width="1600" height="1008" alt="Allyn UI design system" loading="lazy" data-zoom /></figure>
+</div>
 
 <h2 id="final-designs">One clear next step, <span class="dim">on every screen.</span></h2>
 
@@ -301,8 +374,8 @@ Six aura gradients, one per health area:
 Welcome, care approach tiles, goals and a deadline, health profile, the multi-device wearables ring and a pathway summary. **Decision:** care approach comes first, because everything else adapts to it.
 
 <div class="even-row even-row--mid">
-  <figure style="--ar:.461"><div class="asset-slot" style="aspect-ratio:393/852;margin:0;width:100%;transform:none">1.1 Care approach</div><figcaption><b>1.1 · Care approach</b></figcaption></figure>
-  <figure style="--ar:.461"><div class="asset-slot" style="aspect-ratio:393/852;margin:0;width:100%;transform:none">1.3 Health profile</div><figcaption><b>1.3 · Health profile</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-care-approach.webp" width="393" height="852" alt="Onboarding: choose your care approach" loading="lazy" data-zoom /><figcaption><b>1.1 · Care approach</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-health-profile.webp" width="393" height="852" alt="Health profile: conditions and medications" loading="lazy" data-zoom /><figcaption><b>1.3 · Health profile</b></figcaption></figure>
   <figure style="--ar:.461"><img src="/media/allyn/screen-wearables.webp" width="393" height="852" alt="Onboarding: connect your wearables" loading="lazy" data-zoom /><figcaption><b>1.4 · Wearables</b>Multi-device ring</figcaption></figure>
 </div>
 
@@ -311,9 +384,9 @@ Welcome, care approach tiles, goals and a deadline, health profile, the multi-de
 Morning push, daily check-in, Today with a pixel sleep-score ring, insights (why first, sources last), a 14-day experiment, Ask Allyn chat and the Pathway tab. **Decision:** one clear next step instead of a dashboard.
 
 <div class="even-row even-row--mid">
-  <figure style="--ar:.461"><div class="asset-slot" style="aspect-ratio:393/852;margin:0;width:100%;transform:none">2.0 Morning push</div><figcaption><b>2.0 · Morning push</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-morning-push.webp" width="393" height="852" alt="Morning push notification" loading="lazy" data-zoom /><figcaption><b>2.0 · Morning push</b></figcaption></figure>
   <figure style="--ar:.461"><img src="/media/allyn/screen-today.webp" width="393" height="852" alt="Today: sleep score and today's insight" loading="lazy" data-zoom /><figcaption><b>2.1 · Today</b>Pixel sleep-score ring</figcaption></figure>
-  <figure style="--ar:.461"><div class="asset-slot" style="aspect-ratio:393/852;margin:0;width:100%;transform:none">2.5 Ask Allyn</div><figcaption><b>2.5 · Ask Allyn</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-ask-allyn.webp" width="393" height="852" alt="Ask Allyn AI chat" loading="lazy" data-zoom /><figcaption><b>2.5 · Ask Allyn</b></figcaption></figure>
 </div>
 
 <div class="ai-note ai-note--product"><span class="ai-note__tag">AI in the product · Insights & Ask Allyn</span><p>Every insight leads with <em>why</em> and ends with its sources. Ask Allyn shows what it is based on, for example “Oura Ring + Fitbit · last 14 days”, so people can see where an answer comes from.</p></div>
@@ -323,9 +396,9 @@ Morning push, daily check-in, Today with a pixel sleep-score ring, insights (why
 The Prep tab, what to ask (Western vs. functional), the visit brief, and a PDF preview to share. **Decision:** the brief hands off to the doctor, who decides.
 
 <div class="even-row even-row--mid">
-  <figure style="--ar:.461"><div class="asset-slot" style="aspect-ratio:393/852;margin:0;width:100%;transform:none">3.2 What to ask</div><figcaption><b>3.2 · What to ask</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-what-to-ask.webp" width="393" height="852" alt="What to ask your doctor" loading="lazy" data-zoom /><figcaption><b>3.2 · What to ask</b></figcaption></figure>
   <figure style="--ar:.461"><img src="/media/allyn/screen-visit-brief.webp" width="393" height="852" alt="Visit brief for a doctor's appointment" loading="lazy" data-zoom /><figcaption><b>3.3 · Visit brief</b>One page for the doctor</figcaption></figure>
-  <figure style="--ar:.461"><div class="asset-slot" style="aspect-ratio:393/852;margin:0;width:100%;transform:none">3.4 Brief preview & share</div><figcaption><b>3.4 · Preview & share</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-brief-share.webp" width="393" height="852" alt="Visit brief preview and share" loading="lazy" data-zoom /><figcaption><b>3.4 · Preview & share</b></figcaption></figure>
 </div>
 
 <div class="ai-note ai-note--product"><span class="ai-note__tag">AI in the product · Checkup prep</span><p>The AI suggests questions to ask, adapted to your doctor type (Western, functional or Chinese medicine), and frames tests as questions, never diagnoses. The doctor decides.</p></div>
@@ -335,9 +408,9 @@ The Prep tab, what to ask (Western vs. functional), the visit brief, and a PDF p
 Filters, a care map with a pulsing top match, provider profiles, booking and confirmation. **Decision:** trust signals (ratings, price, insurance), because people rely on referrals.
 
 <div class="even-row even-row--mid">
-  <figure style="--ar:.461"><div class="asset-slot" style="aspect-ratio:393/852;margin:0;width:100%;transform:none">4.1 Care map</div><figcaption><b>4.1 · Care map</b></figcaption></figure>
-  <figure style="--ar:.461"><div class="asset-slot" style="aspect-ratio:393/852;margin:0;width:100%;transform:none">4.2 Provider profile</div><figcaption><b>4.2 · Provider profile</b></figcaption></figure>
-  <figure style="--ar:.461"><div class="asset-slot" style="aspect-ratio:393/852;margin:0;width:100%;transform:none">4.3 Book a visit</div><figcaption><b>4.3 · Book a visit</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-care-map.webp" width="393" height="852" alt="Care map with matches" loading="lazy" data-zoom /><figcaption><b>4.1 · Care map</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-provider.webp" width="393" height="852" alt="Provider profile" loading="lazy" data-zoom /><figcaption><b>4.2 · Provider profile</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-book.webp" width="393" height="852" alt="Book a visit" loading="lazy" data-zoom /><figcaption><b>4.3 · Book a visit</b></figcaption></figure>
 </div>
 
 ### Prototype & micro-interactions
@@ -362,7 +435,14 @@ A clickable prototype covers every flow, from onboarding to booking.
 
 <span class="ai-note__tag ai-note__tag--solo">AI in the product · principles</span>
 
-Designing an AI that talks about your health meant designing for trust first.
+Designing an AI that talks about your health meant designing for trust first. Here is how one reading becomes something you can act on:
+
+<div class="card-grid card-grid--4">
+  <div class="info-card"><h4>Your tracker says</h4><p><b style="font-family:'Doto';font-size:32px;color:#fff">71 bpm</b><br>Resting heart rate, up from 64 last week.</p></div>
+  <div class="info-card"><h4>Why</h4><p>It rose after three late nights and two evenings with alcohol, which both tend to raise resting heart rate.</p></div>
+  <div class="info-card"><h4>Try</h4><p>A 14-day experiment: alcohol-free weeknights, lights out by 11 pm, and a 20-minute morning walk.</p></div>
+  <div class="info-card"><h4>If it stays high</h4><p>Ask your doctor whether a thyroid panel and iron levels make sense. <em>Evidence label: emerging research.</em></p></div>
+</div>
 
 <div class="card-grid card-grid--2">
   <div class="info-card"><h4>Trust & transparency</h4><p>Every insight shows <em>why</em> and links its sources. The brief and insights say “Illustrative data · your doctor decides.”</p></div>
