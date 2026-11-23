@@ -1,6 +1,7 @@
 ---
 title: Allyn
 year: 2026
+inProgress: true
 lens: [product]
 template: case-study
 theme: allyn

@@ -794,3 +794,9 @@ body:has(.theme-allyn) {
 .prose .a-table-wrap { width: min(1100px, calc(100vw - 2 * var(--gutter))); margin: 2em 0 0 50%; transform: translateX(-50%); overflow-x: auto; }
 .prose .a-table-wrap table { width: 100%; margin: 0; transform: none; min-width: 820px; display: table; }
 .a-matrix__ax--l, .a-matrix__ax--r { translate: 0 10px; }
+/* In progress */
+.card__wip { background: color-mix(in srgb, var(--bg) 80%, transparent); color: var(--fg); border: 1px solid var(--line); backdrop-filter: blur(6px); }
+.card__wip, .wip-note span { --wip: #f2b84b; }
+.card__wip::first-letter, .wip-note span { color: #f2b84b; }
+.wip-note { display: inline-flex; align-items: center; gap: 8px; margin: 4px auto 0; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; width: fit-content; }
+.ed-head .wip-note { margin: 12px 0 0; }

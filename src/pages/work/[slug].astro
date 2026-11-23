@@ -38,6 +38,7 @@ const hasMedia = Boolean(d.cover || d.coverVideo);
       <header class="ed-head wrap">
         <a class="back mono" href={back}>← Index</a>
         <h1 class="ed-title">{d.title}</h1>
+        {d.inProgress && <p class="wip-note mono"><span aria-hidden="true">●</span> In progress · this case study is still being written, and more content is on the way.</p>}
         <div class="meta">
           <div><span class="mono muted">Discipline</span><span>{d.category}</span></div>
           {facts.map(([k, v]) => <div><span class="mono muted">{k}</span><span>{v}</span></div>)}
@@ -70,6 +71,7 @@ const hasMedia = Boolean(d.cover || d.coverVideo);
         <a class="back" href={back}>← All work</a>
         <span class="eyebrow">{d.category} · {d.year}</span>
         <h1 class="story-title">{d.title}</h1>
+        {d.inProgress && <p class="wip-note mono"><span aria-hidden="true">●</span> In progress · this case study is still being written, and more content is on the way.</p>}
         <p class="story-hook">{d.hook ?? d.summary}</p>
         {d.link && <a class="story-link" href={d.link.url} target="_blank" rel="noopener">{d.link.label} ↗</a>}
       </header>

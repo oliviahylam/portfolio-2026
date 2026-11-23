@@ -1,6 +1,7 @@
 ---
 title: Encoded Identity
 year: "[Year]"
+inProgress: true
 lens: [brand]
 template: editorial
 order: 12

@@ -66,6 +66,7 @@ const projects = defineCollection({
       // Shows the card greyed out with a "Coming soon" badge and no page
       comingSoon: z.boolean().default(false),
       locked: z.boolean().default(false),
+      inProgress: z.boolean().default(false), // shows an "In progress" badge on the card and a note on the case study
       coverSound: z.boolean().default(false), // cover video gets a sound toggle
       opener: z.string().optional(), // full-screen statement shown first on the case study (accepts <span class="dim">)
       theme: z.enum(['allyn']).optional(), // page theme (colours + fonts) for a single case study

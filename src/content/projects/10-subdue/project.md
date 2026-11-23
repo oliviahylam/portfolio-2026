@@ -1,6 +1,7 @@
 ---
 title: Subdue
 year: 2026
+inProgress: true
 lens: [product]
 template: case-study
 order: 6
