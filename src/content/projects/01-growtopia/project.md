@@ -173,7 +173,7 @@ The core experience was mapped in three phases, plus a monetization flow.
 
 ### Full game walkthrough (with audio)
 
-<div class="asset-slot">Full game walkthrough with audio — add a YouTube/Vimeo link or a short video here</div>
+<div class="yt"><iframe src="https://www.youtube-nocookie.com/embed/AF2atL8RSuQ?rel=0" title="Growtopia full game walkthrough with audio" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ### Focus mode: timer, to-do list, lo-fi soundtrack
 
