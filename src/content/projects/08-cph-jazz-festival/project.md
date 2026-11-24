@@ -14,7 +14,7 @@ tools: [Adobe Illustrator, Adobe InDesign, Adobe Photoshop, After Effects]
 skills: [Identity, Poster design, Motion graphics, Web design]
 ---
 
-[Two or three sentences on the concept behind the identity.]
+This project focused on creating an identity for Copenhagen Jazz Festival that stays true to the Danish design style. The festival has been around for many years, so I wanted to respect its traditional design while adding a modern twist. I did this by focusing on the forms of the instruments and merging them with other objects associated with jazz, pairing the trombone with a martini glass, the double bass with a vintage microphone and the French horn with a vintage record player. Combined with playful typography that conveys movement, the aim was to create something eye-catching that still feels rooted in the festival's history.
 
 ## Process
 
