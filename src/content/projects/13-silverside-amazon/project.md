@@ -5,6 +5,7 @@ lens: [product]
 template: case-study
 group: client
 locked: true
+comingSoon: true
 order: 1
 category: Social content · Amazon Ads
 client: Amazon Ads (via Silverside AI)
