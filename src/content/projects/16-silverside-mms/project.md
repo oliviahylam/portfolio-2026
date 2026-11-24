@@ -14,7 +14,7 @@ thumbVideo: /media/mms/where-are-the-reds.mp4
 thumbRatio: 1.778
 role: Designer, Creative Director & Creative Technologist
 team: "Valentina Scheerle, Lucy Bruechert, Ethan Stewart"
-timeline: "[e.g. 3 weeks]"
+timeline: 1 month
 client: Intern capstone project at Silverside AI, presented to Mars
 outcome: Presented to Mars, who responded positively
 tools: [Claude, Nano Banana, Seedance, ElevenLabs, Figma, Premiere Pro]
