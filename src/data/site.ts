@@ -147,7 +147,8 @@ export const site = {
       { what: '[Role] · [Company]', when: '[Years]' },
       { what: '[Education]', when: '[Years]' },
     ],
-    tools: ['Figma', 'TouchDesigner', '[XR tool]', '[Motion tool]', 'HTML / CSS / JS', '[AI tools]'],
+    // The toolbox on the About page. Names matching toolIcons show their logo.
+    tools: ['Figma', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe InDesign', 'After Effects', 'Premiere Pro', 'Procreate', 'TouchDesigner', '8th Wall', 'HTML', 'CSS', 'JavaScript', 'VS Code', 'Claude', 'Cursor', 'Midjourney', 'Nano Banana', 'Seedance', 'Kling AI', 'ElevenLabs', 'Suno', 'Meshy AI'],
   },
 
   // Playground — small experiments. media: '/media/playground/clip.mp4' or an image path, or null.

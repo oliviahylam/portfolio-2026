@@ -1,0 +1,20 @@
+---
+import { site } from '../data/site';
+interface Props { label: string; items: string[]; kind: 'tools' | 'skills' }
+const { label, items, kind } = Astro.props;
+const icons = site.toolIcons as Record<string, string>;
+const n = items.length;
+---
+<div class:list={['toolbox', `toolbox--${kind}`]} data-toolbox>
+  <ul class="toolbox__items" aria-label={label}>
+    {items.map((t, i) => (
+      <li class:list={['toolbox__item', { 'toolbox__item--logo': kind === 'tools' && icons[t] }]} style={`--d:${i * 30}ms;--r:${((i * 37) % 11) - 5}deg`} title={t}>
+        {kind === 'tools' && icons[t] ? <img src={icons[t]} alt={t} width="44" height="44" loading="lazy" /> : <span>{t}</span>}
+      </li>
+    ))}
+  </ul>
+  <button type="button" class="toolbox__box" aria-expanded="false" aria-label={`Open the ${label.toLowerCase()} box`}>
+    <span class="toolbox__lid" aria-hidden="true"><span class="toolbox__handle"></span></span>
+    <span class="toolbox__body"><span class="mono">{label}</span><span class="toolbox__count mono">{String(n).padStart(2, '0')}</span></span>
+  </button>
+</div>

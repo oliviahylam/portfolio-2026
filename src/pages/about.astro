@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { site } from '../data/site';
+import ToolBox from '../components/ToolBox.astro';
 const c = site.idCard;
 const a = site.about;
 const skills = [...new Set([...site.lenses.product.tags, ...site.lenses.brand.tags])];
@@ -63,20 +64,30 @@ const skills = [...new Set([...site.lenses.product.tags, ...site.lenses.brand.ta
   </section>
 
   <section class="section wrap">
-    <div class="two-col">
-      <div>
-        <div class="section__head" style="margin-bottom:8px"><h2 class="mono">Experience</h2></div>
-        <ul class="rows">{a.experience.map((e) => <li><span>{e.what}</span><span class="mono muted">{e.when}</span></li>)}</ul>
-      </div>
-      <div>
-        <div class="section__head" style="margin-bottom:20px"><h2 class="mono">Skills</h2></div>
-        <div class="chips" style="margin-bottom:40px">{skills.map((t) => <span class="chip">{t}</span>)}</div>
-        <div class="section__head" style="margin-bottom:20px"><h2 class="mono">Tools</h2></div>
-        <div class="chips">{a.tools.map((t) => <span class="chip">{t}</span>)}</div>
-      </div>
+    <div class="section__head"><h2 class="mono">My toolbox</h2><span class="mono muted">Hover to open · tap on mobile</span></div>
+    <div class="boxes">
+      <ToolBox label="Tools" items={a.tools} kind="tools" />
+      <ToolBox label="Skills" items={skills} kind="skills" />
     </div>
   </section>
   <script>
+    document.querySelectorAll<HTMLElement>('[data-toolbox]').forEach((box) => {
+      const btn = box.querySelector('button')!;
+      // each item starts inside the box, then flies up to its spot
+      const place = () => {
+        const b = btn.getBoundingClientRect();
+        const cx = b.left + b.width / 2, cy = b.top + b.height * 0.55;
+        box.querySelectorAll<HTMLElement>('.toolbox__item').forEach((it) => {
+          const prev = it.style.transform; it.style.transition = 'none'; it.style.transform = 'none';
+          const r = it.getBoundingClientRect();
+          it.style.setProperty('--fx', `${cx - (r.left + r.width / 2)}px`);
+          it.style.setProperty('--fy', `${cy - (r.top + r.height / 2)}px`);
+          it.style.transform = prev; void it.offsetWidth; it.style.transition = '';
+        });
+      };
+      place(); addEventListener('resize', place);
+      btn.addEventListener('click', () => { const open = box.classList.toggle('is-open'); btn.setAttribute('aria-expanded', String(open)); });
+    });
     const card = document.querySelector('[data-id-card]')!;
     const btn = document.querySelector<HTMLButtonElement>('[data-id-flip]')!;
     btn.addEventListener('click', () => {
