@@ -40,12 +40,27 @@ Urban Tattoos translates the impermanent marks of city life into print. It is an
 
 An interactive website prototype that translates the visual chaos of city sticker culture into a dynamic digital archive. The experience reimagines urban stickers as meaningful artefacts through personalised curation, archival storytelling and an augmented reality feature. Users can browse the archive to learn the story behind each sticker, customise and save their own collection, and explore longer stories from the streets of New York.
 
-![Urban Tattoos website prototype walkthrough](/media/urban-tattoos/website.mp4)
+<div class="even-row">
+  <figure><video src="/media/urban-tattoos/web-home.mp4" autoplay muted loop playsinline data-expand aria-label="Home"></video><figcaption><b>01 · Home</b></figcaption></figure>
+</div>
+<div class="even-row">
+  <figure><video src="/media/urban-tattoos/web-archive-edit.mp4" autoplay muted loop playsinline data-expand aria-label="Archive"></video><figcaption><b>02 · Archive</b></figcaption></figure>
+</div>
+<div class="even-row">
+  <figure><video src="/media/urban-tattoos/web-collection.mp4" autoplay muted loop playsinline data-expand aria-label="Customise & collection"></video><figcaption><b>03 · Customise & collection</b></figcaption></figure>
+</div>
+<div class="even-row">
+  <figure><video src="/media/urban-tattoos/web-ar-experience.mp4" autoplay muted loop playsinline data-expand aria-label="AR experience"></video><figcaption><b>04 · AR experience</b></figcaption></figure>
+</div>
+<div class="even-row">
+  <figure><video src="/media/urban-tattoos/web-explore.mp4" autoplay muted loop playsinline data-expand aria-label="Explore"></video><figcaption><b>05 · Explore</b></figcaption></figure>
+</div>
 
 ## Augmented reality
 
 Digitally tap and place stickers. Scanning the QR code on the website opens an augmented reality experience built in 8th Wall. With a simple tap-to-place interaction, users can preserve their favourite stickers and digitally stick them in new spaces, giving these short-lived marks a second life beyond the street.
 
-<div class="even-row even-row--narrow">
+<div class="even-row">
+  <figure style="--ar:1.468"><img src="/media/urban-tattoos/ar-park.webp" width="1067" height="727" alt="Stickers placed in augmented reality along a park path" loading="lazy" /></figure>
   <figure style="--ar:0.461"><video src="/media/urban-tattoos/online-experience.mp4" autoplay muted loop playsinline data-expand aria-label="Augmented reality tap-to-place stickers"></video></figure>
 </div>
