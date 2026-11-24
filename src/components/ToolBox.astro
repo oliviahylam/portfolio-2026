@@ -1,20 +1,20 @@
 ---
 import { site } from '../data/site';
-interface Props { label: string; items: string[]; kind: 'tools' | 'skills' }
-const { label, items, kind } = Astro.props;
+interface Props { label: string; tools: string[]; skills?: string[] }
+const { label, tools, skills = [] } = Astro.props;
 const icons = site.toolIcons as Record<string, string>;
-const n = items.length;
+const items = [...tools.map((t) => ({ t, k: 'tool' })), ...skills.map((t) => ({ t, k: 'skill' }))];
 ---
-<div class:list={['toolbox', `toolbox--${kind}`]} data-toolbox>
+<div class="toolbox" data-toolbox>
   <ul class="toolbox__items" aria-label={label}>
-    {items.map((t, i) => (
-      <li class:list={['toolbox__item', { 'toolbox__item--logo': kind === 'tools' && icons[t] }]} style={`--d:${i * 30}ms;--r:${((i * 37) % 11) - 5}deg`} title={t}>
-        {kind === 'tools' && icons[t] ? <img src={icons[t]} alt={t} width="44" height="44" loading="lazy" /> : <span>{t}</span>}
+    {items.map(({ t, k }, i) => (
+      <li class:list={['toolbox__item', `toolbox__item--${k}`, { 'toolbox__item--logo': k === 'tool' && icons[t] }]} style={`--d:${i * 22}ms;--r:${((i * 37) % 11) - 5}deg`} title={t}>
+        {k === 'tool' && icons[t] ? <img src={icons[t]} alt={t} width="44" height="44" loading="lazy" /> : <span>{t}</span>}
       </li>
     ))}
   </ul>
-  <button type="button" class="toolbox__box" aria-expanded="false" aria-label={`Open the ${label.toLowerCase()} box`}>
+  <button type="button" class="toolbox__box" aria-expanded="false" aria-label={`Open my ${label.toLowerCase()}`}>
     <span class="toolbox__lid" aria-hidden="true"><span class="toolbox__handle"></span></span>
-    <span class="toolbox__body"><span class="mono">{label}</span><span class="toolbox__count mono">{String(n).padStart(2, '0')}</span></span>
+    <span class="toolbox__body"><span class="mono">{label}</span><span class="toolbox__count mono">{tools.length} tools · {skills.length} skills</span></span>
   </button>
 </div>

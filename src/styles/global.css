@@ -824,3 +824,17 @@ body:has(.theme-allyn) {
 @media (hover: none) { .toolbox:hover .toolbox__item:not(.toolbox.is-open *) { opacity: 0; } }
 .toolbox { gap: 84px; }
 .toolbox:hover .toolbox__lid, .toolbox.is-open .toolbox__lid { transform: rotate(-22deg) translate(-4px, -6px); }
+/* About: condensed "How I work" */
+.how { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 56px; align-items: start; }
+.values--list { display: flex; flex-direction: column; gap: 0; }
+.values--list .value { flex-direction: row; gap: 18px; padding: 20px 0; border-top: 1px solid var(--line); }
+.values--list .value:first-child { border-top: 1px solid var(--fg); }
+.values--list .value h3 { font-size: 22px; margin: 0 0 4px; }
+.values--list .value .mono { padding-top: 6px; }
+.how .toolbox { min-height: 560px; }
+.how .toolbox__items { max-width: 560px; gap: 10px; }
+.toolbox__item--skill > span { background: color-mix(in srgb, var(--accent) 22%, var(--card)) !important; font-size: 13.5px; }
+.toolbox__item--tool > span:not(img) { font-family: var(--font-mono); font-size: 10.5px; height: 48px; display: flex; align-items: center; padding: 0 12px; border-radius: 13px; text-transform: uppercase; letter-spacing: .04em; }
+.toolbox__count { font-size: 11px !important; }
+@media (max-width: 960px) { .how { grid-template-columns: 1fr; } }
+.how .toolbox__box { width: 280px; } .toolbox__count { white-space: nowrap; }

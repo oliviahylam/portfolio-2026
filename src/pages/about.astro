@@ -54,20 +54,15 @@ const skills = [...new Set([...site.lenses.product.tags, ...site.lenses.brand.ta
   </section>
 
   <section class="section wrap">
-    <div class="section__head"><h2 class="mono">Design values</h2></div>
-    <ol class="values">{a.values.map((v, i) => <li class="value"><span class="mono">{String(i + 1).padStart(2, '0')}</span><h3>{v.title}</h3><p>{v.text}</p></li>)}</ol>
-  </section>
-
-  <section class="section wrap">
-    <div class="section__head"><h2 class="mono">What I do</h2></div>
-    <div class="services">{a.services.map((s) => <div class="service"><h3>{s.title}</h3><p>{s.text}</p></div>)}</div>
-  </section>
-
-  <section class="section wrap">
-    <div class="section__head"><h2 class="mono">My toolbox</h2><span class="mono muted">Hover to open · tap on mobile</span></div>
-    <div class="boxes">
-      <ToolBox label="Tools" items={a.tools} kind="tools" />
-      <ToolBox label="Skills" items={skills} kind="skills" />
+    <div class="how">
+      <div class="how__values">
+        <div class="section__head"><h2 class="mono">How I work</h2></div>
+        <ol class="values values--list">{a.values.map((v, i) => <li class="value"><span class="mono">{String(i + 1).padStart(2, '0')}</span><div><h3>{v.title}</h3><p>{v.text}</p></div></li>)}</ol>
+      </div>
+      <div class="how__box">
+        <div class="section__head"><h2 class="mono">My toolbox</h2><span class="mono muted">Hover to open · tap on mobile</span></div>
+        <ToolBox label="Toolbox" tools={a.tools} skills={skills} />
+      </div>
     </div>
   </section>
   <script>
