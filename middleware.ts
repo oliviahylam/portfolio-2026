@@ -7,7 +7,7 @@
 import { next } from '@vercel/functions';
 
 export const config = {
-  matcher: ['/work/silverside-amazon', '/work/silverside-amazon/:path*', '/media/amazon/:path*'],
+  matcher: ['/work/silverside-amazon', '/work/silverside-amazon/:path*', '/media/amazon/:path*', '/work/silverside-mms', '/work/silverside-mms/:path*', '/media/mms/:path*'],
 };
 
 const COOKIE = 'pf_unlock';

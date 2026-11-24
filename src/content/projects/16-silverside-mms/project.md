@@ -4,13 +4,14 @@ year: 2026
 lens: [product]
 template: case-study
 order: 2
+comingSoon: true
 category: Social campaign · Generative AI · Silverside AI
 summary: "Where are the reds? A true-crime-style social campaign for M&M’S, turning real online discourse about missing red M&M’S into a mystery series for Gen Z: a teaser, four 30-second episodes and four statics."
 hook: Turning real online discourse about missing red M&M’S into a conspiracy series people want to speculate on.
 coverVideo: /media/mms/teaser.mp4
 coverRatio: 0.5625
 coverSound: true  # cover video also opens fullscreen on click
-thumbVideo: /media/mms/where-are-the-reds.mp4
+thumbVideo: /media/cards/mms-thumb.mp4
 thumbRatio: 1.778
 role: Designer, Creative Director & Creative Technologist
 team: "Valentina Scheerle, Lucy Bruechert, Ethan Stewart"
@@ -134,7 +135,7 @@ The idea was to give the entire campaign one visual identity while taking a uniq
 The look and feel is inspired by “CSI style” videos, found footage, old tapes and documentary storytelling, giving every episode the tone of an investigation.
 
 <div class="even-row">
-  <figure style="--ar:1.778"><video src="/media/mms/where-are-the-reds.mp4" autoplay muted loop playsinline aria-label="The investigation board building up"></video><figcaption><b>The investigation board</b>Where are the reds?</figcaption></figure>
+  <figure style="--ar:1.778"><video src="/media/cards/mms-thumb.mp4" autoplay muted loop playsinline aria-label="The investigation board building up"></video><figcaption><b>The investigation board</b>Where are the reds?</figcaption></figure>
   <figure style="--ar:1.333"><img src="/media/mms/style-cctv.webp" width="600" height="450" alt="Found-footage CCTV style reference" loading="lazy" /><figcaption><b>Found footage</b>CCTV and old-tape textures</figcaption></figure>
 </div>
 
