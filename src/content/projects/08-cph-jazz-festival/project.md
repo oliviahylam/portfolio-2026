@@ -16,6 +16,27 @@ skills: [Identity, Poster design, Motion graphics, Web design]
 
 [Two or three sentences on the concept behind the identity.]
 
+## Process
+
+I began by sketching each instrument as a simple line drawing, then explored how far it could be pushed in scale. Some layouts let a single instrument fill the whole frame, while others paired it with smaller objects like the gramophone and the martini glass, which helped me see how the balance of the composition changed.
+
+<div class="even-row">
+  <figure style="--ar:0.7"><img src="/media/cph-jazz/process-07.webp" width="800" height="1143" alt="Line sketch of a French horn and gramophone" loading="lazy" /></figure>
+  <figure style="--ar:0.7"><img src="/media/cph-jazz/process-08.webp" width="800" height="1143" alt="Line sketch of a double bass with microphone" loading="lazy" /></figure>
+  <figure style="--ar:0.7"><img src="/media/cph-jazz/process-09.webp" width="800" height="1143" alt="Early illustrated direction" loading="lazy" /></figure>
+  <figure style="--ar:0.7"><img src="/media/cph-jazz/process-01.webp" width="800" height="1143" alt="Scale and overlay exploration" loading="lazy" /></figure>
+</div>
+<div class="even-row">
+  <figure style="--ar:0.7"><img src="/media/cph-jazz/process-04.webp" width="800" height="1143" alt="Black silhouette on green" loading="lazy" /></figure>
+  <figure style="--ar:0.7"><img src="/media/cph-jazz/process-05.webp" width="800" height="1143" alt="Black silhouette on red" loading="lazy" /></figure>
+  <figure style="--ar:0.7"><img src="/media/cph-jazz/process-02.webp" width="800" height="1143" alt="Colour study in orange and navy" loading="lazy" /></figure>
+  <figure style="--ar:0.7"><img src="/media/cph-jazz/process-10.webp" width="800" height="1143" alt="Colour study in red and yellow" loading="lazy" /></figure>
+  <figure style="--ar:0.7"><img src="/media/cph-jazz/process-12.webp" width="800" height="1143" alt="Colour study in green and burgundy" loading="lazy" /></figure>
+  <figure style="--ar:0.7"><img src="/media/cph-jazz/process-13.webp" width="800" height="1143" alt="Colour study in light blue and yellow" loading="lazy" /></figure>
+</div>
+
+Colour became the main focus. I tested the same layouts across many colour combinations, as well as solid black silhouettes, to find pairings that felt bold while still feeling balanced. The direction draws on Scandinavian design, keeping everything simple, minimalist and functional so that the visuals emphasise clarity and a sense of natural simplicity. Anything that didn't serve this, such as the busier illustrated scene, was stripped back.
+
 ## Posters
 
 ![Poster](./poster-01.webp)
