@@ -7,7 +7,7 @@ template: case-study
 theme: allyn
 opener: "Your ring sees you every night. Your doctor sees you once a year. <span class=\"dim\">They’ve never met.</span>"
 order: 1
-category: Case study · AI product
+category: AI product design
 summary: An AI health ally that turns wearable data into a personal plan, across Western, functional and Eastern care. Designed solo, from research to a 25-screen high-fidelity prototype.
 hook: An AI health ally that turns wearable data into a personal plan, across Western, functional and Eastern care.
 coverVideo: /media/allyn/thumbnail.mp4
