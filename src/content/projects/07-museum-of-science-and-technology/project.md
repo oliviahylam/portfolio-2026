@@ -5,14 +5,14 @@ lens: [brand]
 template: editorial
 order: 7
 brandOrder: 2
-category: Rebrand · Identity system
+category: Rebrand · Identity system · Motion
 summary: A rebrand of the Danish Museum of Science and Technology, introducing a new icon, a geometric condensed typeface and a colour system designed to speak to visitors of all ages.
 cover: ./billboard.webp
 thumb: ./thumb-variations.webp
 role: "Brand Designer"
 client: "[Danmarks Tekniske Museum — student project?]"
 tools: [Adobe Photoshop, Adobe Illustrator, After Effects]
-skills: [Rebrand, Logo design, Colour systems, Poster design, Motion]
+skills: [Rebrand, Logo design, Colour systems, Poster design, Motion graphics]
 ---
 
 This project focused on the rebrand of Danmarks Tekniske Museum, the Danish Museum of Science and Technology. The museum welcomes a wide audience, from school groups to engineers, so the goal was to create an identity that reflected science and technology while still feeling approachable for every age.

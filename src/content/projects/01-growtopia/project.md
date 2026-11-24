@@ -4,7 +4,7 @@ year: 2025
 lens: [product]
 template: case-study
 order: 3
-category: Gamified productivity platform
+category: AI product design · Built & deployed end-to-end
 summary: A productivity platform that blends Pomodoro focus sessions with cozy gardening mechanics, turning tasks into progress and play — designed, built and shipped in one month with an AI-accelerated workflow.
 hook: A productivity platform that blends Pomodoro focus sessions with cozy gardening mechanics, turning tasks into progress and play. Designed an AI workflow to support the design process.
 link: { label: "Play the game (best on laptop)", url: "https://growtopia-phz5.vercel.app/main.html?v=1" }
@@ -16,7 +16,7 @@ role: Product Designer
 timeline: 1 month
 outcome: Designed, built and deployed end-to-end
 tools: [ChatGPT, Claude, Figma, Midjourney, Cursor, Kling AI, Suno]
-skills: [UI/UX, Product design, Systems thinking, Game design, AI image generation, AI animation generation, AI audio generation, Prompt design]
+skills: [AI product design, Full-stack AI build, UI/UX, Product design, Systems thinking, Game design, AI image generation, AI animation generation, AI audio generation, Prompt design]
 industry: Productivity · Games
 parts:
   - { label: Overview, anchor: product-glimpse }
