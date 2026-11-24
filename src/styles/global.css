@@ -638,22 +638,14 @@ img[data-zoom] { cursor: zoom-in; }
 
 /* ── Allyn theme: night sky, Allyn blue, soft auras ─────────── */
 body:has(.theme-allyn) {
-  --bg: #121A3A; --surface: rgba(201, 214, 250, .06); --card: rgba(201, 214, 250, .08);
-  --fg: #ffffff; --muted: rgba(255, 255, 255, .6); --line: rgba(201, 214, 250, .16);
-  --accent: #9DB4F5; --on-accent: #121A3A;
-  background: #121A3A;
+  --surface: rgba(201, 214, 250, .06); --card: rgba(201, 214, 250, .08);
+  --line: rgba(201, 214, 250, .16); --accent: #9DB4F5; --on-accent: #121A3A;
 }
 .theme-allyn {
   --font-sans: 'Urbanist', 'Geist', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', 'Geist Mono', monospace;
   --a-blue: #4F74E0; --a-sky: #9DB4F5; --a-mist: #C9D6FA;
   font-family: var(--font-sans);
-  position: relative; isolation: isolate;
-  background:
-    radial-gradient(60vw 40vw at 85% 4%, rgba(79, 116, 224, .28), transparent 70%),
-    radial-gradient(50vw 40vw at 0% 30%, rgba(184, 163, 242, .14), transparent 70%),
-    radial-gradient(50vw 40vw at 100% 62%, rgba(147, 217, 188, .08), transparent 70%),
-    radial-gradient(60vw 40vw at 10% 92%, rgba(242, 154, 180, .10), transparent 70%);
 }
 .theme-allyn .story-title { font-weight: 600; letter-spacing: -.03em; }
 .theme-allyn .story-hook { color: rgba(255, 255, 255, .7); }
