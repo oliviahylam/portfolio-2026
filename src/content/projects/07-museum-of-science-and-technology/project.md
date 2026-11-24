@@ -10,7 +10,7 @@ summary: A rebrand of the Danish Museum of Science and Technology, introducing a
 cover: ./billboard.webp
 thumb: ./thumb-variations.webp
 role: "Brand Designer"
-client: "[Danmarks Tekniske Museum — student project?]"
+client: "Danish Museum of Science and Technology (student project)"
 tools: [Adobe Photoshop, Adobe Illustrator, After Effects]
 skills: [Rebrand, Logo design, Colour systems, Poster design, Motion graphics]
 ---

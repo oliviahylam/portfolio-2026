@@ -26,12 +26,12 @@ stats:
   - { value: "4 + 4", label: "30-second episodes and statics, plus a teaser" }
 ai:
   inProcess:
-    - { tool: "Claude", role: "[e.g. Concepting & scripting]", note: "[How you used it, e.g. brainstorming conspiracy theories, researching M&M’S facts, or writing the episode scripts and prompts.]" }
-    - { tool: "Nano Banana", role: "Image generation", note: "[How you used it, e.g. generating the stills, evidence shots and frames for each theory.]" }
-    - { tool: "Seedance", role: "Video generation", note: "[How you used it, e.g. turning frames into the found-footage clips for each episode.]" }
-    - { tool: "ElevenLabs", role: "AI voiceover", note: "[How you used it, e.g. the investigator narration.]" }
-    - { tool: "Premiere Pro", role: "Editing", note: "[How you used it, e.g. cutting the episodes and adding the vintage camera, documentary-style effects.]" }
-    - { tool: "Figma", role: "Statics & layout", note: "[How you used it, e.g. designing the four statics and the missing poster.]" }
+    - { tool: "Claude", role: "Brainstorming & planning", note: "I used Claude for brainstorming, storyboarding, organising our research and putting together a plan of action." }
+    - { tool: "Nano Banana", role: "Image generation", note: "While exploring different conceptual directions, I used Nano Banana to generate keyframes for each one. Once we decided on a final execution, I generated all the keyframes for each short video individually." }
+    - { tool: "Seedance", role: "Video generation", note: "I animated a few keyframes from each direction to get a better understanding of how they might look, then animated the final keyframes for every episode." }
+    - { tool: "ElevenLabs", role: "Voiceover & sound effects", note: "Used for the voiceovers and sound effects across all of the videos." }
+    - { tool: "Premiere Pro", role: "Editing", note: "I edited each video, bringing the animated clips, voiceovers and sound effects together." }
+    - { tool: "Figma", role: "Brainstorming & statics", note: "Used for brainstorming ideas as well as designing the statics." }
 parts:
   - { label: Brief, anchor: the-brief }
   - { label: Research, anchor: research }
@@ -119,7 +119,7 @@ We chose to go in the direction of conspiracy theories because of the increasing
 
 ### Round 03 · Refining the series
 
-[What changed in this round, e.g. narrowing the theories to four, refining the visual style, pacing and narration.]
+Once we narrowed it down to one conceptual execution, I individually generated all the keyframes for each short video in Nano Banana before animating them in Seedance. I then added voiceovers and sound effects with ElevenLabs and edited the final videos in Premiere Pro.
 
 <div class="asset-slot">Round 3 frames or work-in-progress edits</div>
 

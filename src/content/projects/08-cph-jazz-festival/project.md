@@ -9,7 +9,7 @@ category: Design for Copenhagen Jazz Festival
 summary: A festival identity for Copenhagen Jazz Festival 2026 — bold color fields, playful type and instrument forms carried across posters, street media, records and the website.
 cover: ./poster-mockup.webp
 role: "Brand Designer"
-client: "[Copenhagen Jazz Festival — student project?]"
+client: "Copenhagen Jazz Festival (student project)"
 tools: [Adobe Illustrator, Adobe InDesign, Adobe Photoshop, After Effects]
 skills: [Identity, Poster design, Motion graphics, Web design]
 ---
@@ -61,6 +61,3 @@ Colour became the main focus. I tested the same layouts across many colour combi
 
 ![Copenhagen Jazz Festival motion](/media/cph-jazz/motion.mp4#sound)
 
-## Credits
-
-[Course, collaborators.]
