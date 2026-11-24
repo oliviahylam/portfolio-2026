@@ -54,16 +54,22 @@ At the end of each interview, participants described the visual landscapes they 
 
 ## Digital experience
 
-[Echoform carries the book's system onto the screen: a synesthetic platform for discovering sound through colour, motion and form. Two or three sentences on why you extended it and what it lets people do that the book can't.]
+For the digital part of this project, I was tasked with creating a digitised version of the concept. I wanted to design an interactive interface that simulates the feeling of synaesthesia, so that people who don't experience it can get a sense of what it is like. Echoform is a platform for music discovery through visual means such as colour, motion and form.
 
 ### 01 · Home
+
+I designed multiple visual landscapes, each reflecting a particular feeling through colour, motion and form. Songs are organised by these visuals, so each landscape holds the music that fits within it.
 
 ![Echoform — home](/media/synesthesia/digital-1-home.mp4)
 
 ### 02 · Music
 
+Readers can not only read about how the music is categorised, but also browse through the songs within each landscape and listen to them, as every song links directly to Spotify.
+
 ![Echoform — music](/media/synesthesia/digital-2-music.mp4)
 
 ### 03 · Connect
+
+Lastly, I designed an interactive section where users can reflect and write about their experience, build their own synaesthetic map by selecting a series of visual elements, or contribute to a community of other users and hear about their experiences with the platform.
 
 ![Echoform — connect](/media/synesthesia/digital-3-connect.mp4)
