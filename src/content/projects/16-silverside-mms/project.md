@@ -19,7 +19,6 @@ client: Intern capstone project at Silverside AI
 tools: [Claude, Nano Banana, Seedance, ElevenLabs, Figma, Premiere Pro]
 skills: [Generative AI, Creative direction, Design, Advertising, Short-form video, Storytelling]
 industry: Advertising · Consumer goods
-context: "[Why this project mattered to you, in first person, e.g. what you enjoyed about turning a real conversation into a campaign.]"
 challenge: M&M’S is globally recognized, but the creative space is crowded. How might we find a point of view the brand can hold, and build a campaign around it?
 stats:
   - { value: "79%", label: "of US Gen Z say M&M’S is their favourite candy", note: "YouGov & Statista, 2024" }
