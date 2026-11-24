@@ -36,6 +36,10 @@ skills: [Identity, Poster design, Motion graphics, Web design]
 
 ![Website](./web.webp)
 
+## Motion
+
+![Copenhagen Jazz Festival motion](/media/cph-jazz/motion.mp4#sound)
+
 ## Credits
 
 [Course, collaborators.]
