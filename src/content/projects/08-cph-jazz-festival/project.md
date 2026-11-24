@@ -5,7 +5,7 @@ lens: [brand]
 template: editorial
 order: 8
 brandOrder: 5
-category: Festival identity · Motion
+category: Design for Copenhagen Jazz Festival
 summary: A festival identity for Copenhagen Jazz Festival 2026 — bold color fields, playful type and instrument forms carried across posters, street media, records and the website.
 cover: ./poster-mockup.webp
 role: "Brand Designer"
