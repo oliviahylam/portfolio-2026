@@ -250,7 +250,7 @@ In interviews, pathway and insights ranked highest. Checkup prep was split (Vera
 One flow covers all four features, from onboarding to two endings: "insights & plan" and "book & save". Navigation is four tabs (Today · Pathway · Prep · Care) plus an Ask Allyn AI button.
 
 <div class="even-row">
-  <figure style="--ar:1.667"><img src="/media/allyn/user-flow.webp" width="1600" height="960" alt="User flow: Option B, goal-first" loading="lazy" data-zoom /><figcaption><b>Goal-first flow · works with or without a tracker</b></figcaption></figure>
+  <figure style="--ar:1.667"><img src="/media/allyn/user-flow.webp" width="1600" height="960" alt="User flow: Option B, goal-first" loading="lazy" /><figcaption><b>Goal-first flow · works with or without a tracker</b></figcaption></figure>
 </div>
 
 <h2 id="iteration">Testing reshaped <span class="dim">11 parts of the product.</span></h2>
@@ -258,18 +258,18 @@ One flow covers all four features, from onboarding to two endings: "insights & p
 Human feedback drove every change. I put grayscale mid-fidelity wireframes in front of all four interviewees, then updated the design based on what they told me.
 
 <div class="even-row even-row--narrow">
-  <figure style="--ar:0.416"><img src="/media/allyn/midfi-v2.webp" width="665" height="1600" alt="Mid-fidelity updates from user testing (v2)" loading="lazy" data-zoom /><figcaption><b>Mid-fidelity v2 · updates from user testing</b></figcaption></figure>
+  <figure style="--ar:0.416"><img src="/media/allyn/midfi-v2.webp" width="665" height="1600" alt="Mid-fidelity updates from user testing (v2)" loading="lazy" /><figcaption><b>Mid-fidelity v2 · updates from user testing</b></figcaption></figure>
 </div>
 
 ### Before and after testing
 
 <div class="even-row">
-  <figure style="--ar:.46"><img src="/media/allyn/midfi-wearables.webp" width="440" height="956" alt="Wearables: mid-fidelity before testing" loading="lazy" data-zoom /><figcaption><b>Before</b>Wearables · mid-fi</figcaption></figure>
-  <figure style="--ar:.461"><img src="/media/allyn/screen-wearables.webp" width="393" height="852" alt="Wearables: after testing" loading="lazy" data-zoom /><figcaption><b>After</b>Wearables · v3</figcaption></figure>
-  <figure style="--ar:.46"><img src="/media/allyn/midfi-what-to-ask.webp" width="440" height="956" alt="What to ask: mid-fidelity before testing" loading="lazy" data-zoom /><figcaption><b>Before</b>What to ask · mid-fi</figcaption></figure>
-  <figure style="--ar:.461"><img src="/media/allyn/screen-what-to-ask.webp" width="393" height="852" alt="What to ask: after testing" loading="lazy" data-zoom /><figcaption><b>After</b>What to ask · v3</figcaption></figure>
-  <figure style="--ar:.46"><img src="/media/allyn/midfi-provider.webp" width="440" height="956" alt="Provider: mid-fidelity before testing" loading="lazy" data-zoom /><figcaption><b>Before</b>Provider · mid-fi</figcaption></figure>
-  <figure style="--ar:.461"><img src="/media/allyn/screen-provider.webp" width="393" height="852" alt="Provider: after testing" loading="lazy" data-zoom /><figcaption><b>After</b>Provider · v3</figcaption></figure>
+  <figure style="--ar:.46"><img src="/media/allyn/midfi-wearables.webp" width="440" height="956" alt="Wearables: mid-fidelity before testing" loading="lazy" /><figcaption><b>Before</b>Wearables · mid-fi</figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-wearables.webp" width="393" height="852" alt="Wearables: after testing" loading="lazy" /><figcaption><b>After</b>Wearables · v3</figcaption></figure>
+  <figure style="--ar:.46"><img src="/media/allyn/midfi-what-to-ask.webp" width="440" height="956" alt="What to ask: mid-fidelity before testing" loading="lazy" /><figcaption><b>Before</b>What to ask · mid-fi</figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-what-to-ask.webp" width="393" height="852" alt="What to ask: after testing" loading="lazy" /><figcaption><b>After</b>What to ask · v3</figcaption></figure>
+  <figure style="--ar:.46"><img src="/media/allyn/midfi-provider.webp" width="440" height="956" alt="Provider: mid-fidelity before testing" loading="lazy" /><figcaption><b>Before</b>Provider · mid-fi</figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-provider.webp" width="393" height="852" alt="Provider: after testing" loading="lazy" /><figcaption><b>After</b>Provider · v3</figcaption></figure>
 </div>
 
 | Learning | Change | Screens (v3) |
@@ -329,19 +329,19 @@ Calm · Clear · Open-minded · Supportive · Quietly smart. *“The friend who 
 I explored wordmarks (ll treatments), symbols from the word, wearable and "extension of you" ideas, then unity and support symbols. The final mark is **the clasp**: two identical hooks holding each other, for you and your ally, equal and connected.
 
 <div class="even-row">
-  <figure style="--ar:2.817"><img src="/media/allyn/logo-v2.webp" width="1600" height="568" alt="Symbol directions v2" loading="lazy" data-zoom /><figcaption><b>Symbols from the meaning of the word</b></figcaption></figure>
+  <figure style="--ar:2.817"><img src="/media/allyn/logo-v2.webp" width="1600" height="568" alt="Symbol directions v2" loading="lazy" /><figcaption><b>Symbols from the meaning of the word</b></figcaption></figure>
 </div>
 
 <div class="even-row">
-  <figure style="--ar:2.817"><img src="/media/allyn/logo-v4.webp" width="1600" height="568" alt="Symbol directions v4" loading="lazy" data-zoom /><figcaption><b>Unity, support and alignment</b></figcaption></figure>
+  <figure style="--ar:2.817"><img src="/media/allyn/logo-v4.webp" width="1600" height="568" alt="Symbol directions v4" loading="lazy" /><figcaption><b>Unity, support and alignment</b></figcaption></figure>
 </div>
 
 <div class="even-row">
-  <figure style="--ar:2.428"><img src="/media/allyn/logo-clasp.webp" width="1600" height="659" alt="Clasp refinement" loading="lazy" data-zoom /><figcaption><b>Refining the clasp</b></figcaption></figure>
+  <figure style="--ar:2.428"><img src="/media/allyn/logo-clasp.webp" width="1600" height="659" alt="Clasp refinement" loading="lazy" /><figcaption><b>Refining the clasp</b></figcaption></figure>
 </div>
 
 <div class="even-row">
-  <figure style="--ar:2.092"><img src="/media/allyn/logo-final.webp" width="1600" height="765" alt="Final Allyn logo" loading="lazy" data-zoom /><figcaption><b>The clasp: two hooks, one hold</b></figcaption></figure>
+  <figure style="--ar:2.092"><img src="/media/allyn/logo-final.webp" width="1600" height="765" alt="Final Allyn logo" loading="lazy" /><figcaption><b>The clasp: two hooks, one hold</b></figcaption></figure>
 </div>
 
 ### Stylescape
@@ -349,7 +349,7 @@ I explored wordmarks (ll treatments), symbols from the word, wearable and "exten
 Night-sky base, one confident blue, soft auras per health area, and liquid glass on touchable elements only.
 
 <div class="even-row">
-  <figure style="--ar:1.406"><img src="/media/allyn/stylescape.webp" width="1600" height="1138" alt="Allyn stylescape" loading="lazy" data-zoom /></figure>
+  <figure style="--ar:1.406"><img src="/media/allyn/stylescape.webp" width="1600" height="1138" alt="Allyn stylescape" loading="lazy" /></figure>
 </div>
 
 ### A night sky and one confident blue
@@ -394,7 +394,7 @@ Six aura gradients, one per health area:
 </div>
 
 <div class="even-row">
-  <figure style="--ar:1.587"><img src="/media/allyn/design-system.webp" width="1600" height="1008" alt="Allyn UI design system" loading="lazy" data-zoom /></figure>
+  <figure style="--ar:1.587"><img src="/media/allyn/design-system.webp" width="1600" height="1008" alt="Allyn UI design system" loading="lazy" /></figure>
 </div>
 
 <h2 id="final-designs">One clear next step, <span class="dim">on every screen.</span></h2>
@@ -408,9 +408,9 @@ Six aura gradients, one per health area:
 Welcome, care approach tiles, goals and a deadline, health profile, the multi-device wearables ring and a pathway summary. **Decision:** care approach comes first, because everything else adapts to it.
 
 <div class="even-row even-row--mid">
-  <figure style="--ar:.461"><img src="/media/allyn/screen-care-approach.webp" width="393" height="852" alt="Onboarding: choose your care approach" loading="lazy" data-zoom /><figcaption><b>1.1 · Care approach</b></figcaption></figure>
-  <figure style="--ar:.461"><img src="/media/allyn/screen-health-profile.webp" width="393" height="852" alt="Health profile: conditions and medications" loading="lazy" data-zoom /><figcaption><b>1.3 · Health profile</b></figcaption></figure>
-  <figure style="--ar:.461"><img src="/media/allyn/screen-wearables.webp" width="393" height="852" alt="Onboarding: connect your wearables" loading="lazy" data-zoom /><figcaption><b>1.4 · Wearables</b>Multi-device ring</figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-care-approach.webp" width="393" height="852" alt="Onboarding: choose your care approach" loading="lazy" /><figcaption><b>1.1 · Care approach</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-health-profile.webp" width="393" height="852" alt="Health profile: conditions and medications" loading="lazy" /><figcaption><b>1.3 · Health profile</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-wearables.webp" width="393" height="852" alt="Onboarding: connect your wearables" loading="lazy" /><figcaption><b>1.4 · Wearables</b>Multi-device ring</figcaption></figure>
 </div>
 
 ### Insights & action · Kevin
@@ -418,9 +418,9 @@ Welcome, care approach tiles, goals and a deadline, health profile, the multi-de
 Morning push, daily check-in, Today with a pixel sleep-score ring, insights (why first, sources last), a 14-day experiment, Ask Allyn chat and the Pathway tab. **Decision:** one clear next step instead of a dashboard.
 
 <div class="even-row even-row--mid">
-  <figure style="--ar:.461"><img src="/media/allyn/screen-morning-push.webp" width="393" height="852" alt="Morning push notification" loading="lazy" data-zoom /><figcaption><b>2.0 · Morning push</b></figcaption></figure>
-  <figure style="--ar:.461"><img src="/media/allyn/screen-today.webp" width="393" height="852" alt="Today: sleep score and today's insight" loading="lazy" data-zoom /><figcaption><b>2.1 · Today</b>Pixel sleep-score ring</figcaption></figure>
-  <figure style="--ar:.461"><img src="/media/allyn/screen-ask-allyn.webp" width="393" height="852" alt="Ask Allyn AI chat" loading="lazy" data-zoom /><figcaption><b>2.5 · Ask Allyn</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-morning-push.webp" width="393" height="852" alt="Morning push notification" loading="lazy" /><figcaption><b>2.0 · Morning push</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-today.webp" width="393" height="852" alt="Today: sleep score and today's insight" loading="lazy" /><figcaption><b>2.1 · Today</b>Pixel sleep-score ring</figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-ask-allyn.webp" width="393" height="852" alt="Ask Allyn AI chat" loading="lazy" /><figcaption><b>2.5 · Ask Allyn</b></figcaption></figure>
 </div>
 
 <div class="ai-note ai-note--product"><span class="ai-note__tag">AI in the product · Insights & Ask Allyn</span><p>Every insight leads with <em>why</em> and ends with its sources. Ask Allyn shows what it is based on, for example “Oura Ring + Fitbit · last 14 days”, so people can see where an answer comes from.</p></div>
@@ -430,9 +430,9 @@ Morning push, daily check-in, Today with a pixel sleep-score ring, insights (why
 The Prep tab, what to ask (Western vs. functional), the visit brief, and a PDF preview to share. **Decision:** the brief hands off to the doctor, who decides.
 
 <div class="even-row even-row--mid">
-  <figure style="--ar:.461"><img src="/media/allyn/screen-what-to-ask.webp" width="393" height="852" alt="What to ask your doctor" loading="lazy" data-zoom /><figcaption><b>3.2 · What to ask</b></figcaption></figure>
-  <figure style="--ar:.461"><img src="/media/allyn/screen-visit-brief.webp" width="393" height="852" alt="Visit brief for a doctor's appointment" loading="lazy" data-zoom /><figcaption><b>3.3 · Visit brief</b>One page for the doctor</figcaption></figure>
-  <figure style="--ar:.461"><img src="/media/allyn/screen-brief-share.webp" width="393" height="852" alt="Visit brief preview and share" loading="lazy" data-zoom /><figcaption><b>3.4 · Preview & share</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-what-to-ask.webp" width="393" height="852" alt="What to ask your doctor" loading="lazy" /><figcaption><b>3.2 · What to ask</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-visit-brief.webp" width="393" height="852" alt="Visit brief for a doctor's appointment" loading="lazy" /><figcaption><b>3.3 · Visit brief</b>One page for the doctor</figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-brief-share.webp" width="393" height="852" alt="Visit brief preview and share" loading="lazy" /><figcaption><b>3.4 · Preview & share</b></figcaption></figure>
 </div>
 
 <div class="ai-note ai-note--product"><span class="ai-note__tag">AI in the product · Checkup prep</span><p>The AI suggests questions to ask, adapted to your doctor type (Western, functional or Chinese medicine), and frames tests as questions, never diagnoses. The doctor decides.</p></div>
@@ -442,9 +442,9 @@ The Prep tab, what to ask (Western vs. functional), the visit brief, and a PDF p
 Filters, a care map with a pulsing top match, provider profiles, booking and confirmation. **Decision:** trust signals (ratings, price, insurance), because people rely on referrals.
 
 <div class="even-row even-row--mid">
-  <figure style="--ar:.461"><img src="/media/allyn/screen-care-map.webp" width="393" height="852" alt="Care map with matches" loading="lazy" data-zoom /><figcaption><b>4.1 · Care map</b></figcaption></figure>
-  <figure style="--ar:.461"><img src="/media/allyn/screen-provider.webp" width="393" height="852" alt="Provider profile" loading="lazy" data-zoom /><figcaption><b>4.2 · Provider profile</b></figcaption></figure>
-  <figure style="--ar:.461"><img src="/media/allyn/screen-book.webp" width="393" height="852" alt="Book a visit" loading="lazy" data-zoom /><figcaption><b>4.3 · Book a visit</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-care-map.webp" width="393" height="852" alt="Care map with matches" loading="lazy" /><figcaption><b>4.1 · Care map</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-provider.webp" width="393" height="852" alt="Provider profile" loading="lazy" /><figcaption><b>4.2 · Provider profile</b></figcaption></figure>
+  <figure style="--ar:.461"><img src="/media/allyn/screen-book.webp" width="393" height="852" alt="Book a visit" loading="lazy" /><figcaption><b>4.3 · Book a visit</b></figcaption></figure>
 </div>
 
 ### Prototype & micro-interactions
