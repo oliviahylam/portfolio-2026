@@ -54,7 +54,7 @@ At the end of each interview, participants described the visual landscapes they 
 
 ## Digital experience
 
-For the digital part of this project, I was tasked with creating a digitised version of the concept. I wanted to design an interactive interface that simulates the feeling of synaesthesia, so that people who don't experience it can get a sense of what it is like. Echoform is a platform for music discovery through visual means such as colour, motion and form.
+For the digital part of this project, I was tasked with creating a digitised version of the concept. I wanted to design an interactive interface that simulates the feeling of synesthesia, so that people who don't experience it can get a sense of what it is like. Echoform is a platform for music discovery through visual means such as colour, motion and form.
 
 ### 01 · Home
 
@@ -70,6 +70,6 @@ Readers can not only read about how the music is categorised, but also browse th
 
 ### 03 · Connect
 
-Lastly, I designed an interactive section where users can reflect and write about their experience, build their own synaesthetic map by selecting a series of visual elements, or contribute to a community of other users and hear about their experiences with the platform.
+Lastly, I designed an interactive section where users can reflect and write about their experience, build their own synesthetic map by selecting a series of visual elements, or contribute to a community of other users and hear about their experiences with the platform.
 
 ![Echoform — connect](/media/synesthesia/digital-3-connect.mp4)
