@@ -5,7 +5,7 @@ lens: [product]
 template: case-study
 order: 2
 category: Social campaign · Generative AI · Silverside AI
-summary: "Where are the reds? A true-crime-style social campaign for M&M’S, turning real online discourse about missing red M&M’S into a mystery series for Gen Z: a teaser, four 30-second episodes and four statics, presented to Mars."
+summary: "Where are the reds? A true-crime-style social campaign for M&M’S, turning real online discourse about missing red M&M’S into a mystery series for Gen Z: a teaser, four 30-second episodes and four statics."
 hook: Turning real online discourse about missing red M&M’S into a conspiracy series people want to speculate on.
 coverVideo: /media/mms/teaser.mp4
 coverRatio: 0.5625
@@ -15,8 +15,7 @@ thumbRatio: 1.778
 role: Designer, Creative Director & Creative Technologist
 team: "Valentina Scheerle, Lucy Bruechert, Ethan Stewart"
 timeline: 1 month
-client: Intern capstone project at Silverside AI, presented to Mars
-outcome: Presented to Mars, who responded positively
+client: Intern capstone project at Silverside AI
 tools: [Claude, Nano Banana, Seedance, ElevenLabs, Figma, Premiere Pro]
 skills: [Generative AI, Creative direction, Design, Advertising, Short-form video, Storytelling]
 industry: Advertising · Consumer goods
@@ -46,7 +45,7 @@ parts:
   - { label: Outcome, anchor: outcome }
 ---
 
-This project focused on creating a social campaign for M&M’S built around a real conversation happening online: the missing red M&M’S. As a team of four at Silverside AI, we used generative AI alongside creative direction and design to develop #MMysteries, a conspiracy series of 30-second episodes, each exploring a different theory about where the red M&M’S could have disappeared to, supported by an intro teaser (above) and four statics. The project was our intern capstone, and it was presented to the Mars company, who liked it.
+This project focused on creating a social campaign for M&M’S built around a real conversation happening online: the missing red M&M’S. As a team of four at Silverside AI, we used generative AI alongside creative direction and design to develop #MMysteries, a conspiracy series of 30-second episodes, each exploring a different theory about where the red M&M’S could have disappeared to, supported by an intro teaser (above) and four statics. The project was our intern capstone, with full creative control over the direction.
 
 ## The brief
 
@@ -201,7 +200,7 @@ The campaign was planned as a three-week content calendar, alternating statics a
 
 ## Outcome
 
-Although this was not client work, the campaign was presented to the Mars company, and they liked it. The project was not only interesting but also engaging and contributive, inviting the audience to take part in the conversation rather than just watch an ad.
+As an intern-led project, our team had full creative control, and the project was not only interesting but also engaging and contributive, inviting the audience to take part in the conversation rather than just watch an ad.
 
 <div class="card-grid card-grid--3">
   <div class="info-card"><h4>Ownable</h4><p>A point of view only M&M’S can hold, carried as one continuous story across every asset.</p></div>
